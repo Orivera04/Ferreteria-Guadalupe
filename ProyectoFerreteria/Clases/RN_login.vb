@@ -1,0 +1,37 @@
+﻿Imports System.Data.SqlClient
+Public Class RN_login
+
+    Public Sub consulta(user As String, contraseña As String, mensaje As Label)
+        Dim SQL As String
+        Dim MiConexion As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\ProyectoFerreteria\ProyectoFerreteria\BaseDeDatos\FerreteriaBDD.mdf;Integrated Security=True")
+        Dim Rs As SqlDataReader
+        Dim Consulta As New SqlCommand
+        Dim respuesta As String
+        Consulta.Connection = MiConexion
+        MiConexion.Open()
+
+
+        Try
+            SQL = "SELECT COUNT(*) from Usuarios u where u.usuario='" + user + "' and passwordx='" + contraseña + "'"
+
+
+
+            Consulta = New SqlCommand(SQL, MiConexion)
+            Rs = Consulta.ExecuteReader()
+            Rs.Read()
+            respuesta = Rs(0) 'aca me pone el primer campo del select 
+            mensaje.Text = respuesta
+            Rs.Close()
+
+
+
+        Catch ex As Exception
+            MessageBox.Show("Error al Conectar: " + ex.Message)
+
+        End Try
+
+
+    End Sub
+
+
+End Class
