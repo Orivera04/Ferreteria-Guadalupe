@@ -53,9 +53,9 @@ Partial Class Login
         Me.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Black
         Me.bunifuCustomLabel1.Location = New System.Drawing.Point(119, 119)
         Me.bunifuCustomLabel1.Name = "bunifuCustomLabel1"
-        Me.bunifuCustomLabel1.Size = New System.Drawing.Size(179, 22)
+        Me.bunifuCustomLabel1.Size = New System.Drawing.Size(133, 22)
         Me.bunifuCustomLabel1.TabIndex = 9
-        Me.bunifuCustomLabel1.Text = "Ferreteria Guadalupe"
+        Me.bunifuCustomLabel1.Text = "Ferreteria mijail"
         '
         'bunifuFlatButton1
         '
