@@ -49,13 +49,13 @@ Partial Class Login
         'bunifuCustomLabel1
         '
         Me.bunifuCustomLabel1.AutoSize = True
-        Me.bunifuCustomLabel1.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Black
-        Me.bunifuCustomLabel1.Location = New System.Drawing.Point(119, 119)
+        Me.bunifuCustomLabel1.Location = New System.Drawing.Point(156, 121)
         Me.bunifuCustomLabel1.Name = "bunifuCustomLabel1"
-        Me.bunifuCustomLabel1.Size = New System.Drawing.Size(133, 22)
+        Me.bunifuCustomLabel1.Size = New System.Drawing.Size(121, 20)
         Me.bunifuCustomLabel1.TabIndex = 9
-        Me.bunifuCustomLabel1.Text = "Ferreteria mijail"
+        Me.bunifuCustomLabel1.Text = "Ferreteria Maria"
         '
         'bunifuFlatButton1
         '
