@@ -157,12 +157,6 @@
     <Compile Include="Formularios\Formularios Hijos\Menu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Formularios Hijos\VentaRapida.Designer.vb">
-      <DependentUpon>VentaRapida.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Formularios Hijos\VentaRapida.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Formularios\Formularios Hijos\Ventas.Designer.vb">
       <DependentUpon>Ventas.vb</DependentUpon>
     </Compile>
@@ -210,9 +204,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios Hijos\Menu.resx">
       <DependentUpon>Menu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Formularios Hijos\VentaRapida.resx">
-      <DependentUpon>VentaRapida.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios Hijos\Ventas.resx">
       <DependentUpon>Ventas.vb</DependentUpon>
