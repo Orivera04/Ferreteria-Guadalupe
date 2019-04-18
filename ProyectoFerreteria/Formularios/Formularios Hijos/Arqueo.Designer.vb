@@ -41,16 +41,39 @@ Partial Class Arqueo
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.pictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.DataGridINVENTARIO = New System.Windows.Forms.DataGridView()
         Me.EtiquetaD = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridINVENTARIO, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -93,9 +116,17 @@ Partial Class Arqueo
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.GroupBox3)
+        Me.Panel1.Controls.Add(Me.TextBox4)
+        Me.Panel1.Controls.Add(Me.Label9)
+        Me.Panel1.Controls.Add(Me.Label8)
+        Me.Panel1.Controls.Add(Me.DateTimePicker1)
+        Me.Panel1.Controls.Add(Me.Label7)
+        Me.Panel1.Controls.Add(Me.TextBox3)
+        Me.Panel1.Controls.Add(Me.GroupBox2)
         Me.Panel1.Controls.Add(Me.GroupBox1)
-        Me.Panel1.Controls.Add(Me.DataGridINVENTARIO)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.ForeColor = System.Drawing.Color.LightCoral
         Me.Panel1.Location = New System.Drawing.Point(0, 45)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1291, 694)
@@ -104,6 +135,7 @@ Partial Class Arqueo
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.White
+        Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.EtiquetaD)
         Me.GroupBox1.Controls.Add(Me.TextBoxConversion)
@@ -119,9 +151,9 @@ Partial Class Arqueo
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.pictureBox8)
-        Me.GroupBox1.Location = New System.Drawing.Point(39, 28)
+        Me.GroupBox1.Location = New System.Drawing.Point(39, 103)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(427, 491)
+        Me.GroupBox1.Size = New System.Drawing.Size(427, 539)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         '
@@ -148,9 +180,11 @@ Partial Class Arqueo
         'RadioButtonDolar
         '
         Me.RadioButtonDolar.AutoSize = True
-        Me.RadioButtonDolar.Location = New System.Drawing.Point(270, 173)
+        Me.RadioButtonDolar.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButtonDolar.ForeColor = System.Drawing.Color.Black
+        Me.RadioButtonDolar.Location = New System.Drawing.Point(281, 173)
         Me.RadioButtonDolar.Name = "RadioButtonDolar"
-        Me.RadioButtonDolar.Size = New System.Drawing.Size(50, 17)
+        Me.RadioButtonDolar.Size = New System.Drawing.Size(54, 20)
         Me.RadioButtonDolar.TabIndex = 48
         Me.RadioButtonDolar.TabStop = True
         Me.RadioButtonDolar.Text = "Dolar"
@@ -159,9 +193,11 @@ Partial Class Arqueo
         'RadioButtonCordoba
         '
         Me.RadioButtonCordoba.AutoSize = True
+        Me.RadioButtonCordoba.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButtonCordoba.ForeColor = System.Drawing.Color.Black
         Me.RadioButtonCordoba.Location = New System.Drawing.Point(199, 173)
         Me.RadioButtonCordoba.Name = "RadioButtonCordoba"
-        Me.RadioButtonCordoba.Size = New System.Drawing.Size(65, 17)
+        Me.RadioButtonCordoba.Size = New System.Drawing.Size(76, 20)
         Me.RadioButtonCordoba.TabIndex = 47
         Me.RadioButtonCordoba.TabStop = True
         Me.RadioButtonCordoba.Text = "Cordoba"
@@ -190,7 +226,7 @@ Partial Class Arqueo
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(141, 62)
+        Me.PictureBox1.Location = New System.Drawing.Point(164, 51)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -237,7 +273,7 @@ Partial Class Arqueo
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 50.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(66, 386)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(66, 437)
         Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.Salmon
@@ -270,11 +306,11 @@ Partial Class Arqueo
         Me.Label5.BackColor = System.Drawing.Color.LightCoral
         Me.Label5.Font = New System.Drawing.Font("MS Reference Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(166, 9)
+        Me.Label5.Location = New System.Drawing.Point(144, 8)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(95, 26)
+        Me.Label5.Size = New System.Drawing.Size(142, 26)
         Me.Label5.TabIndex = 27
-        Me.Label5.Text = "Moneda"
+        Me.Label5.Text = "Arqueo Caja"
         '
         'pictureBox8
         '
@@ -285,18 +321,6 @@ Partial Class Arqueo
         Me.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pictureBox8.TabIndex = 27
         Me.pictureBox8.TabStop = False
-        '
-        'DataGridINVENTARIO
-        '
-        Me.DataGridINVENTARIO.AllowUserToAddRows = False
-        Me.DataGridINVENTARIO.AllowUserToDeleteRows = False
-        Me.DataGridINVENTARIO.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.DataGridINVENTARIO.BackgroundColor = System.Drawing.Color.LightYellow
-        Me.DataGridINVENTARIO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridINVENTARIO.Location = New System.Drawing.Point(789, 130)
-        Me.DataGridINVENTARIO.Name = "DataGridINVENTARIO"
-        Me.DataGridINVENTARIO.Size = New System.Drawing.Size(408, 328)
-        Me.DataGridINVENTARIO.TabIndex = 0
         '
         'EtiquetaD
         '
@@ -323,6 +347,263 @@ Partial Class Arqueo
         Me.Label4.TabIndex = 52
         Me.Label4.Text = "Cantidad"
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.White
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label3.Location = New System.Drawing.Point(15, 249)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(183, 23)
+        Me.Label3.TabIndex = 53
+        Me.Label3.Text = "Monedas y billetes"
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(28, 103)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(120, 316)
+        Me.ListBox1.TabIndex = 12
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.BackColor = System.Drawing.Color.White
+        Me.GroupBox2.Controls.Add(Me.Label6)
+        Me.GroupBox2.Controls.Add(Me.ListBox1)
+        Me.GroupBox2.Controls.Add(Me.PictureBox2)
+        Me.GroupBox2.Location = New System.Drawing.Point(479, 104)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(176, 537)
+        Me.GroupBox2.TabIndex = 13
+        Me.GroupBox2.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.LightCoral
+        Me.PictureBox2.Location = New System.Drawing.Point(1, 7)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(230, 29)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 54
+        Me.PictureBox2.TabStop = False
+        '
+        'Label6
+        '
+        Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.LightCoral
+        Me.Label6.Font = New System.Drawing.Font("MS Reference Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(60, 8)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(62, 26)
+        Me.Label6.TabIndex = 54
+        Me.Label6.Text = "Lista"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.Color.Bisque
+        Me.TextBox3.Enabled = False
+        Me.TextBox3.Font = New System.Drawing.Font("Century", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.ForeColor = System.Drawing.Color.LightCoral
+        Me.TextBox3.Location = New System.Drawing.Point(170, 36)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox3.TabIndex = 14
+        Me.TextBox3.Text = "1"
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.White
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label7.Location = New System.Drawing.Point(54, 31)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(110, 23)
+        Me.Label7.TabIndex = 54
+        Me.Label7.Text = "Arqueo N°:"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.CalendarMonthBackground = System.Drawing.Color.Bisque
+        Me.DateTimePicker1.CustomFormat = "yyyy/MM/dd"
+        Me.DateTimePicker1.Enabled = False
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker1.Location = New System.Drawing.Point(170, 69)
+        Me.DateTimePicker1.MinDate = New Date(2010, 2, 22, 0, 0, 0, 0)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(99, 20)
+        Me.DateTimePicker1.TabIndex = 55
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.White
+        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label8.Location = New System.Drawing.Point(54, 66)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(72, 23)
+        Me.Label8.TabIndex = 56
+        Me.Label8.Text = "Fecha:"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.White
+        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label9.Location = New System.Drawing.Point(368, 36)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(134, 23)
+        Me.Label9.TabIndex = 57
+        Me.Label9.Text = "Saldo inicial :"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.BackColor = System.Drawing.Color.Bisque
+        Me.TextBox4.Enabled = False
+        Me.TextBox4.Font = New System.Drawing.Font("Century", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox4.ForeColor = System.Drawing.Color.LightCoral
+        Me.TextBox4.Location = New System.Drawing.Point(508, 39)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox4.TabIndex = 58
+        Me.TextBox4.Text = "2000"
+        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.BackColor = System.Drawing.Color.White
+        Me.GroupBox3.Controls.Add(Me.BunifuFlatButton2)
+        Me.GroupBox3.Controls.Add(Me.TextBox6)
+        Me.GroupBox3.Controls.Add(Me.Label12)
+        Me.GroupBox3.Controls.Add(Me.TextBox5)
+        Me.GroupBox3.Controls.Add(Me.Label11)
+        Me.GroupBox3.Controls.Add(Me.DataGridView1)
+        Me.GroupBox3.Controls.Add(Me.Label10)
+        Me.GroupBox3.Controls.Add(Me.PictureBox3)
+        Me.GroupBox3.Location = New System.Drawing.Point(669, 103)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(520, 537)
+        Me.GroupBox3.TabIndex = 55
+        Me.GroupBox3.TabStop = False
+        '
+        'Label10
+        '
+        Me.Label10.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.LightCoral
+        Me.Label10.Font = New System.Drawing.Font("MS Reference Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(173, 10)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(214, 26)
+        Me.Label10.TabIndex = 54
+        Me.Label10.Text = "Gastos autorizados"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.LightCoral
+        Me.PictureBox3.Location = New System.Drawing.Point(1, 7)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(519, 29)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 54
+        Me.PictureBox3.TabStop = False
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.Linen
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(32, 186)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(444, 321)
+        Me.DataGridView1.TabIndex = 55
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.White
+        Me.Label11.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label11.Location = New System.Drawing.Point(28, 49)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(104, 23)
+        Me.Label11.TabIndex = 59
+        Me.Label11.Text = "Cantidad:"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(158, 52)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox5.TabIndex = 54
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.White
+        Me.Label12.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label12.Location = New System.Drawing.Point(28, 89)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(124, 23)
+        Me.Label12.TabIndex = 60
+        Me.Label12.Text = "Descripcion:"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox6.Location = New System.Drawing.Point(158, 92)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(318, 20)
+        Me.TextBox6.TabIndex = 61
+        '
+        'BunifuFlatButton2
+        '
+        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.Tomato
+        Me.BunifuFlatButton2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuFlatButton2.BackColor = System.Drawing.Color.Salmon
+        Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton2.BorderRadius = 0
+        Me.BunifuFlatButton2.ButtonText = " Agregar"
+        Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton2.Font = New System.Drawing.Font("Century", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton2.Iconimage = Nothing
+        Me.BunifuFlatButton2.Iconimage_right = Nothing
+        Me.BunifuFlatButton2.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton2.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton2.IconMarginLeft = 0
+        Me.BunifuFlatButton2.IconMarginRight = 0
+        Me.BunifuFlatButton2.IconRightVisible = True
+        Me.BunifuFlatButton2.IconRightZoom = 0R
+        Me.BunifuFlatButton2.IconVisible = True
+        Me.BunifuFlatButton2.IconZoom = 50.0R
+        Me.BunifuFlatButton2.IsTab = False
+        Me.BunifuFlatButton2.Location = New System.Drawing.Point(124, 131)
+        Me.BunifuFlatButton2.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
+        Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.Salmon
+        Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.Coral
+        Me.BunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.selected = False
+        Me.BunifuFlatButton2.Size = New System.Drawing.Size(281, 34)
+        Me.BunifuFlatButton2.TabIndex = 54
+        Me.BunifuFlatButton2.Text = " Agregar"
+        Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'Arqueo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -338,11 +619,18 @@ Partial Class Arqueo
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridINVENTARIO, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -358,7 +646,6 @@ Partial Class Arqueo
     Private WithEvents Label2 As Label
     Private WithEvents Label5 As Label
     Private WithEvents pictureBox8 As PictureBox
-    Friend WithEvents DataGridINVENTARIO As DataGridView
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TextBox1 As TextBox
     Private WithEvents Label1 As Label
@@ -369,4 +656,24 @@ Partial Class Arqueo
     Friend WithEvents TextBoxConversion As TextBox
     Private WithEvents Label4 As Label
     Private WithEvents EtiquetaD As Label
+    Private WithEvents Label3 As Label
+    Friend WithEvents GroupBox2 As GroupBox
+    Private WithEvents Label6 As Label
+    Friend WithEvents ListBox1 As ListBox
+    Private WithEvents PictureBox2 As PictureBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Private WithEvents Label7 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox4 As TextBox
+    Private WithEvents Label9 As Label
+    Private WithEvents Label8 As Label
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents DataGridView1 As DataGridView
+    Private WithEvents Label10 As Label
+    Private WithEvents PictureBox3 As PictureBox
+    Friend WithEvents TextBox6 As TextBox
+    Private WithEvents Label12 As Label
+    Friend WithEvents TextBox5 As TextBox
+    Private WithEvents Label11 As Label
+    Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
 End Class
