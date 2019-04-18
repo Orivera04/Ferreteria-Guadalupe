@@ -139,6 +139,12 @@
     <Compile Include="Formularios\Formularios Hijos\AgregarProducto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\Formularios Hijos\Arqueo.Designer.vb">
+      <DependentUpon>Arqueo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios Hijos\Arqueo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\Formularios Hijos\Inventario.Designer.vb">
       <DependentUpon>Inventario.vb</DependentUpon>
     </Compile>
@@ -195,6 +201,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Formularios\Formularios Hijos\AgregarProducto.resx">
       <DependentUpon>AgregarProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios Hijos\Arqueo.resx">
+      <DependentUpon>Arqueo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios Hijos\Inventario.resx">
       <DependentUpon>Inventario.vb</DependentUpon>

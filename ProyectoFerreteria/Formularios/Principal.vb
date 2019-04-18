@@ -88,4 +88,8 @@
     Private Sub BunifuFlatButton6_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton6.Click
 
     End Sub
+
+    Private Sub BunifuFlatButton5_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton5.Click
+        Abrirform(New Arqueo)
+    End Sub
 End Class
