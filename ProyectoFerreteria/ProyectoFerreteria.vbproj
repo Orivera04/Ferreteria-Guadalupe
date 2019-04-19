@@ -145,6 +145,12 @@
     <Compile Include="Formularios\Formularios Hijos\Arqueo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\Formularios Hijos\Configuracion.Designer.vb">
+      <DependentUpon>Configuracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios Hijos\Configuracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\Formularios Hijos\Inventario.Designer.vb">
       <DependentUpon>Inventario.vb</DependentUpon>
     </Compile>
@@ -155,6 +161,12 @@
       <DependentUpon>Menu.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Formularios Hijos\Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formularios Hijos\Proveedores.Designer.vb">
+      <DependentUpon>Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios Hijos\Proveedores.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Formularios Hijos\Ventas.Designer.vb">
@@ -199,11 +211,17 @@
     <EmbeddedResource Include="Formularios\Formularios Hijos\Arqueo.resx">
       <DependentUpon>Arqueo.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios Hijos\Configuracion.resx">
+      <DependentUpon>Configuracion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios Hijos\Inventario.resx">
       <DependentUpon>Inventario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios Hijos\Menu.resx">
       <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios Hijos\Proveedores.resx">
+      <DependentUpon>Proveedores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios Hijos\Ventas.resx">
       <DependentUpon>Ventas.vb</DependentUpon>
