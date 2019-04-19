@@ -4,7 +4,7 @@ Public Class RN_ConsultaNombre
     Public Sub consulta(mensaje As Label)
 
         Dim SQL As String
-        Dim MiConexion As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\river\OneDrive\Documentos\ProyectoFerreteria\ProyectoFerreteria\BaseDeDatos\FerreteriaBDD.mdf;Integrated Security=True")
+        Dim MiConexion As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\BaseDeDatos\FerreteriaBDD.mdf;Integrated Security=True")
         Dim Rs As SqlDataReader
         Dim Consulta As New SqlCommand
         Dim respuesta As String
