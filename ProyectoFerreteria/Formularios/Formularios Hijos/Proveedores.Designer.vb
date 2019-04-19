@@ -47,6 +47,10 @@ Partial Class Proveedores
         Me.ComboBoxBusqueda = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -108,6 +112,10 @@ Partial Class Proveedores
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.White
+        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.DateTimePicker2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.VentaBox)
@@ -125,17 +133,17 @@ Partial Class Proveedores
         'TextBox1
         '
         Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.TextBox1.Location = New System.Drawing.Point(141, 115)
+        Me.TextBox1.Location = New System.Drawing.Point(141, 117)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(162, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(183, 20)
         Me.TextBox1.TabIndex = 45
         '
         'VentaBox
         '
         Me.VentaBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.VentaBox.Location = New System.Drawing.Point(141, 79)
+        Me.VentaBox.Location = New System.Drawing.Point(141, 81)
         Me.VentaBox.Name = "VentaBox"
-        Me.VentaBox.Size = New System.Drawing.Size(170, 20)
+        Me.VentaBox.Size = New System.Drawing.Size(183, 20)
         Me.VentaBox.TabIndex = 44
         '
         'BunifuFlatButton1
@@ -181,11 +189,11 @@ Partial Class Proveedores
         Me.Label6.BackColor = System.Drawing.Color.White
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label6.Location = New System.Drawing.Point(14, 112)
+        Me.Label6.Location = New System.Drawing.Point(13, 112)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(68, 23)
+        Me.Label6.Size = New System.Drawing.Size(92, 23)
         Me.Label6.TabIndex = 33
-        Me.Label6.Text = "Saldo:"
+        Me.Label6.Text = "Telefono:"
         '
         'Label4
         '
@@ -386,12 +394,52 @@ Partial Class Proveedores
         Me.DateTimePicker2.CustomFormat = "yyyy/MM/dd"
         Me.DateTimePicker2.Enabled = False
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker2.Location = New System.Drawing.Point(141, 158)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(157, 241)
         Me.DateTimePicker2.MinDate = New Date(2019, 2, 22, 0, 0, 0, 0)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(162, 20)
         Me.DateTimePicker2.TabIndex = 50
         Me.DateTimePicker2.Value = New Date(2019, 3, 20, 0, 0, 0, 0)
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.White
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label7.Location = New System.Drawing.Point(13, 154)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(78, 23)
+        Me.Label7.TabIndex = 51
+        Me.Label7.Text = "Correo:"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.TextBox3.Location = New System.Drawing.Point(141, 157)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(183, 20)
+        Me.TextBox3.TabIndex = 52
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.White
+        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label8.Location = New System.Drawing.Point(13, 197)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(103, 23)
+        Me.Label8.TabIndex = 53
+        Me.Label8.Text = "Direccion:"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.TextBox4.Location = New System.Drawing.Point(141, 202)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(183, 20)
+        Me.TextBox4.TabIndex = 54
         '
         'Proveedores
         '
@@ -443,4 +491,8 @@ Partial Class Proveedores
     Friend WithEvents ComboBoxBusqueda As ComboBox
     Friend WithEvents DateTimePicker2 As DateTimePicker
     Private WithEvents Label3 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Private WithEvents Label8 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Private WithEvents Label7 As Label
 End Class
