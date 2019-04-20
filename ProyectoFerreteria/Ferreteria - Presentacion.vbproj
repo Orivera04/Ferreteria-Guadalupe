@@ -122,11 +122,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataSET\DataUsuarios.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataUsuarios.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\Formularios Hijos\AgregarProducto.Designer.vb">
       <DependentUpon>AgregarProducto.vb</DependentUpon>
     </Compile>
@@ -235,17 +230,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="DataSET\DataUsuarios.xsc">
-      <DependentUpon>DataUsuarios.xsd</DependentUpon>
-    </None>
-    <None Include="DataSET\DataUsuarios.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataUsuarios.Designer.vb</LastGenOutput>
-    </None>
-    <None Include="DataSET\DataUsuarios.xss">
-      <DependentUpon>DataUsuarios.xsd</DependentUpon>
-    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
