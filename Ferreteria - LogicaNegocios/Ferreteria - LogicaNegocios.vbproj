@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Ferreteria___LogicaNegocios</RootNamespace>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ferreteria - AccesoDatos\Ferreteria - AccesoDatos.vbproj" />
+    <ProjectReference Include="..\Ferreteria - Entidades\Ferreteria - Entidades.vbproj" />
+  </ItemGroup>
+
+</Project>

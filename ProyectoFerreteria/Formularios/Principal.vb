@@ -4,8 +4,6 @@
         PictureBox2.Image = System.Drawing.Bitmap.FromFile("IconoLogin.PNG")
         PictureBox1.Image = System.Drawing.Bitmap.FromFile("Play1.PNG")
         Abrirform(New Menu)
-        Dim instacia As New RN_ConsultaNombre
-        instacia.consulta(Nombre)
 
     End Sub
 
@@ -23,45 +21,7 @@
         End If
     End Sub
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        If PanelSecundario.Width = 50 Then
 
-
-            ' PanelSecundario.Visible = False
-            ' Label1.Location = New Point(27, 80)
-
-
-            AnimacionPanelSecundario.ShowSync(PanelSecundario)
-
-
-            PictureBox1.Visible = False
-            AnimacionFlecha.ShowSync(PictureBox1)
-            PictureBox1.Image = System.Drawing.Bitmap.FromFile("Play2.PNG")
-            PanelSecundario.Width = 170
-
-
-        ElseIf PanelSecundario.Width = 170 Then
-
-
-
-            'Logo.Visible = False
-            'AnimacionLogo.ShowSync(Logo)
-            '  PanelSecundario.Visible = False
-            'Label1.Location = New Point(1, 80)
-
-            AnimacionPanelSecundario.ShowSync(PanelSecundario)
-
-            PictureBox1.Visible = False
-            AnimacionFlecha.ShowSync(PictureBox1)
-
-            PictureBox1.Image = System.Drawing.Bitmap.FromFile("Play1.PNG")
-            PanelSecundario.Width = 50
-
-
-
-        End If
-
-        PictureBox1.Width = 18
-        PictureBox1.Height = 18
     End Sub
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click

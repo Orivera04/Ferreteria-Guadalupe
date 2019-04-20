@@ -1,7 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class Login
 
-    Dim conexion As Conexion = New Conexion()
     Dim res As Integer
     Dim oportunidad As Integer = 3
 
@@ -40,28 +39,6 @@ Public Class Login
     End Sub
 
     Private Sub bunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles bunifuFlatButton1.Click
-        Dim instancia As New RN_login
-        mensaje.Visible = False
-        instancia.consulta(bunifuMaterialTextbox1.Text.ToString, bunifuMaterialTextbox2.Text.ToString,mensaje)
-        If mensaje.Text = 1 Then
-            MsgBox("Iniciando sesion como :" + bunifuMaterialTextbox1.Text.ToString, MsgBoxStyle.Information, "Usuario encontrado")
-
-            Modsx.usuario = bunifuMaterialTextbox1.Text.ToString
-            Me.Hide()
-            Principal.Show()
-        Else mensaje.Text = 0
-            oportunidad = oportunidad - 1
-            MsgBox("No existe el usuario", MsgBoxStyle.Critical, "Verifique")
-            If oportunidad = 0 Then
-
-                Me.Close()
-            Else
-
-            End If
-            mensaje.Visible = True
-            mensaje.Text = "Opertunidades restantes :" + oportunidad.ToString
-        End If
-        'Me.Hide()
 
 
     End Sub
