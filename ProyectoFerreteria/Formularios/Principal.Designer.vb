@@ -23,9 +23,9 @@ Partial Class Principal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation5 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation8 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation7 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Principal))
-        Dim Animation6 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Me.BarControl = New Bunifu.Framework.UI.BunifuCards()
         Me.Nombre = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -78,7 +78,7 @@ Partial Class Principal
         Me.BarControl.Name = "BarControl"
         Me.BarControl.RightSahddow = False
         Me.BarControl.ShadowDepth = 20
-        Me.BarControl.Size = New System.Drawing.Size(1396, 38)
+        Me.BarControl.Size = New System.Drawing.Size(1386, 38)
         Me.BarControl.TabIndex = 2
         '
         'Nombre
@@ -112,7 +112,7 @@ Partial Class Principal
         Me.AnimacionPanelSecundario.SetDecoration(Me.PictureBox6, BunifuAnimatorNS.DecorationType.None)
         Me.AnimacionFlecha.SetDecoration(Me.PictureBox6, BunifuAnimatorNS.DecorationType.None)
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(1368, 11)
+        Me.PictureBox6.Location = New System.Drawing.Point(1339, 14)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(16, 16)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -124,7 +124,7 @@ Partial Class Principal
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.AnimacionPanelSecundario.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
         Me.AnimacionFlecha.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
-        Me.PictureBox1.Location = New System.Drawing.Point(18, 11)
+        Me.PictureBox1.Location = New System.Drawing.Point(8, 11)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(18, 18)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -166,7 +166,7 @@ Partial Class Principal
         Me.PanelSecundario.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelSecundario.Location = New System.Drawing.Point(0, 38)
         Me.PanelSecundario.Name = "PanelSecundario"
-        Me.PanelSecundario.Size = New System.Drawing.Size(50, 760)
+        Me.PanelSecundario.Size = New System.Drawing.Size(50, 750)
         Me.PanelSecundario.TabIndex = 3
         '
         'BunifuFlatButton6
@@ -425,22 +425,22 @@ Partial Class Principal
         '
         Me.AnimacionFlecha.AnimationType = BunifuAnimatorNS.AnimationType.Rotate
         Me.AnimacionFlecha.Cursor = Nothing
-        Animation5.AnimateOnlyDifferences = True
-        Animation5.BlindCoeff = CType(resources.GetObject("Animation5.BlindCoeff"), System.Drawing.PointF)
-        Animation5.LeafCoeff = 0!
-        Animation5.MaxTime = 1.0!
-        Animation5.MinTime = 0!
-        Animation5.MosaicCoeff = CType(resources.GetObject("Animation5.MosaicCoeff"), System.Drawing.PointF)
-        Animation5.MosaicShift = CType(resources.GetObject("Animation5.MosaicShift"), System.Drawing.PointF)
-        Animation5.MosaicSize = 0
-        Animation5.Padding = New System.Windows.Forms.Padding(50)
-        Animation5.RotateCoeff = 1.0!
-        Animation5.RotateLimit = 0!
-        Animation5.ScaleCoeff = CType(resources.GetObject("Animation5.ScaleCoeff"), System.Drawing.PointF)
-        Animation5.SlideCoeff = CType(resources.GetObject("Animation5.SlideCoeff"), System.Drawing.PointF)
-        Animation5.TimeCoeff = 0!
-        Animation5.TransparencyCoeff = 1.0!
-        Me.AnimacionFlecha.DefaultAnimation = Animation5
+        Animation8.AnimateOnlyDifferences = True
+        Animation8.BlindCoeff = CType(resources.GetObject("Animation8.BlindCoeff"), System.Drawing.PointF)
+        Animation8.LeafCoeff = 0!
+        Animation8.MaxTime = 1.0!
+        Animation8.MinTime = 0!
+        Animation8.MosaicCoeff = CType(resources.GetObject("Animation8.MosaicCoeff"), System.Drawing.PointF)
+        Animation8.MosaicShift = CType(resources.GetObject("Animation8.MosaicShift"), System.Drawing.PointF)
+        Animation8.MosaicSize = 0
+        Animation8.Padding = New System.Windows.Forms.Padding(50)
+        Animation8.RotateCoeff = 1.0!
+        Animation8.RotateLimit = 0!
+        Animation8.ScaleCoeff = CType(resources.GetObject("Animation8.ScaleCoeff"), System.Drawing.PointF)
+        Animation8.SlideCoeff = CType(resources.GetObject("Animation8.SlideCoeff"), System.Drawing.PointF)
+        Animation8.TimeCoeff = 0!
+        Animation8.TransparencyCoeff = 1.0!
+        Me.AnimacionFlecha.DefaultAnimation = Animation8
         '
         'PanelContenedor
         '
@@ -451,7 +451,7 @@ Partial Class Principal
         Me.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelContenedor.Location = New System.Drawing.Point(50, 38)
         Me.PanelContenedor.Name = "PanelContenedor"
-        Me.PanelContenedor.Size = New System.Drawing.Size(1346, 760)
+        Me.PanelContenedor.Size = New System.Drawing.Size(1336, 750)
         Me.PanelContenedor.TabIndex = 4
         '
         'PictureBox3
@@ -470,22 +470,22 @@ Partial Class Principal
         '
         Me.AnimacionPanelSecundario.AnimationType = BunifuAnimatorNS.AnimationType.Scale
         Me.AnimacionPanelSecundario.Cursor = Nothing
-        Animation6.AnimateOnlyDifferences = True
-        Animation6.BlindCoeff = CType(resources.GetObject("Animation6.BlindCoeff"), System.Drawing.PointF)
-        Animation6.LeafCoeff = 0!
-        Animation6.MaxTime = 1.0!
-        Animation6.MinTime = 0!
-        Animation6.MosaicCoeff = CType(resources.GetObject("Animation6.MosaicCoeff"), System.Drawing.PointF)
-        Animation6.MosaicShift = CType(resources.GetObject("Animation6.MosaicShift"), System.Drawing.PointF)
-        Animation6.MosaicSize = 0
-        Animation6.Padding = New System.Windows.Forms.Padding(0)
-        Animation6.RotateCoeff = 0!
-        Animation6.RotateLimit = 0!
-        Animation6.ScaleCoeff = CType(resources.GetObject("Animation6.ScaleCoeff"), System.Drawing.PointF)
-        Animation6.SlideCoeff = CType(resources.GetObject("Animation6.SlideCoeff"), System.Drawing.PointF)
-        Animation6.TimeCoeff = 0!
-        Animation6.TransparencyCoeff = 0!
-        Me.AnimacionPanelSecundario.DefaultAnimation = Animation6
+        Animation7.AnimateOnlyDifferences = True
+        Animation7.BlindCoeff = CType(resources.GetObject("Animation7.BlindCoeff"), System.Drawing.PointF)
+        Animation7.LeafCoeff = 0!
+        Animation7.MaxTime = 1.0!
+        Animation7.MinTime = 0!
+        Animation7.MosaicCoeff = CType(resources.GetObject("Animation7.MosaicCoeff"), System.Drawing.PointF)
+        Animation7.MosaicShift = CType(resources.GetObject("Animation7.MosaicShift"), System.Drawing.PointF)
+        Animation7.MosaicSize = 0
+        Animation7.Padding = New System.Windows.Forms.Padding(0)
+        Animation7.RotateCoeff = 0!
+        Animation7.RotateLimit = 0!
+        Animation7.ScaleCoeff = CType(resources.GetObject("Animation7.ScaleCoeff"), System.Drawing.PointF)
+        Animation7.SlideCoeff = CType(resources.GetObject("Animation7.SlideCoeff"), System.Drawing.PointF)
+        Animation7.TimeCoeff = 0!
+        Animation7.TransparencyCoeff = 0!
+        Me.AnimacionPanelSecundario.DefaultAnimation = Animation7
         '
         'Tarjetadecontrol
         '
@@ -499,7 +499,7 @@ Partial Class Principal
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1396, 798)
+        Me.ClientSize = New System.Drawing.Size(1386, 788)
         Me.ControlBox = False
         Me.Controls.Add(Me.PanelContenedor)
         Me.Controls.Add(Me.PanelSecundario)
