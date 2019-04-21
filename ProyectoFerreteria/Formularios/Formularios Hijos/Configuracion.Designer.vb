@@ -353,7 +353,8 @@ Partial Class Configuracion
         '
         'GroupDataGrid
         '
-        Me.GroupDataGrid.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.GroupDataGrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupDataGrid.BackColor = System.Drawing.Color.White
         Me.GroupDataGrid.Controls.Add(Me.DataGridView1)
         Me.GroupDataGrid.Controls.Add(Me.Label1)
@@ -366,6 +367,8 @@ Partial Class Configuracion
         '
         'DataGridView1
         '
+        Me.DataGridView1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.OldLace
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(73, 117)
@@ -391,7 +394,7 @@ Partial Class Configuracion
         Me.PictureBox2.BackColor = System.Drawing.Color.MediumPurple
         Me.PictureBox2.Location = New System.Drawing.Point(2, 7)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(836, 29)
+        Me.PictureBox2.Size = New System.Drawing.Size(886, 29)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 26
         Me.PictureBox2.TabStop = False
