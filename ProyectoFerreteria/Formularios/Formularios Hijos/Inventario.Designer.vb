@@ -402,7 +402,8 @@ Partial Class Inventario
         '
         'GroupDataGrid
         '
-        Me.GroupDataGrid.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.GroupDataGrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupDataGrid.BackColor = System.Drawing.Color.White
         Me.GroupDataGrid.Controls.Add(Me.ComboBoxBusqueda)
         Me.GroupDataGrid.Controls.Add(Me.GroupBox4)
@@ -461,6 +462,8 @@ Partial Class Inventario
         '
         'PictureBox2
         '
+        Me.PictureBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox2.BackColor = System.Drawing.Color.LightCoral
         Me.PictureBox2.Location = New System.Drawing.Point(2, 7)
         Me.PictureBox2.Name = "PictureBox2"
@@ -486,7 +489,8 @@ Partial Class Inventario
         '
         Me.DataGridINVENTARIO.AllowUserToAddRows = False
         Me.DataGridINVENTARIO.AllowUserToDeleteRows = False
-        Me.DataGridINVENTARIO.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.DataGridINVENTARIO.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridINVENTARIO.BackgroundColor = System.Drawing.Color.LightYellow
         Me.DataGridINVENTARIO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridINVENTARIO.Location = New System.Drawing.Point(55, 86)
