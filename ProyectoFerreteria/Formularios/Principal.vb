@@ -46,10 +46,14 @@
     End Sub
 
     Private Sub BunifuFlatButton6_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton6.Click
-        Abrirform(New Configuracion)
+        Abrirform(New Estadisticas)
     End Sub
 
     Private Sub BunifuFlatButton5_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton5.Click
         Abrirform(New Arqueo)
+    End Sub
+
+    Private Sub BunifuFlatButton7_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton7.Click
+        Abrirform(New Configuracion)
     End Sub
 End Class

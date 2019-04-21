@@ -36,6 +36,8 @@ Partial Class Configuracion
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -48,8 +50,6 @@ Partial Class Configuracion
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -245,9 +245,30 @@ Partial Class Configuracion
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         '
+        'TextBox6
+        '
+        Me.TextBox6.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.TextBox6.Location = New System.Drawing.Point(43, 290)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(281, 20)
+        Me.TextBox6.TabIndex = 49
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.White
+        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label9.Location = New System.Drawing.Point(22, 258)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(73, 23)
+        Me.Label9.TabIndex = 48
+        Me.Label9.Text = "Correo"
+        '
         'TextBox2
         '
         Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.TextBox2.Enabled = False
         Me.TextBox2.Location = New System.Drawing.Point(43, 225)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(281, 20)
@@ -268,6 +289,7 @@ Partial Class Configuracion
         'TextBox1
         '
         Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.TextBox1.Enabled = False
         Me.TextBox1.Location = New System.Drawing.Point(43, 153)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(281, 20)
@@ -276,6 +298,7 @@ Partial Class Configuracion
         'VentaBox
         '
         Me.VentaBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.VentaBox.Enabled = False
         Me.VentaBox.Location = New System.Drawing.Point(43, 83)
         Me.VentaBox.Name = "VentaBox"
         Me.VentaBox.Size = New System.Drawing.Size(281, 20)
@@ -372,26 +395,6 @@ Partial Class Configuracion
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 26
         Me.PictureBox2.TabStop = False
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.White
-        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label9.Location = New System.Drawing.Point(22, 258)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(73, 23)
-        Me.Label9.TabIndex = 48
-        Me.Label9.Text = "Correo"
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.TextBox6.Location = New System.Drawing.Point(43, 290)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(281, 20)
-        Me.TextBox6.TabIndex = 49
         '
         'Configuracion
         '
