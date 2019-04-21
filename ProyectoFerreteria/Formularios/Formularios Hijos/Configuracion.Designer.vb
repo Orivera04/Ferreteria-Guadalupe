@@ -391,10 +391,12 @@ Partial Class Configuracion
         '
         'PictureBox2
         '
+        Me.PictureBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox2.BackColor = System.Drawing.Color.MediumPurple
         Me.PictureBox2.Location = New System.Drawing.Point(2, 7)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(886, 29)
+        Me.PictureBox2.Size = New System.Drawing.Size(837, 29)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 26
         Me.PictureBox2.TabStop = False
