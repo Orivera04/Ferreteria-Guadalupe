@@ -7,14 +7,14 @@
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="ProyectoFerreteria.exe.manifest" size="9170">
+    <dependentAssembly dependencyType="install" codebase="ProyectoFerreteria.exe.manifest" size="8282">
       <assemblyIdentity name="ProyectoFerreteria.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MKvCIDZCxG7HZougZNgX86kZkLJDdwjMkI2dVOiUEHw=</dsig:DigestValue>
+        <dsig:DigestValue>yNlENN1c6x4UwPa9BUqXKO9G+Zl2BI/KOfL4Y4O4xJc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -103,14 +103,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoFerreteria.exe" size="334336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoFerreteria.exe" size="296960">
       <assemblyIdentity name="ProyectoFerreteria" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6WrFo9ICadIRLGSLfw0QWZnqVgY1X81QqjSK9cPDHaw=</dsig:DigestValue>
+        <dsig:DigestValue>+l5Noq4eDn7snaAI3YwxFeXoor6uwRj9ho8sDBpgS3E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -126,24 +126,6 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="BaseDeDatos\FerreteriaBDD.mdf" size="8388608" writeableType="applicationData">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>vLUvtiAtvPXMWGoV4Q1WkYu0YmBkA0csKSh52FCudzs=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="BaseDeDatos\FerreteriaBDD_log.ldf" size="8388608" writeableType="applicationData">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>IOqgwok//Gjwjmbar4DvB8Q9Ja3Rm++ngoEne28aOzo=</dsig:DigestValue>
-    </hash>
-  </file>
   <file name="fire.ico" size="9662">
     <hash>
       <dsig:Transforms>
