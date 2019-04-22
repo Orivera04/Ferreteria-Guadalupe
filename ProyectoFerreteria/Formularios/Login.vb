@@ -1,8 +1,11 @@
-﻿Imports System.Data.SqlClient
+﻿
+Imports Ferreteria___LogicaNegocios
+Imports Ferreteria___Entidades
+
 Public Class Login
 
-    Dim res As Integer
-    Dim oportunidad As Integer = 3
+    Private _EmpleadoBoi As New Boi_Empleado()
+    Private _Empleado As New E_Empleado()
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         Me.Close()
@@ -39,8 +42,14 @@ Public Class Login
     End Sub
 
     Private Sub bunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles bunifuFlatButton1.Click
-
-
+        _Empleado.Usuario_P = bunifuMaterialTextbox1.Text
+        _Empleado.Contraseña_P = bunifuMaterialTextbox1.Text
+        _EmpleadoBoi.AutenticarUsuario(_Empleado)
+        If (_EmpleadoBoi.Errores.Length = 0) Then
+            MessageBox.Show("Exito")
+        Else
+            MessageBox.Show(_EmpleadoBoi.Errores.ToString())
+        End If
     End Sub
 
 

@@ -1,0 +1,4 @@
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\netstandard2.0\Ferreteria - LogicaNegocios.vbprojAssemblyReference.cache
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\netstandard2.0\Ferreteria - LogicaNegocios.vbproj.CoreCompileInputs.cache
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\netstandard2.0\Ferreteria - LogicaNegocios.AssemblyInfoInputs.cache
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\netstandard2.0\Ferreteria - LogicaNegocios.AssemblyInfo.vb

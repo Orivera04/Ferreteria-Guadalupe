@@ -2,28 +2,26 @@
 Imports System.Data.SqlClient
 Imports Ferreteria___Entidades
 
+'Operaciones CRUD con la entidad Empleado'
 Public Class Dai_Empleado
     Dim Query As String
 
+    'Verifica si un usuario (Empleado) existe dentro de la BD'
     Public Function VerificarUsuario(ByVal Empleado As E_Empleado)
-        Try
-            Using Conn As New SqlConnection(ConfigurationManager.ConnectionStrings("CadenaConexion").ToString())
-                Conn.Open()
-                Query = "SELECT COUNT(*) FROM EMPLEADO
+        Using Conn As New SqlConnection(ConfigurationManager.ConnectionStrings("CadenaConexion").ToString())
+            Conn.Open()
+            Query = "SELECT COUNT(*) FROM EMPLEADO
                      WHERE USUARIO = @Usuario AND Contraseña = @Contraseña;"
-                Using CMD As New SqlCommand(Query, Conn)
-                    CMD.Parameters.AddWithValue("@Usuario", Empleado.Usuario_P)
-                    CMD.Parameters.AddWithValue("@Contraseña", Empleado.Contraseña_P)
-                    If (CMD.ExecuteScalar() = "1") Then
-                        Return 1
-                    Else
-                        Return 0
-                    End If
-                End Using
+            Using CMD As New SqlCommand(Query, Conn)
+                CMD.Parameters.AddWithValue("@Usuario", Empleado.Usuario_P)
+                CMD.Parameters.AddWithValue("@Contraseña", Empleado.Contraseña_P)
+                If (CMD.ExecuteScalar() = "1") Then
+                    Return 1
+                Else
+                    Return 0
+                End If
             End Using
-        Catch Ex As Exception
-            Return Ex.Message.ToString()
-        End Try
+        End Using
     End Function
 
 

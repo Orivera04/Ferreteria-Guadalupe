@@ -53,3 +53,5 @@ C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\Proyec
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.xml
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.pdb
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Estadisticas.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\Ferreteria - Presentacion.vbprojAssemblyReference.cache
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Estadisticas.resources

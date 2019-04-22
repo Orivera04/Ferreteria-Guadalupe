@@ -18,7 +18,6 @@
             ID = value
         End Set
     End Property
-
     Public Property Nombre_P As String
         Get
             Return Nombre
@@ -27,7 +26,6 @@
             Nombre = value
         End Set
     End Property
-
     Public Property Apellido_P As String
         Get
             Return Apellido
@@ -36,7 +34,6 @@
             Apellido = value
         End Set
     End Property
-
     Public Property Cedula_P As String
         Get
             Return Cedula
@@ -45,7 +42,6 @@
             Cedula = value
         End Set
     End Property
-
     Public Property Telefono_P As String
         Get
             Return Telefono
@@ -54,7 +50,6 @@
             Telefono = value
         End Set
     End Property
-
     Public Property Usuario_P As String
         Get
             Return Usuario
@@ -63,7 +58,6 @@
             Usuario = value
         End Set
     End Property
-
     Public Property Contraseña_P As String
         Get
             Return Contraseña
@@ -72,5 +66,6 @@
             Contraseña = value
         End Set
     End Property
+
 End Class
 
