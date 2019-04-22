@@ -146,12 +146,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formularios\Formularios Hijos\AgregarProducto.Designer.vb">
-      <DependentUpon>AgregarProducto.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Formularios Hijos\AgregarProducto.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Formularios\Formularios Hijos\Arqueo.Designer.vb">
       <DependentUpon>Arqueo.vb</DependentUpon>
     </Compile>
@@ -170,10 +164,22 @@
     <Compile Include="Formularios\Formularios Hijos\Estadisticas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\Formularios Hijos\Factura_Compra.Designer.vb">
+      <DependentUpon>Factura_Compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios Hijos\Factura_Compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\Formularios Hijos\Inventario.Designer.vb">
       <DependentUpon>Inventario.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Formularios Hijos\Inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formularios Hijos\Medida.Designer.vb">
+      <DependentUpon>Medida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios Hijos\Medida.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Formularios Hijos\Menu.Designer.vb">
@@ -224,9 +230,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Formularios\Formularios Hijos\AgregarProducto.resx">
-      <DependentUpon>AgregarProducto.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios Hijos\Arqueo.resx">
       <DependentUpon>Arqueo.vb</DependentUpon>
     </EmbeddedResource>
@@ -236,8 +239,14 @@
     <EmbeddedResource Include="Formularios\Formularios Hijos\Estadisticas.resx">
       <DependentUpon>Estadisticas.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios Hijos\Factura_Compra.resx">
+      <DependentUpon>Factura_Compra.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios Hijos\Inventario.resx">
       <DependentUpon>Inventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios Hijos\Medida.resx">
+      <DependentUpon>Medida.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios Hijos\Menu.resx">
       <DependentUpon>Menu.vb</DependentUpon>
