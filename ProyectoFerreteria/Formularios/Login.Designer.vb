@@ -118,7 +118,7 @@ Partial Class Login
         Me.bunifuMaterialTextbox2.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty
-        Me.bunifuMaterialTextbox2.HintText = ""
+        Me.bunifuMaterialTextbox2.HintText = "Contraseña"
         Me.bunifuMaterialTextbox2.isPassword = False
         Me.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.RoyalBlue
         Me.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.DodgerBlue
@@ -129,17 +129,17 @@ Partial Class Login
         Me.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2"
         Me.bunifuMaterialTextbox2.Size = New System.Drawing.Size(218, 33)
         Me.bunifuMaterialTextbox2.TabIndex = 3
-        Me.bunifuMaterialTextbox2.Text = "Contraseña"
         Me.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'bunifuMaterialTextbox1
         '
+        Me.bunifuMaterialTextbox1.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange
         Me.bunifuMaterialTextbox1.BackColor = System.Drawing.Color.White
         Me.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.bunifuMaterialTextbox1.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty
-        Me.bunifuMaterialTextbox1.HintText = ""
+        Me.bunifuMaterialTextbox1.HintText = "Usuario"
         Me.bunifuMaterialTextbox1.isPassword = False
         Me.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.RoyalBlue
         Me.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.DodgerBlue
@@ -150,7 +150,6 @@ Partial Class Login
         Me.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1"
         Me.bunifuMaterialTextbox1.Size = New System.Drawing.Size(218, 33)
         Me.bunifuMaterialTextbox1.TabIndex = 2
-        Me.bunifuMaterialTextbox1.Text = "Usuario"
         Me.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'PictureBox2

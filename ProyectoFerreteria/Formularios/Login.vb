@@ -43,21 +43,17 @@ Public Class Login
 
     Private Sub bunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles bunifuFlatButton1.Click
         _Empleado.Usuario_P = bunifuMaterialTextbox1.Text
-        _Empleado.Contraseña_P = bunifuMaterialTextbox1.Text
+        _Empleado.Contraseña_P = bunifuMaterialTextbox2.Text
         _EmpleadoBoi.AutenticarUsuario(_Empleado)
         If (_EmpleadoBoi.Errores.Length = 0) Then
-            MessageBox.Show("Exito")
+            Principal.Show()
+            Me.Hide()
         Else
             MessageBox.Show(_EmpleadoBoi.Errores.ToString())
         End If
     End Sub
 
-
-
-
-
-
-
-
-
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        bunifuFlatButton1.Select()
+    End Sub
 End Class

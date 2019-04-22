@@ -1,0 +1,15 @@
+[2019/04/22 01:35:37]  System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 11
+   en Ferreteria___LogicaNegocios.Boi_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Boi_Empleado.vb:línea 30
+[2019/04/22 01:35:42]  System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 11
+   en Ferreteria___LogicaNegocios.Boi_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Boi_Empleado.vb:línea 30
+[2019/04/22 01:38:21]  System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 11
+   en Ferreteria___LogicaNegocios.Boi_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Boi_Empleado.vb:línea 30
+[2019/04/22 01:53:40]  System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 11
+   en Ferreteria___LogicaNegocios.Boi_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Boi_Empleado.vb:línea 30
+[2019/04/22 01:55:59]  System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 11
+   en Ferreteria___LogicaNegocios.Boi_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Boi_Empleado.vb:línea 30

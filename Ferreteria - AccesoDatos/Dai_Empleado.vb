@@ -8,7 +8,7 @@ Public Class Dai_Empleado
 
     'Verifica si un usuario (Empleado) existe dentro de la BD'
     Public Function VerificarUsuario(ByVal Empleado As E_Empleado)
-        Using Conn As New SqlConnection(ConfigurationManager.ConnectionStrings("CadenaConexion").ToString())
+        Using Conn As New SqlConnection(My.Resources.CadenaConexion)
             Conn.Open()
             Query = "SELECT COUNT(*) FROM EMPLEADO
                      WHERE USUARIO = @Usuario AND Contraseña = @Contraseña;"

@@ -55,3 +55,12 @@ C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\Proyec
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Estadisticas.resources
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\Ferreteria - Presentacion.vbprojAssemblyReference.cache
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Estadisticas.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.dll
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.dll
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.dll
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.xml

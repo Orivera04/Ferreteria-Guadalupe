@@ -13,7 +13,7 @@ Public Class Log
     Public Shared Function GenerarLog(ByVal ErrorTxt As String)
         Try
             'Obtenemos la ruta donde se ejecuta el programa'
-            Dim RutaLog As String = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase) + "Errores.txt"
+            Dim RutaLog As String = "Errores.txt"
             'Si el archivo no existe lo creamos'
             If (Not System.IO.File.Exists(RutaLog)) Then
                 System.IO.File.Create(RutaLog).Dispose()
@@ -22,7 +22,7 @@ Public Class Log
             'Escribimos el Error en el log'
             Dim Stream As StreamWriter
             Stream = File.AppendText(RutaLog)
-            Stream.Write("[" + Date.Now.ToString("yyyy/MM/dd HH:mm:ss") + "]" + "  " + ErrorTxt)
+            Stream.Write("[" + Date.Now.ToString("yyyy/MM/dd HH:mm:ss") + "]" + "  " + ErrorTxt + vbNewLine)
             Stream.Flush()
             Stream.Close()
             Return 1

@@ -19,10 +19,10 @@ Public Class Boi_Empleado
     Public Sub AutenticarUsuario(ByVal Empleado As E_Empleado)
         Errores.Clear()
         If (Empleado.Usuario_P = "") Then
-            Errores.Append("No se ingreso ningun usuario.")
+            Errores.Append("No se ingreso ningun usuario." + vbNewLine)
         End If
         If (Empleado.Contraseña_P = "") Then
-            Errores.Append("No se ingreso ninguna contraseña.")
+            Errores.Append("No se ingreso ninguna contraseña." + vbNewLine)
         End If
 
         If (Errores.Length = 0) Then
@@ -32,8 +32,8 @@ Public Class Boi_Empleado
                 End If
             Catch Ex As Exception
                 Errores.Append("Hubo un error al realizar la operación")
-                If (Not Log.GenerarLog(Ex.ToString() = 1)) Then
-                    Errores.Append("Ocurrio un error al escribir en el Log, Intentelo mas tarde")
+                If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                    Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
                 End If
             End Try
         End If
