@@ -21,7 +21,45 @@
         End If
     End Sub
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        If PanelSecundario.Width = 50 Then
 
+
+            ' PanelSecundario.Visible = False
+            ' Label1.Location = New Point(27, 80)
+
+
+            AnimacionPanelSecundario.ShowSync(PanelSecundario)
+
+
+            PictureBox1.Visible = False
+            AnimacionFlecha.ShowSync(PictureBox1)
+            PictureBox1.Image = System.Drawing.Bitmap.FromFile("Play2.PNG")
+            PanelSecundario.Width = 170
+
+
+        ElseIf PanelSecundario.Width = 170 Then
+
+
+
+            'Logo.Visible = False
+            'AnimacionLogo.ShowSync(Logo)
+            '  PanelSecundario.Visible = False
+            'Label1.Location = New Point(1, 80)
+
+            AnimacionPanelSecundario.ShowSync(PanelSecundario)
+
+            PictureBox1.Visible = False
+            AnimacionFlecha.ShowSync(PictureBox1)
+
+            PictureBox1.Image = System.Drawing.Bitmap.FromFile("Play1.PNG")
+            PanelSecundario.Width = 50
+
+
+
+        End If
+
+        PictureBox1.Width = 18
+        PictureBox1.Height = 18
     End Sub
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
@@ -46,10 +84,14 @@
     End Sub
 
     Private Sub BunifuFlatButton6_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton6.Click
-        Abrirform(New Configuracion)
+        Abrirform(New Estadisticas)
     End Sub
 
     Private Sub BunifuFlatButton5_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton5.Click
         Abrirform(New Arqueo)
+    End Sub
+
+    Private Sub BunifuFlatButton7_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton7.Click
+        Abrirform(New Configuracion)
     End Sub
 End Class
