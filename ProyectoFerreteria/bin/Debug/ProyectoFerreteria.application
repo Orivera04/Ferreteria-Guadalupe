@@ -7,7 +7,7 @@
     <framework targetVersion="4.5.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="ProyectoFerreteria.exe.manifest" size="10239">
+    <dependentAssembly dependencyType="install" codebase="ProyectoFerreteria.exe.manifest" size="10280">
       <assemblyIdentity name="ProyectoFerreteria.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
@@ -15,6 +15,7 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>dn9WR1CMjl8y4F8tDGQJcXSDbHuCBJkSvowFhBpKYM8=</dsig:DigestValue>
+        <dsig:DigestValue>WRZr9F8cgwN+lNJdrwAYeJxFCX4/9m3qUXpFgCmwDFM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
