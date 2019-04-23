@@ -1,5 +1,4 @@
-﻿Imports System.Configuration
-Imports System.Data.SqlClient
+﻿Imports System.Data.SqlClient
 Imports Ferreteria___Entidades
 
 'Operaciones CRUD con la entidad Empleado'
