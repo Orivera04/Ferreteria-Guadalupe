@@ -15,3 +15,45 @@ C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Rele
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\Ferreteria - Presentacion.vbproj.CoreCompileInputs.cache
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Factura_Compra.resources
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Medida.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\ProyectoFerreteria.exe.config
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\ProyectoFerreteria.exe.manifest
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\ProyectoFerreteria.application
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\ProyectoFerreteria.exe
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\ProyectoFerreteria.pdb
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\ProyectoFerreteria.xml
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Bunifu_UI_v1.5.3.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - Entidades.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - LogicaNegocios.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Infragistics4.Shared.v17.1.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Infragistics4.Win.Misc.v17.1.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Infragistics4.Win.UltraWinGrid.v17.1.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Infragistics4.Win.v17.1.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\VisualReactiveWinForms.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - AccesoDatos.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - Entidades.pdb
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - Entidades.xml
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - LogicaNegocios.pdb
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - LogicaNegocios.xml
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\VisualReactiveWinForms.xml
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - AccesoDatos.pdb
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - AccesoDatos.xml
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\Ferreteria - Presentacion.vbprojResolveAssemblyReference.cache
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Arqueo.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Configuracion.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Estadisticas.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Factura_Compra.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Inventario.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Medida.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Menu.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Proveedores.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Ventas.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Login.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Principal.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Resources.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\Ferreteria - Presentacion.vbproj.GenerateResource.Cache
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.exe.licenses
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.exe.manifest
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.application
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.exe
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.xml
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.pdb
