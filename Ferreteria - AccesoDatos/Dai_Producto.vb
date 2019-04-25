@@ -54,18 +54,19 @@ Public Class Dai_Producto
                     Lector.Read()
                     Dim _Producto As New E_Producto
                     _Producto.P_ID_Producto = Lector("ID_Producto")
-                    _Producto.P_ID_Producto = Lector("Marca")
-                    _Producto.P_ID_Producto = Lector("Descripcion")
-                    _Producto.P_ID_Producto = Lector("Categoria")
-                    _Producto.P_ID_Producto = Lector("Nombre")
-                    _Producto.P_ID_Producto = Lector("Stock_Min")
-                    _Producto.P_ID_Producto = Lector("Stock_Max ")
-                    _Producto.P_ID_Producto = Lector("Existencia")
-                    _Producto.P_ID_Producto = Lector("ID_Unidad_De_Medida")
-                    _Producto.P_ID_Producto = Lector("PrecioCompra")
-                    _Producto.P_ID_Producto = Lector("PrecioVenta")
-                    _Producto.P_ID_Producto = Lector("FechaIngreso")
-                    _Producto.P_ID_Producto = Lector("ID_Proveedor")
+                    _Producto.P_Marca = Lector("Marca")
+                    _Producto.P_Descripcion = Lector("Descripcion")
+                    _Producto.P_Categoria = Lector("Categoria")
+                    _Producto.P_Nombre = Lector("Nombre")
+                    _Producto.P_Stock_Minimo = Lector("Stock_Min")
+                    _Producto.P_Stock_Maximo = Lector("Stock_Max")
+                    _Producto.P_Existencia = Lector("Existencia")
+                    _Producto.P_ID_UnidadMedida = Lector("ID_Unidad_De_Medida")
+                    _Producto.P_PrecioCompra = Lector("PrecioCompra")
+                    _Producto.P_PrecioVenta = Lector("PrecioVenta")
+                    _Producto.P_FechaIngreso = Lector("FechaIngreso")
+                    _Producto.P_ID_Proveedor = Lector("ID_Proveedor")
+
                     Return _Producto
                 End Using
             End Using

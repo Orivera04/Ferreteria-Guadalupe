@@ -54,7 +54,11 @@ Public Class Bol_Producto
             Try
                 Dai_Producto.Insert(Producto)
             Catch Ex As Exception
-                Errores.Append("Hubo un error al insertar el producto")
+                If (Ex.HResult <> -2146232060) Then
+                    Errores.Append("Hubo un error al insertar el producto")
+                Else
+                    Errores.Append("El ID que trata insertar ya se encuentra registrado en la base de datos, por favor escriba otro.")
+                End If
                 If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
                     Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
                 End If
@@ -70,6 +74,19 @@ Public Class Bol_Producto
             Return Dai_Producto.GetAll()
         Catch Ex As Exception
             Errores.Append("Hubo un error al leer la lista de productos")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+            Return Nothing
+        End Try
+    End Function
+
+    Public Function LeerProducto(ByVal ID As String)
+        Errores.Clear()
+        Try
+            Return Dai_Producto.GetByID(ID)
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al listar el producto")
             If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
                 Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
             End If

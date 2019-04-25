@@ -77,10 +77,11 @@ Public Class Inventario
             _Producto.P_PrecioVenta = VentaBox.Text
             _Producto.P_FechaIngreso = DateTimePicker1.Value
             _Producto.P_ID_Proveedor = ProveedorCombo.Text.Split("#"c)(1)
+
             _ProductoBol.InsertarProducto(_Producto)
-            LlenarDataGridViewProductos()
             If (_ProductoBol.Errores.Length = 0) Then
-                MsgBox("El producto fue ingresdo exitosamente", MsgBoxStyle.OkOnly, "Exito")
+                LlenarDataGridViewProductos()
+                MsgBox("El producto fue ingresado exitosamente", MsgBoxStyle.OkOnly, "Exito")
             Else
                 MsgBox(_ProductoBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
             End If
@@ -99,7 +100,7 @@ Public Class Inventario
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles DescripcionBox.TextChanged, Button1.Click
         If Porcentaje.Text > 0 Then
-            VentaBox.Text = (Porcentaje.Text / 100 + 1) * CompraBox.Value
+            VentaBox.Text = (Int32.Parse(Porcentaje.Text) / 100 + 1) * CompraBox.Value
         Else
             MsgBox("El porcentaje es 0 verifique", MsgBoxStyle.Critical, "ERROR")
             Porcentaje.Clear()
@@ -172,6 +173,28 @@ Public Class Inventario
             If (Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57) Then
                 e.Handled = True
             End If
+        End If
+    End Sub
+
+    Private Sub DataGridINVENTARIO_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridINVENTARIO.CellContentClick
+        If (e.ColumnIndex = 13) Then
+            BunifuFlatButton2.Visible = True
+            Dim Producto = _ProductoBol.LeerProducto(DataGridINVENTARIO.Rows(e.RowIndex).Cells(0).Value)
+            IDBox.Text = Producto.P_ID_Producto
+            Marcabox.Text = Producto.P_Marca
+            DescripcionBox.Text = Producto.P_Descripcion
+            CategoriaCombo.SelectedItem = Producto.P_Categoria
+            Nombrebox.Text = Producto.P_Nombre
+            MinStockDown1.Value = Producto.P_Stock_Minimo
+            MaxStockDown2.Value = Producto.P_Stock_Maximo
+            ExistenciaDown1.Value = Producto.P_Existencia
+            MedidaCombo.Text = Producto.P_ID_UnidadMedida
+            CompraBox.Text = Producto.P_PrecioCompra
+            VentaBox.Text = Producto.P_PrecioVenta
+            DateTimePicker1.Value = Producto.P_FechaIngreso
+            ProveedorCombo.Text = Producto.P_ID_Proveedor
+        ElseIf (e.ColumnIndex = 14) Then
+            MessageBox.Show("Eliminar")
         End If
     End Sub
 

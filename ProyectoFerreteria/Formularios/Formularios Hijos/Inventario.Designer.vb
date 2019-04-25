@@ -81,6 +81,7 @@ Partial Class Inventario
         Me.Proveedor_ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Edit = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Elim = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -147,6 +148,7 @@ Partial Class Inventario
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.White
+        Me.GroupBox1.Controls.Add(Me.BunifuFlatButton2)
         Me.GroupBox1.Controls.Add(Me.ProveedorCombo)
         Me.GroupBox1.Controls.Add(Me.VentaBox)
         Me.GroupBox1.Controls.Add(Me.CompraBox)
@@ -197,6 +199,7 @@ Partial Class Inventario
         '
         'VentaBox
         '
+        Me.VentaBox.DecimalPlaces = 2
         Me.VentaBox.Location = New System.Drawing.Point(145, 375)
         Me.VentaBox.Name = "VentaBox"
         Me.VentaBox.Size = New System.Drawing.Size(216, 20)
@@ -204,6 +207,7 @@ Partial Class Inventario
         '
         'CompraBox
         '
+        Me.CompraBox.DecimalPlaces = 2
         Me.CompraBox.Location = New System.Drawing.Point(144, 348)
         Me.CompraBox.Name = "CompraBox"
         Me.CompraBox.Size = New System.Drawing.Size(43, 20)
@@ -708,6 +712,44 @@ Partial Class Inventario
         Me.Elim.Name = "Elim"
         Me.Elim.Text = "Eliminar"
         '
+        'BunifuFlatButton2
+        '
+        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.Tomato
+        Me.BunifuFlatButton2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuFlatButton2.BackColor = System.Drawing.Color.Salmon
+        Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton2.BorderRadius = 0
+        Me.BunifuFlatButton2.ButtonText = "                        Editar"
+        Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton2.Font = New System.Drawing.Font("Century", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton2.Iconimage = CType(resources.GetObject("BunifuFlatButton2.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton2.Iconimage_right = Nothing
+        Me.BunifuFlatButton2.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton2.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton2.IconMarginLeft = 0
+        Me.BunifuFlatButton2.IconMarginRight = 0
+        Me.BunifuFlatButton2.IconRightVisible = True
+        Me.BunifuFlatButton2.IconRightZoom = 0R
+        Me.BunifuFlatButton2.IconVisible = True
+        Me.BunifuFlatButton2.IconZoom = 50.0R
+        Me.BunifuFlatButton2.IsTab = False
+        Me.BunifuFlatButton2.Location = New System.Drawing.Point(46, 475)
+        Me.BunifuFlatButton2.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
+        Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.Salmon
+        Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.Coral
+        Me.BunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.selected = False
+        Me.BunifuFlatButton2.Size = New System.Drawing.Size(281, 55)
+        Me.BunifuFlatButton2.TabIndex = 66
+        Me.BunifuFlatButton2.Text = "                        Editar"
+        Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton2.Visible = False
+        '
         'Inventario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -800,4 +842,5 @@ Partial Class Inventario
     Friend WithEvents Proveedor_ID As DataGridViewTextBoxColumn
     Friend WithEvents Edit As DataGridViewButtonColumn
     Friend WithEvents Elim As DataGridViewButtonColumn
+    Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
 End Class
