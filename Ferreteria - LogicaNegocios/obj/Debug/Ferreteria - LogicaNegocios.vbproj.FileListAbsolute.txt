@@ -30,3 +30,4 @@ C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\obj\Deb
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\Ferreteria - LogicaNegocios.dll
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\Ferreteria - LogicaNegocios.xml
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\Ferreteria - LogicaNegocios.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\bin\Debug\Ferreteria - AccesoDatos.dll.config

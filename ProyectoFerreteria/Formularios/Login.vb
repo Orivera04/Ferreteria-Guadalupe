@@ -4,7 +4,7 @@ Imports Ferreteria___Entidades
 
 Public Class Login
 
-    Private _EmpleadoBoi As New Boi_Empleado()
+    Private _EmpleadoBoi As New Bol_Empleado()
     Private _Empleado As New E_Empleado()
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
@@ -49,7 +49,7 @@ Public Class Login
             Principal.Show()
             Me.Hide()
         Else
-            MessageBox.Show(_EmpleadoBoi.Errores.ToString())
+            MsgBox(_EmpleadoBoi.Errores.ToString(), MsgBoxStyle.Critical, "ERROR")
         End If
     End Sub
 

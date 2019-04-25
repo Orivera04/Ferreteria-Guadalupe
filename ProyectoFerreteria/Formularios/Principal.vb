@@ -1,10 +1,11 @@
 ﻿Public Class Principal
-    Public usuario As String
+
+    Private Inventario As New Inventario()
+
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PictureBox2.Image = System.Drawing.Bitmap.FromFile("IconoLogin.PNG")
         PictureBox1.Image = System.Drawing.Bitmap.FromFile("Play1.PNG")
         Abrirform(New Menu)
-
     End Sub
 
 
@@ -72,7 +73,7 @@
     End Sub
 
     Private Sub BunifuFlatButton2_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton2.Click
-        Abrirform(New Inventario)
+        Abrirform(Inventario)
     End Sub
 
     Private Sub BunifuFlatButton4_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton4.Click
@@ -105,5 +106,9 @@
 
     Private Sub BunifuFlatButton10_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton10.Click
         Abrirform(New Configuracion)
+    End Sub
+
+    Private Sub PanelContenedor_Paint(sender As Object, e As PaintEventArgs) Handles PanelContenedor.Paint
+
     End Sub
 End Class

@@ -86,7 +86,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Boi_Empleado.vb" />
+    <Compile Include="Bol_UnidadMedida.vb" />
+    <Compile Include="Bol_Empleado.vb" />
+    <Compile Include="Bol_Producto.vb" />
+    <Compile Include="Bol_Proveedor.vb" />
     <Compile Include="Log.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

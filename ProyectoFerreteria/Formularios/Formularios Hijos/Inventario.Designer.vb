@@ -28,16 +28,27 @@ Partial Class Inventario
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ProveedorCombo = New System.Windows.Forms.ComboBox()
+        Me.VentaBox = New System.Windows.Forms.NumericUpDown()
+        Me.CompraBox = New System.Windows.Forms.NumericUpDown()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.CategoriaCombo = New System.Windows.Forms.ComboBox()
+        Me.IDBox = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.ExistenciaDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.MaxStockDown2 = New System.Windows.Forms.NumericUpDown()
+        Me.MinStockDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.Nombrebox = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.Porcentaje = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.VentaBox = New System.Windows.Forms.TextBox()
-        Me.CompraBox = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.CategoriaBox = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.MedidaCombo = New System.Windows.Forms.ComboBox()
@@ -49,13 +60,12 @@ Partial Class Inventario
         Me.pictureBox8 = New System.Windows.Forms.PictureBox()
         Me.GroupDataGrid = New System.Windows.Forms.GroupBox()
         Me.ComboBoxBusqueda = New System.Windows.Forms.ComboBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.DataGridINVENTARIO = New System.Windows.Forms.DataGridView()
         Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -69,26 +79,21 @@ Partial Class Inventario
         Me.Precio_Venta = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Fecha_Ing = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Proveedor_ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombrebox = New System.Windows.Forms.TextBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.MinStockDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.MaxStockDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.ExistenciaDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.ProveedorCombo = New System.Windows.Forms.ComboBox()
+        Me.Edit = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Elim = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.VentaBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CompraBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ExistenciaDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MaxStockDown2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MinStockDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupDataGrid.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridINVENTARIO, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MinStockDown1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MaxStockDown2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ExistenciaDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -142,8 +147,14 @@ Partial Class Inventario
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.White
-        Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.ProveedorCombo)
+        Me.GroupBox1.Controls.Add(Me.VentaBox)
+        Me.GroupBox1.Controls.Add(Me.CompraBox)
+        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox1.Controls.Add(Me.CategoriaCombo)
+        Me.GroupBox1.Controls.Add(Me.IDBox)
+        Me.GroupBox1.Controls.Add(Me.Label16)
+        Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.ExistenciaDown1)
         Me.GroupBox1.Controls.Add(Me.Label12)
@@ -153,14 +164,10 @@ Partial Class Inventario
         Me.GroupBox1.Controls.Add(Me.Label13)
         Me.GroupBox1.Controls.Add(Me.Porcentaje)
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.VentaBox)
-        Me.GroupBox1.Controls.Add(Me.CompraBox)
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox1.Controls.Add(Me.BunifuFlatButton1)
-        Me.GroupBox1.Controls.Add(Me.CategoriaBox)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.MedidaCombo)
@@ -172,16 +179,164 @@ Partial Class Inventario
         Me.GroupBox1.Controls.Add(Me.pictureBox8)
         Me.GroupBox1.Location = New System.Drawing.Point(39, 28)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(367, 491)
+        Me.GroupBox1.Size = New System.Drawing.Size(367, 550)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
+        '
+        'ProveedorCombo
+        '
+        Me.ProveedorCombo.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.ProveedorCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ProveedorCombo.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.ProveedorCombo.FormattingEnabled = True
+        Me.ProveedorCombo.Items.AddRange(New Object() {"Cargando..."})
+        Me.ProveedorCombo.Location = New System.Drawing.Point(144, 433)
+        Me.ProveedorCombo.Name = "ProveedorCombo"
+        Me.ProveedorCombo.Size = New System.Drawing.Size(217, 21)
+        Me.ProveedorCombo.TabIndex = 65
+        '
+        'VentaBox
+        '
+        Me.VentaBox.Location = New System.Drawing.Point(145, 375)
+        Me.VentaBox.Name = "VentaBox"
+        Me.VentaBox.Size = New System.Drawing.Size(216, 20)
+        Me.VentaBox.TabIndex = 64
+        '
+        'CompraBox
+        '
+        Me.CompraBox.Location = New System.Drawing.Point(144, 348)
+        Me.CompraBox.Name = "CompraBox"
+        Me.CompraBox.Size = New System.Drawing.Size(43, 20)
+        Me.CompraBox.TabIndex = 63
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Enabled = False
+        Me.DateTimePicker1.Location = New System.Drawing.Point(144, 404)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(217, 20)
+        Me.DateTimePicker1.TabIndex = 62
+        '
+        'CategoriaCombo
+        '
+        Me.CategoriaCombo.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.CategoriaCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CategoriaCombo.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.CategoriaCombo.FormattingEnabled = True
+        Me.CategoriaCombo.Items.AddRange(New Object() {"Carpintería", "Construcción", "Eléctricidad", "Hogar", "Máquina y herramientas"})
+        Me.CategoriaCombo.Location = New System.Drawing.Point(143, 193)
+        Me.CategoriaCombo.Name = "CategoriaCombo"
+        Me.CategoriaCombo.Size = New System.Drawing.Size(218, 21)
+        Me.CategoriaCombo.TabIndex = 61
+        '
+        'IDBox
+        '
+        Me.IDBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.IDBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.IDBox.Location = New System.Drawing.Point(144, 55)
+        Me.IDBox.MaxLength = 9
+        Me.IDBox.Name = "IDBox"
+        Me.IDBox.Size = New System.Drawing.Size(217, 20)
+        Me.IDBox.TabIndex = 60
+        Me.IDBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.White
+        Me.Label16.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label16.Location = New System.Drawing.Point(15, 57)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(23, 18)
+        Me.Label16.TabIndex = 59
+        Me.Label16.Text = "ID"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.White
+        Me.Label14.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label14.Location = New System.Drawing.Point(17, 433)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(88, 18)
+        Me.Label14.TabIndex = 57
+        Me.Label14.Text = "Proveedor:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.White
+        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label8.Location = New System.Drawing.Point(16, 284)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(81, 18)
+        Me.Label8.TabIndex = 55
+        Me.Label8.Text = "Existencia"
+        '
+        'ExistenciaDown1
+        '
+        Me.ExistenciaDown1.Location = New System.Drawing.Point(144, 285)
+        Me.ExistenciaDown1.Name = "ExistenciaDown1"
+        Me.ExistenciaDown1.Size = New System.Drawing.Size(217, 20)
+        Me.ExistenciaDown1.TabIndex = 54
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.White
+        Me.Label12.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label12.Location = New System.Drawing.Point(15, 255)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(127, 18)
+        Me.Label12.TabIndex = 53
+        Me.Label12.Text = "Stock Min / Max"
+        '
+        'MaxStockDown2
+        '
+        Me.MaxStockDown2.Location = New System.Drawing.Point(264, 255)
+        Me.MaxStockDown2.Name = "MaxStockDown2"
+        Me.MaxStockDown2.Size = New System.Drawing.Size(97, 20)
+        Me.MaxStockDown2.TabIndex = 52
+        '
+        'MinStockDown1
+        '
+        Me.MinStockDown1.Location = New System.Drawing.Point(144, 255)
+        Me.MinStockDown1.Name = "MinStockDown1"
+        Me.MinStockDown1.Size = New System.Drawing.Size(96, 20)
+        Me.MinStockDown1.TabIndex = 51
+        '
+        'Nombrebox
+        '
+        Me.Nombrebox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Nombrebox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.Nombrebox.Location = New System.Drawing.Point(144, 224)
+        Me.Nombrebox.MaxLength = 50
+        Me.Nombrebox.Name = "Nombrebox"
+        Me.Nombrebox.Size = New System.Drawing.Size(217, 20)
+        Me.Nombrebox.TabIndex = 50
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.White
+        Me.Label13.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label13.Location = New System.Drawing.Point(14, 225)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(72, 18)
+        Me.Label13.TabIndex = 49
+        Me.Label13.Text = "Nombre:"
         '
         'Porcentaje
         '
         Me.Porcentaje.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Porcentaje.Location = New System.Drawing.Point(193, 305)
+        Me.Porcentaje.Location = New System.Drawing.Point(193, 348)
         Me.Porcentaje.Name = "Porcentaje"
-        Me.Porcentaje.Size = New System.Drawing.Size(65, 20)
+        Me.Porcentaje.Size = New System.Drawing.Size(110, 20)
         Me.Porcentaje.TabIndex = 46
         Me.Porcentaje.Text = "15"
         Me.Porcentaje.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -189,28 +344,12 @@ Partial Class Inventario
         'Button1
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Button1.Location = New System.Drawing.Point(264, 303)
+        Me.Button1.Location = New System.Drawing.Point(309, 346)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(52, 23)
         Me.Button1.TabIndex = 45
         Me.Button1.Text = "Aplicar %"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'VentaBox
-        '
-        Me.VentaBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.VentaBox.Location = New System.Drawing.Point(144, 332)
-        Me.VentaBox.Name = "VentaBox"
-        Me.VentaBox.Size = New System.Drawing.Size(172, 20)
-        Me.VentaBox.TabIndex = 44
-        '
-        'CompraBox
-        '
-        Me.CompraBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.CompraBox.Location = New System.Drawing.Point(145, 305)
-        Me.CompraBox.Name = "CompraBox"
-        Me.CompraBox.Size = New System.Drawing.Size(42, 20)
-        Me.CompraBox.TabIndex = 43
         '
         'Label11
         '
@@ -218,7 +357,7 @@ Partial Class Inventario
         Me.Label11.BackColor = System.Drawing.Color.White
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label11.Location = New System.Drawing.Point(16, 331)
+        Me.Label11.Location = New System.Drawing.Point(16, 374)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(56, 18)
         Me.Label11.TabIndex = 42
@@ -230,7 +369,7 @@ Partial Class Inventario
         Me.Label10.BackColor = System.Drawing.Color.White
         Me.Label10.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label10.Location = New System.Drawing.Point(16, 302)
+        Me.Label10.Location = New System.Drawing.Point(16, 345)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(73, 18)
         Me.Label10.TabIndex = 41
@@ -242,24 +381,11 @@ Partial Class Inventario
         Me.Label9.BackColor = System.Drawing.Color.White
         Me.Label9.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label9.Location = New System.Drawing.Point(19, 359)
+        Me.Label9.Location = New System.Drawing.Point(19, 404)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(58, 18)
         Me.Label9.TabIndex = 40
         Me.Label9.Text = "Fecha:"
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.DateTimePicker1.CustomFormat = "yyyy/MM/dd"
-        Me.DateTimePicker1.Enabled = False
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(144, 360)
-        Me.DateTimePicker1.MinDate = New Date(2019, 2, 22, 0, 0, 0, 0)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(172, 20)
-        Me.DateTimePicker1.TabIndex = 39
-        Me.DateTimePicker1.Value = New Date(2019, 3, 20, 0, 0, 0, 0)
         '
         'BunifuFlatButton1
         '
@@ -284,7 +410,7 @@ Partial Class Inventario
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 50.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(46, 424)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(46, 475)
         Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.Salmon
@@ -298,22 +424,13 @@ Partial Class Inventario
         Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'CategoriaBox
-        '
-        Me.CategoriaBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.CategoriaBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.CategoriaBox.Location = New System.Drawing.Point(144, 150)
-        Me.CategoriaBox.Name = "CategoriaBox"
-        Me.CategoriaBox.Size = New System.Drawing.Size(172, 20)
-        Me.CategoriaBox.TabIndex = 35
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.White
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label7.Location = New System.Drawing.Point(12, 149)
+        Me.Label7.Location = New System.Drawing.Point(12, 192)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(87, 18)
         Me.Label7.TabIndex = 34
@@ -325,7 +442,7 @@ Partial Class Inventario
         Me.Label6.BackColor = System.Drawing.Color.White
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label6.Location = New System.Drawing.Point(16, 272)
+        Me.Label6.Location = New System.Drawing.Point(16, 315)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(70, 18)
         Me.Label6.TabIndex = 33
@@ -337,20 +454,21 @@ Partial Class Inventario
         Me.MedidaCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.MedidaCombo.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.MedidaCombo.FormattingEnabled = True
-        Me.MedidaCombo.Items.AddRange(New Object() {"Unidad", "Metro", "Yarda"})
-        Me.MedidaCombo.Location = New System.Drawing.Point(144, 272)
+        Me.MedidaCombo.Items.AddRange(New Object() {"Cargando..."})
+        Me.MedidaCombo.Location = New System.Drawing.Point(144, 315)
         Me.MedidaCombo.Name = "MedidaCombo"
-        Me.MedidaCombo.Size = New System.Drawing.Size(172, 21)
+        Me.MedidaCombo.Size = New System.Drawing.Size(217, 21)
         Me.MedidaCombo.TabIndex = 32
         '
         'DescripcionBox
         '
         Me.DescripcionBox.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.DescripcionBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.DescripcionBox.Location = New System.Drawing.Point(144, 71)
+        Me.DescripcionBox.Location = New System.Drawing.Point(144, 114)
+        Me.DescripcionBox.MaxLength = 100
         Me.DescripcionBox.Multiline = True
         Me.DescripcionBox.Name = "DescripcionBox"
-        Me.DescripcionBox.Size = New System.Drawing.Size(172, 71)
+        Me.DescripcionBox.Size = New System.Drawing.Size(217, 71)
         Me.DescripcionBox.TabIndex = 31
         '
         'Label4
@@ -359,7 +477,7 @@ Partial Class Inventario
         Me.Label4.BackColor = System.Drawing.Color.White
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label4.Location = New System.Drawing.Point(14, 92)
+        Me.Label4.Location = New System.Drawing.Point(14, 135)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(101, 18)
         Me.Label4.TabIndex = 30
@@ -371,7 +489,7 @@ Partial Class Inventario
         Me.Label2.BackColor = System.Drawing.Color.White
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label2.Location = New System.Drawing.Point(14, 45)
+        Me.Label2.Location = New System.Drawing.Point(14, 88)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(65, 18)
         Me.Label2.TabIndex = 29
@@ -381,9 +499,10 @@ Partial Class Inventario
         '
         Me.Marcabox.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Marcabox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.Marcabox.Location = New System.Drawing.Point(144, 45)
+        Me.Marcabox.Location = New System.Drawing.Point(144, 88)
+        Me.Marcabox.MaxLength = 15
         Me.Marcabox.Name = "Marcabox"
-        Me.Marcabox.Size = New System.Drawing.Size(172, 20)
+        Me.Marcabox.Size = New System.Drawing.Size(217, 20)
         Me.Marcabox.TabIndex = 28
         Me.Marcabox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -415,9 +534,8 @@ Partial Class Inventario
         Me.GroupDataGrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupDataGrid.BackColor = System.Drawing.Color.White
+        Me.GroupDataGrid.Controls.Add(Me.Label17)
         Me.GroupDataGrid.Controls.Add(Me.ComboBoxBusqueda)
-        Me.GroupDataGrid.Controls.Add(Me.GroupBox4)
-        Me.GroupDataGrid.Controls.Add(Me.GroupBox2)
         Me.GroupDataGrid.Controls.Add(Me.label1)
         Me.GroupDataGrid.Controls.Add(Me.PictureBox2)
         Me.GroupDataGrid.Controls.Add(Me.Label3)
@@ -425,7 +543,7 @@ Partial Class Inventario
         Me.GroupDataGrid.Controls.Add(Me.TextBoxBusqueda)
         Me.GroupDataGrid.Location = New System.Drawing.Point(412, 29)
         Me.GroupDataGrid.Name = "GroupDataGrid"
-        Me.GroupDataGrid.Size = New System.Drawing.Size(839, 490)
+        Me.GroupDataGrid.Size = New System.Drawing.Size(839, 549)
         Me.GroupDataGrid.TabIndex = 10
         Me.GroupDataGrid.TabStop = False
         '
@@ -440,22 +558,6 @@ Partial Class Inventario
         Me.ComboBoxBusqueda.Name = "ComboBoxBusqueda"
         Me.ComboBoxBusqueda.Size = New System.Drawing.Size(121, 21)
         Me.ComboBoxBusqueda.TabIndex = 32
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Location = New System.Drawing.Point(193, 444)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(80, 34)
-        Me.GroupBox4.TabIndex = 31
-        Me.GroupBox4.TabStop = False
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Location = New System.Drawing.Point(55, 444)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(80, 34)
-        Me.GroupBox2.TabIndex = 30
-        Me.GroupBox2.TabStop = False
         '
         'label1
         '
@@ -501,12 +603,12 @@ Partial Class Inventario
         Me.DataGridINVENTARIO.AllowUserToDeleteRows = False
         Me.DataGridINVENTARIO.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridINVENTARIO.BackgroundColor = System.Drawing.Color.LightYellow
+        Me.DataGridINVENTARIO.BackgroundColor = System.Drawing.Color.White
         Me.DataGridINVENTARIO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridINVENTARIO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Marca, Me.Descripcion, Me.Categoria, Me.Nombre, Me.Stock_Min, Me.Stock_Max, Me.Existencia, Me.Unidad_M, Me.Precio_C, Me.Precio_Venta, Me.Fecha_Ing, Me.Proveedor_ID})
+        Me.DataGridINVENTARIO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Marca, Me.Descripcion, Me.Categoria, Me.Nombre, Me.Stock_Min, Me.Stock_Max, Me.Existencia, Me.Unidad_M, Me.Precio_C, Me.Precio_Venta, Me.Fecha_Ing, Me.Proveedor_ID, Me.Edit, Me.Elim})
         Me.DataGridINVENTARIO.Location = New System.Drawing.Point(6, 84)
         Me.DataGridINVENTARIO.Name = "DataGridINVENTARIO"
-        Me.DataGridINVENTARIO.Size = New System.Drawing.Size(827, 328)
+        Me.DataGridINVENTARIO.Size = New System.Drawing.Size(827, 459)
         Me.DataGridINVENTARIO.TabIndex = 0
         '
         'TextBoxBusqueda
@@ -516,6 +618,18 @@ Partial Class Inventario
         Me.TextBoxBusqueda.Name = "TextBoxBusqueda"
         Me.TextBoxBusqueda.Size = New System.Drawing.Size(265, 20)
         Me.TextBoxBusqueda.TabIndex = 5
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label17.Location = New System.Drawing.Point(376, 286)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(96, 18)
+        Me.Label17.TabIndex = 66
+        Me.Label17.Text = "Cargando..."
         '
         'ID
         '
@@ -582,95 +696,17 @@ Partial Class Inventario
         Me.Proveedor_ID.HeaderText = "Proveedor"
         Me.Proveedor_ID.Name = "Proveedor_ID"
         '
-        'Nombrebox
+        'Edit
         '
-        Me.Nombrebox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Nombrebox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.Nombrebox.Location = New System.Drawing.Point(144, 181)
-        Me.Nombrebox.Name = "Nombrebox"
-        Me.Nombrebox.Size = New System.Drawing.Size(172, 20)
-        Me.Nombrebox.TabIndex = 50
+        Me.Edit.HeaderText = "Acción 1"
+        Me.Edit.Name = "Edit"
+        Me.Edit.Text = "Editar"
         '
-        'Label13
+        'Elim
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.Color.White
-        Me.Label13.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label13.Location = New System.Drawing.Point(14, 182)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(72, 18)
-        Me.Label13.TabIndex = 49
-        Me.Label13.Text = "Nombre:"
-        '
-        'MinStockDown1
-        '
-        Me.MinStockDown1.Location = New System.Drawing.Point(144, 212)
-        Me.MinStockDown1.Name = "MinStockDown1"
-        Me.MinStockDown1.Size = New System.Drawing.Size(76, 20)
-        Me.MinStockDown1.TabIndex = 51
-        '
-        'MaxStockDown2
-        '
-        Me.MaxStockDown2.Location = New System.Drawing.Point(244, 212)
-        Me.MaxStockDown2.Name = "MaxStockDown2"
-        Me.MaxStockDown2.Size = New System.Drawing.Size(72, 20)
-        Me.MaxStockDown2.TabIndex = 52
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.BackColor = System.Drawing.Color.White
-        Me.Label12.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label12.Location = New System.Drawing.Point(15, 212)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(127, 18)
-        Me.Label12.TabIndex = 53
-        Me.Label12.Text = "Stock Min / Max"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.White
-        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label8.Location = New System.Drawing.Point(16, 241)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(81, 18)
-        Me.Label8.TabIndex = 55
-        Me.Label8.Text = "Existencia"
-        '
-        'ExistenciaDown1
-        '
-        Me.ExistenciaDown1.Location = New System.Drawing.Point(144, 242)
-        Me.ExistenciaDown1.Name = "ExistenciaDown1"
-        Me.ExistenciaDown1.Size = New System.Drawing.Size(171, 20)
-        Me.ExistenciaDown1.TabIndex = 54
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.BackColor = System.Drawing.Color.White
-        Me.Label14.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label14.Location = New System.Drawing.Point(17, 390)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(88, 18)
-        Me.Label14.TabIndex = 57
-        Me.Label14.Text = "Proveedor:"
-        '
-        'ProveedorCombo
-        '
-        Me.ProveedorCombo.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.ProveedorCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ProveedorCombo.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.ProveedorCombo.FormattingEnabled = True
-        Me.ProveedorCombo.Items.AddRange(New Object() {"Unidad", "Metro", "Yarda"})
-        Me.ProveedorCombo.Location = New System.Drawing.Point(145, 390)
-        Me.ProveedorCombo.Name = "ProveedorCombo"
-        Me.ProveedorCombo.Size = New System.Drawing.Size(172, 21)
-        Me.ProveedorCombo.TabIndex = 56
+        Me.Elim.HeaderText = "Acción 2"
+        Me.Elim.Name = "Elim"
+        Me.Elim.Text = "Eliminar"
         '
         'Inventario
         '
@@ -691,14 +727,16 @@ Partial Class Inventario
         Me.Panel1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.VentaBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CompraBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ExistenciaDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MaxStockDown2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MinStockDown1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupDataGrid.ResumeLayout(False)
         Me.GroupDataGrid.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridINVENTARIO, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MinStockDown1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MaxStockDown2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ExistenciaDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -712,8 +750,6 @@ Partial Class Inventario
     Private WithEvents Label5 As Label
     Private WithEvents pictureBox8 As PictureBox
     Friend WithEvents GroupDataGrid As GroupBox
-    Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents GroupBox2 As GroupBox
     Private WithEvents label1 As Label
     Private WithEvents PictureBox2 As PictureBox
     Private WithEvents Label3 As Label
@@ -730,13 +766,25 @@ Partial Class Inventario
     Private WithEvents Label11 As Label
     Private WithEvents Label10 As Label
     Private WithEvents Label9 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents VentaBox As TextBox
-    Friend WithEvents CompraBox As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Porcentaje As TextBox
     Friend WithEvents ComboBoxBusqueda As ComboBox
-    Friend WithEvents CategoriaBox As TextBox
+    Private WithEvents Label8 As Label
+    Friend WithEvents ExistenciaDown1 As NumericUpDown
+    Private WithEvents Label12 As Label
+    Friend WithEvents MaxStockDown2 As NumericUpDown
+    Friend WithEvents MinStockDown1 As NumericUpDown
+    Friend WithEvents Nombrebox As TextBox
+    Private WithEvents Label13 As Label
+    Private WithEvents Label14 As Label
+    Private WithEvents Label16 As Label
+    Friend WithEvents IDBox As TextBox
+    Friend WithEvents CategoriaCombo As ComboBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents VentaBox As NumericUpDown
+    Friend WithEvents CompraBox As NumericUpDown
+    Friend WithEvents ProveedorCombo As ComboBox
+    Private WithEvents Label17 As Label
     Friend WithEvents ID As DataGridViewTextBoxColumn
     Friend WithEvents Marca As DataGridViewTextBoxColumn
     Friend WithEvents Descripcion As DataGridViewTextBoxColumn
@@ -750,13 +798,6 @@ Partial Class Inventario
     Friend WithEvents Precio_Venta As DataGridViewTextBoxColumn
     Friend WithEvents Fecha_Ing As DataGridViewTextBoxColumn
     Friend WithEvents Proveedor_ID As DataGridViewTextBoxColumn
-    Private WithEvents Label8 As Label
-    Friend WithEvents ExistenciaDown1 As NumericUpDown
-    Private WithEvents Label12 As Label
-    Friend WithEvents MaxStockDown2 As NumericUpDown
-    Friend WithEvents MinStockDown1 As NumericUpDown
-    Friend WithEvents Nombrebox As TextBox
-    Private WithEvents Label13 As Label
-    Private WithEvents Label14 As Label
-    Friend WithEvents ProveedorCombo As ComboBox
+    Friend WithEvents Edit As DataGridViewButtonColumn
+    Friend WithEvents Elim As DataGridViewButtonColumn
 End Class

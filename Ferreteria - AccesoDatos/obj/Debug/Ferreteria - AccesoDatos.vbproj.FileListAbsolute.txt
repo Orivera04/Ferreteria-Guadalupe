@@ -25,3 +25,4 @@ C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.dll
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.xml
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - AccesoDatos.dll.config

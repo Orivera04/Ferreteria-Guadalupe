@@ -4,7 +4,7 @@ Imports Ferreteria___AccesoDatos
 Imports Ferreteria___Entidades
 
 ' Logica de negocios con la entidad empleado'
-Public Class Boi_Empleado
+Public Class Bol_Empleado
     'Definicion de valores retornados en funciones :
     '  1  -> Exito en la operación
     '  0  -> Exito en la operación pero no fue realizada (Por datos que no coinciden o que no existen)

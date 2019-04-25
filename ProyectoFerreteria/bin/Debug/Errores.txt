@@ -1,4 +1,10 @@
-[2019/04/22 10:24:39]  System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'Oscar'.
+﻿[2019/04/24 15:30:53]  System.IndexOutOfRangeException: Stock_Max 
+   en System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   en System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   en System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   en Ferreteria___AccesoDatos.Dai_Producto.GetAll() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Producto.vb:línea 25
+   en Ferreteria___LogicaNegocios.Bol_Producto.LeerTodo() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Producto.vb:línea 70
+[2019/04/24 18:27:54]  System.Data.SqlClient.SqlException (0x80131904): Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Named Pipes Provider, error: 40 - No se pudo abrir una conexión con SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): No se ha encontrado la ruta de acceso de la red
    en System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
    en System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
    en System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
@@ -12,25 +18,7 @@
    en System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
    en System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
    en System.Data.SqlClient.SqlConnection.Open()
-   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 11
-   en Ferreteria___LogicaNegocios.Boi_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Boi_Empleado.vb:línea 30
-ClientConnectionId:6957339a-8eae-48dc-8c38-90114cf05a97
-Error Number:18456,State:1,Class:14
-[2019/04/22 10:25:03]  System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'Oscar'.
-   en System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   en System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   en System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   en System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   en System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   en System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   en System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   en System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   en System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   en System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   en System.Data.SqlClient.SqlConnection.Open()
-   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 11
-   en Ferreteria___LogicaNegocios.Boi_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Boi_Empleado.vb:línea 30
-ClientConnectionId:893cfee3-d3c3-4d66-b80e-fcaf4c4680ec
-Error Number:18456,State:1,Class:14
+   en Ferreteria___AccesoDatos.Dai_Proveedor.GetAll() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Proveedor.vb:línea 12
+   en Ferreteria___LogicaNegocios.Bol_Proveedor.ObtenerIDProveedores() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Proveedor.vb:línea 20
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
