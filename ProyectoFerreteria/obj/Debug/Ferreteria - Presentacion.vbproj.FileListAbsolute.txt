@@ -24,6 +24,20 @@ C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debu
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.exe
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.xml
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\Ferreteria - Presentacion.vbprojAssemblyReference.cache
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Estadisticas.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.dll
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.dll
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.dll
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.dll.config
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Factura_Compra.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Medida.resources
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\ProyectoFerreteria.exe.config
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\ProyectoFerreteria.exe.manifest
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\ProyectoFerreteria.application
@@ -31,12 +45,24 @@ C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Proyec
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\ProyectoFerreteria.pdb
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\ProyectoFerreteria.xml
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.dll
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\VisualReactiveWinForms.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.pdb
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.xml
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.pdb
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.xml
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\VisualReactiveWinForms.xml
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.pdb
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.xml
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\Ferreteria - Presentacion.vbprojResolveAssemblyReference.cache
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Arqueo.resources
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Configuracion.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Estadisticas.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Factura_Compra.resources
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Inventario.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Medida.resources
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Menu.resources
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Proveedores.resources
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Ventas.resources
@@ -50,29 +76,3 @@ C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\Proyec
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.exe
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.xml
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.pdb
-C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Estadisticas.resources
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\Ferreteria - Presentacion.vbprojAssemblyReference.cache
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Estadisticas.resources
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.dll
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.dll
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.dll
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.pdb
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.xml
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.pdb
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.xml
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.pdb
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.xml
-C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.dll
-C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.dll
-C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.dll
-C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.pdb
-C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - Entidades.xml
-C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.pdb
-C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - LogicaNegocios.xml
-C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.pdb
-C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.xml
-C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Medida.resources
-C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Factura_Compra.resources
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Debug\Ferreteria - AccesoDatos.dll.config
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Factura_Compra.resources
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Debug\ProyectoFerreteria.Medida.resources

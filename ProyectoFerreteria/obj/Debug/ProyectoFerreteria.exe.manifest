@@ -15,16 +15,16 @@
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
-          Opciones del manifiesto de UAC
-          Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
-          nodo requestedExecutionLevel por uno de los siguientes.
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
+          nodo requestedExecutionLevel por alguno de los siguientes.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         Si desea usar Virtualización de archivos y Registro para compatibilidad con
-         versiones anteriores, elimine el nodo requestedExecutionLevel.
+         Si desea usar la virtualización de archivos y del Registro para la 
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Y32MKdjllmkKrudZzrJvv7bO3/HbkRUblF0ewy9pnXk=</dsig:DigestValue>
+        <dsig:DigestValue>yHT0eY/TH+5tzWGHL0pYy5+N20axvnbR+d/fCpD3JPk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>aQoikbin56Ad/4Uulq13snynG/f9+AzvBgXs+59+ey8=</dsig:DigestValue>
+        <dsig:DigestValue>l19r5uRym8flpj/sBgp3qw5uJrV1D2Jz/lRf+rDTsgU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZGGlatEggJUzNELxavFiRodbj0d0pd80MjmRIa0leSg=</dsig:DigestValue>
+        <dsig:DigestValue>pTGbEmSuNGayc0//vz8lj6BKJuT4taewCxZaUtt9eWg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -139,14 +139,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoFerreteria.exe" size="392704">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoFerreteria.exe" size="389632">
       <assemblyIdentity name="ProyectoFerreteria" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Gn+6/sSiINX/q5nrgSX3FZlvNsCaXNzXn2A3xD86Wa0=</dsig:DigestValue>
+        <dsig:DigestValue>XzYGF6EIM6pRko1S8tYlGRnYe8mdWn3Q5BnIV7LrTxA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
