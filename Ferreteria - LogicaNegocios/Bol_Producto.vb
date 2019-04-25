@@ -68,10 +68,15 @@ Public Class Bol_Producto
 
     'Lee todos los productos'
 
-    Public Function LeerTodo()
+    Public Function LeerTodo(ByVal FlagFiltro As Boolean, ByVal TipoFiltro As Integer, ByVal CadenaFiltro As String)
         Errores.Clear()
         Try
-            Return Dai_Producto.GetAll()
+            If (FlagFiltro = False) Then
+                Return Dai_Producto.GetAll()
+            Else
+                Return Dai_Producto.Filtro(TipoFiltro, CadenaFiltro)
+            End If
+
         Catch Ex As Exception
             Errores.Append("Hubo un error al leer la lista de productos")
             If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
@@ -94,5 +99,27 @@ Public Class Bol_Producto
         End Try
     End Function
 
+    Public Sub ActualizarProducto(ByVal Producto As E_Producto)
+        Errores.Clear()
+        Try
+            Dai_Producto.Update(Producto)
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al actualizar el producto")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+        End Try
+    End Sub
 
+    Public Sub EliminarProducto(ByVal ID_Producto As String)
+        Errores.Clear()
+        Try
+            Dai_Producto.Delete(ID_Producto)
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al eliminar el producto")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+        End Try
+    End Sub
 End Class

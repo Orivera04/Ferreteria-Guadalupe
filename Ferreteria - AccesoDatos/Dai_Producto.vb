@@ -102,7 +102,7 @@ Public Class Dai_Producto
     Public Sub Update(ByVal Producto As E_Producto)
         Using Conn As New SqlConnection(My.Resources.CadenaConexion)
             Conn.Open()
-            Query = "UPDATE TABLE PRODUCTO 
+            Query = "UPDATE  PRODUCTO 
                     SET Marca = @Marca,Descripcion = @Descripcion,Categoria = @Categoria,Nombre = @Nombre,Stock_Min = @Stock_Min,Stock_Max = @Stock_Max,Existencia = @Existencia,ID_Unidad_De_Medida = @ID_Unidad_De_Medida,PrecioCompra = @PrecioCompra,PrecioVenta = @PrecioVenta,FechaIngreso = @FechaIngreso,ID_Proveedor = @ID_Proveedor
                     WHERE ID_PRODUCTO = @ID_Producto "
             Using CMD As New SqlCommand(Query, Conn)
@@ -136,5 +136,49 @@ Public Class Dai_Producto
             End Using
         End Using
     End Sub
+
+    Public Function Filtro(ByVal TipoFiltro As Integer, ByVal FiltroCadena As String)
+        Using Conn As New SqlConnection(My.Resources.CadenaConexion)
+            Conn.Open()
+            Dim ListaProductos As New List(Of E_Producto)
+            Query = "SELECT PR.*,P.NOMBRE AS PROVEEDORNOMBRE,U.NOMBRE AS UNIDADMEDIDA
+                     FROM PRODUCTO PR, PROVEEDOR P,UNIDAD_DE_MEDIDA U
+                     WHERE P.ID = PR.ID_PROVEEDOR And U.ID_UNIDAD_DE_MEDIDA = PR.ID_UNIDAD_DE_MEDIDA
+                    "
+            If (TipoFiltro = 0) Then
+                Query = Query + " AND PR.ID_PRODUCTO = @PA;"
+            ElseIf (TipoFiltro = 1) Then
+                Query = Query + "AND PR.NOMBRE = @PA"
+            Else
+                Query = Query + "AND PR.MARCA =  @PA"
+            End If
+            Using CMD As New SqlCommand(Query, Conn)
+                CMD.Parameters.AddWithValue("@PA", FiltroCadena)
+                Using Lector As SqlDataReader = CMD.ExecuteReader()
+                    While Lector.Read()
+                        Dim _Producto As New E_Producto
+                        _Producto.P_ID_Producto = Lector("ID_Producto")
+                        _Producto.P_Marca = Lector("Marca")
+                        _Producto.P_Descripcion = Lector("Descripcion")
+                        _Producto.P_Categoria = Lector("Categoria")
+                        _Producto.P_Nombre = Lector("Nombre")
+                        _Producto.P_Stock_Minimo = Lector("Stock_Min")
+                        _Producto.P_Stock_Maximo = Lector("Stock_Max")
+                        _Producto.P_Existencia = Lector("Existencia")
+                        _Producto.P_ID_UnidadMedida = Lector("ID_Unidad_De_Medida")
+                        _Producto.P_PrecioCompra = Lector("PrecioCompra")
+                        _Producto.P_PrecioVenta = Lector("PrecioVenta")
+                        _Producto.P_FechaIngreso = Lector("FechaIngreso")
+                        _Producto.P_ID_Proveedor = Lector("ID_Proveedor")
+                        _Producto.P_NombreProveedor = Lector("PROVEEDORNOMBRE")
+                        _Producto.P_NombreUnidadMedida = Lector("UNIDADMEDIDA")
+                        ListaProductos.Add(_Producto)
+                    End While
+                    Return ListaProductos
+                End Using
+            End Using
+        End Using
+    End Function
+
 
 End Class

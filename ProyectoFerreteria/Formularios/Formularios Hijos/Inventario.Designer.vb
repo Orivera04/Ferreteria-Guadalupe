@@ -28,6 +28,7 @@ Partial Class Inventario
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.EditarButton = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.ProveedorCombo = New System.Windows.Forms.ComboBox()
         Me.VentaBox = New System.Windows.Forms.NumericUpDown()
         Me.CompraBox = New System.Windows.Forms.NumericUpDown()
@@ -59,13 +60,13 @@ Partial Class Inventario
         Me.Label5 = New System.Windows.Forms.Label()
         Me.pictureBox8 = New System.Windows.Forms.PictureBox()
         Me.GroupDataGrid = New System.Windows.Forms.GroupBox()
+        Me.FiltrarBoton = New System.Windows.Forms.Button()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.ComboBoxBusqueda = New System.Windows.Forms.ComboBox()
         Me.label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.DataGridINVENTARIO = New System.Windows.Forms.DataGridView()
-        Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
-        Me.Label17 = New System.Windows.Forms.Label()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -81,7 +82,7 @@ Partial Class Inventario
         Me.Proveedor_ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Edit = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Elim = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -148,7 +149,7 @@ Partial Class Inventario
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.White
-        Me.GroupBox1.Controls.Add(Me.BunifuFlatButton2)
+        Me.GroupBox1.Controls.Add(Me.EditarButton)
         Me.GroupBox1.Controls.Add(Me.ProveedorCombo)
         Me.GroupBox1.Controls.Add(Me.VentaBox)
         Me.GroupBox1.Controls.Add(Me.CompraBox)
@@ -184,6 +185,44 @@ Partial Class Inventario
         Me.GroupBox1.Size = New System.Drawing.Size(367, 550)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
+        '
+        'EditarButton
+        '
+        Me.EditarButton.Activecolor = System.Drawing.Color.Tomato
+        Me.EditarButton.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.EditarButton.BackColor = System.Drawing.Color.Salmon
+        Me.EditarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EditarButton.BorderRadius = 0
+        Me.EditarButton.ButtonText = "                        Editar"
+        Me.EditarButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.EditarButton.DisabledColor = System.Drawing.Color.Gray
+        Me.EditarButton.Font = New System.Drawing.Font("Century", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EditarButton.Iconcolor = System.Drawing.Color.Transparent
+        Me.EditarButton.Iconimage = CType(resources.GetObject("EditarButton.Iconimage"), System.Drawing.Image)
+        Me.EditarButton.Iconimage_right = Nothing
+        Me.EditarButton.Iconimage_right_Selected = Nothing
+        Me.EditarButton.Iconimage_Selected = Nothing
+        Me.EditarButton.IconMarginLeft = 0
+        Me.EditarButton.IconMarginRight = 0
+        Me.EditarButton.IconRightVisible = True
+        Me.EditarButton.IconRightZoom = 0R
+        Me.EditarButton.IconVisible = True
+        Me.EditarButton.IconZoom = 50.0R
+        Me.EditarButton.IsTab = False
+        Me.EditarButton.Location = New System.Drawing.Point(46, 475)
+        Me.EditarButton.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.EditarButton.Name = "EditarButton"
+        Me.EditarButton.Normalcolor = System.Drawing.Color.Salmon
+        Me.EditarButton.OnHovercolor = System.Drawing.Color.Coral
+        Me.EditarButton.OnHoverTextColor = System.Drawing.Color.White
+        Me.EditarButton.selected = False
+        Me.EditarButton.Size = New System.Drawing.Size(281, 55)
+        Me.EditarButton.TabIndex = 66
+        Me.EditarButton.Text = "                        Editar"
+        Me.EditarButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.EditarButton.Textcolor = System.Drawing.Color.White
+        Me.EditarButton.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EditarButton.Visible = False
         '
         'ProveedorCombo
         '
@@ -538,6 +577,7 @@ Partial Class Inventario
         Me.GroupDataGrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupDataGrid.BackColor = System.Drawing.Color.White
+        Me.GroupDataGrid.Controls.Add(Me.FiltrarBoton)
         Me.GroupDataGrid.Controls.Add(Me.Label17)
         Me.GroupDataGrid.Controls.Add(Me.ComboBoxBusqueda)
         Me.GroupDataGrid.Controls.Add(Me.label1)
@@ -551,13 +591,34 @@ Partial Class Inventario
         Me.GroupDataGrid.TabIndex = 10
         Me.GroupDataGrid.TabStop = False
         '
+        'FiltrarBoton
+        '
+        Me.FiltrarBoton.Location = New System.Drawing.Point(671, 55)
+        Me.FiltrarBoton.Name = "FiltrarBoton"
+        Me.FiltrarBoton.Size = New System.Drawing.Size(75, 23)
+        Me.FiltrarBoton.TabIndex = 67
+        Me.FiltrarBoton.Text = "Filtrar"
+        Me.FiltrarBoton.UseVisualStyleBackColor = True
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label17.Location = New System.Drawing.Point(376, 286)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(96, 18)
+        Me.Label17.TabIndex = 66
+        Me.Label17.Text = "Cargando..."
+        '
         'ComboBoxBusqueda
         '
         Me.ComboBoxBusqueda.BackColor = System.Drawing.Color.LemonChiffon
         Me.ComboBoxBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBoxBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBoxBusqueda.FormattingEnabled = True
-        Me.ComboBoxBusqueda.Items.AddRange(New Object() {"Codigo", "Nombre", "Marca"})
+        Me.ComboBoxBusqueda.Items.AddRange(New Object() {"Codigo", "Nombre", "Marca", "Todo"})
         Me.ComboBoxBusqueda.Location = New System.Drawing.Point(243, 55)
         Me.ComboBoxBusqueda.Name = "ComboBoxBusqueda"
         Me.ComboBoxBusqueda.Size = New System.Drawing.Size(121, 21)
@@ -595,7 +656,7 @@ Partial Class Inventario
         Me.Label3.BackColor = System.Drawing.Color.White
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Salmon
-        Me.Label3.Location = New System.Drawing.Point(110, 55)
+        Me.Label3.Location = New System.Drawing.Point(99, 53)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(127, 20)
         Me.Label3.TabIndex = 10
@@ -614,26 +675,6 @@ Partial Class Inventario
         Me.DataGridINVENTARIO.Name = "DataGridINVENTARIO"
         Me.DataGridINVENTARIO.Size = New System.Drawing.Size(827, 459)
         Me.DataGridINVENTARIO.TabIndex = 0
-        '
-        'TextBoxBusqueda
-        '
-        Me.TextBoxBusqueda.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TextBoxBusqueda.Location = New System.Drawing.Point(379, 55)
-        Me.TextBoxBusqueda.Name = "TextBoxBusqueda"
-        Me.TextBoxBusqueda.Size = New System.Drawing.Size(265, 20)
-        Me.TextBoxBusqueda.TabIndex = 5
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label17.Location = New System.Drawing.Point(376, 286)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(96, 18)
-        Me.Label17.TabIndex = 66
-        Me.Label17.Text = "Cargando..."
         '
         'ID
         '
@@ -712,43 +753,13 @@ Partial Class Inventario
         Me.Elim.Name = "Elim"
         Me.Elim.Text = "Eliminar"
         '
-        'BunifuFlatButton2
+        'TextBoxBusqueda
         '
-        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.Tomato
-        Me.BunifuFlatButton2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuFlatButton2.BackColor = System.Drawing.Color.Salmon
-        Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton2.BorderRadius = 0
-        Me.BunifuFlatButton2.ButtonText = "                        Editar"
-        Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton2.Font = New System.Drawing.Font("Century", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton2.Iconimage = CType(resources.GetObject("BunifuFlatButton2.Iconimage"), System.Drawing.Image)
-        Me.BunifuFlatButton2.Iconimage_right = Nothing
-        Me.BunifuFlatButton2.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton2.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton2.IconMarginLeft = 0
-        Me.BunifuFlatButton2.IconMarginRight = 0
-        Me.BunifuFlatButton2.IconRightVisible = True
-        Me.BunifuFlatButton2.IconRightZoom = 0R
-        Me.BunifuFlatButton2.IconVisible = True
-        Me.BunifuFlatButton2.IconZoom = 50.0R
-        Me.BunifuFlatButton2.IsTab = False
-        Me.BunifuFlatButton2.Location = New System.Drawing.Point(46, 475)
-        Me.BunifuFlatButton2.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
-        Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
-        Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.Salmon
-        Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.Coral
-        Me.BunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton2.selected = False
-        Me.BunifuFlatButton2.Size = New System.Drawing.Size(281, 55)
-        Me.BunifuFlatButton2.TabIndex = 66
-        Me.BunifuFlatButton2.Text = "                        Editar"
-        Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuFlatButton2.Visible = False
+        Me.TextBoxBusqueda.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextBoxBusqueda.Location = New System.Drawing.Point(379, 55)
+        Me.TextBoxBusqueda.Name = "TextBoxBusqueda"
+        Me.TextBoxBusqueda.Size = New System.Drawing.Size(265, 20)
+        Me.TextBoxBusqueda.TabIndex = 5
         '
         'Inventario
         '
@@ -842,5 +853,6 @@ Partial Class Inventario
     Friend WithEvents Proveedor_ID As DataGridViewTextBoxColumn
     Friend WithEvents Edit As DataGridViewButtonColumn
     Friend WithEvents Elim As DataGridViewButtonColumn
-    Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents EditarButton As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents FiltrarBoton As Button
 End Class

@@ -34,7 +34,6 @@ Partial Class Principal
         Me.Label15 = New System.Windows.Forms.Label()
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.PanelSecundario = New System.Windows.Forms.Panel()
-        Me.BunifuFlatButton10 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton9 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton8 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton7 = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -52,15 +51,15 @@ Partial Class Principal
         Me.AnimacionPanelSecundario = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Tarjetadecontrol = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.BarControl.SuspendLayout
+        Me.BarControl.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelSecundario.SuspendLayout
-        Me.Panel1.SuspendLayout
+        Me.PanelSecundario.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelContenedor.SuspendLayout
+        Me.PanelContenedor.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout
+        Me.SuspendLayout()
         '
         'BarControl
         '
@@ -159,7 +158,6 @@ Partial Class Principal
         'PanelSecundario
         '
         Me.PanelSecundario.BackColor = System.Drawing.Color.White
-        Me.PanelSecundario.Controls.Add(Me.BunifuFlatButton10)
         Me.PanelSecundario.Controls.Add(Me.BunifuFlatButton9)
         Me.PanelSecundario.Controls.Add(Me.BunifuFlatButton8)
         Me.PanelSecundario.Controls.Add(Me.BunifuFlatButton7)
@@ -177,44 +175,6 @@ Partial Class Principal
         Me.PanelSecundario.Name = "PanelSecundario"
         Me.PanelSecundario.Size = New System.Drawing.Size(50, 750)
         Me.PanelSecundario.TabIndex = 3
-        '
-        'BunifuFlatButton10
-        '
-        Me.BunifuFlatButton10.Activecolor = System.Drawing.Color.SteelBlue
-        Me.BunifuFlatButton10.BackColor = System.Drawing.Color.GhostWhite
-        Me.BunifuFlatButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton10.BorderRadius = 0
-        Me.BunifuFlatButton10.ButtonText = "    Configuracion"
-        Me.BunifuFlatButton10.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.AnimacionFlecha.SetDecoration(Me.BunifuFlatButton10, BunifuAnimatorNS.DecorationType.None)
-        Me.AnimacionPanelSecundario.SetDecoration(Me.BunifuFlatButton10, BunifuAnimatorNS.DecorationType.None)
-        Me.BunifuFlatButton10.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BunifuFlatButton10.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton10.Iconimage = CType(resources.GetObject("BunifuFlatButton10.Iconimage"), System.Drawing.Image)
-        Me.BunifuFlatButton10.Iconimage_right = Nothing
-        Me.BunifuFlatButton10.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton10.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton10.IconMarginLeft = 0
-        Me.BunifuFlatButton10.IconMarginRight = 0
-        Me.BunifuFlatButton10.IconRightVisible = True
-        Me.BunifuFlatButton10.IconRightZoom = 0R
-        Me.BunifuFlatButton10.IconVisible = True
-        Me.BunifuFlatButton10.IconZoom = 90.0R
-        Me.BunifuFlatButton10.IsTab = False
-        Me.BunifuFlatButton10.Location = New System.Drawing.Point(0, 532)
-        Me.BunifuFlatButton10.Name = "BunifuFlatButton10"
-        Me.BunifuFlatButton10.Normalcolor = System.Drawing.Color.GhostWhite
-        Me.BunifuFlatButton10.OnHovercolor = System.Drawing.Color.LightSteelBlue
-        Me.BunifuFlatButton10.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton10.selected = False
-        Me.BunifuFlatButton10.Size = New System.Drawing.Size(50, 48)
-        Me.BunifuFlatButton10.TabIndex = 14
-        Me.BunifuFlatButton10.Text = "    Configuracion"
-        Me.BunifuFlatButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BunifuFlatButton10.Textcolor = System.Drawing.Color.CornflowerBlue
-        Me.BunifuFlatButton10.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolTip1.SetToolTip(Me.BunifuFlatButton10, "Configuracion y perfil")
         '
         'BunifuFlatButton9
         '
@@ -673,7 +633,7 @@ Partial Class Principal
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Principal"
         Me.BarControl.ResumeLayout(False)
-        Me.BarControl.PerformLayout
+        Me.BarControl.PerformLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelSecundario.ResumeLayout(False)
@@ -708,7 +668,6 @@ Partial Class Principal
     Friend WithEvents BunifuFlatButton5 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton6 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton7 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents BunifuFlatButton10 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton9 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton8 As Bunifu.Framework.UI.BunifuFlatButton
 End Class

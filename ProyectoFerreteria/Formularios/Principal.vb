@@ -104,7 +104,7 @@
 
     End Sub
 
-    Private Sub BunifuFlatButton10_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton10.Click
+    Private Sub BunifuFlatButton10_Click(sender As Object, e As EventArgs) 
         Abrirform(New Configuracion)
     End Sub
 
