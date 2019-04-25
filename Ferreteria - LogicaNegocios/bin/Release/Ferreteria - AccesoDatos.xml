@@ -22,5 +22,10 @@ Ferreteria - AccesoDatos
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:Ferreteria___AccesoDatos.My.Resources.Resources.CadenaConexion">
+<summary>
+  Busca una cadena traducida similar a Data Source=guadalupe.cucaxhq0asdg.us-east-2.rds.amazonaws.com;Initial Catalog=Ferreteria;User ID=Oscar;Password=root12345.
+</summary>
+</member>
 </members>
 </doc>
