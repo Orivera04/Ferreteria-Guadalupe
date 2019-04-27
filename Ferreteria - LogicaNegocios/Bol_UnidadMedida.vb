@@ -1,5 +1,6 @@
 ﻿Imports System.Text
 Imports Ferreteria___AccesoDatos
+Imports Ferreteria___Entidades
 
 'Logica de negocios de la entidad UnidadDeMedida'
 Public Class Bol_UnidadMedida
@@ -17,13 +18,8 @@ Public Class Bol_UnidadMedida
 
     Public Function ObtenerIDUnidadesMedida()
         Errores.Clear()
-        Try
-            Dim ListaUnidades = Dai_UnidadMedida.GetAll()
-            Dim UnidadesID(ListaUnidades.count - 1) As String
-            For I As Integer = 0 To ListaUnidades.count - 1
-                UnidadesID(I) = ListaUnidades(I).P_Nombre + " #" + ListaUnidades(I).P_ID_UnidadMedida.ToString()
-            Next
-            Return UnidadesID
+        Try            
+            Return Dai_UnidadMedida.GetAll()
         Catch Ex As Exception
             Errores.Append("Hubo un error al leer la lista de unidades de medida")
             If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
@@ -32,5 +28,79 @@ Public Class Bol_UnidadMedida
             Return Nothing
         End Try
     End Function
+
+    Public Function ObtenerUnidadesDeMedidas()
+        Errores.Clear()
+        Try
+            Return Dai_UnidadMedida.GetAll()
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al leer la lista de unidades de medida")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+            Return Nothing
+        End Try
+    End Function
+
+    Public Function ObtenerUnidadDeMedida(ByVal UnidadMedida As Integer)
+        Errores.Clear()
+        Try
+            Return Dai_UnidadMedida.GetByID(UnidadMedida)
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al leer la lista de unidades de medida")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+            Return Nothing
+        End Try
+    End Function
+
+    Public Sub InsertarUnidadMedida(ByVal Unidad As E_UnidadMedida)
+        Errores.Clear()
+        Try
+            If (Unidad.P_Nombre = "") Then
+                Errores.Append("El nombre de la unidad de medida no puede estar vacia")
+            End If
+            If (Errores.Length = 0) Then
+                Dai_UnidadMedida.Insert(Unidad)
+            End If
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al leer la lista de unidades de medida")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+        End Try
+    End Sub
+
+    Public Sub ActualizarUnidadMedida(ByVal Unidad As E_UnidadMedida)
+        Errores.Clear()
+        Try
+            If (Unidad.P_Nombre = "") Then
+                Errores.Append("El nombre de la unidad de medida no puede estar vacia")
+            End If
+            If (Errores.Length = 0) Then
+                Dai_UnidadMedida.Update(Unidad)
+            End If
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al leer la lista de unidades de medida")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+        End Try
+    End Sub
+    Public Sub EliminarUnidadMedida(ByVal ID As Integer)
+        Errores.Clear()
+        Try
+            Dai_UnidadMedida.Delete(ID)
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al leer la lista de unidades de medida")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+        End Try
+    End Sub
+
+
+
 
 End Class

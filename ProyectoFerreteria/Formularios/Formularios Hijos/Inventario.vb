@@ -33,7 +33,7 @@ Public Class Inventario
         MedidaCombo.Items.Clear()
         Dim ListaUnidades = _UnidadesMedidasBol.ObtenerIDUnidadesMedida()
         If (_UnidadesMedidasBol.Errores.Length = 0) Then
-            For I As Integer = 0 To ListaUnidades.length - 1
+            For I As Integer = 0 To ListaUnidades.count - 1
                 MedidaCombo.Items.Add(ListaUnidades(I))
             Next
             MedidaCombo.SelectedIndex = 0
@@ -212,7 +212,7 @@ Public Class Inventario
             Me.Cursor = Cursors.WaitCursor
             _ProductoBol.EliminarProducto(DataGridINVENTARIO.Rows(e.RowIndex).Cells(0).Value)
             If (_ProductoBol.Errores.Length = 0) Then
-                LlenarDataGridViewProductos(False, "", "")
+                LlenarDataGridViewProductos(False, 0, "")
                 MsgBox("El producto fue eliminado exitosamente", MsgBoxStyle.OkOnly, "Exito")
             Else
                 MsgBox(_ProductoBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
