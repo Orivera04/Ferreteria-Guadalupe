@@ -85,7 +85,7 @@
     End Sub
 
     Private Sub BunifuFlatButton6_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton6.Click
-        Abrirform(New Estadisticas)
+        Abrirform(New Medida)
     End Sub
 
     Private Sub BunifuFlatButton5_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton5.Click
@@ -93,19 +93,19 @@
     End Sub
 
     Private Sub BunifuFlatButton7_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton7.Click
-        Abrirform(New Medida)
-    End Sub
-
-    Private Sub BunifuFlatButton8_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton8.Click
         Abrirform(New Factura_Compra)
     End Sub
 
-    Private Sub BunifuFlatButton9_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton9.Click
+    Private Sub BunifuFlatButton8_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton8.Click
 
     End Sub
 
-    Private Sub BunifuFlatButton10_Click(sender As Object, e As EventArgs) 
+    Private Sub BunifuFlatButton9_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton9.Click
         Abrirform(New Configuracion)
+    End Sub
+
+    Private Sub BunifuFlatButton10_Click(sender As Object, e As EventArgs)
+
     End Sub
 
     Private Sub PanelContenedor_Paint(sender As Object, e As PaintEventArgs) Handles PanelContenedor.Paint
