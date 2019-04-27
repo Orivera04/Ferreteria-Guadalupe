@@ -97,18 +97,14 @@
     End Sub
 
     Private Sub BunifuFlatButton8_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton8.Click
-
+        Abrirform(New Cliente)
     End Sub
 
     Private Sub BunifuFlatButton9_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton9.Click
+        Abrirform(New Estadisticas)
+    End Sub
+
+    Private Sub BunifuFlatButton10_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton10.Click
         Abrirform(New Configuracion)
-    End Sub
-
-    Private Sub BunifuFlatButton10_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub PanelContenedor_Paint(sender As Object, e As PaintEventArgs) Handles PanelContenedor.Paint
-
     End Sub
 End Class

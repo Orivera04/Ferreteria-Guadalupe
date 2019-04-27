@@ -41,6 +41,7 @@ Partial Class Ventas
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
@@ -62,7 +63,6 @@ Partial Class Ventas
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
-        Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -332,8 +332,46 @@ Partial Class Ventas
         Me.GroupBox2.TabIndex = 38
         Me.GroupBox2.TabStop = False
         '
+        'BunifuFlatButton2
+        '
+        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.BunifuFlatButton2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuFlatButton2.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton2.BorderRadius = 0
+        Me.BunifuFlatButton2.ButtonText = "Facturar"
+        Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton2.Iconimage = Nothing
+        Me.BunifuFlatButton2.Iconimage_right = Nothing
+        Me.BunifuFlatButton2.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton2.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton2.IconMarginLeft = 0
+        Me.BunifuFlatButton2.IconMarginRight = 0
+        Me.BunifuFlatButton2.IconRightVisible = True
+        Me.BunifuFlatButton2.IconRightZoom = 0R
+        Me.BunifuFlatButton2.IconVisible = True
+        Me.BunifuFlatButton2.IconZoom = 90.0R
+        Me.BunifuFlatButton2.IsTab = False
+        Me.BunifuFlatButton2.Location = New System.Drawing.Point(27, 343)
+        Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
+        Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.MediumSeaGreen
+        Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.SeaGreen
+        Me.BunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.selected = False
+        Me.BunifuFlatButton2.Size = New System.Drawing.Size(286, 29)
+        Me.BunifuFlatButton2.TabIndex = 53
+        Me.BunifuFlatButton2.Text = "Facturar"
+        Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'TextBox6
         '
+        Me.TextBox6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox6.Location = New System.Drawing.Point(99, 225)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(214, 20)
@@ -345,7 +383,7 @@ Partial Class Ventas
         Me.Label16.BackColor = System.Drawing.Color.White
         Me.Label16.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label16.Location = New System.Drawing.Point(23, 226)
+        Me.Label16.Location = New System.Drawing.Point(15, 226)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(49, 19)
         Me.Label16.TabIndex = 58
@@ -353,14 +391,16 @@ Partial Class Ventas
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(158, 150)
+        Me.TextBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox5.Location = New System.Drawing.Point(194, 148)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(100, 20)
         Me.TextBox5.TabIndex = 57
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(158, 108)
+        Me.TextBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox4.Location = New System.Drawing.Point(194, 108)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 20)
         Me.TextBox4.TabIndex = 56
@@ -371,7 +411,7 @@ Partial Class Ventas
         Me.Label14.BackColor = System.Drawing.Color.White
         Me.Label14.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label14.Location = New System.Drawing.Point(23, 148)
+        Me.Label14.Location = New System.Drawing.Point(15, 148)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(40, 19)
         Me.Label14.TabIndex = 55
@@ -383,7 +423,7 @@ Partial Class Ventas
         Me.Label13.BackColor = System.Drawing.Color.White
         Me.Label13.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label13.Location = New System.Drawing.Point(23, 106)
+        Me.Label13.Location = New System.Drawing.Point(15, 106)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(94, 19)
         Me.Label13.TabIndex = 54
@@ -395,7 +435,7 @@ Partial Class Ventas
         Me.Label12.BackColor = System.Drawing.Color.White
         Me.Label12.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label12.Location = New System.Drawing.Point(23, 64)
+        Me.Label12.Location = New System.Drawing.Point(15, 64)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(82, 19)
         Me.Label12.TabIndex = 53
@@ -416,7 +456,8 @@ Partial Class Ventas
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(158, 63)
+        Me.TextBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox3.Location = New System.Drawing.Point(194, 63)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 51
@@ -563,40 +604,6 @@ Partial Class Ventas
         Me.TextBoxBusqueda.Size = New System.Drawing.Size(155, 22)
         Me.TextBoxBusqueda.TabIndex = 5
         Me.TextBoxBusqueda.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'BunifuFlatButton2
-        '
-        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.BunifuFlatButton2.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton2.BorderRadius = 0
-        Me.BunifuFlatButton2.ButtonText = "Facturar"
-        Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton2.Iconimage = Nothing
-        Me.BunifuFlatButton2.Iconimage_right = Nothing
-        Me.BunifuFlatButton2.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton2.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton2.IconMarginLeft = 0
-        Me.BunifuFlatButton2.IconMarginRight = 0
-        Me.BunifuFlatButton2.IconRightVisible = True
-        Me.BunifuFlatButton2.IconRightZoom = 0R
-        Me.BunifuFlatButton2.IconVisible = True
-        Me.BunifuFlatButton2.IconZoom = 90.0R
-        Me.BunifuFlatButton2.IsTab = False
-        Me.BunifuFlatButton2.Location = New System.Drawing.Point(27, 343)
-        Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
-        Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.MediumSeaGreen
-        Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.SeaGreen
-        Me.BunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton2.selected = False
-        Me.BunifuFlatButton2.Size = New System.Drawing.Size(286, 29)
-        Me.BunifuFlatButton2.TabIndex = 53
-        Me.BunifuFlatButton2.Text = "Facturar"
-        Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'Ventas
         '

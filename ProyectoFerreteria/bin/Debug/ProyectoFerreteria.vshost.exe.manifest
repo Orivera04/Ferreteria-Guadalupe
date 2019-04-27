@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ferreteria - AccesoDatos.dll" size="18944">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ferreteria - AccesoDatos.dll" size="20480">
       <assemblyIdentity name="Ferreteria - AccesoDatos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yHT0eY/TH+5tzWGHL0pYy5+N20axvnbR+d/fCpD3JPk=</dsig:DigestValue>
+        <dsig:DigestValue>5KbQTiowAGkZ12VPW/bX9TiryB3tGqgYvy0Bst6hYAk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ferreteria - LogicaNegocios.dll" size="16384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ferreteria - LogicaNegocios.dll" size="17408">
       <assemblyIdentity name="Ferreteria - LogicaNegocios" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pTGbEmSuNGayc0//vz8lj6BKJuT4taewCxZaUtt9eWg=</dsig:DigestValue>
+        <dsig:DigestValue>cC6Bb/MXpIwSQfaxMS9QsNhCSchMlCGy3qBPqsR5M2A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -139,14 +139,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoFerreteria.exe" size="381440">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoFerreteria.exe" size="413696">
       <assemblyIdentity name="ProyectoFerreteria" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SiU4fgyXP6eiqVEZUmukd3AhBUVkBdFQXXuoQUX7XGg=</dsig:DigestValue>
+        <dsig:DigestValue>1LV6/bEJj3vIUiXzSHpIy7roWZR/bLFrP1YD/Ui9nvI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

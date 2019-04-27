@@ -23,9 +23,9 @@ Partial Class Principal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation51 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation5 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Principal))
-        Dim Animation52 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation6 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Me.BarControl = New Bunifu.Framework.UI.BunifuCards()
         Me.Nombre = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -34,6 +34,7 @@ Partial Class Principal
         Me.Label15 = New System.Windows.Forms.Label()
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.PanelSecundario = New System.Windows.Forms.Panel()
+        Me.BunifuFlatButton10 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton9 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton8 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton7 = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -158,6 +159,7 @@ Partial Class Principal
         'PanelSecundario
         '
         Me.PanelSecundario.BackColor = System.Drawing.Color.White
+        Me.PanelSecundario.Controls.Add(Me.BunifuFlatButton10)
         Me.PanelSecundario.Controls.Add(Me.BunifuFlatButton9)
         Me.PanelSecundario.Controls.Add(Me.BunifuFlatButton8)
         Me.PanelSecundario.Controls.Add(Me.BunifuFlatButton7)
@@ -176,13 +178,51 @@ Partial Class Principal
         Me.PanelSecundario.Size = New System.Drawing.Size(50, 750)
         Me.PanelSecundario.TabIndex = 3
         '
+        'BunifuFlatButton10
+        '
+        Me.BunifuFlatButton10.Activecolor = System.Drawing.Color.SteelBlue
+        Me.BunifuFlatButton10.BackColor = System.Drawing.Color.GhostWhite
+        Me.BunifuFlatButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton10.BorderRadius = 0
+        Me.BunifuFlatButton10.ButtonText = "    Configuracion"
+        Me.BunifuFlatButton10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.AnimacionFlecha.SetDecoration(Me.BunifuFlatButton10, BunifuAnimatorNS.DecorationType.None)
+        Me.AnimacionPanelSecundario.SetDecoration(Me.BunifuFlatButton10, BunifuAnimatorNS.DecorationType.None)
+        Me.BunifuFlatButton10.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton10.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BunifuFlatButton10.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton10.Iconimage = CType(resources.GetObject("BunifuFlatButton10.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton10.Iconimage_right = Nothing
+        Me.BunifuFlatButton10.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton10.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton10.IconMarginLeft = 0
+        Me.BunifuFlatButton10.IconMarginRight = 0
+        Me.BunifuFlatButton10.IconRightVisible = True
+        Me.BunifuFlatButton10.IconRightZoom = 0R
+        Me.BunifuFlatButton10.IconVisible = True
+        Me.BunifuFlatButton10.IconZoom = 100.0R
+        Me.BunifuFlatButton10.IsTab = False
+        Me.BunifuFlatButton10.Location = New System.Drawing.Point(0, 532)
+        Me.BunifuFlatButton10.Name = "BunifuFlatButton10"
+        Me.BunifuFlatButton10.Normalcolor = System.Drawing.Color.GhostWhite
+        Me.BunifuFlatButton10.OnHovercolor = System.Drawing.Color.LightSteelBlue
+        Me.BunifuFlatButton10.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton10.selected = False
+        Me.BunifuFlatButton10.Size = New System.Drawing.Size(50, 48)
+        Me.BunifuFlatButton10.TabIndex = 14
+        Me.BunifuFlatButton10.Text = "    Configuracion"
+        Me.BunifuFlatButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BunifuFlatButton10.Textcolor = System.Drawing.Color.CornflowerBlue
+        Me.BunifuFlatButton10.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolTip1.SetToolTip(Me.BunifuFlatButton10, "Configuracion y perfil")
+        '
         'BunifuFlatButton9
         '
         Me.BunifuFlatButton9.Activecolor = System.Drawing.Color.SteelBlue
         Me.BunifuFlatButton9.BackColor = System.Drawing.Color.GhostWhite
         Me.BunifuFlatButton9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton9.BorderRadius = 0
-        Me.BunifuFlatButton9.ButtonText = "    Configuracion"
+        Me.BunifuFlatButton9.ButtonText = "    Estadistica"
         Me.BunifuFlatButton9.Cursor = System.Windows.Forms.Cursors.Hand
         Me.AnimacionFlecha.SetDecoration(Me.BunifuFlatButton9, BunifuAnimatorNS.DecorationType.None)
         Me.AnimacionPanelSecundario.SetDecoration(Me.BunifuFlatButton9, BunifuAnimatorNS.DecorationType.None)
@@ -198,7 +238,7 @@ Partial Class Principal
         Me.BunifuFlatButton9.IconRightVisible = True
         Me.BunifuFlatButton9.IconRightZoom = 0R
         Me.BunifuFlatButton9.IconVisible = True
-        Me.BunifuFlatButton9.IconZoom = 100.0R
+        Me.BunifuFlatButton9.IconZoom = 85.0R
         Me.BunifuFlatButton9.IsTab = False
         Me.BunifuFlatButton9.Location = New System.Drawing.Point(0, 484)
         Me.BunifuFlatButton9.Name = "BunifuFlatButton9"
@@ -208,7 +248,7 @@ Partial Class Principal
         Me.BunifuFlatButton9.selected = False
         Me.BunifuFlatButton9.Size = New System.Drawing.Size(50, 48)
         Me.BunifuFlatButton9.TabIndex = 13
-        Me.BunifuFlatButton9.Text = "    Configuracion"
+        Me.BunifuFlatButton9.Text = "    Estadistica"
         Me.BunifuFlatButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton9.Textcolor = System.Drawing.Color.CornflowerBlue
         Me.BunifuFlatButton9.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -220,7 +260,7 @@ Partial Class Principal
         Me.BunifuFlatButton8.BackColor = System.Drawing.Color.GhostWhite
         Me.BunifuFlatButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton8.BorderRadius = 0
-        Me.BunifuFlatButton8.ButtonText = "     F Compra"
+        Me.BunifuFlatButton8.ButtonText = "     Cliente"
         Me.BunifuFlatButton8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.AnimacionFlecha.SetDecoration(Me.BunifuFlatButton8, BunifuAnimatorNS.DecorationType.None)
         Me.AnimacionPanelSecundario.SetDecoration(Me.BunifuFlatButton8, BunifuAnimatorNS.DecorationType.None)
@@ -236,7 +276,7 @@ Partial Class Principal
         Me.BunifuFlatButton8.IconRightVisible = True
         Me.BunifuFlatButton8.IconRightZoom = 0R
         Me.BunifuFlatButton8.IconVisible = True
-        Me.BunifuFlatButton8.IconZoom = 90.0R
+        Me.BunifuFlatButton8.IconZoom = 80.0R
         Me.BunifuFlatButton8.IsTab = False
         Me.BunifuFlatButton8.Location = New System.Drawing.Point(0, 436)
         Me.BunifuFlatButton8.Name = "BunifuFlatButton8"
@@ -246,7 +286,7 @@ Partial Class Principal
         Me.BunifuFlatButton8.selected = False
         Me.BunifuFlatButton8.Size = New System.Drawing.Size(50, 48)
         Me.BunifuFlatButton8.TabIndex = 12
-        Me.BunifuFlatButton8.Text = "     F Compra"
+        Me.BunifuFlatButton8.Text = "     Cliente"
         Me.BunifuFlatButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton8.Textcolor = System.Drawing.Color.CornflowerBlue
         Me.BunifuFlatButton8.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -296,7 +336,7 @@ Partial Class Principal
         Me.BunifuFlatButton6.BackColor = System.Drawing.Color.GhostWhite
         Me.BunifuFlatButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton6.BorderRadius = 0
-        Me.BunifuFlatButton6.ButtonText = "    Estadistica"
+        Me.BunifuFlatButton6.ButtonText = "    Medida"
         Me.BunifuFlatButton6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.AnimacionFlecha.SetDecoration(Me.BunifuFlatButton6, BunifuAnimatorNS.DecorationType.None)
         Me.AnimacionPanelSecundario.SetDecoration(Me.BunifuFlatButton6, BunifuAnimatorNS.DecorationType.None)
@@ -322,7 +362,7 @@ Partial Class Principal
         Me.BunifuFlatButton6.selected = False
         Me.BunifuFlatButton6.Size = New System.Drawing.Size(50, 48)
         Me.BunifuFlatButton6.TabIndex = 10
-        Me.BunifuFlatButton6.Text = "    Estadistica"
+        Me.BunifuFlatButton6.Text = "    Medida"
         Me.BunifuFlatButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton6.Textcolor = System.Drawing.Color.CornflowerBlue
         Me.BunifuFlatButton6.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -546,22 +586,22 @@ Partial Class Principal
         '
         Me.AnimacionFlecha.AnimationType = BunifuAnimatorNS.AnimationType.Rotate
         Me.AnimacionFlecha.Cursor = Nothing
-        Animation51.AnimateOnlyDifferences = True
-        Animation51.BlindCoeff = CType(resources.GetObject("Animation51.BlindCoeff"), System.Drawing.PointF)
-        Animation51.LeafCoeff = 0!
-        Animation51.MaxTime = 1.0!
-        Animation51.MinTime = 0!
-        Animation51.MosaicCoeff = CType(resources.GetObject("Animation51.MosaicCoeff"), System.Drawing.PointF)
-        Animation51.MosaicShift = CType(resources.GetObject("Animation51.MosaicShift"), System.Drawing.PointF)
-        Animation51.MosaicSize = 0
-        Animation51.Padding = New System.Windows.Forms.Padding(50)
-        Animation51.RotateCoeff = 1.0!
-        Animation51.RotateLimit = 0!
-        Animation51.ScaleCoeff = CType(resources.GetObject("Animation51.ScaleCoeff"), System.Drawing.PointF)
-        Animation51.SlideCoeff = CType(resources.GetObject("Animation51.SlideCoeff"), System.Drawing.PointF)
-        Animation51.TimeCoeff = 0!
-        Animation51.TransparencyCoeff = 1.0!
-        Me.AnimacionFlecha.DefaultAnimation = Animation51
+        Animation5.AnimateOnlyDifferences = True
+        Animation5.BlindCoeff = CType(resources.GetObject("Animation5.BlindCoeff"), System.Drawing.PointF)
+        Animation5.LeafCoeff = 0!
+        Animation5.MaxTime = 1.0!
+        Animation5.MinTime = 0!
+        Animation5.MosaicCoeff = CType(resources.GetObject("Animation5.MosaicCoeff"), System.Drawing.PointF)
+        Animation5.MosaicShift = CType(resources.GetObject("Animation5.MosaicShift"), System.Drawing.PointF)
+        Animation5.MosaicSize = 0
+        Animation5.Padding = New System.Windows.Forms.Padding(50)
+        Animation5.RotateCoeff = 1.0!
+        Animation5.RotateLimit = 0!
+        Animation5.ScaleCoeff = CType(resources.GetObject("Animation5.ScaleCoeff"), System.Drawing.PointF)
+        Animation5.SlideCoeff = CType(resources.GetObject("Animation5.SlideCoeff"), System.Drawing.PointF)
+        Animation5.TimeCoeff = 0!
+        Animation5.TransparencyCoeff = 1.0!
+        Me.AnimacionFlecha.DefaultAnimation = Animation5
         '
         'PanelContenedor
         '
@@ -591,22 +631,22 @@ Partial Class Principal
         '
         Me.AnimacionPanelSecundario.AnimationType = BunifuAnimatorNS.AnimationType.Scale
         Me.AnimacionPanelSecundario.Cursor = Nothing
-        Animation52.AnimateOnlyDifferences = True
-        Animation52.BlindCoeff = CType(resources.GetObject("Animation52.BlindCoeff"), System.Drawing.PointF)
-        Animation52.LeafCoeff = 0!
-        Animation52.MaxTime = 1.0!
-        Animation52.MinTime = 0!
-        Animation52.MosaicCoeff = CType(resources.GetObject("Animation52.MosaicCoeff"), System.Drawing.PointF)
-        Animation52.MosaicShift = CType(resources.GetObject("Animation52.MosaicShift"), System.Drawing.PointF)
-        Animation52.MosaicSize = 0
-        Animation52.Padding = New System.Windows.Forms.Padding(0)
-        Animation52.RotateCoeff = 0!
-        Animation52.RotateLimit = 0!
-        Animation52.ScaleCoeff = CType(resources.GetObject("Animation52.ScaleCoeff"), System.Drawing.PointF)
-        Animation52.SlideCoeff = CType(resources.GetObject("Animation52.SlideCoeff"), System.Drawing.PointF)
-        Animation52.TimeCoeff = 0!
-        Animation52.TransparencyCoeff = 0!
-        Me.AnimacionPanelSecundario.DefaultAnimation = Animation52
+        Animation6.AnimateOnlyDifferences = True
+        Animation6.BlindCoeff = CType(resources.GetObject("Animation6.BlindCoeff"), System.Drawing.PointF)
+        Animation6.LeafCoeff = 0!
+        Animation6.MaxTime = 1.0!
+        Animation6.MinTime = 0!
+        Animation6.MosaicCoeff = CType(resources.GetObject("Animation6.MosaicCoeff"), System.Drawing.PointF)
+        Animation6.MosaicShift = CType(resources.GetObject("Animation6.MosaicShift"), System.Drawing.PointF)
+        Animation6.MosaicSize = 0
+        Animation6.Padding = New System.Windows.Forms.Padding(0)
+        Animation6.RotateCoeff = 0!
+        Animation6.RotateLimit = 0!
+        Animation6.ScaleCoeff = CType(resources.GetObject("Animation6.ScaleCoeff"), System.Drawing.PointF)
+        Animation6.SlideCoeff = CType(resources.GetObject("Animation6.SlideCoeff"), System.Drawing.PointF)
+        Animation6.TimeCoeff = 0!
+        Animation6.TransparencyCoeff = 0!
+        Me.AnimacionPanelSecundario.DefaultAnimation = Animation6
         '
         'Tarjetadecontrol
         '
@@ -670,4 +710,5 @@ Partial Class Principal
     Friend WithEvents BunifuFlatButton7 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton9 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton8 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents BunifuFlatButton10 As Bunifu.Framework.UI.BunifuFlatButton
 End Class

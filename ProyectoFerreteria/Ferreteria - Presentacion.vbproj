@@ -152,6 +152,12 @@
     <Compile Include="Formularios\Formularios Hijos\Arqueo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\Formularios Hijos\Cliente.Designer.vb">
+      <DependentUpon>Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios Hijos\Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\Formularios Hijos\Configuracion.Designer.vb">
       <DependentUpon>Configuracion.vb</DependentUpon>
     </Compile>
@@ -232,6 +238,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Formularios\Formularios Hijos\Arqueo.resx">
       <DependentUpon>Arqueo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios Hijos\Cliente.resx">
+      <DependentUpon>Cliente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios Hijos\Configuracion.resx">
       <DependentUpon>Configuracion.vb</DependentUpon>
