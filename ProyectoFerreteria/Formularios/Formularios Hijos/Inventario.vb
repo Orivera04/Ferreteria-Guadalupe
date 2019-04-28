@@ -33,7 +33,7 @@ Public Class Inventario
         MedidaCombo.Items.Clear()
         Dim ListaUnidades = _UnidadesMedidasBol.ObtenerIDUnidadesMedida()
         If (_UnidadesMedidasBol.Errores.Length = 0) Then
-            For I As Integer = 0 To ListaUnidades.count - 1
+            For I As Integer = 0 To ListaUnidades.length - 1
                 MedidaCombo.Items.Add(ListaUnidades(I))
             Next
             MedidaCombo.SelectedIndex = 0

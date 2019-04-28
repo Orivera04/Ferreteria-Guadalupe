@@ -80,5 +80,4 @@ Public Class Medida
         HiloMedidas.Start()
     End Sub
 
-
 End Class

@@ -116,7 +116,11 @@ Public Class Bol_Producto
         Try
             Dai_Producto.Delete(ID_Producto)
         Catch Ex As Exception
-            Errores.Append("Hubo un error al eliminar el producto")
+            If (Ex.HResult <> -2146232060) Then
+                Errores.Append("Hubo un error al eliminar el producto.")
+            Else
+                Errores.Append("No se puede eliminar el producto porque tiene depedencias, si lo quiere eliminar proceda a quitarlas.")
+            End If
             If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
                 Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
             End If

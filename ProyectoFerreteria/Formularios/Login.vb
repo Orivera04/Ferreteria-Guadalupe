@@ -46,6 +46,7 @@ Public Class Login
         _Empleado.Contraseña_P = bunifuMaterialTextbox2.Text
         _EmpleadoBoi.AutenticarUsuario(_Empleado)
         If (_EmpleadoBoi.Errores.Length = 0) Then
+            Principal.UsuarioActivo = bunifuMaterialTextbox1.Text
             Principal.Show()
             Me.Hide()
         Else
@@ -55,5 +56,11 @@ Public Class Login
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         bunifuFlatButton1.Select()
+    End Sub
+
+    Private Sub BunifuMaterialTextbox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles bunifuMaterialTextbox1.KeyPress
+        If (e.KeyChar = ChrW(Keys.Enter)) Then
+            bunifuMaterialTextbox2.Select()
+        End If
     End Sub
 End Class

@@ -250,6 +250,7 @@ Partial Class Medida
         Me.UnidadBox.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.UnidadBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.UnidadBox.Location = New System.Drawing.Point(138, 85)
+        Me.UnidadBox.MaxLength = 15
         Me.UnidadBox.Name = "UnidadBox"
         Me.UnidadBox.Size = New System.Drawing.Size(200, 20)
         Me.UnidadBox.TabIndex = 28

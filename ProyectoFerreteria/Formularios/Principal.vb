@@ -1,10 +1,17 @@
 ﻿Public Class Principal
 
+    Public Shared UsuarioActivo As String
+
     Private Inventario As New Inventario()
+    Private UnidadMedida As New Medida()
+    Private Provedor As New Proveedores()
+
+
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PictureBox2.Image = System.Drawing.Bitmap.FromFile("IconoLogin.PNG")
         PictureBox1.Image = System.Drawing.Bitmap.FromFile("Play1.PNG")
+        Nombre.Text = UsuarioActivo
         Abrirform(New Menu)
     End Sub
 
@@ -23,42 +30,18 @@
     End Sub
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         If PanelSecundario.Width = 50 Then
-
-
-            ' PanelSecundario.Visible = False
-            ' Label1.Location = New Point(27, 80)
-
-
             AnimacionPanelSecundario.ShowSync(PanelSecundario)
-
-
             PictureBox1.Visible = False
             AnimacionFlecha.ShowSync(PictureBox1)
             PictureBox1.Image = System.Drawing.Bitmap.FromFile("Play2.PNG")
             PanelSecundario.Width = 170
-
-
         ElseIf PanelSecundario.Width = 170 Then
-
-
-
-            'Logo.Visible = False
-            'AnimacionLogo.ShowSync(Logo)
-            '  PanelSecundario.Visible = False
-            'Label1.Location = New Point(1, 80)
-
             AnimacionPanelSecundario.ShowSync(PanelSecundario)
-
             PictureBox1.Visible = False
             AnimacionFlecha.ShowSync(PictureBox1)
-
             PictureBox1.Image = System.Drawing.Bitmap.FromFile("Play1.PNG")
             PanelSecundario.Width = 50
-
-
-
         End If
-
         PictureBox1.Width = 18
         PictureBox1.Height = 18
     End Sub
@@ -77,7 +60,7 @@
     End Sub
 
     Private Sub BunifuFlatButton4_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton4.Click
-        Abrirform(New Proveedores)
+        Abrirform(Provedor)
     End Sub
 
     Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
@@ -85,7 +68,7 @@
     End Sub
 
     Private Sub BunifuFlatButton6_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton6.Click
-        Abrirform(New Medida)
+        Abrirform(UnidadMedida)
     End Sub
 
     Private Sub BunifuFlatButton5_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton5.Click
@@ -107,4 +90,6 @@
     Private Sub BunifuFlatButton10_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton10.Click
         Abrirform(New Configuracion)
     End Sub
+
+
 End Class

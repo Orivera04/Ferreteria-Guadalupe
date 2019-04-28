@@ -277,7 +277,7 @@ Partial Class Inventario
         Me.IDBox.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.IDBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.IDBox.Location = New System.Drawing.Point(144, 55)
-        Me.IDBox.MaxLength = 9
+        Me.IDBox.MaxLength = 15
         Me.IDBox.Name = "IDBox"
         Me.IDBox.Size = New System.Drawing.Size(217, 20)
         Me.IDBox.TabIndex = 60

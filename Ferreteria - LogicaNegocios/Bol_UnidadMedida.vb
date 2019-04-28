@@ -18,8 +18,13 @@ Public Class Bol_UnidadMedida
 
     Public Function ObtenerIDUnidadesMedida()
         Errores.Clear()
-        Try            
-            Return Dai_UnidadMedida.GetAll()
+        Try
+            Dim Unidades = Dai_UnidadMedida.GetAll()
+            Dim IDUnidades(Unidades.count - 1) As String
+            For I As Integer = 0 To Unidades.count - 1
+                IDUnidades(I) = Unidades(I).P_Nombre + "#" + Unidades(I).P_ID_UnidadMedida.ToString()
+            Next
+            Return IDUnidades
         Catch Ex As Exception
             Errores.Append("Hubo un error al leer la lista de unidades de medida")
             If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
@@ -65,7 +70,7 @@ Public Class Bol_UnidadMedida
                 Dai_UnidadMedida.Insert(Unidad)
             End If
         Catch Ex As Exception
-            Errores.Append("Hubo un error al leer la lista de unidades de medida")
+            Errores.Append("Hubo un error al insertar la unidad de medida")
             If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
                 Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
             End If
@@ -93,7 +98,11 @@ Public Class Bol_UnidadMedida
         Try
             Dai_UnidadMedida.Delete(ID)
         Catch Ex As Exception
-            Errores.Append("Hubo un error al leer la lista de unidades de medida")
+            If (Ex.HResult <> -2146232060) Then
+                Errores.Append("Hubo un error al eliminar la unidad.")
+            Else
+                Errores.Append("No se puede eliminar la unidad de medida porque tiene depedencias, si la quiere eliminar proceda a quitarlas.")
+            End If
             If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
                 Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
             End If

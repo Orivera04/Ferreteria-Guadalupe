@@ -40,12 +40,18 @@ Partial Class Proveedores
         Me.Label5 = New System.Windows.Forms.Label()
         Me.pictureBox8 = New System.Windows.Forms.PictureBox()
         Me.GroupDataGrid = New System.Windows.Forms.GroupBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboBoxBusqueda = New System.Windows.Forms.ComboBox()
         Me.label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.DataGridINVENTARIO = New System.Windows.Forms.DataGridView()
-        Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
+        Me.DataGridProveedores = New System.Windows.Forms.DataGridView()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Correo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Acc1 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Acc2 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -53,7 +59,7 @@ Partial Class Proveedores
         CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupDataGrid.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridINVENTARIO, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridProveedores, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -88,7 +94,7 @@ Partial Class Proveedores
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label15.Location = New System.Drawing.Point(153, 10)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(235, 28)
+        Me.Label15.Size = New System.Drawing.Size(235, 25)
         Me.Label15.TabIndex = 4
         Me.Label15.Text = "Gestion de Proveedores"
         '
@@ -107,6 +113,7 @@ Partial Class Proveedores
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.White
+        Me.GroupBox1.Controls.Add(Me.BunifuFlatButton2)
         Me.GroupBox1.Controls.Add(Me.TextBox4)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.TextBox3)
@@ -128,6 +135,7 @@ Partial Class Proveedores
         '
         Me.TextBox4.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.TextBox4.Location = New System.Drawing.Point(143, 218)
+        Me.TextBox4.MaxLength = 100
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(183, 20)
         Me.TextBox4.TabIndex = 54
@@ -148,6 +156,7 @@ Partial Class Proveedores
         '
         Me.TextBox3.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.TextBox3.Location = New System.Drawing.Point(143, 164)
+        Me.TextBox3.MaxLength = 40
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(183, 20)
         Me.TextBox3.TabIndex = 52
@@ -168,6 +177,7 @@ Partial Class Proveedores
         '
         Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.TextBox1.Location = New System.Drawing.Point(143, 117)
+        Me.TextBox1.MaxLength = 15
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(183, 20)
         Me.TextBox1.TabIndex = 45
@@ -176,6 +186,7 @@ Partial Class Proveedores
         '
         Me.VentaBox.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.VentaBox.Location = New System.Drawing.Point(143, 68)
+        Me.VentaBox.MaxLength = 15
         Me.VentaBox.Name = "VentaBox"
         Me.VentaBox.Size = New System.Drawing.Size(183, 20)
         Me.VentaBox.TabIndex = 44
@@ -269,41 +280,15 @@ Partial Class Proveedores
         Me.GroupDataGrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupDataGrid.BackColor = System.Drawing.Color.White
-        Me.GroupDataGrid.Controls.Add(Me.Label3)
-        Me.GroupDataGrid.Controls.Add(Me.ComboBoxBusqueda)
+        Me.GroupDataGrid.Controls.Add(Me.Label17)
         Me.GroupDataGrid.Controls.Add(Me.label1)
         Me.GroupDataGrid.Controls.Add(Me.PictureBox2)
-        Me.GroupDataGrid.Controls.Add(Me.DataGridINVENTARIO)
-        Me.GroupDataGrid.Controls.Add(Me.TextBoxBusqueda)
+        Me.GroupDataGrid.Controls.Add(Me.DataGridProveedores)
         Me.GroupDataGrid.Location = New System.Drawing.Point(414, 30)
         Me.GroupDataGrid.Name = "GroupDataGrid"
         Me.GroupDataGrid.Size = New System.Drawing.Size(839, 486)
         Me.GroupDataGrid.TabIndex = 10
         Me.GroupDataGrid.TabStop = False
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.White
-        Me.Label3.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.PaleVioletRed
-        Me.Label3.Location = New System.Drawing.Point(53, 55)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(114, 21)
-        Me.Label3.TabIndex = 49
-        Me.Label3.Text = "Busqueda Por:"
-        '
-        'ComboBoxBusqueda
-        '
-        Me.ComboBoxBusqueda.BackColor = System.Drawing.Color.LemonChiffon
-        Me.ComboBoxBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBoxBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBoxBusqueda.FormattingEnabled = True
-        Me.ComboBoxBusqueda.Items.AddRange(New Object() {"Codigo", "Proveedor"})
-        Me.ComboBoxBusqueda.Location = New System.Drawing.Point(183, 56)
-        Me.ComboBoxBusqueda.Name = "ComboBoxBusqueda"
-        Me.ComboBoxBusqueda.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBoxBusqueda.TabIndex = 48
         '
         'label1
         '
@@ -330,26 +315,109 @@ Partial Class Proveedores
         Me.PictureBox2.TabIndex = 26
         Me.PictureBox2.TabStop = False
         '
-        'DataGridINVENTARIO
+        'DataGridProveedores
         '
-        Me.DataGridINVENTARIO.AllowUserToAddRows = False
-        Me.DataGridINVENTARIO.AllowUserToDeleteRows = False
-        Me.DataGridINVENTARIO.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.DataGridProveedores.AllowUserToAddRows = False
+        Me.DataGridProveedores.AllowUserToDeleteRows = False
+        Me.DataGridProveedores.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridINVENTARIO.BackgroundColor = System.Drawing.Color.LightYellow
-        Me.DataGridINVENTARIO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridINVENTARIO.Location = New System.Drawing.Point(57, 115)
-        Me.DataGridINVENTARIO.Name = "DataGridINVENTARIO"
-        Me.DataGridINVENTARIO.Size = New System.Drawing.Size(713, 337)
-        Me.DataGridINVENTARIO.TabIndex = 0
+        Me.DataGridProveedores.BackgroundColor = System.Drawing.Color.White
+        Me.DataGridProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridProveedores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Nombre, Me.Telefono, Me.Correo, Me.Direccion, Me.Acc1, Me.Acc2})
+        Me.DataGridProveedores.Location = New System.Drawing.Point(6, 42)
+        Me.DataGridProveedores.Name = "DataGridProveedores"
+        Me.DataGridProveedores.Size = New System.Drawing.Size(827, 438)
+        Me.DataGridProveedores.TabIndex = 0
         '
-        'TextBoxBusqueda
+        'ID
         '
-        Me.TextBoxBusqueda.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TextBoxBusqueda.Location = New System.Drawing.Point(320, 57)
-        Me.TextBoxBusqueda.Name = "TextBoxBusqueda"
-        Me.TextBoxBusqueda.Size = New System.Drawing.Size(265, 20)
-        Me.TextBoxBusqueda.TabIndex = 5
+        Me.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.ID.HeaderText = "ID Proveedor"
+        Me.ID.Name = "ID"
+        '
+        'Nombre
+        '
+        Me.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        '
+        'Telefono
+        '
+        Me.Telefono.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Telefono.HeaderText = "Telefono"
+        Me.Telefono.Name = "Telefono"
+        '
+        'Correo
+        '
+        Me.Correo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Correo.HeaderText = "Correo"
+        Me.Correo.Name = "Correo"
+        '
+        'Direccion
+        '
+        Me.Direccion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Direccion.HeaderText = "Direccion"
+        Me.Direccion.Name = "Direccion"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label17.Location = New System.Drawing.Point(371, 234)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(96, 18)
+        Me.Label17.TabIndex = 67
+        Me.Label17.Text = "Cargando..."
+        '
+        'Acc1
+        '
+        Me.Acc1.HeaderText = "Acción 1"
+        Me.Acc1.Name = "Acc1"
+        '
+        'Acc2
+        '
+        Me.Acc2.HeaderText = "Acción 2"
+        Me.Acc2.Name = "Acc2"
+        '
+        'BunifuFlatButton2
+        '
+        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.MediumPurple
+        Me.BunifuFlatButton2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuFlatButton2.BackColor = System.Drawing.Color.SlateBlue
+        Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton2.BorderRadius = 0
+        Me.BunifuFlatButton2.ButtonText = "Editar"
+        Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton2.Font = New System.Drawing.Font("Century", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton2.Iconimage = Nothing
+        Me.BunifuFlatButton2.Iconimage_right = Nothing
+        Me.BunifuFlatButton2.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton2.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton2.IconMarginLeft = 0
+        Me.BunifuFlatButton2.IconMarginRight = 0
+        Me.BunifuFlatButton2.IconRightVisible = True
+        Me.BunifuFlatButton2.IconRightZoom = 0R
+        Me.BunifuFlatButton2.IconVisible = True
+        Me.BunifuFlatButton2.IconZoom = 50.0R
+        Me.BunifuFlatButton2.IsTab = False
+        Me.BunifuFlatButton2.Location = New System.Drawing.Point(45, 320)
+        Me.BunifuFlatButton2.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
+        Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.SlateBlue
+        Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.MediumPurple
+        Me.BunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.selected = False
+        Me.BunifuFlatButton2.Size = New System.Drawing.Size(281, 30)
+        Me.BunifuFlatButton2.TabIndex = 55
+        Me.BunifuFlatButton2.Text = "Editar"
+        Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton2.Visible = False
         '
         'Proveedores
         '
@@ -371,7 +439,7 @@ Partial Class Proveedores
         Me.GroupDataGrid.ResumeLayout(False)
         Me.GroupDataGrid.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridINVENTARIO, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridProveedores, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -392,12 +460,18 @@ Partial Class Proveedores
     Friend WithEvents GroupDataGrid As GroupBox
     Private WithEvents label1 As Label
     Private WithEvents PictureBox2 As PictureBox
-    Friend WithEvents DataGridINVENTARIO As DataGridView
-    Friend WithEvents TextBoxBusqueda As TextBox
-    Friend WithEvents ComboBoxBusqueda As ComboBox
-    Private WithEvents Label3 As Label
+    Friend WithEvents DataGridProveedores As DataGridView
     Friend WithEvents TextBox4 As TextBox
     Private WithEvents Label8 As Label
     Friend WithEvents TextBox3 As TextBox
     Private WithEvents Label7 As Label
+    Friend WithEvents ID As DataGridViewTextBoxColumn
+    Friend WithEvents Nombre As DataGridViewTextBoxColumn
+    Friend WithEvents Telefono As DataGridViewTextBoxColumn
+    Friend WithEvents Correo As DataGridViewTextBoxColumn
+    Friend WithEvents Direccion As DataGridViewTextBoxColumn
+    Private WithEvents Label17 As Label
+    Friend WithEvents Acc1 As DataGridViewButtonColumn
+    Friend WithEvents Acc2 As DataGridViewButtonColumn
+    Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
 End Class
