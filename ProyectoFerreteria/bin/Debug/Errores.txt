@@ -419,3 +419,23 @@ Error Number:207,State:1,Class:16
    en Ferreteria___LogicaNegocios.Bol_Proveedor.ObtenerProveedor(Int32 ID_Proveedor) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Proveedor.vb:línea 42
 ClientConnectionId:86005c39-6c20-4804-9de5-9ef1670f7a39
 Error Number:207,State:1,Class:16
+[2019/04/29 02:31:20]  System.InvalidCastException: El operador '=' no está definido para tipo 'DBNull' ni para cadena "A".
+   en Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   en Ferreteria___AccesoDatos.Dai_Empleado.GetAll() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 42
+   en Ferreteria___LogicaNegocios.Bol_Empleado.ObtenerEmpleados() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 45
+[2019/04/29 02:32:57]  System.InvalidCastException: El operador '=' no está definido para tipo 'DBNull' ni para cadena "A".
+   en Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   en Ferreteria___AccesoDatos.Dai_Empleado.GetAll() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 42
+   en Ferreteria___LogicaNegocios.Bol_Empleado.ObtenerEmpleados() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 45
+[2019/04/29 02:33:34]  System.InvalidCastException: El operador '=' no está definido para tipo 'DBNull' ni para cadena "A".
+   en Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   en Ferreteria___AccesoDatos.Dai_Empleado.GetAll() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 42
+   en Ferreteria___LogicaNegocios.Bol_Empleado.ObtenerEmpleados() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 45
+[2019/04/29 02:33:59]  System.InvalidCastException: El operador '=' no está definido para tipo 'DBNull' ni para cadena "A".
+   en Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   en Ferreteria___AccesoDatos.Dai_Empleado.GetAll() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 42
+   en Ferreteria___LogicaNegocios.Bol_Empleado.ObtenerEmpleados() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 45
+[2019/04/29 02:36:19]  System.InvalidCastException: El operador '=' no está definido para tipo 'DBNull' ni para cadena "A".
+   en Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(Object Left, Object Right, Boolean TextCompare)
+   en Ferreteria___AccesoDatos.Dai_Empleado.GetAll() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 42
+   en Ferreteria___LogicaNegocios.Bol_Empleado.ObtenerEmpleados() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 45

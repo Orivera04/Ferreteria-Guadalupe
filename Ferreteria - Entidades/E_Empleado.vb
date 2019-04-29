@@ -8,6 +8,7 @@
     Private Telefono As String
     Private Usuario As String
     Private Contraseña As String
+    Private Rol As String
 
     'Propiedades de lectura y escritura'
     Public Property ID_P As Integer
@@ -64,6 +65,15 @@
         End Get
         Set(value As String)
             Contraseña = value
+        End Set
+    End Property
+
+    Public Property Rol_P As String
+        Get
+            Return Rol
+        End Get
+        Set(value As String)
+            Rol = value
         End Set
     End Property
 
