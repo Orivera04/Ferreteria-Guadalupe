@@ -9,12 +9,16 @@
   <dependency>
     <dependentAssembly dependencyType="install" codebase="ProyectoFerreteria.exe.manifest" size="10244">
       <assemblyIdentity name="ProyectoFerreteria.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="amd64" type="win32" />
+    <dependentAssembly dependencyType="install" codebase="ProyectoFerreteria.exe.manifest" size="10282">
+      <assemblyIdentity name="ProyectoFerreteria.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>hV/YAmsBGnDFaujBhJNJ7zw5Azo2CX5CuZDKP+Qmms0=</dsig:DigestValue>
+        <dsig:DigestValue>uuCawPtl+We7t0OJwEDb11w29hqziDJzbTBvthOjD9Y=</dsig:DigestValue>
+
       </hash>
     </dependentAssembly>
   </dependency>
