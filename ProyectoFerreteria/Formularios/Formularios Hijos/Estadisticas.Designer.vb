@@ -35,6 +35,8 @@ Partial Class Estadisticas
         Me.Label22 = New System.Windows.Forms.Label()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -47,12 +49,10 @@ Partial Class Estadisticas
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.UltraGroupBox4 = New Infragistics.Win.Misc.UltraGroupBox()
-        Me.UltraGroupBox3 = New Infragistics.Win.Misc.UltraGroupBox()
-        Me.UltraGroupBox2 = New Infragistics.Win.Misc.UltraGroupBox()
-        Me.UltraGroupBox1 = New Infragistics.Win.Misc.UltraGroupBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.BunifuCards1 = New Bunifu.Framework.UI.BunifuCards()
+        Me.BunifuCards2 = New Bunifu.Framework.UI.BunifuCards()
+        Me.BunifuCards3 = New Bunifu.Framework.UI.BunifuCards()
+        Me.BunifuCards4 = New Bunifu.Framework.UI.BunifuCards()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox7.SuspendLayout()
@@ -64,10 +64,10 @@ Partial Class Estadisticas
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UltraGroupBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UltraGroupBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UltraGroupBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UltraGroupBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BunifuCards1.SuspendLayout()
+        Me.BunifuCards2.SuspendLayout()
+        Me.BunifuCards3.SuspendLayout()
+        Me.BunifuCards4.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
@@ -114,7 +114,7 @@ Partial Class Estadisticas
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(48, 141)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(134, 15)
+        Me.Label3.Size = New System.Drawing.Size(135, 18)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Administre su negocio"
         '
@@ -125,7 +125,7 @@ Partial Class Estadisticas
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(60, 16)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(128, 25)
+        Me.Label4.Size = New System.Drawing.Size(128, 28)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Estadisticas"
         '
@@ -147,7 +147,7 @@ Partial Class Estadisticas
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label15.Location = New System.Drawing.Point(146, 10)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(128, 25)
+        Me.Label15.Size = New System.Drawing.Size(128, 28)
         Me.Label15.TabIndex = 4
         Me.Label15.Text = "Estadisticas"
         '
@@ -170,7 +170,7 @@ Partial Class Estadisticas
         Me.Label21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label21.Location = New System.Drawing.Point(37, 145)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(169, 15)
+        Me.Label21.Size = New System.Drawing.Size(173, 18)
         Me.Label21.TabIndex = 2
         Me.Label21.Text = "Realize Factura y Cotizacion"
         '
@@ -181,16 +181,16 @@ Partial Class Estadisticas
         Me.Label22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label22.Location = New System.Drawing.Point(61, 16)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(125, 25)
+        Me.Label22.Size = New System.Drawing.Size(125, 28)
         Me.Label22.TabIndex = 1
         Me.Label22.Text = "Facturacion"
         '
         'PictureBox10
         '
         Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
-        Me.PictureBox10.Location = New System.Drawing.Point(81, 63)
+        Me.PictureBox10.Location = New System.Drawing.Point(-420, 101)
         Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(79, 76)
+        Me.PictureBox10.Size = New System.Drawing.Size(35, 38)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox10.TabIndex = 0
         Me.PictureBox10.TabStop = False
@@ -201,34 +201,51 @@ Partial Class Estadisticas
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.Controls.Add(Me.Label12)
         Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Controls.Add(Me.Label10)
-        Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.PictureBox5)
         Me.Panel1.Controls.Add(Me.PictureBox4)
         Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.UltraGroupBox4)
-        Me.Panel1.Controls.Add(Me.UltraGroupBox3)
-        Me.Panel1.Controls.Add(Me.UltraGroupBox2)
-        Me.Panel1.Controls.Add(Me.UltraGroupBox1)
+        Me.Panel1.Controls.Add(Me.BunifuCards1)
+        Me.Panel1.Controls.Add(Me.BunifuCards2)
+        Me.Panel1.Controls.Add(Me.BunifuCards3)
+        Me.Panel1.Controls.Add(Me.BunifuCards4)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 50)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1291, 689)
         Me.Panel1.TabIndex = 69
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.White
+        Me.Label12.Font = New System.Drawing.Font("Century Gothic", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.Label12.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label12.Location = New System.Drawing.Point(89, 209)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(94, 19)
+        Me.Label12.TabIndex = 32
+        Me.Label12.Text = "Ganacias:"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.White
+        Me.Label11.Font = New System.Drawing.Font("Century Gothic", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.Label11.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label11.Location = New System.Drawing.Point(89, 33)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(99, 19)
+        Me.Label11.TabIndex = 31
+        Me.Label11.Text = "Generales:"
+        '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(1096, 96)
+        Me.Label10.Location = New System.Drawing.Point(152, 23)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(25, 25)
         Me.Label10.TabIndex = 16
@@ -239,7 +256,7 @@ Partial Class Estadisticas
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(809, 97)
+        Me.Label9.Location = New System.Drawing.Point(152, 24)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(25, 25)
         Me.Label9.TabIndex = 15
@@ -250,7 +267,7 @@ Partial Class Estadisticas
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label6.Location = New System.Drawing.Point(1060, 138)
+        Me.Label6.Location = New System.Drawing.Point(119, 65)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(92, 18)
         Me.Label6.TabIndex = 14
@@ -261,7 +278,7 @@ Partial Class Estadisticas
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label5.Location = New System.Drawing.Point(778, 139)
+        Me.Label5.Location = New System.Drawing.Point(123, 66)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(86, 18)
         Me.Label5.TabIndex = 13
@@ -272,7 +289,7 @@ Partial Class Estadisticas
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label2.Location = New System.Drawing.Point(504, 139)
+        Me.Label2.Location = New System.Drawing.Point(137, 68)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(60, 18)
         Me.Label2.TabIndex = 12
@@ -283,7 +300,7 @@ Partial Class Estadisticas
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(522, 97)
+        Me.Label8.Location = New System.Drawing.Point(155, 26)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(25, 25)
         Me.Label8.TabIndex = 11
@@ -327,7 +344,7 @@ Partial Class Estadisticas
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label1.Location = New System.Drawing.Point(199, 139)
+        Me.Label1.Location = New System.Drawing.Point(116, 69)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(86, 18)
         Me.Label1.TabIndex = 7
@@ -338,7 +355,7 @@ Partial Class Estadisticas
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(232, 97)
+        Me.Label7.Location = New System.Drawing.Point(244, 99)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(25, 25)
         Me.Label7.TabIndex = 6
@@ -355,61 +372,68 @@ Partial Class Estadisticas
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
-        'UltraGroupBox4
+        'BunifuCards1
         '
-        Me.UltraGroupBox4.HeaderPosition = Infragistics.Win.Misc.GroupBoxHeaderPosition.LeftOutsideBorder
-        Me.UltraGroupBox4.Location = New System.Drawing.Point(954, 73)
-        Me.UltraGroupBox4.Name = "UltraGroupBox4"
-        Me.UltraGroupBox4.TabIndex = 4
-        Me.UltraGroupBox4.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.XP
+        Me.BunifuCards1.BackColor = System.Drawing.SystemColors.Control
+        Me.BunifuCards1.BorderRadius = 5
+        Me.BunifuCards1.BottomSahddow = True
+        Me.BunifuCards1.color = System.Drawing.SystemColors.Control
+        Me.BunifuCards1.Controls.Add(Me.Label1)
+        Me.BunifuCards1.LeftSahddow = False
+        Me.BunifuCards1.Location = New System.Drawing.Point(93, 70)
+        Me.BunifuCards1.Name = "BunifuCards1"
+        Me.BunifuCards1.RightSahddow = True
+        Me.BunifuCards1.ShadowDepth = 20
+        Me.BunifuCards1.Size = New System.Drawing.Size(225, 109)
+        Me.BunifuCards1.TabIndex = 33
         '
-        'UltraGroupBox3
+        'BunifuCards2
         '
-        Me.UltraGroupBox3.HeaderPosition = Infragistics.Win.Misc.GroupBoxHeaderPosition.LeftOutsideBorder
-        Me.UltraGroupBox3.Location = New System.Drawing.Point(670, 71)
-        Me.UltraGroupBox3.Name = "UltraGroupBox3"
-        Me.UltraGroupBox3.TabIndex = 3
-        Me.UltraGroupBox3.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.XP
+        Me.BunifuCards2.BackColor = System.Drawing.SystemColors.Control
+        Me.BunifuCards2.BorderRadius = 5
+        Me.BunifuCards2.BottomSahddow = True
+        Me.BunifuCards2.color = System.Drawing.SystemColors.Control
+        Me.BunifuCards2.Controls.Add(Me.Label8)
+        Me.BunifuCards2.Controls.Add(Me.Label2)
+        Me.BunifuCards2.LeftSahddow = False
+        Me.BunifuCards2.Location = New System.Drawing.Point(384, 71)
+        Me.BunifuCards2.Name = "BunifuCards2"
+        Me.BunifuCards2.RightSahddow = True
+        Me.BunifuCards2.ShadowDepth = 20
+        Me.BunifuCards2.Size = New System.Drawing.Size(225, 109)
+        Me.BunifuCards2.TabIndex = 34
         '
-        'UltraGroupBox2
+        'BunifuCards3
         '
-        Me.UltraGroupBox2.HeaderPosition = Infragistics.Win.Misc.GroupBoxHeaderPosition.LeftOutsideBorder
-        Me.UltraGroupBox2.Location = New System.Drawing.Point(382, 70)
-        Me.UltraGroupBox2.Name = "UltraGroupBox2"
-        Me.UltraGroupBox2.TabIndex = 2
-        Me.UltraGroupBox2.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.XP
+        Me.BunifuCards3.BackColor = System.Drawing.SystemColors.Control
+        Me.BunifuCards3.BorderRadius = 5
+        Me.BunifuCards3.BottomSahddow = True
+        Me.BunifuCards3.color = System.Drawing.SystemColors.Control
+        Me.BunifuCards3.Controls.Add(Me.Label9)
+        Me.BunifuCards3.Controls.Add(Me.Label5)
+        Me.BunifuCards3.LeftSahddow = False
+        Me.BunifuCards3.Location = New System.Drawing.Point(669, 73)
+        Me.BunifuCards3.Name = "BunifuCards3"
+        Me.BunifuCards3.RightSahddow = True
+        Me.BunifuCards3.ShadowDepth = 20
+        Me.BunifuCards3.Size = New System.Drawing.Size(225, 109)
+        Me.BunifuCards3.TabIndex = 35
         '
-        'UltraGroupBox1
+        'BunifuCards4
         '
-        Me.UltraGroupBox1.HeaderPosition = Infragistics.Win.Misc.GroupBoxHeaderPosition.LeftOutsideBorder
-        Me.UltraGroupBox1.Location = New System.Drawing.Point(91, 69)
-        Me.UltraGroupBox1.Name = "UltraGroupBox1"
-        Me.UltraGroupBox1.TabIndex = 1
-        Me.UltraGroupBox1.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.XP
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.BackColor = System.Drawing.Color.White
-        Me.Label11.Font = New System.Drawing.Font("Century Gothic", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.Label11.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label11.Location = New System.Drawing.Point(89, 33)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(99, 19)
-        Me.Label11.TabIndex = 31
-        Me.Label11.Text = "Generales:"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.BackColor = System.Drawing.Color.White
-        Me.Label12.Font = New System.Drawing.Font("Century Gothic", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.Label12.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label12.Location = New System.Drawing.Point(89, 209)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(94, 19)
-        Me.Label12.TabIndex = 32
-        Me.Label12.Text = "Ganacias:"
+        Me.BunifuCards4.BackColor = System.Drawing.SystemColors.Control
+        Me.BunifuCards4.BorderRadius = 5
+        Me.BunifuCards4.BottomSahddow = True
+        Me.BunifuCards4.color = System.Drawing.SystemColors.Control
+        Me.BunifuCards4.Controls.Add(Me.Label10)
+        Me.BunifuCards4.Controls.Add(Me.Label6)
+        Me.BunifuCards4.LeftSahddow = False
+        Me.BunifuCards4.Location = New System.Drawing.Point(956, 74)
+        Me.BunifuCards4.Name = "BunifuCards4"
+        Me.BunifuCards4.RightSahddow = True
+        Me.BunifuCards4.ShadowDepth = 20
+        Me.BunifuCards4.Size = New System.Drawing.Size(225, 109)
+        Me.BunifuCards4.TabIndex = 36
         '
         'Estadisticas
         '
@@ -436,10 +460,14 @@ Partial Class Estadisticas
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UltraGroupBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UltraGroupBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UltraGroupBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UltraGroupBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BunifuCards1.ResumeLayout(False)
+        Me.BunifuCards1.PerformLayout()
+        Me.BunifuCards2.ResumeLayout(False)
+        Me.BunifuCards2.PerformLayout()
+        Me.BunifuCards3.ResumeLayout(False)
+        Me.BunifuCards3.PerformLayout()
+        Me.BunifuCards4.ResumeLayout(False)
+        Me.BunifuCards4.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -466,12 +494,12 @@ Partial Class Estadisticas
     Friend WithEvents Label1 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Private WithEvents UltraGroupBox4 As Infragistics.Win.Misc.UltraGroupBox
-    Private WithEvents UltraGroupBox3 As Infragistics.Win.Misc.UltraGroupBox
-    Private WithEvents UltraGroupBox2 As Infragistics.Win.Misc.UltraGroupBox
-    Private WithEvents UltraGroupBox1 As Infragistics.Win.Misc.UltraGroupBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Private WithEvents Label11 As Label
     Private WithEvents Label12 As Label
+    Friend WithEvents BunifuCards1 As Bunifu.Framework.UI.BunifuCards
+    Friend WithEvents BunifuCards2 As Bunifu.Framework.UI.BunifuCards
+    Friend WithEvents BunifuCards3 As Bunifu.Framework.UI.BunifuCards
+    Friend WithEvents BunifuCards4 As Bunifu.Framework.UI.BunifuCards
 End Class
