@@ -15,3 +15,4 @@ C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - Entidades\obj\Debug\Fe
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - Entidades\obj\Debug\Ferreteria - Entidades.dll
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - Entidades\obj\Debug\Ferreteria - Entidades.xml
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - Entidades\obj\Debug\Ferreteria - Entidades.pdb
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - Entidades\obj\Debug\Ferreteria - Entidades.vbprojResolveAssemblyReference.cache
