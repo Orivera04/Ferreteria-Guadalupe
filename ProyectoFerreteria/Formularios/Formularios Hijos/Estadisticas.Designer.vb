@@ -51,6 +51,8 @@ Partial Class Estadisticas
         Me.UltraGroupBox3 = New Infragistics.Win.Misc.UltraGroupBox()
         Me.UltraGroupBox2 = New Infragistics.Win.Misc.UltraGroupBox()
         Me.UltraGroupBox1 = New Infragistics.Win.Misc.UltraGroupBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox7.SuspendLayout()
@@ -197,6 +199,8 @@ Partial Class Estadisticas
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.Label12)
+        Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.Label6)
@@ -224,7 +228,7 @@ Partial Class Estadisticas
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(1099, 68)
+        Me.Label10.Location = New System.Drawing.Point(1096, 96)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(25, 25)
         Me.Label10.TabIndex = 16
@@ -235,7 +239,7 @@ Partial Class Estadisticas
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(813, 68)
+        Me.Label9.Location = New System.Drawing.Point(809, 97)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(25, 25)
         Me.Label9.TabIndex = 15
@@ -246,7 +250,7 @@ Partial Class Estadisticas
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label6.Location = New System.Drawing.Point(1072, 110)
+        Me.Label6.Location = New System.Drawing.Point(1060, 138)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(92, 18)
         Me.Label6.TabIndex = 14
@@ -257,7 +261,7 @@ Partial Class Estadisticas
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label5.Location = New System.Drawing.Point(787, 110)
+        Me.Label5.Location = New System.Drawing.Point(778, 139)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(86, 18)
         Me.Label5.TabIndex = 13
@@ -268,7 +272,7 @@ Partial Class Estadisticas
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label2.Location = New System.Drawing.Point(512, 110)
+        Me.Label2.Location = New System.Drawing.Point(504, 139)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(60, 18)
         Me.Label2.TabIndex = 12
@@ -279,7 +283,7 @@ Partial Class Estadisticas
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(527, 68)
+        Me.Label8.Location = New System.Drawing.Point(522, 97)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(25, 25)
         Me.Label8.TabIndex = 11
@@ -289,7 +293,7 @@ Partial Class Estadisticas
         '
         Me.PictureBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(119, Byte), Integer), CType(CType(155, Byte), Integer))
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(956, 35)
+        Me.PictureBox5.Location = New System.Drawing.Point(956, 75)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(100, 106)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -300,7 +304,7 @@ Partial Class Estadisticas
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(669, 35)
+        Me.PictureBox4.Location = New System.Drawing.Point(669, 73)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(100, 106)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -311,7 +315,7 @@ Partial Class Estadisticas
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(93, Byte), Integer), CType(CType(156, Byte), Integer), CType(CType(236, Byte), Integer))
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(384, 35)
+        Me.PictureBox2.Location = New System.Drawing.Point(384, 72)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(100, 106)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -323,7 +327,7 @@ Partial Class Estadisticas
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label1.Location = New System.Drawing.Point(208, 110)
+        Me.Label1.Location = New System.Drawing.Point(199, 139)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(86, 18)
         Me.Label1.TabIndex = 7
@@ -334,7 +338,7 @@ Partial Class Estadisticas
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(232, 68)
+        Me.Label7.Location = New System.Drawing.Point(232, 97)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(25, 25)
         Me.Label7.TabIndex = 6
@@ -344,7 +348,7 @@ Partial Class Estadisticas
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(95, Byte), Integer), CType(CType(147, Byte), Integer))
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(94, 35)
+        Me.PictureBox1.Location = New System.Drawing.Point(93, 71)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(100, 106)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -354,7 +358,7 @@ Partial Class Estadisticas
         'UltraGroupBox4
         '
         Me.UltraGroupBox4.HeaderPosition = Infragistics.Win.Misc.GroupBoxHeaderPosition.LeftOutsideBorder
-        Me.UltraGroupBox4.Location = New System.Drawing.Point(954, 32)
+        Me.UltraGroupBox4.Location = New System.Drawing.Point(954, 73)
         Me.UltraGroupBox4.Name = "UltraGroupBox4"
         Me.UltraGroupBox4.TabIndex = 4
         Me.UltraGroupBox4.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.XP
@@ -362,7 +366,7 @@ Partial Class Estadisticas
         'UltraGroupBox3
         '
         Me.UltraGroupBox3.HeaderPosition = Infragistics.Win.Misc.GroupBoxHeaderPosition.LeftOutsideBorder
-        Me.UltraGroupBox3.Location = New System.Drawing.Point(670, 32)
+        Me.UltraGroupBox3.Location = New System.Drawing.Point(670, 71)
         Me.UltraGroupBox3.Name = "UltraGroupBox3"
         Me.UltraGroupBox3.TabIndex = 3
         Me.UltraGroupBox3.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.XP
@@ -370,7 +374,7 @@ Partial Class Estadisticas
         'UltraGroupBox2
         '
         Me.UltraGroupBox2.HeaderPosition = Infragistics.Win.Misc.GroupBoxHeaderPosition.LeftOutsideBorder
-        Me.UltraGroupBox2.Location = New System.Drawing.Point(382, 33)
+        Me.UltraGroupBox2.Location = New System.Drawing.Point(382, 70)
         Me.UltraGroupBox2.Name = "UltraGroupBox2"
         Me.UltraGroupBox2.TabIndex = 2
         Me.UltraGroupBox2.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.XP
@@ -378,10 +382,34 @@ Partial Class Estadisticas
         'UltraGroupBox1
         '
         Me.UltraGroupBox1.HeaderPosition = Infragistics.Win.Misc.GroupBoxHeaderPosition.LeftOutsideBorder
-        Me.UltraGroupBox1.Location = New System.Drawing.Point(91, 32)
+        Me.UltraGroupBox1.Location = New System.Drawing.Point(91, 69)
         Me.UltraGroupBox1.Name = "UltraGroupBox1"
         Me.UltraGroupBox1.TabIndex = 1
         Me.UltraGroupBox1.ViewStyle = Infragistics.Win.Misc.GroupBoxViewStyle.XP
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.White
+        Me.Label11.Font = New System.Drawing.Font("Century Gothic", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.Label11.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label11.Location = New System.Drawing.Point(89, 33)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(99, 19)
+        Me.Label11.TabIndex = 31
+        Me.Label11.Text = "Generales:"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.White
+        Me.Label12.Font = New System.Drawing.Font("Century Gothic", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.Label12.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label12.Location = New System.Drawing.Point(89, 209)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(94, 19)
+        Me.Label12.TabIndex = 32
+        Me.Label12.Text = "Ganacias:"
         '
         'Estadisticas
         '
@@ -444,4 +472,6 @@ Partial Class Estadisticas
     Private WithEvents UltraGroupBox1 As Infragistics.Win.Misc.UltraGroupBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
+    Private WithEvents Label11 As Label
+    Private WithEvents Label12 As Label
 End Class
