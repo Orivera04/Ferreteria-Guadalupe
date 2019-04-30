@@ -486,11 +486,11 @@ Partial Class Estadisticas
         Me.Label16.BackColor = System.Drawing.Color.SteelBlue
         Me.Label16.Font = New System.Drawing.Font("Century Gothic", 12.25!, System.Drawing.FontStyle.Bold)
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(624, 285)
+        Me.Label16.Location = New System.Drawing.Point(596, 281)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(53, 19)
+        Me.Label16.Size = New System.Drawing.Size(104, 19)
         Me.Label16.TabIndex = 57
-        Me.Label16.Text = "Filtros"
+        Me.Label16.Text = "Ganancias "
         '
         'BunifuCards6
         '
@@ -552,7 +552,7 @@ Partial Class Estadisticas
         Me.BunifuCards7.Controls.Add(Me.Label19)
         Me.BunifuCards7.Controls.Add(Me.Label20)
         Me.BunifuCards7.LeftSahddow = False
-        Me.BunifuCards7.Location = New System.Drawing.Point(81, 388)
+        Me.BunifuCards7.Location = New System.Drawing.Point(93, 388)
         Me.BunifuCards7.Name = "BunifuCards7"
         Me.BunifuCards7.RightSahddow = True
         Me.BunifuCards7.ShadowDepth = 20
