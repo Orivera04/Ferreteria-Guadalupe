@@ -502,7 +502,7 @@ Partial Class Estadisticas
         Me.BunifuCards6.Controls.Add(Me.Label17)
         Me.BunifuCards6.Controls.Add(Me.Label18)
         Me.BunifuCards6.LeftSahddow = False
-        Me.BunifuCards6.Location = New System.Drawing.Point(384, 388)
+        Me.BunifuCards6.Location = New System.Drawing.Point(512, 388)
         Me.BunifuCards6.Name = "BunifuCards6"
         Me.BunifuCards6.RightSahddow = True
         Me.BunifuCards6.ShadowDepth = 20
@@ -605,7 +605,7 @@ Partial Class Estadisticas
         'DateTimePicker2
         '
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker2.Location = New System.Drawing.Point(449, 350)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(574, 350)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(115, 20)
         Me.DateTimePicker2.TabIndex = 59
@@ -620,7 +620,7 @@ Partial Class Estadisticas
         Me.BunifuCards5.Controls.Add(Me.Label12)
         Me.BunifuCards5.Controls.Add(Me.Label13)
         Me.BunifuCards5.LeftSahddow = False
-        Me.BunifuCards5.Location = New System.Drawing.Point(669, 388)
+        Me.BunifuCards5.Location = New System.Drawing.Point(956, 388)
         Me.BunifuCards5.Name = "BunifuCards5"
         Me.BunifuCards5.RightSahddow = True
         Me.BunifuCards5.ShadowDepth = 20
@@ -663,7 +663,7 @@ Partial Class Estadisticas
         'DateTimePicker3
         '
         Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker3.Location = New System.Drawing.Point(737, 350)
+        Me.DateTimePicker3.Location = New System.Drawing.Point(1024, 350)
         Me.DateTimePicker3.Name = "DateTimePicker3"
         Me.DateTimePicker3.Size = New System.Drawing.Size(115, 20)
         Me.DateTimePicker3.TabIndex = 60
