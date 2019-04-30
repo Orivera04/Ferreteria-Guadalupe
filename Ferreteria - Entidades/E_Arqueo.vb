@@ -3,6 +3,9 @@
     'Definición de la entidad Arqueo Oscar Cochon'
 
     Private Fecha As Date
+    Private ID_EMPLEADO As Integer
+    Private Caja_Chica As Double
+    Private total As Double
     Private B1000 As Integer
     Private B500 As Integer
     Private B200 As Integer
@@ -165,5 +168,30 @@
         End Set
     End Property
 
+    Public Property ID_EMPLEADO1 As Integer
+        Get
+            Return ID_EMPLEADO
+        End Get
+        Set(value As Integer)
+            ID_EMPLEADO = value
+        End Set
+    End Property
 
+    Public Property Caja_Chica1 As Double
+        Get
+            Return Caja_Chica
+        End Get
+        Set(value As Double)
+            Caja_Chica = value
+        End Set
+    End Property
+
+    Public Property Total1 As Double
+        Get
+            Return total
+        End Get
+        Set(value As Double)
+            total = value
+        End Set
+    End Property
 End Class

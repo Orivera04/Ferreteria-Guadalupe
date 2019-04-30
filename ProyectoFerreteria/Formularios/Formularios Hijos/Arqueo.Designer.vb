@@ -85,6 +85,10 @@ Partial Class Arqueo
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.pictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -155,7 +159,11 @@ Partial Class Arqueo
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.TextBox2)
         Me.Panel1.Controls.Add(Me.TabControl1)
+        Me.Panel1.Controls.Add(Me.Label27)
+        Me.Panel1.Controls.Add(Me.Label28)
+        Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.TextBox4)
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.Label8)
@@ -250,7 +258,7 @@ Partial Class Arqueo
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(814, 523)
+        Me.TabPage2.Size = New System.Drawing.Size(814, 554)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Gastos Autorizados"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -398,7 +406,6 @@ Partial Class Arqueo
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 22)
         Me.TextBox4.TabIndex = 58
-        Me.TextBox4.Text = "2000"
         Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label9
@@ -507,98 +514,98 @@ Partial Class Arqueo
         '
         'NumericUpDown14
         '
-        Me.NumericUpDown14.Location = New System.Drawing.Point(83, 482)
+        Me.NumericUpDown14.Location = New System.Drawing.Point(64, 467)
         Me.NumericUpDown14.Name = "NumericUpDown14"
         Me.NumericUpDown14.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown14.TabIndex = 15
         '
         'NumericUpDown13
         '
-        Me.NumericUpDown13.Location = New System.Drawing.Point(83, 456)
+        Me.NumericUpDown13.Location = New System.Drawing.Point(64, 441)
         Me.NumericUpDown13.Name = "NumericUpDown13"
         Me.NumericUpDown13.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown13.TabIndex = 14
         '
         'NumericUpDown12
         '
-        Me.NumericUpDown12.Location = New System.Drawing.Point(83, 433)
+        Me.NumericUpDown12.Location = New System.Drawing.Point(64, 418)
         Me.NumericUpDown12.Name = "NumericUpDown12"
         Me.NumericUpDown12.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown12.TabIndex = 13
         '
         'NumericUpDown11
         '
-        Me.NumericUpDown11.Location = New System.Drawing.Point(83, 410)
+        Me.NumericUpDown11.Location = New System.Drawing.Point(64, 395)
         Me.NumericUpDown11.Name = "NumericUpDown11"
         Me.NumericUpDown11.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown11.TabIndex = 12
         '
         'NumericUpDown10
         '
-        Me.NumericUpDown10.Location = New System.Drawing.Point(83, 364)
+        Me.NumericUpDown10.Location = New System.Drawing.Point(64, 342)
         Me.NumericUpDown10.Name = "NumericUpDown10"
         Me.NumericUpDown10.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown10.TabIndex = 10
         '
         'NumericUpDown9
         '
-        Me.NumericUpDown9.Location = New System.Drawing.Point(83, 341)
+        Me.NumericUpDown9.Location = New System.Drawing.Point(64, 319)
         Me.NumericUpDown9.Name = "NumericUpDown9"
         Me.NumericUpDown9.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown9.TabIndex = 9
         '
         'NumericUpDown8
         '
-        Me.NumericUpDown8.Location = New System.Drawing.Point(83, 318)
+        Me.NumericUpDown8.Location = New System.Drawing.Point(64, 296)
         Me.NumericUpDown8.Name = "NumericUpDown8"
         Me.NumericUpDown8.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown8.TabIndex = 8
         '
         'NumericUpDown7
         '
-        Me.NumericUpDown7.Location = New System.Drawing.Point(83, 295)
+        Me.NumericUpDown7.Location = New System.Drawing.Point(64, 273)
         Me.NumericUpDown7.Name = "NumericUpDown7"
         Me.NumericUpDown7.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown7.TabIndex = 7
         '
         'NumericUpDown6
         '
-        Me.NumericUpDown6.Location = New System.Drawing.Point(83, 272)
+        Me.NumericUpDown6.Location = New System.Drawing.Point(64, 250)
         Me.NumericUpDown6.Name = "NumericUpDown6"
         Me.NumericUpDown6.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown6.TabIndex = 6
         '
         'NumericUpDown5
         '
-        Me.NumericUpDown5.Location = New System.Drawing.Point(83, 249)
+        Me.NumericUpDown5.Location = New System.Drawing.Point(64, 227)
         Me.NumericUpDown5.Name = "NumericUpDown5"
         Me.NumericUpDown5.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown5.TabIndex = 5
         '
         'NumericUpDown4
         '
-        Me.NumericUpDown4.Location = New System.Drawing.Point(83, 226)
+        Me.NumericUpDown4.Location = New System.Drawing.Point(64, 204)
         Me.NumericUpDown4.Name = "NumericUpDown4"
         Me.NumericUpDown4.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown4.TabIndex = 4
         '
         'NumericUpDown3
         '
-        Me.NumericUpDown3.Location = New System.Drawing.Point(83, 158)
+        Me.NumericUpDown3.Location = New System.Drawing.Point(64, 143)
         Me.NumericUpDown3.Name = "NumericUpDown3"
         Me.NumericUpDown3.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown3.TabIndex = 3
         '
         'NumericUpDown2
         '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(83, 134)
+        Me.NumericUpDown2.Location = New System.Drawing.Point(64, 119)
         Me.NumericUpDown2.Name = "NumericUpDown2"
         Me.NumericUpDown2.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown2.TabIndex = 2
         '
         'NumericUpDown1
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(83, 111)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(64, 96)
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown1.TabIndex = 1
@@ -609,7 +616,7 @@ Partial Class Arqueo
         Me.Label26.BackColor = System.Drawing.Color.White
         Me.Label26.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label26.Location = New System.Drawing.Point(50, 479)
+        Me.Label26.Location = New System.Drawing.Point(31, 464)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(26, 23)
         Me.Label26.TabIndex = 74
@@ -621,7 +628,7 @@ Partial Class Arqueo
         Me.Label25.BackColor = System.Drawing.Color.White
         Me.Label25.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label25.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label25.Location = New System.Drawing.Point(50, 450)
+        Me.Label25.Location = New System.Drawing.Point(31, 438)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(26, 23)
         Me.Label25.TabIndex = 73
@@ -633,7 +640,7 @@ Partial Class Arqueo
         Me.Label24.BackColor = System.Drawing.Color.White
         Me.Label24.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label24.Location = New System.Drawing.Point(40, 430)
+        Me.Label24.Location = New System.Drawing.Point(21, 415)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(37, 23)
         Me.Label24.TabIndex = 72
@@ -645,7 +652,7 @@ Partial Class Arqueo
         Me.Label22.BackColor = System.Drawing.Color.White
         Me.Label22.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label22.Location = New System.Drawing.Point(40, 407)
+        Me.Label22.Location = New System.Drawing.Point(21, 392)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(37, 23)
         Me.Label22.TabIndex = 71
@@ -657,7 +664,7 @@ Partial Class Arqueo
         Me.Label6.BackColor = System.Drawing.Color.White
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label6.Location = New System.Drawing.Point(15, 384)
+        Me.Label6.Location = New System.Drawing.Point(19, 369)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(125, 23)
         Me.Label6.TabIndex = 70
@@ -669,7 +676,7 @@ Partial Class Arqueo
         Me.Label21.BackColor = System.Drawing.Color.White
         Me.Label21.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label21.Location = New System.Drawing.Point(40, 361)
+        Me.Label21.Location = New System.Drawing.Point(21, 339)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(37, 23)
         Me.Label21.TabIndex = 62
@@ -681,7 +688,7 @@ Partial Class Arqueo
         Me.Label20.BackColor = System.Drawing.Color.White
         Me.Label20.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label20.Location = New System.Drawing.Point(40, 338)
+        Me.Label20.Location = New System.Drawing.Point(21, 316)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(37, 23)
         Me.Label20.TabIndex = 61
@@ -693,7 +700,7 @@ Partial Class Arqueo
         Me.Label19.BackColor = System.Drawing.Color.White
         Me.Label19.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label19.Location = New System.Drawing.Point(40, 315)
+        Me.Label19.Location = New System.Drawing.Point(21, 293)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(37, 23)
         Me.Label19.TabIndex = 60
@@ -705,7 +712,7 @@ Partial Class Arqueo
         Me.Label18.BackColor = System.Drawing.Color.White
         Me.Label18.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label18.Location = New System.Drawing.Point(29, 246)
+        Me.Label18.Location = New System.Drawing.Point(10, 224)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(48, 23)
         Me.Label18.TabIndex = 59
@@ -717,7 +724,7 @@ Partial Class Arqueo
         Me.Label17.BackColor = System.Drawing.Color.White
         Me.Label17.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label17.Location = New System.Drawing.Point(15, 193)
+        Me.Label17.Location = New System.Drawing.Point(10, 175)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(160, 23)
         Me.Label17.TabIndex = 57
@@ -729,7 +736,7 @@ Partial Class Arqueo
         Me.Label16.BackColor = System.Drawing.Color.White
         Me.Label16.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label16.Location = New System.Drawing.Point(18, 223)
+        Me.Label16.Location = New System.Drawing.Point(-1, 201)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(59, 23)
         Me.Label16.TabIndex = 56
@@ -741,7 +748,7 @@ Partial Class Arqueo
         Me.Label14.BackColor = System.Drawing.Color.White
         Me.Label14.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label14.Location = New System.Drawing.Point(29, 155)
+        Me.Label14.Location = New System.Drawing.Point(10, 140)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(48, 23)
         Me.Label14.TabIndex = 55
@@ -753,7 +760,7 @@ Partial Class Arqueo
         Me.Label13.BackColor = System.Drawing.Color.White
         Me.Label13.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label13.Location = New System.Drawing.Point(51, 132)
+        Me.Label13.Location = New System.Drawing.Point(32, 117)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(26, 23)
         Me.Label13.TabIndex = 54
@@ -765,7 +772,7 @@ Partial Class Arqueo
         Me.Label3.BackColor = System.Drawing.Color.White
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label3.Location = New System.Drawing.Point(51, 109)
+        Me.Label3.Location = New System.Drawing.Point(32, 94)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(26, 23)
         Me.Label3.TabIndex = 53
@@ -777,7 +784,7 @@ Partial Class Arqueo
         Me.Label4.BackColor = System.Drawing.Color.White
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label4.Location = New System.Drawing.Point(29, 292)
+        Me.Label4.Location = New System.Drawing.Point(10, 270)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(48, 23)
         Me.Label4.TabIndex = 52
@@ -789,7 +796,7 @@ Partial Class Arqueo
         Me.EtiquetaD.BackColor = System.Drawing.Color.White
         Me.EtiquetaD.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EtiquetaD.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.EtiquetaD.Location = New System.Drawing.Point(15, 77)
+        Me.EtiquetaD.Location = New System.Drawing.Point(10, 62)
         Me.EtiquetaD.Name = "EtiquetaD"
         Me.EtiquetaD.Size = New System.Drawing.Size(93, 23)
         Me.EtiquetaD.TabIndex = 51
@@ -801,7 +808,7 @@ Partial Class Arqueo
         Me.Label1.BackColor = System.Drawing.Color.White
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label1.Location = New System.Drawing.Point(29, 269)
+        Me.Label1.Location = New System.Drawing.Point(10, 247)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(48, 23)
         Me.Label1.TabIndex = 43
@@ -814,7 +821,7 @@ Partial Class Arqueo
         Me.BunifuFlatButton1.BackColor = System.Drawing.Color.Salmon
         Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton1.BorderRadius = 0
-        Me.BunifuFlatButton1.ButtonText = " Agregar"
+        Me.BunifuFlatButton1.ButtonText = "Comprobar"
         Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton1.Font = New System.Drawing.Font("Century", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -839,7 +846,7 @@ Partial Class Arqueo
         Me.BunifuFlatButton1.selected = False
         Me.BunifuFlatButton1.Size = New System.Drawing.Size(281, 30)
         Me.BunifuFlatButton1.TabIndex = 16
-        Me.BunifuFlatButton1.Text = " Agregar"
+        Me.BunifuFlatButton1.Text = "Comprobar"
         Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -850,7 +857,7 @@ Partial Class Arqueo
         Me.Label2.BackColor = System.Drawing.Color.White
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label2.Location = New System.Drawing.Point(127, 52)
+        Me.Label2.Location = New System.Drawing.Point(102, 39)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(145, 23)
         Me.Label2.TabIndex = 29
@@ -878,6 +885,54 @@ Partial Class Arqueo
         Me.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pictureBox8.TabIndex = 27
         Me.pictureBox8.TabStop = False
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.Bisque
+        Me.TextBox1.Enabled = False
+        Me.TextBox1.Font = New System.Drawing.Font("Century", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.ForeColor = System.Drawing.Color.LightCoral
+        Me.TextBox1.Location = New System.Drawing.Point(799, 39)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox1.TabIndex = 60
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.BackColor = System.Drawing.Color.White
+        Me.Label27.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label27.Location = New System.Drawing.Point(986, 39)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(59, 23)
+        Me.Label27.TabIndex = 75
+        Me.Label27.Text = "Total:"
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.BackColor = System.Drawing.Color.White
+        Me.Label28.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label28.Location = New System.Drawing.Point(684, 36)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(109, 23)
+        Me.Label28.TabIndex = 76
+        Me.Label28.Text = "Diferencia:"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.Color.Bisque
+        Me.TextBox2.Enabled = False
+        Me.TextBox2.Font = New System.Drawing.Font("Century", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.ForeColor = System.Drawing.Color.LightCoral
+        Me.TextBox2.Location = New System.Drawing.Point(1062, 39)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox2.TabIndex = 77
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Arqueo
         '
@@ -990,4 +1045,8 @@ Partial Class Arqueo
     Private WithEvents Label24 As Label
     Private WithEvents Label22 As Label
     Private WithEvents Label6 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Private WithEvents Label27 As Label
+    Private WithEvents Label28 As Label
+    Friend WithEvents TextBox1 As TextBox
 End Class

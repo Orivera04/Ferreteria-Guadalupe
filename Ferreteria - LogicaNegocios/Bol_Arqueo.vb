@@ -55,6 +55,17 @@ Public Class Bol_Arqueo
         End If
     End Sub
 
-
+    Public Function ObtenerEmpleado(ByVal Nombre As String)
+        Errores.Clear()
+        Try
+            Return Dai_Arqueo.GetByNombre(Nombre)
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al leer los datos del empleado")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+            Return Nothing
+        End Try
+    End Function
 
 End Class

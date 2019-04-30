@@ -34,4 +34,30 @@ Public Class Dai_Arqueo
         End Using
     End Sub
 
+
+
+    'Mando a consultar el id del empleado
+
+
+
+
+    Public Function GetByNombre(ByVal Nombre As String)
+        Using Conn As New SqlConnection(My.Resources.CadenaConexion)
+            Conn.Open()
+            Query = "SELECT ID FROM EMPLEADO WHERE  Nombre=@Nombre"
+            Using CMD As New SqlCommand(Query, Conn)
+                CMD.Parameters.AddWithValue("@Nombre", Nombre)
+                Using Lector As SqlDataReader = CMD.ExecuteReader()
+                    Lector.Read()
+                    Dim _Arqueo As New E_Arqueo
+                    _Arqueo.ID_EMPLEADO1 = Lector("ID")
+
+
+
+                    Return _Arqueo
+
+                End Using
+            End Using
+        End Using
+    End Function
 End Class
