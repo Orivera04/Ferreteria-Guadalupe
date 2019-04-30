@@ -35,7 +35,6 @@ Partial Class Estadisticas
         Me.Label22 = New System.Windows.Forms.Label()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -53,10 +52,6 @@ Partial Class Estadisticas
         Me.BunifuCards2 = New Bunifu.Framework.UI.BunifuCards()
         Me.BunifuCards3 = New Bunifu.Framework.UI.BunifuCards()
         Me.BunifuCards4 = New Bunifu.Framework.UI.BunifuCards()
-        Me.BunifuCards5 = New Bunifu.Framework.UI.BunifuCards()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.Label14 = New System.Windows.Forms.Label()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -64,6 +59,17 @@ Partial Class Estadisticas
         Me.Label17 = New System.Windows.Forms.Label()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.Label18 = New System.Windows.Forms.Label()
+        Me.BunifuCards7 = New Bunifu.Framework.UI.BunifuCards()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.BunifuCards5 = New Bunifu.Framework.UI.BunifuCards()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox7.SuspendLayout()
@@ -79,12 +85,14 @@ Partial Class Estadisticas
         Me.BunifuCards2.SuspendLayout()
         Me.BunifuCards3.SuspendLayout()
         Me.BunifuCards4.SuspendLayout()
-        Me.BunifuCards5.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BunifuCards6.SuspendLayout()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BunifuCards7.SuspendLayout()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BunifuCards5.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -216,13 +224,16 @@ Partial Class Estadisticas
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.DateTimePicker3)
+        Me.Panel1.Controls.Add(Me.BunifuCards5)
+        Me.Panel1.Controls.Add(Me.DateTimePicker2)
+        Me.Panel1.Controls.Add(Me.DateTimePicker1)
+        Me.Panel1.Controls.Add(Me.BunifuCards7)
         Me.Panel1.Controls.Add(Me.BunifuCards6)
         Me.Panel1.Controls.Add(Me.Label16)
         Me.Panel1.Controls.Add(Me.PictureBox9)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Controls.Add(Me.PictureBox8)
-        Me.Panel1.Controls.Add(Me.BunifuCards5)
-        Me.Panel1.Controls.Add(Me.Label12)
         Me.Panel1.Controls.Add(Me.PictureBox5)
         Me.Panel1.Controls.Add(Me.PictureBox4)
         Me.Panel1.Controls.Add(Me.PictureBox2)
@@ -237,18 +248,6 @@ Partial Class Estadisticas
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1291, 689)
         Me.Panel1.TabIndex = 69
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.BackColor = System.Drawing.Color.White
-        Me.Label12.Font = New System.Drawing.Font("Century Gothic", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.Label12.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label12.Location = New System.Drawing.Point(89, 209)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(94, 19)
-        Me.Label12.TabIndex = 32
-        Me.Label12.Text = "Ganacias:"
         '
         'Label11
         '
@@ -457,56 +456,6 @@ Partial Class Estadisticas
         Me.BunifuCards4.Size = New System.Drawing.Size(225, 109)
         Me.BunifuCards4.TabIndex = 36
         '
-        'BunifuCards5
-        '
-        Me.BunifuCards5.BackColor = System.Drawing.SystemColors.Control
-        Me.BunifuCards5.BorderRadius = 5
-        Me.BunifuCards5.BottomSahddow = True
-        Me.BunifuCards5.color = System.Drawing.SystemColors.Control
-        Me.BunifuCards5.Controls.Add(Me.PictureBox6)
-        Me.BunifuCards5.Controls.Add(Me.Label14)
-        Me.BunifuCards5.Controls.Add(Me.Label13)
-        Me.BunifuCards5.LeftSahddow = False
-        Me.BunifuCards5.Location = New System.Drawing.Point(93, 247)
-        Me.BunifuCards5.Name = "BunifuCards5"
-        Me.BunifuCards5.RightSahddow = True
-        Me.BunifuCards5.ShadowDepth = 20
-        Me.BunifuCards5.Size = New System.Drawing.Size(225, 109)
-        Me.BunifuCards5.TabIndex = 34
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.DarkOrange
-        Me.Label13.Location = New System.Drawing.Point(134, 73)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(60, 18)
-        Me.Label13.TabIndex = 7
-        Me.Label13.Text = "Del dia"
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(176, Byte), Integer))
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(100, 106)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox6.TabIndex = 37
-        Me.PictureBox6.TabStop = False
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Label14.Location = New System.Drawing.Point(151, 35)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(25, 25)
-        Me.Label14.TabIndex = 37
-        Me.Label14.Text = "0"
-        '
         'PictureBox8
         '
         Me.PictureBox8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -524,7 +473,7 @@ Partial Class Estadisticas
         Me.PictureBox9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox9.BackColor = System.Drawing.Color.SteelBlue
-        Me.PictureBox9.Location = New System.Drawing.Point(31, 362)
+        Me.PictureBox9.Location = New System.Drawing.Point(31, 275)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(1223, 29)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -537,7 +486,7 @@ Partial Class Estadisticas
         Me.Label16.BackColor = System.Drawing.Color.SteelBlue
         Me.Label16.Font = New System.Drawing.Font("Century Gothic", 12.25!, System.Drawing.FontStyle.Bold)
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(627, 368)
+        Me.Label16.Location = New System.Drawing.Point(624, 285)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(53, 19)
         Me.Label16.TabIndex = 57
@@ -553,7 +502,7 @@ Partial Class Estadisticas
         Me.BunifuCards6.Controls.Add(Me.Label17)
         Me.BunifuCards6.Controls.Add(Me.Label18)
         Me.BunifuCards6.LeftSahddow = False
-        Me.BunifuCards6.Location = New System.Drawing.Point(384, 247)
+        Me.BunifuCards6.Location = New System.Drawing.Point(384, 388)
         Me.BunifuCards6.Name = "BunifuCards6"
         Me.BunifuCards6.RightSahddow = True
         Me.BunifuCards6.ShadowDepth = 20
@@ -593,6 +542,132 @@ Partial Class Estadisticas
         Me.Label18.TabIndex = 7
         Me.Label18.Text = "Del Mes"
         '
+        'BunifuCards7
+        '
+        Me.BunifuCards7.BackColor = System.Drawing.SystemColors.Control
+        Me.BunifuCards7.BorderRadius = 5
+        Me.BunifuCards7.BottomSahddow = True
+        Me.BunifuCards7.color = System.Drawing.SystemColors.Control
+        Me.BunifuCards7.Controls.Add(Me.PictureBox12)
+        Me.BunifuCards7.Controls.Add(Me.Label19)
+        Me.BunifuCards7.Controls.Add(Me.Label20)
+        Me.BunifuCards7.LeftSahddow = False
+        Me.BunifuCards7.Location = New System.Drawing.Point(81, 388)
+        Me.BunifuCards7.Name = "BunifuCards7"
+        Me.BunifuCards7.RightSahddow = True
+        Me.BunifuCards7.ShadowDepth = 20
+        Me.BunifuCards7.Size = New System.Drawing.Size(225, 109)
+        Me.BunifuCards7.TabIndex = 38
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(176, Byte), Integer))
+        Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
+        Me.PictureBox12.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(100, 106)
+        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox12.TabIndex = 37
+        Me.PictureBox12.TabStop = False
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.Label19.Location = New System.Drawing.Point(151, 35)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(25, 25)
+        Me.Label19.TabIndex = 37
+        Me.Label19.Text = "0"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.DarkOrange
+        Me.Label20.Location = New System.Drawing.Point(146, 73)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(33, 18)
+        Me.Label20.TabIndex = 7
+        Me.Label20.Text = "Dia"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.CalendarFont = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.CalendarMonthBackground = System.Drawing.Color.Wheat
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker1.Location = New System.Drawing.Point(145, 350)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(115, 20)
+        Me.DateTimePicker1.TabIndex = 58
+        '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker2.Location = New System.Drawing.Point(449, 350)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(115, 20)
+        Me.DateTimePicker2.TabIndex = 59
+        '
+        'BunifuCards5
+        '
+        Me.BunifuCards5.BackColor = System.Drawing.SystemColors.Control
+        Me.BunifuCards5.BorderRadius = 5
+        Me.BunifuCards5.BottomSahddow = True
+        Me.BunifuCards5.color = System.Drawing.SystemColors.Control
+        Me.BunifuCards5.Controls.Add(Me.PictureBox6)
+        Me.BunifuCards5.Controls.Add(Me.Label12)
+        Me.BunifuCards5.Controls.Add(Me.Label13)
+        Me.BunifuCards5.LeftSahddow = False
+        Me.BunifuCards5.Location = New System.Drawing.Point(669, 388)
+        Me.BunifuCards5.Name = "BunifuCards5"
+        Me.BunifuCards5.RightSahddow = True
+        Me.BunifuCards5.ShadowDepth = 20
+        Me.BunifuCards5.Size = New System.Drawing.Size(225, 109)
+        Me.BunifuCards5.TabIndex = 39
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(176, Byte), Integer))
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(100, 106)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox6.TabIndex = 37
+        Me.PictureBox6.TabStop = False
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.Label12.Location = New System.Drawing.Point(151, 35)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(25, 25)
+        Me.Label12.TabIndex = 37
+        Me.Label12.Text = "0"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.DarkOrange
+        Me.Label13.Location = New System.Drawing.Point(146, 73)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(37, 18)
+        Me.Label13.TabIndex = 7
+        Me.Label13.Text = "Año"
+        '
+        'DateTimePicker3
+        '
+        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker3.Location = New System.Drawing.Point(737, 350)
+        Me.DateTimePicker3.Name = "DateTimePicker3"
+        Me.DateTimePicker3.Size = New System.Drawing.Size(115, 20)
+        Me.DateTimePicker3.TabIndex = 60
+        '
         'Estadisticas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -626,14 +701,17 @@ Partial Class Estadisticas
         Me.BunifuCards3.PerformLayout()
         Me.BunifuCards4.ResumeLayout(False)
         Me.BunifuCards4.PerformLayout()
-        Me.BunifuCards5.ResumeLayout(False)
-        Me.BunifuCards5.PerformLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BunifuCards6.ResumeLayout(False)
         Me.BunifuCards6.PerformLayout()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BunifuCards7.ResumeLayout(False)
+        Me.BunifuCards7.PerformLayout()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BunifuCards5.ResumeLayout(False)
+        Me.BunifuCards5.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -663,15 +741,10 @@ Partial Class Estadisticas
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Private WithEvents Label11 As Label
-    Private WithEvents Label12 As Label
     Friend WithEvents BunifuCards1 As Bunifu.Framework.UI.BunifuCards
     Friend WithEvents BunifuCards2 As Bunifu.Framework.UI.BunifuCards
     Friend WithEvents BunifuCards3 As Bunifu.Framework.UI.BunifuCards
     Friend WithEvents BunifuCards4 As Bunifu.Framework.UI.BunifuCards
-    Friend WithEvents BunifuCards5 As Bunifu.Framework.UI.BunifuCards
-    Friend WithEvents Label14 As Label
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents Label13 As Label
     Private WithEvents Label16 As Label
     Private WithEvents PictureBox9 As PictureBox
     Private WithEvents PictureBox8 As PictureBox
@@ -679,4 +752,15 @@ Partial Class Estadisticas
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
+    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents BunifuCards7 As Bunifu.Framework.UI.BunifuCards
+    Friend WithEvents PictureBox12 As PictureBox
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label20 As Label
+    Friend WithEvents DateTimePicker3 As DateTimePicker
+    Friend WithEvents BunifuCards5 As Bunifu.Framework.UI.BunifuCards
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label13 As Label
 End Class
