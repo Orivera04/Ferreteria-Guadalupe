@@ -1,5 +1,4 @@
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\Ferreteria - Presentacion.vbprojAssemblyReference.cache
-C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.AgregarProducto.resources
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Arqueo.resources
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Configuracion.resources
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Estadisticas.resources
@@ -57,3 +56,29 @@ C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\Proy
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.exe
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.xml
 C:\Users\Richard\Documents\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\ProyectoFerreteria.exe.config
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\ProyectoFerreteria.exe.manifest
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\ProyectoFerreteria.application
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\ProyectoFerreteria.exe
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\ProyectoFerreteria.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\ProyectoFerreteria.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - Entidades.dll
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - LogicaNegocios.dll
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Infragistics4.Win.UltraWinGrid.v17.1.dll
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\VisualReactiveWinForms.dll
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - AccesoDatos.dll
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - Entidades.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - Entidades.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - LogicaNegocios.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - LogicaNegocios.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\VisualReactiveWinForms.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - AccesoDatos.pdb
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - AccesoDatos.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\bin\Release\Ferreteria - AccesoDatos.dll.config
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.Cliente.resources
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.exe.manifest
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.application
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\Ferreteria - Presentacion.vbproj.CopyComplete
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.exe
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.xml
+C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\ProyectoFerreteria\obj\Release\ProyectoFerreteria.pdb
