@@ -22,7 +22,7 @@
     Private D5 As Integer
     Private D1 As Integer
 
-    Public Property Fecha1 As Date
+    Public Property P_Fecha As Date
         Get
             Return Fecha
         End Get
@@ -168,7 +168,7 @@
         End Set
     End Property
 
-    Public Property ID_EMPLEADO1 As Integer
+    Public Property P_ID_EMPLEADO As Integer
         Get
             Return ID_EMPLEADO
         End Get
@@ -177,7 +177,7 @@
         End Set
     End Property
 
-    Public Property Caja_Chica1 As Double
+    Public Property P_Caja_Chica As Double
         Get
             Return Caja_Chica
         End Get
@@ -186,7 +186,7 @@
         End Set
     End Property
 
-    Public Property Total1 As Double
+    Public Property P_Total As Double
         Get
             Return total
         End Get

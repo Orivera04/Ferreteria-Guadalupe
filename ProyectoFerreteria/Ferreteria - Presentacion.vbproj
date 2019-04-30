@@ -178,6 +178,12 @@
     <Compile Include="Formularios\Formularios Hijos\Factura_Compra.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\Formularios Hijos\Factura_Vista.Designer.vb">
+      <DependentUpon>Factura_Vista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios Hijos\Factura_Vista.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\Formularios Hijos\Inventario.Designer.vb">
       <DependentUpon>Inventario.vb</DependentUpon>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios Hijos\Factura_Compra.resx">
       <DependentUpon>Factura_Compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios Hijos\Factura_Vista.resx">
+      <DependentUpon>Factura_Vista.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios Hijos\Inventario.resx">
       <DependentUpon>Inventario.vb</DependentUpon>

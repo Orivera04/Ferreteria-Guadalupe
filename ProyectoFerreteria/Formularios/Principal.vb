@@ -80,16 +80,18 @@
     End Sub
 
     Private Sub BunifuFlatButton8_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton8.Click
-        Abrirform(New Cliente)
+        Abrirform(New Factura_Vista)
     End Sub
 
     Private Sub BunifuFlatButton9_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton9.Click
-        Abrirform(New Estadisticas)
+        Abrirform(New Cliente)
     End Sub
 
     Private Sub BunifuFlatButton10_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton10.Click
-        Abrirform(New Configuracion)
+        Abrirform(New Estadisticas)
     End Sub
 
-
+    Private Sub BunifuFlatButton11_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton11.Click
+        Abrirform(New Configuracion)
+    End Sub
 End Class
