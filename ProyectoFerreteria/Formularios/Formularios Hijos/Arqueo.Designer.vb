@@ -50,6 +50,25 @@ Partial Class Arqueo
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.NumericUpDown14 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown13 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown12 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown11 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown10 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown9 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown8 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown7 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown6 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown5 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
@@ -66,25 +85,6 @@ Partial Class Arqueo
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.pictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown5 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown6 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown7 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown8 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown9 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown10 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown11 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown12 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown13 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown14 = New System.Windows.Forms.NumericUpDown()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -98,21 +98,21 @@ Partial Class Arqueo
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -180,7 +180,7 @@ Partial Class Arqueo
         Me.TabControl1.Location = New System.Drawing.Point(384, 84)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(822, 552)
+        Me.TabControl1.Size = New System.Drawing.Size(822, 583)
         Me.TabControl1.TabIndex = 59
         '
         'TabPage1
@@ -189,7 +189,7 @@ Partial Class Arqueo
         Me.TabPage1.Location = New System.Drawing.Point(4, 25)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(814, 523)
+        Me.TabPage1.Size = New System.Drawing.Size(814, 554)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Arqueo"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -204,7 +204,7 @@ Partial Class Arqueo
         Me.GroupBox2.Controls.Add(Me.PictureBox1)
         Me.GroupBox2.Location = New System.Drawing.Point(4, -5)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(804, 537)
+        Me.GroupBox2.Size = New System.Drawing.Size(804, 535)
         Me.GroupBox2.TabIndex = 56
         Me.GroupBox2.TabStop = False
         '
@@ -505,6 +505,164 @@ Partial Class Arqueo
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         '
+        'NumericUpDown14
+        '
+        Me.NumericUpDown14.Location = New System.Drawing.Point(83, 482)
+        Me.NumericUpDown14.Name = "NumericUpDown14"
+        Me.NumericUpDown14.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown14.TabIndex = 15
+        '
+        'NumericUpDown13
+        '
+        Me.NumericUpDown13.Location = New System.Drawing.Point(83, 456)
+        Me.NumericUpDown13.Name = "NumericUpDown13"
+        Me.NumericUpDown13.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown13.TabIndex = 14
+        '
+        'NumericUpDown12
+        '
+        Me.NumericUpDown12.Location = New System.Drawing.Point(83, 433)
+        Me.NumericUpDown12.Name = "NumericUpDown12"
+        Me.NumericUpDown12.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown12.TabIndex = 13
+        '
+        'NumericUpDown11
+        '
+        Me.NumericUpDown11.Location = New System.Drawing.Point(83, 410)
+        Me.NumericUpDown11.Name = "NumericUpDown11"
+        Me.NumericUpDown11.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown11.TabIndex = 12
+        '
+        'NumericUpDown10
+        '
+        Me.NumericUpDown10.Location = New System.Drawing.Point(83, 364)
+        Me.NumericUpDown10.Name = "NumericUpDown10"
+        Me.NumericUpDown10.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown10.TabIndex = 10
+        '
+        'NumericUpDown9
+        '
+        Me.NumericUpDown9.Location = New System.Drawing.Point(83, 341)
+        Me.NumericUpDown9.Name = "NumericUpDown9"
+        Me.NumericUpDown9.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown9.TabIndex = 9
+        '
+        'NumericUpDown8
+        '
+        Me.NumericUpDown8.Location = New System.Drawing.Point(83, 318)
+        Me.NumericUpDown8.Name = "NumericUpDown8"
+        Me.NumericUpDown8.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown8.TabIndex = 8
+        '
+        'NumericUpDown7
+        '
+        Me.NumericUpDown7.Location = New System.Drawing.Point(83, 295)
+        Me.NumericUpDown7.Name = "NumericUpDown7"
+        Me.NumericUpDown7.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown7.TabIndex = 7
+        '
+        'NumericUpDown6
+        '
+        Me.NumericUpDown6.Location = New System.Drawing.Point(83, 272)
+        Me.NumericUpDown6.Name = "NumericUpDown6"
+        Me.NumericUpDown6.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown6.TabIndex = 6
+        '
+        'NumericUpDown5
+        '
+        Me.NumericUpDown5.Location = New System.Drawing.Point(83, 249)
+        Me.NumericUpDown5.Name = "NumericUpDown5"
+        Me.NumericUpDown5.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown5.TabIndex = 5
+        '
+        'NumericUpDown4
+        '
+        Me.NumericUpDown4.Location = New System.Drawing.Point(83, 226)
+        Me.NumericUpDown4.Name = "NumericUpDown4"
+        Me.NumericUpDown4.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown4.TabIndex = 4
+        '
+        'NumericUpDown3
+        '
+        Me.NumericUpDown3.Location = New System.Drawing.Point(83, 158)
+        Me.NumericUpDown3.Name = "NumericUpDown3"
+        Me.NumericUpDown3.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown3.TabIndex = 3
+        '
+        'NumericUpDown2
+        '
+        Me.NumericUpDown2.Location = New System.Drawing.Point(83, 134)
+        Me.NumericUpDown2.Name = "NumericUpDown2"
+        Me.NumericUpDown2.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown2.TabIndex = 2
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.Location = New System.Drawing.Point(83, 111)
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown1.TabIndex = 1
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.BackColor = System.Drawing.Color.White
+        Me.Label26.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label26.Location = New System.Drawing.Point(50, 479)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(26, 23)
+        Me.Label26.TabIndex = 74
+        Me.Label26.Text = "1:"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.BackColor = System.Drawing.Color.White
+        Me.Label25.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label25.Location = New System.Drawing.Point(50, 450)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(26, 23)
+        Me.Label25.TabIndex = 73
+        Me.Label25.Text = "5:"
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.BackColor = System.Drawing.Color.White
+        Me.Label24.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label24.Location = New System.Drawing.Point(40, 430)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(37, 23)
+        Me.Label24.TabIndex = 72
+        Me.Label24.Text = "20:"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.BackColor = System.Drawing.Color.White
+        Me.Label22.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label22.Location = New System.Drawing.Point(40, 407)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(37, 23)
+        Me.Label22.TabIndex = 71
+        Me.Label22.Text = "50:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.White
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label6.Location = New System.Drawing.Point(15, 384)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(125, 23)
+        Me.Label6.TabIndex = 70
+        Me.Label6.Text = "Billete Dolar:"
+        '
         'Label21
         '
         Me.Label21.AutoSize = True
@@ -721,164 +879,6 @@ Partial Class Arqueo
         Me.pictureBox8.TabIndex = 27
         Me.pictureBox8.TabStop = False
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.White
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label6.Location = New System.Drawing.Point(15, 384)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(125, 23)
-        Me.Label6.TabIndex = 70
-        Me.Label6.Text = "Billete Dolar:"
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.BackColor = System.Drawing.Color.White
-        Me.Label22.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label22.Location = New System.Drawing.Point(40, 407)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(37, 23)
-        Me.Label22.TabIndex = 71
-        Me.Label22.Text = "50:"
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.BackColor = System.Drawing.Color.White
-        Me.Label24.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label24.Location = New System.Drawing.Point(40, 430)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(37, 23)
-        Me.Label24.TabIndex = 72
-        Me.Label24.Text = "20:"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.BackColor = System.Drawing.Color.White
-        Me.Label25.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label25.Location = New System.Drawing.Point(50, 450)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(26, 23)
-        Me.Label25.TabIndex = 73
-        Me.Label25.Text = "5:"
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.BackColor = System.Drawing.Color.White
-        Me.Label26.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label26.Location = New System.Drawing.Point(50, 479)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(26, 23)
-        Me.Label26.TabIndex = 74
-        Me.Label26.Text = "1:"
-        '
-        'NumericUpDown1
-        '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(83, 111)
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown1.TabIndex = 1
-        '
-        'NumericUpDown2
-        '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(83, 134)
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown2.TabIndex = 2
-        '
-        'NumericUpDown3
-        '
-        Me.NumericUpDown3.Location = New System.Drawing.Point(83, 158)
-        Me.NumericUpDown3.Name = "NumericUpDown3"
-        Me.NumericUpDown3.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown3.TabIndex = 3
-        '
-        'NumericUpDown4
-        '
-        Me.NumericUpDown4.Location = New System.Drawing.Point(83, 226)
-        Me.NumericUpDown4.Name = "NumericUpDown4"
-        Me.NumericUpDown4.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown4.TabIndex = 4
-        '
-        'NumericUpDown5
-        '
-        Me.NumericUpDown5.Location = New System.Drawing.Point(83, 249)
-        Me.NumericUpDown5.Name = "NumericUpDown5"
-        Me.NumericUpDown5.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown5.TabIndex = 5
-        '
-        'NumericUpDown6
-        '
-        Me.NumericUpDown6.Location = New System.Drawing.Point(83, 272)
-        Me.NumericUpDown6.Name = "NumericUpDown6"
-        Me.NumericUpDown6.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown6.TabIndex = 6
-        '
-        'NumericUpDown7
-        '
-        Me.NumericUpDown7.Location = New System.Drawing.Point(83, 295)
-        Me.NumericUpDown7.Name = "NumericUpDown7"
-        Me.NumericUpDown7.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown7.TabIndex = 7
-        '
-        'NumericUpDown8
-        '
-        Me.NumericUpDown8.Location = New System.Drawing.Point(83, 318)
-        Me.NumericUpDown8.Name = "NumericUpDown8"
-        Me.NumericUpDown8.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown8.TabIndex = 8
-        '
-        'NumericUpDown9
-        '
-        Me.NumericUpDown9.Location = New System.Drawing.Point(83, 341)
-        Me.NumericUpDown9.Name = "NumericUpDown9"
-        Me.NumericUpDown9.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown9.TabIndex = 9
-        '
-        'NumericUpDown10
-        '
-        Me.NumericUpDown10.Location = New System.Drawing.Point(83, 364)
-        Me.NumericUpDown10.Name = "NumericUpDown10"
-        Me.NumericUpDown10.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown10.TabIndex = 10
-        '
-        'NumericUpDown11
-        '
-        Me.NumericUpDown11.Location = New System.Drawing.Point(83, 410)
-        Me.NumericUpDown11.Name = "NumericUpDown11"
-        Me.NumericUpDown11.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown11.TabIndex = 12
-        '
-        'NumericUpDown12
-        '
-        Me.NumericUpDown12.Location = New System.Drawing.Point(83, 433)
-        Me.NumericUpDown12.Name = "NumericUpDown12"
-        Me.NumericUpDown12.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown12.TabIndex = 13
-        '
-        'NumericUpDown13
-        '
-        Me.NumericUpDown13.Location = New System.Drawing.Point(83, 456)
-        Me.NumericUpDown13.Name = "NumericUpDown13"
-        Me.NumericUpDown13.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown13.TabIndex = 14
-        '
-        'NumericUpDown14
-        '
-        Me.NumericUpDown14.Location = New System.Drawing.Point(83, 482)
-        Me.NumericUpDown14.Name = "NumericUpDown14"
-        Me.NumericUpDown14.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown14.TabIndex = 15
-        '
         'Arqueo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -908,21 +908,21 @@ Partial Class Arqueo
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
