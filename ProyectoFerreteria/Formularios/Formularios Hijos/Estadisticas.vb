@@ -13,7 +13,7 @@ Public Class Estadisticas
         Label9.Text = _EstadisticasBol.ObtenerEstadistica(3, Nothing)
         Label10.Text = _EstadisticasBol.ObtenerEstadistica(4, Nothing)
 
-        Label19.Text = _EstadisticasBol.ObtenerEstadistica(5, DateTimePicker1.Value).ToString() + " C$"
+        Label19.Text = _EstadisticasBol.ObtenerEstadistica(5, DateTimePicker1.Value).ToString() + " C$" 'este voy ocupar :v
         Label17.Text = _EstadisticasBol.ObtenerEstadistica(6, DateTimePicker2.Value).ToString() + " C$"
         Label12.Text = ""
         Label12.Text = _EstadisticasBol.ObtenerEstadistica(7, DateTimePicker2.Value).ToString() + " C$"

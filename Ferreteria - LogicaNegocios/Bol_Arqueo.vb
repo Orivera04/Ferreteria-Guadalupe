@@ -7,35 +7,50 @@ Public Class Bol_Arqueo
     Public Errores As New StringBuilder
     Public Sub Insertar(ByVal Arqueo As E_Arqueo)
         Errores.Clear()
-        If (Arqueo.AB1000 = "") Then
-            Errores.Append("El CAMPO no puede estar vacio." + vbNewLine)
+        If (Arqueo.AB1000 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
         End If
-        If (Arqueo.AB500 = "") Then
-            Errores.Append("Debe ingresar una marca" + vbNewLine)
+        If (Arqueo.AB500 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
         End If
-        If (Arqueo.AB200 = "") Then
-            Errores.Append("Debe ingresar una descripción" + vbNewLine)
+        If (Arqueo.AB200 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
         End If
-        If (Arqueo.AB100 = "") Then
-            Errores.Append("Debe ingresar una categoria" + vbNewLine)
+        If (Arqueo.AB100 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
         End If
-        If (Arqueo.AB50 = "") Then
-            Errores.Append("Debe ingresar un nombre" + vbNewLine)
+        If (Arqueo.AB50 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
         End If
-        If (Arqueo.AB20 = "") Then
-            Errores.Append("El stock minimo debe ser mayor que 0" + vbNewLine)
+        If (Arqueo.AB20 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
         End If
-        If (Arqueo.AB10 = "") Then
-            Errores.Append("El stock maximo debe ser mayor que 0" + vbNewLine)
+        If (Arqueo.AB10 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
         End If
-        If (Arqueo.AM5 = "") Then
-            Errores.Append("La existencia debe ser mayor que 0" + vbNewLine)
+        If (Arqueo.AM5 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
         End If
-        If (Arqueo.AM1 = "") Then
-            Errores.Append("El precio de compra no puede ser menor o igual que 0" + vbNewLine)
+        If (Arqueo.AM1 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
         End If
-        If (Arqueo.AM050 = "") Then
-            Errores.Append("El precio de venta no puede  ser menor o igual que 0" + vbNewLine)
+        If (Arqueo.AM050 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
+        End If
+        If (Arqueo.AD50 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
+        End If
+        If (Arqueo.AD20 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
+        End If
+        If (Arqueo.AD10 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
+        End If
+        If (Arqueo.AD5 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
+        End If
+        If (Arqueo.AD1 < 0) Then
+            Errores.Append("NO PUEDEN INGRESAR DATOS NULOS" + vbNewLine)
         End If
 
 

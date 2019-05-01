@@ -64,6 +64,21 @@ Public Class Dai_Estadistica
     End Function
 
 
+
+    'Devuelve EL TOTAL DE VENTA DE FACTURAS PARA EL ARQUEO'
+    Public Function GetEstadisticaVentaTotal(ByVal Dia As Date)
+        Using Conn As New SqlConnection(My.Resources.CadenaConexion)
+            Conn.Open()
+            Query = "SELECT SUM(SubTotal)
+                     FROM FACTURAVENTA
+                     WHERE FECHA = @FECHA;"
+            Using CMD As New SqlCommand(Query, Conn)
+                CMD.Parameters.AddWithValue("@FECHA", Dia.Year.ToString() + "-" + Dia.Month.ToString() + "-" + Dia.Day.ToString())
+                Return CMD.ExecuteScalar()
+            End Using
+        End Using
+    End Function
+
     'Devuelve las ganancia mensual'
     Public Function GetEstadisticaGananciaMensual(ByVal Dia As Date)
         Using Conn As New SqlConnection(My.Resources.CadenaConexion)

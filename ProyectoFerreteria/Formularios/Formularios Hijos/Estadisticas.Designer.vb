@@ -24,6 +24,7 @@ Partial Class Estadisticas
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Estadisticas))
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -70,7 +71,6 @@ Partial Class Estadisticas
         Me.BunifuCards4 = New Bunifu.Framework.UI.BunifuCards()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox7.SuspendLayout()
@@ -111,6 +111,43 @@ Partial Class Estadisticas
         Me.Panel2.Size = New System.Drawing.Size(1291, 50)
         Me.Panel2.TabIndex = 68
         '
+        'BunifuFlatButton2
+        '
+        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.MediumPurple
+        Me.BunifuFlatButton2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuFlatButton2.BackColor = System.Drawing.Color.SlateBlue
+        Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton2.BorderRadius = 0
+        Me.BunifuFlatButton2.ButtonText = "Actualizar"
+        Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton2.Font = New System.Drawing.Font("Century", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton2.Iconimage = Nothing
+        Me.BunifuFlatButton2.Iconimage_right = Nothing
+        Me.BunifuFlatButton2.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton2.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton2.IconMarginLeft = 0
+        Me.BunifuFlatButton2.IconMarginRight = 0
+        Me.BunifuFlatButton2.IconRightVisible = True
+        Me.BunifuFlatButton2.IconRightZoom = 0R
+        Me.BunifuFlatButton2.IconVisible = True
+        Me.BunifuFlatButton2.IconZoom = 50.0R
+        Me.BunifuFlatButton2.IsTab = False
+        Me.BunifuFlatButton2.Location = New System.Drawing.Point(1132, 10)
+        Me.BunifuFlatButton2.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
+        Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.SlateBlue
+        Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.MediumPurple
+        Me.BunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.selected = False
+        Me.BunifuFlatButton2.Size = New System.Drawing.Size(82, 30)
+        Me.BunifuFlatButton2.TabIndex = 56
+        Me.BunifuFlatButton2.Text = "Actualizar"
+        Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'PictureBox7
         '
         Me.PictureBox7.BackColor = System.Drawing.Color.White
@@ -141,7 +178,7 @@ Partial Class Estadisticas
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(48, 141)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(134, 15)
+        Me.Label3.Size = New System.Drawing.Size(135, 18)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Administre su negocio"
         '
@@ -152,7 +189,7 @@ Partial Class Estadisticas
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(60, 16)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(128, 25)
+        Me.Label4.Size = New System.Drawing.Size(128, 28)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Estadisticas"
         '
@@ -174,7 +211,7 @@ Partial Class Estadisticas
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label15.Location = New System.Drawing.Point(146, 10)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(128, 25)
+        Me.Label15.Size = New System.Drawing.Size(128, 28)
         Me.Label15.TabIndex = 4
         Me.Label15.Text = "Estadisticas"
         '
@@ -197,7 +234,7 @@ Partial Class Estadisticas
         Me.Label21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label21.Location = New System.Drawing.Point(37, 145)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(169, 15)
+        Me.Label21.Size = New System.Drawing.Size(173, 18)
         Me.Label21.TabIndex = 2
         Me.Label21.Text = "Realize Factura y Cotizacion"
         '
@@ -208,7 +245,7 @@ Partial Class Estadisticas
         Me.Label22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label22.Location = New System.Drawing.Point(61, 16)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(125, 25)
+        Me.Label22.Size = New System.Drawing.Size(125, 28)
         Me.Label22.TabIndex = 1
         Me.Label22.Text = "Facturacion"
         '
@@ -292,7 +329,7 @@ Partial Class Estadisticas
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(108, 46)
+        Me.Label12.Location = New System.Drawing.Point(138, 46)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(61, 25)
         Me.Label12.TabIndex = 37
@@ -322,7 +359,7 @@ Partial Class Estadisticas
         Me.DateTimePicker1.CalendarFont = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.CalendarMonthBackground = System.Drawing.Color.Wheat
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(188, 350)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(142, 350)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(115, 20)
         Me.DateTimePicker1.TabIndex = 58
@@ -360,7 +397,7 @@ Partial Class Estadisticas
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Label19.Location = New System.Drawing.Point(106, 46)
+        Me.Label19.Location = New System.Drawing.Point(109, 46)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(61, 25)
         Me.Label19.TabIndex = 37
@@ -410,7 +447,7 @@ Partial Class Estadisticas
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Label17.Location = New System.Drawing.Point(106, 46)
+        Me.Label17.Location = New System.Drawing.Point(117, 46)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(61, 25)
         Me.Label17.TabIndex = 37
@@ -669,43 +706,6 @@ Partial Class Estadisticas
         Me.Label6.Size = New System.Drawing.Size(92, 18)
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "Empleados"
-        '
-        'BunifuFlatButton2
-        '
-        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.MediumPurple
-        Me.BunifuFlatButton2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuFlatButton2.BackColor = System.Drawing.Color.SlateBlue
-        Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton2.BorderRadius = 0
-        Me.BunifuFlatButton2.ButtonText = "Actualizar"
-        Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton2.Font = New System.Drawing.Font("Century", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton2.Iconimage = Nothing
-        Me.BunifuFlatButton2.Iconimage_right = Nothing
-        Me.BunifuFlatButton2.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton2.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton2.IconMarginLeft = 0
-        Me.BunifuFlatButton2.IconMarginRight = 0
-        Me.BunifuFlatButton2.IconRightVisible = True
-        Me.BunifuFlatButton2.IconRightZoom = 0R
-        Me.BunifuFlatButton2.IconVisible = True
-        Me.BunifuFlatButton2.IconZoom = 50.0R
-        Me.BunifuFlatButton2.IsTab = False
-        Me.BunifuFlatButton2.Location = New System.Drawing.Point(1132, 10)
-        Me.BunifuFlatButton2.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
-        Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
-        Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.SlateBlue
-        Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.MediumPurple
-        Me.BunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton2.selected = False
-        Me.BunifuFlatButton2.Size = New System.Drawing.Size(82, 30)
-        Me.BunifuFlatButton2.TabIndex = 56
-        Me.BunifuFlatButton2.Text = "Actualizar"
-        Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'Estadisticas
         '

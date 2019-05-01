@@ -150,4 +150,25 @@ Public Class Bol_Empleado
 
 
 
+
+
+
+
+
+
+
+    'Parte de obtener ID por medio del nombre --- ARQUEO
+    Public Function ObtenerNameEmpleado(ByVal Name As String)
+        Errores.Clear()
+        Try
+            Return Dai_Empleado.GetByName(Name)
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al leer los datos del empleado")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+            Return Nothing
+        End Try
+    End Function
+
 End Class
