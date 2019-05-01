@@ -10,9 +10,10 @@ Public Class Dai_Arqueo
         Using Conn As New SqlConnection(My.Resources.CadenaConexion)
             Conn.Open()
             Query = "INSERT INTO Arqueo 
-                     VALUES(@Fecha,@B1000,@B500,@B200,@B100,@B50,@B20,@B10,@M5,@M1,@M050,@D50,@D20,@D10,@D5,@D1)"
+                     VALUES(@ID_Empleado,@Fecha,@B1000,@B500,@B200,@B100,@B50,@B20,@B10,@M5,@M1,@M050,@D50,@D20,@D10,@D5,@D1,@Caja_Chica,@Total)"
             Using CMD As New SqlCommand(Query, Conn)
-                CMD.Parameters.AddWithValue("@Fecha", Arqueo.Fecha1)
+                CMD.Parameters.AddWithValue("@ID_Empleado", Arqueo.P_ID_EMPLEADO)
+                CMD.Parameters.AddWithValue("@Fecha", Arqueo.P_Fecha)
                 CMD.Parameters.AddWithValue("@B1000", Arqueo.AB1000)
                 CMD.Parameters.AddWithValue("@B500", Arqueo.AB500)
                 CMD.Parameters.AddWithValue("@B200", Arqueo.AB200)
@@ -36,20 +37,10 @@ Public Class Dai_Arqueo
 
 
 
-    'Mando a consultar el id del empleado
-    Public Function GetByNombre(ByVal Nombre As String)
-        Using Conn As New SqlConnection(My.Resources.CadenaConexion)
-            Conn.Open()
-            Query = "SELECT ID FROM EMPLEADO WHERE  Nombre=@Nombre"
-            Using CMD As New SqlCommand(Query, Conn)
-                CMD.Parameters.AddWithValue("@Nombre", Nombre)
-                Using Lector As SqlDataReader = CMD.ExecuteReader()
-                    Lector.Read()
-                    Dim _Arqueo As New E_Arqueo
-                    _Arqueo.ID_EMPLEADO1 = Lector("ID")
-                    Return _Arqueo
-                End Using
-            End Using
-        End Using
-    End Function
+  
+
+
+
+
+
 End Class

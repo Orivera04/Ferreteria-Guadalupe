@@ -27,7 +27,17 @@ Partial Class Cliente
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -46,27 +56,24 @@ Partial Class Cliente
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.DataGridINVENTARIO = New System.Windows.Forms.DataGridView()
         Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupDataGrid.SuspendLayout()
@@ -74,9 +81,6 @@ Partial Class Cliente
         CType(Me.DataGridINVENTARIO, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -119,8 +123,8 @@ Partial Class Cliente
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Controls.Add(Me.GroupBox2)
         Me.Panel1.Controls.Add(Me.GroupBox3)
+        Me.Panel1.Controls.Add(Me.GroupBox2)
         Me.Panel1.Controls.Add(Me.GroupBox1)
         Me.Panel1.Controls.Add(Me.GroupDataGrid)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -128,6 +132,105 @@ Partial Class Cliente
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1291, 694)
         Me.Panel1.TabIndex = 73
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox2.BackColor = System.Drawing.Color.White
+        Me.GroupBox2.Controls.Add(Me.DataGridView2)
+        Me.GroupBox2.Controls.Add(Me.DateTimePicker3)
+        Me.GroupBox2.Controls.Add(Me.Label10)
+        Me.GroupBox2.Controls.Add(Me.ComboBox1)
+        Me.GroupBox2.Controls.Add(Me.Label12)
+        Me.GroupBox2.Controls.Add(Me.PictureBox1)
+        Me.GroupBox2.Controls.Add(Me.TextBox6)
+        Me.GroupBox2.Location = New System.Drawing.Point(416, 415)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(836, 255)
+        Me.GroupBox2.TabIndex = 53
+        Me.GroupBox2.TabStop = False
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.AllowUserToAddRows = False
+        Me.DataGridView2.AllowUserToDeleteRows = False
+        Me.DataGridView2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DataGridView2.BackgroundColor = System.Drawing.Color.LightYellow
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(55, 83)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.Size = New System.Drawing.Size(710, 163)
+        Me.DataGridView2.TabIndex = 59
+        '
+        'DateTimePicker3
+        '
+        Me.DateTimePicker3.CustomFormat = "yyyy/MM/dd"
+        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker3.Location = New System.Drawing.Point(322, 57)
+        Me.DateTimePicker3.MinDate = New Date(2019, 2, 22, 0, 0, 0, 0)
+        Me.DateTimePicker3.Name = "DateTimePicker3"
+        Me.DateTimePicker3.Size = New System.Drawing.Size(85, 20)
+        Me.DateTimePicker3.TabIndex = 49
+        Me.DateTimePicker3.Value = New Date(2019, 3, 20, 0, 0, 0, 0)
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.White
+        Me.Label10.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.PaleVioletRed
+        Me.Label10.Location = New System.Drawing.Point(53, 55)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(114, 21)
+        Me.Label10.TabIndex = 49
+        Me.Label10.Text = "Busqueda Por:"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.BackColor = System.Drawing.Color.LemonChiffon
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Codigo", "Proveedor", "Fecha"})
+        Me.ComboBox1.Location = New System.Drawing.Point(183, 56)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 48
+        '
+        'Label12
+        '
+        Me.Label12.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.MediumPurple
+        Me.Label12.Font = New System.Drawing.Font("MS Reference Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(328, 9)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(175, 26)
+        Me.Label12.TabIndex = 9
+        Me.Label12.Text = "Gestion abonos"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.BackColor = System.Drawing.Color.MediumPurple
+        Me.PictureBox1.Location = New System.Drawing.Point(2, 7)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(833, 29)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 26
+        Me.PictureBox1.TabStop = False
+        '
+        'TextBox6
+        '
+        Me.TextBox6.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextBox6.Location = New System.Drawing.Point(422, 57)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(265, 20)
+        Me.TextBox6.TabIndex = 5
         '
         'GroupBox1
         '
@@ -150,6 +253,26 @@ Partial Class Cliente
         Me.GroupBox1.Size = New System.Drawing.Size(367, 380)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.TextBox2.Location = New System.Drawing.Point(143, 267)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(183, 20)
+        Me.TextBox2.TabIndex = 56
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.White
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label2.Location = New System.Drawing.Point(20, 262)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(92, 23)
+        Me.Label2.TabIndex = 55
+        Me.Label2.Text = "Telefono:"
         '
         'TextBox4
         '
@@ -378,41 +501,61 @@ Partial Class Cliente
         Me.TextBoxBusqueda.Size = New System.Drawing.Size(265, 20)
         Me.TextBoxBusqueda.TabIndex = 5
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.White
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label2.Location = New System.Drawing.Point(20, 262)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(92, 23)
-        Me.Label2.TabIndex = 55
-        Me.Label2.Text = "Telefono:"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.TextBox2.Location = New System.Drawing.Point(143, 267)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(183, 20)
-        Me.TextBox2.TabIndex = 56
-        '
         'GroupBox3
         '
         Me.GroupBox3.BackColor = System.Drawing.Color.White
+        Me.GroupBox3.Controls.Add(Me.ComboBox5)
+        Me.GroupBox3.Controls.Add(Me.ComboBox4)
+        Me.GroupBox3.Controls.Add(Me.TextBox5)
+        Me.GroupBox3.Controls.Add(Me.Label9)
         Me.GroupBox3.Controls.Add(Me.Label11)
+        Me.GroupBox3.Controls.Add(Me.Label13)
         Me.GroupBox3.Controls.Add(Me.Label16)
         Me.GroupBox3.Controls.Add(Me.PictureBox3)
-        Me.GroupBox3.Controls.Add(Me.Label9)
+        Me.GroupBox3.Controls.Add(Me.Label14)
         Me.GroupBox3.Controls.Add(Me.BunifuFlatButton2)
-        Me.GroupBox3.Controls.Add(Me.TextBox5)
         Me.GroupBox3.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox3.Location = New System.Drawing.Point(40, 414)
+        Me.GroupBox3.Location = New System.Drawing.Point(45, 415)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(367, 247)
-        Me.GroupBox3.TabIndex = 52
+        Me.GroupBox3.Size = New System.Drawing.Size(367, 255)
+        Me.GroupBox3.TabIndex = 54
         Me.GroupBox3.TabStop = False
+        '
+        'ComboBox5
+        '
+        Me.ComboBox5.FormattingEnabled = True
+        Me.ComboBox5.Location = New System.Drawing.Point(148, 144)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(151, 21)
+        Me.ComboBox5.TabIndex = 54
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Location = New System.Drawing.Point(148, 106)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(151, 21)
+        Me.ComboBox4.TabIndex = 53
+        '
+        'TextBox5
+        '
+        Me.TextBox5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextBox5.Location = New System.Drawing.Point(148, 190)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(151, 20)
+        Me.TextBox5.TabIndex = 52
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.White
+        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label9.Location = New System.Drawing.Point(27, 104)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(81, 23)
+        Me.Label9.TabIndex = 51
+        Me.Label9.Text = "Cliente:"
         '
         'Label11
         '
@@ -420,11 +563,23 @@ Partial Class Cliente
         Me.Label11.BackColor = System.Drawing.Color.White
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label11.Location = New System.Drawing.Point(27, 66)
+        Me.Label11.Location = New System.Drawing.Point(27, 188)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(72, 23)
-        Me.Label11.TabIndex = 48
-        Me.Label11.Text = "Fecha:"
+        Me.Label11.Size = New System.Drawing.Size(96, 23)
+        Me.Label11.TabIndex = 49
+        Me.Label11.Text = "Deposito:"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.White
+        Me.Label13.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label13.Location = New System.Drawing.Point(27, 66)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(72, 23)
+        Me.Label13.TabIndex = 48
+        Me.Label13.Text = "Fecha:"
         '
         'Label16
         '
@@ -449,17 +604,17 @@ Partial Class Cliente
         Me.PictureBox3.TabIndex = 27
         Me.PictureBox3.TabStop = False
         '
-        'Label9
+        'Label14
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.White
-        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label9.Location = New System.Drawing.Point(27, 126)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(96, 23)
-        Me.Label9.TabIndex = 46
-        Me.Label9.Text = "Deposito:"
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.White
+        Me.Label14.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label14.Location = New System.Drawing.Point(27, 144)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(112, 23)
+        Me.Label14.TabIndex = 46
+        Me.Label14.Text = "Factura N°:"
         '
         'BunifuFlatButton2
         '
@@ -485,7 +640,7 @@ Partial Class Cliente
         Me.BunifuFlatButton2.IconVisible = True
         Me.BunifuFlatButton2.IconZoom = 50.0R
         Me.BunifuFlatButton2.IsTab = False
-        Me.BunifuFlatButton2.Location = New System.Drawing.Point(31, 204)
+        Me.BunifuFlatButton2.Location = New System.Drawing.Point(31, 222)
         Me.BunifuFlatButton2.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
         Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.SlateBlue
@@ -499,14 +654,6 @@ Partial Class Cliente
         Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'TextBox5
-        '
-        Me.TextBox5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TextBox5.Location = New System.Drawing.Point(148, 129)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(151, 20)
-        Me.TextBox5.TabIndex = 47
-        '
         'DateTimePicker1
         '
         Me.DateTimePicker1.CustomFormat = "yyyy/MM/dd"
@@ -518,105 +665,6 @@ Partial Class Cliente
         Me.DateTimePicker1.Size = New System.Drawing.Size(151, 20)
         Me.DateTimePicker1.TabIndex = 46
         Me.DateTimePicker1.Value = New Date(2019, 3, 20, 0, 0, 0, 0)
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox2.BackColor = System.Drawing.Color.White
-        Me.GroupBox2.Controls.Add(Me.DataGridView2)
-        Me.GroupBox2.Controls.Add(Me.DateTimePicker3)
-        Me.GroupBox2.Controls.Add(Me.Label10)
-        Me.GroupBox2.Controls.Add(Me.ComboBox1)
-        Me.GroupBox2.Controls.Add(Me.Label12)
-        Me.GroupBox2.Controls.Add(Me.PictureBox1)
-        Me.GroupBox2.Controls.Add(Me.TextBox6)
-        Me.GroupBox2.Location = New System.Drawing.Point(416, 415)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(836, 246)
-        Me.GroupBox2.TabIndex = 53
-        Me.GroupBox2.TabStop = False
-        '
-        'DataGridView2
-        '
-        Me.DataGridView2.AllowUserToAddRows = False
-        Me.DataGridView2.AllowUserToDeleteRows = False
-        Me.DataGridView2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView2.BackgroundColor = System.Drawing.Color.LightYellow
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(55, 83)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(710, 144)
-        Me.DataGridView2.TabIndex = 59
-        '
-        'DateTimePicker3
-        '
-        Me.DateTimePicker3.CustomFormat = "yyyy/MM/dd"
-        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker3.Location = New System.Drawing.Point(322, 57)
-        Me.DateTimePicker3.MinDate = New Date(2019, 2, 22, 0, 0, 0, 0)
-        Me.DateTimePicker3.Name = "DateTimePicker3"
-        Me.DateTimePicker3.Size = New System.Drawing.Size(85, 20)
-        Me.DateTimePicker3.TabIndex = 49
-        Me.DateTimePicker3.Value = New Date(2019, 3, 20, 0, 0, 0, 0)
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.White
-        Me.Label10.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.PaleVioletRed
-        Me.Label10.Location = New System.Drawing.Point(53, 55)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(114, 21)
-        Me.Label10.TabIndex = 49
-        Me.Label10.Text = "Busqueda Por:"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.BackColor = System.Drawing.Color.LemonChiffon
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Codigo", "Proveedor", "Fecha"})
-        Me.ComboBox1.Location = New System.Drawing.Point(183, 56)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 48
-        '
-        'Label12
-        '
-        Me.Label12.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label12.AutoSize = True
-        Me.Label12.BackColor = System.Drawing.Color.MediumPurple
-        Me.Label12.Font = New System.Drawing.Font("MS Reference Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(328, 9)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(175, 26)
-        Me.Label12.TabIndex = 9
-        Me.Label12.Text = "Gestion abonos"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.BackColor = System.Drawing.Color.MediumPurple
-        Me.PictureBox1.Location = New System.Drawing.Point(2, 7)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(833, 29)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 26
-        Me.PictureBox1.TabStop = False
-        '
-        'TextBox6
-        '
-        Me.TextBox6.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TextBox6.Location = New System.Drawing.Point(422, 57)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(265, 20)
-        Me.TextBox6.TabIndex = 5
         '
         'Cliente
         '
@@ -632,6 +680,10 @@ Partial Class Cliente
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
@@ -642,10 +694,6 @@ Partial Class Cliente
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -676,14 +724,6 @@ Partial Class Cliente
     Private WithEvents PictureBox2 As PictureBox
     Friend WithEvents DataGridINVENTARIO As DataGridView
     Friend WithEvents TextBoxBusqueda As TextBox
-    Friend WithEvents GroupBox3 As GroupBox
-    Private WithEvents Label11 As Label
-    Private WithEvents Label16 As Label
-    Private WithEvents PictureBox3 As PictureBox
-    Private WithEvents Label9 As Label
-    Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents DateTimePicker3 As DateTimePicker
@@ -692,4 +732,16 @@ Partial Class Cliente
     Private WithEvents Label12 As Label
     Private WithEvents PictureBox1 As PictureBox
     Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents ComboBox5 As ComboBox
+    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents TextBox5 As TextBox
+    Private WithEvents Label9 As Label
+    Private WithEvents Label11 As Label
+    Private WithEvents Label13 As Label
+    Private WithEvents Label16 As Label
+    Private WithEvents PictureBox3 As PictureBox
+    Private WithEvents Label14 As Label
+    Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class
