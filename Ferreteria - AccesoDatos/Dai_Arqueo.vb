@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports Ferreteria___Entidades
 
-'el crud :V ni puta idea que significa
+'Crud de la entidad arqueo'
 
 Public Class Dai_Arqueo
     Dim Query As String
@@ -37,10 +37,6 @@ Public Class Dai_Arqueo
 
 
     'Mando a consultar el id del empleado
-
-
-
-
     Public Function GetByNombre(ByVal Nombre As String)
         Using Conn As New SqlConnection(My.Resources.CadenaConexion)
             Conn.Open()
@@ -51,11 +47,7 @@ Public Class Dai_Arqueo
                     Lector.Read()
                     Dim _Arqueo As New E_Arqueo
                     _Arqueo.ID_EMPLEADO1 = Lector("ID")
-
-
-
                     Return _Arqueo
-
                 End Using
             End Using
         End Using

@@ -1,6 +1,6 @@
 ﻿Public Class E_Arqueo
 
-    'Definición de la entidad Arqueo Oscar Cochon'
+    'Definición de la entidad Arqueo'
 
     Private Fecha As Date
     Private ID_EMPLEADO As Integer

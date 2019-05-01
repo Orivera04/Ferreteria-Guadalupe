@@ -86,6 +86,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="E_Estadistica.vb" />
     <Compile Include="E_Arqueo.vb" />
     <Compile Include="E_Empleado.vb" />
     <Compile Include="E_Producto.vb" />

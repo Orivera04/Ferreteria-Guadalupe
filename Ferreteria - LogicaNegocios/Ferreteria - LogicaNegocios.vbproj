@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bol_Arqueo.vb" />
+    <Compile Include="Bol_Estadistica.vb" />
     <Compile Include="Bol_UnidadMedida.vb" />
     <Compile Include="Bol_Empleado.vb" />
     <Compile Include="Bol_Producto.vb" />
