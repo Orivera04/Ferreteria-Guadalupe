@@ -5,6 +5,8 @@
     Private Inventario As New Inventario()
     Private UnidadMedida As New Medida()
     Private Provedor As New Proveedores()
+    Private Configuracion As New Configuracion()
+    Private Estadistica As New Estadisticas()
 
 
 
@@ -88,10 +90,10 @@
     End Sub
 
     Private Sub BunifuFlatButton10_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton10.Click
-        Abrirform(New Estadisticas)
+        Abrirform(Estadistica)
     End Sub
 
     Private Sub BunifuFlatButton11_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton11.Click
-        Abrirform(New Configuracion)
+        Abrirform(Configuracion)
     End Sub
 End Class
