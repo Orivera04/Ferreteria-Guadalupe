@@ -242,7 +242,7 @@ Partial Class Arqueo
         Me.TextBox8.Enabled = False
         Me.TextBox8.Font = New System.Drawing.Font("Century", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox8.ForeColor = System.Drawing.Color.LightCoral
-        Me.TextBox8.Location = New System.Drawing.Point(1062, 77)
+        Me.TextBox8.Location = New System.Drawing.Point(1062, 42)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(100, 22)
         Me.TextBox8.TabIndex = 80
@@ -278,7 +278,7 @@ Partial Class Arqueo
         Me.TextBox2.Enabled = False
         Me.TextBox2.Font = New System.Drawing.Font("Century", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.ForeColor = System.Drawing.Color.LightCoral
-        Me.TextBox2.Location = New System.Drawing.Point(1062, 42)
+        Me.TextBox2.Location = New System.Drawing.Point(1062, 76)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 22)
         Me.TextBox2.TabIndex = 77
