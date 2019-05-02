@@ -11,6 +11,7 @@ Public Class Arqueo
     Private _EstadisticasBol As New Bol_Estadistica()
     Dim SumaTemp As Double
     Dim Dolar As Double = 33.0
+    Dim caja As Integer
     Dim VentaDelDia As Double
 
 
@@ -21,15 +22,26 @@ Public Class Arqueo
     'Oca si lees esto chupala :V
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
 
+
         Verificarnumeric()
         If SumaTemp = VentaDelDia Then
-            MsgBox("Arqueo correcto FINALIZAR")
+            Dim result As Integer = MessageBox.Show("Arqueo Completo ¿Desea GUARDAR el arqueo?", "Arqueo", MessageBoxButtons.YesNo)
 
-            TextBox2.Text = VentaDelDia
-            TextBox1.Text = 0
+            If result = DialogResult.No Then
+                MessageBox.Show("No se guardaron los cambios")
+            ElseIf result = DialogResult.Yes Then
+                TextBox2.Text = VentaDelDia
+                TextBox1.Text = 0
 
-            InsertarArqueo()
-            _ArqueoBOL.Insertar(_ArqueE)
+                InsertarArqueo()
+                _ArqueoBOL.Insertar(_ArqueE)
+                MsgBox("Se guardaron los cambios", MsgBoxStyle.Information, "ARQUEO")
+                LlenarDataGridViewArqueo()
+
+            End If
+
+
+
         Else
             TextBox1.Text = ""
             TextBox1.Text = SumaTemp - VentaDelDia
@@ -48,19 +60,19 @@ Public Class Arqueo
 
     Public Sub LlenarDataGridViewArqueo()
         DataGridArqueo.Rows.Clear()
-        Dim ListaProveedores
-        ' ListaProveedores = _ArqueoBOL.ObtenerArqueo()
-        For I As Integer = 0 To ListaProveedores.Count() - 1
-            '   DataGridProveedores.Rows.Add(ListaProveedores(I).P_ID_Proveedor, ListaProveedores(I).P_Nombre, ListaProveedores(I).P_Telefono, ListaProveedores(I).P_Correo, ListaProveedores(I).P_Direccion, "Editar", "Eliminar")
+        Dim ListaArqueo
+        ListaArqueo = _ArqueoBOL.ObtenerArqueo()
+        For I As Integer = 0 To ListaArqueo.Count() - 1
+            DataGridArqueo.Rows.Add(ListaArqueo(I).P_ID, ListaArqueo(I).P_ID_EMPLEADO, ListaArqueo(I).P_Fecha, ListaArqueo(I).AB1000, ListaArqueo(I).AB500, ListaArqueo(I).AB200, ListaArqueo(I).AB100, ListaArqueo(I).AB50, ListaArqueo(I).AB20, ListaArqueo(I).AB10, ListaArqueo(I).AM5, ListaArqueo(I).AM1, ListaArqueo(I).AM050, ListaArqueo(I).AD50, ListaArqueo(I).AD20, ListaArqueo(I).AD10, ListaArqueo(I).AD5, ListaArqueo(I).AD1, ListaArqueo(I).P_Caja_Chica, ListaArqueo(I).P_Total)
         Next
-        Label17.Hide()
+        Label32.Hide()
     End Sub
 
 
 #Region "VALIDACION"
     Public Sub Verificarnumeric()
-        SumaTemp = 0
 
+        SumaTemp = caja
         '------------------------ Moneda -------------------------'
 
 
@@ -208,7 +220,8 @@ Public Class Arqueo
 
 
     Private Sub Arqueo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim caja As Integer
+        CheckForIllegalCrossThreadCalls = False
+
         Try
 INICIO:
             caja = InputBox("Saldo Inicial(Caja Chica)", "SALDO")
@@ -228,6 +241,8 @@ INICIO:
         TextBox7.Text = Principal.UsuarioActivo
         ListarEmpleadoID(Principal.UsuarioActivo)
         VentaDelDia = _EstadisticasBol.ObtenerEstadistica(5, DateTimePicker1.Value).ToString()
+        Dim HiloArqueo As New Thread(AddressOf LlenarDataGridViewArqueo)
+        HiloArqueo.Start()
 
     End Sub
 

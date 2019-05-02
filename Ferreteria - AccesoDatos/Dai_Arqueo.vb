@@ -29,6 +29,8 @@ Public Class Dai_Arqueo
                 CMD.Parameters.AddWithValue("@D10", Arqueo.AD10)
                 CMD.Parameters.AddWithValue("@D5", Arqueo.AD5)
                 CMD.Parameters.AddWithValue("@D1", Arqueo.AD1)
+                CMD.Parameters.AddWithValue("@Caja_Chica", Arqueo.P_Caja_Chica)
+                CMD.Parameters.AddWithValue("@Total", Arqueo.P_Total)
 
                 CMD.ExecuteNonQuery()
             End Using
@@ -37,7 +39,43 @@ Public Class Dai_Arqueo
 
 
 
-  
+    Public Function GetAll()
+        Using Conn As New SqlConnection(My.Resources.CadenaConexion)
+            Conn.Open()
+            Dim ListaArqueo As New List(Of E_Arqueo)
+            Query = "SELECT * FROM Arqueo"
+            Using CMD As New SqlCommand(Query, Conn)
+                Using Lector As SqlDataReader = CMD.ExecuteReader()
+                    While Lector.Read()
+                        Dim _Arqueo As New E_Arqueo
+                        _Arqueo.P_ID = Lector("ID")
+                        _Arqueo.P_ID_EMPLEADO = Lector("ID_Empleado")
+                        _Arqueo.P_Fecha = Lector("Fecha")
+                        _Arqueo.AB1000 = Lector("B1000")
+                        _Arqueo.AB500 = Lector("B500")
+                        _Arqueo.AB200 = Lector("B200")
+                        _Arqueo.AB100 = Lector("B100")
+                        _Arqueo.AB50 = Lector("B50")
+                        _Arqueo.AB20 = Lector("B20")
+                        _Arqueo.AB10 = Lector("B10")
+                        _Arqueo.AM5 = Lector("M5")
+                        _Arqueo.AM1 = Lector("M1")
+                        _Arqueo.AM050 = Lector("M050")
+                        _Arqueo.AD50 = Lector("D50")
+                        _Arqueo.AD20 = Lector("D20")
+                        _Arqueo.AD10 = Lector("D10")
+                        _Arqueo.AD5 = Lector("D5")
+                        _Arqueo.AD1 = Lector("D1")
+                        _Arqueo.P_Caja_Chica = Lector("Caja_Chica")
+                        _Arqueo.P_Total = Lector("Total")
+
+                        ListaArqueo.Add(_Arqueo)
+                    End While
+                    Return ListaArqueo
+                End Using
+            End Using
+        End Using
+    End Function
 
 
 

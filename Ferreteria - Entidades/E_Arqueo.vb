@@ -3,6 +3,7 @@
     'Definición de la entidad Arqueo'
 
     Private Fecha As Date
+    Private ID As Integer
     Private ID_EMPLEADO As Integer
     Private Caja_Chica As Double
     Private total As Double
@@ -192,6 +193,15 @@
         End Get
         Set(value As Double)
             total = value
+        End Set
+    End Property
+
+    Public Property P_ID As Integer
+        Get
+            Return ID
+        End Get
+        Set(value As Integer)
+            ID = value
         End Set
     End Property
 End Class

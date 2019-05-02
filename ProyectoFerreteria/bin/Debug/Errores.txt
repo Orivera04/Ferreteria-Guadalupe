@@ -1968,3 +1968,9 @@ Error Number:208,State:1,Class:16
    en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
    en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
    en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 22:45:24]  System.IndexOutOfRangeException: @ID_Empleado
+   en System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   en System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   en System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   en Ferreteria___AccesoDatos.Dai_Arqueo.GetAll() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Arqueo.vb:línea 52
+   en Ferreteria___LogicaNegocios.Bol_Arqueo.ObtenerArqueo() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Arqueo.vb:línea 78

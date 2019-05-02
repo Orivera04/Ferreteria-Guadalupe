@@ -72,6 +72,17 @@ Public Class Bol_Arqueo
 
 
 
-
+    Public Function ObtenerArqueo()
+        Errores.Clear()
+        Try
+            Return Dai_Arqueo.GetAll()
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al listar el Arqueo")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+            Return Nothing
+        End Try
+    End Function
 
 End Class
