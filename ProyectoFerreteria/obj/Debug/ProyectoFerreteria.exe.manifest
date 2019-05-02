@@ -55,26 +55,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ferreteria - AccesoDatos.dll" size="32256">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ferreteria - AccesoDatos.dll" size="34816">
       <assemblyIdentity name="Ferreteria - AccesoDatos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bRPgAKHTs9Iwddw28F9446h+Rti/ULPxweAJpIXAE/c=</dsig:DigestValue>
+        <dsig:DigestValue>iSLviRgXE31sUjRdzZEjp86bvncMP+EnpDBsBrd3W20=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ferreteria - Entidades.dll" size="14848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ferreteria - Entidades.dll" size="16896">
       <assemblyIdentity name="Ferreteria - Entidades" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2WUw4XZ5rzEsb1lRW5NJR0A0TM6IIL5DL/vaE/oGAZY=</dsig:DigestValue>
+        <dsig:DigestValue>EHP06Xec4oOYIxPRlhi8QvnLw18VVFw2cAv2xlu+pWI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Ycu0JHwqgEdVa8VgXRjEK6H5TJcQXeqCiit4ZPTnaRA=</dsig:DigestValue>
+        <dsig:DigestValue>Tbz7+dnmEkN2kJgoK8HAMW3ZTnMNgRlGJZMa6eDym3w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -146,7 +146,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>uzxZK4+Zt3JFKqaPL2dn17R2SIjGTCjkUvX9wgpohTg=</dsig:DigestValue>
+        <dsig:DigestValue>Pno6mHfO+BUfvmtt6pTs6Q9OguG/kKh9SlZlpEuUijs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
