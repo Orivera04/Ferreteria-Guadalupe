@@ -1,7 +1,6 @@
 ﻿
 Imports System.Text
 Imports Ferreteria___AccesoDatos
-Imports Ferreteria___Entidades
 
 ' Logica de negocios con la entidad estadistica'
 Public Class Bol_Estadistica
