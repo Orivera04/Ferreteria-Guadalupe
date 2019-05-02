@@ -49,4 +49,16 @@ Public Class Dai_FacturaVenta
     End Sub
 
 
+    'Devuelve la cantidad de facturas que existen'
+    Public Function GetLastID()
+        Using Conn As New SqlConnection(My.Resources.CadenaConexion)
+            Conn.Open()
+            Query = "SELECT COUNT(*) FROM FACTURAVENTA"
+            Using CMD As New SqlCommand(Query, Conn)
+                Return CMD.ExecuteScalar()
+            End Using
+        End Using
+    End Function
+
+
 End Class

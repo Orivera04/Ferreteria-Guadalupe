@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="E_Arqueo.vb" />
+    <Compile Include="E_Cliente.vb" />
     <Compile Include="E_DetalleFactura.vb" />
     <Compile Include="E_Empleado.vb" />
     <Compile Include="E_FacturaVenta.vb" />

@@ -131,14 +131,18 @@ Public Class Bol_Producto
         Errores.Clear()
         Try
             Dim ListaProductos = Dai_Producto.GetAll()
+            Dim ListaID(ListaProductos.count - 1) As String
             For I As Integer = 0 To ListaProductos.count - 1
+                ListaID(I) = ListaProductos(I).P_Nombre + " #" + ListaProductos(I).P_ID_Producto
             Next
+            Return ListaID
         Catch Ex As Exception
             Errores.Append("Hubo un error al listar los productos.")
             If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
                 Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
             End If
         End Try
+        Return -2
     End Function
 
 End Class

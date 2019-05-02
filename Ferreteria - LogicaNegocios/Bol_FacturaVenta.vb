@@ -33,4 +33,18 @@ Public Class Bol_FacturaVenta
     End Sub
 
 
+    'Obtiene el ID de la ultima factura'
+    Public Function ObtenerUltimoID()
+        Errores.Clear()
+        Try
+            Return Dai_FacturaVenta.GetLastID() + 1
+        Catch Ex As Exception
+            Errores.Append("Ocurrio un error al obtener los datos de la ultima factura")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+        End Try
+    End Function
+
+
 End Class

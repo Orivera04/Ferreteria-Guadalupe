@@ -666,6 +666,7 @@ Partial Class Inventario
         '
         Me.DataGridINVENTARIO.AllowUserToAddRows = False
         Me.DataGridINVENTARIO.AllowUserToDeleteRows = False
+        Me.DataGridINVENTARIO.AllowUserToOrderColumns = True
         Me.DataGridINVENTARIO.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridINVENTARIO.BackgroundColor = System.Drawing.Color.White

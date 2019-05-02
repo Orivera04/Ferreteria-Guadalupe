@@ -63,6 +63,11 @@ Partial Class Ventas
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
+        Me.Linea = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Acc1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -108,7 +113,7 @@ Partial Class Ventas
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label15.Location = New System.Drawing.Point(153, 10)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(67, 28)
+        Me.Label15.Size = New System.Drawing.Size(67, 25)
         Me.Label15.TabIndex = 4
         Me.Label15.Text = "Venta"
         '
@@ -211,6 +216,7 @@ Partial Class Ventas
         '
         'TextBox2
         '
+        Me.TextBox2.Enabled = False
         Me.TextBox2.Location = New System.Drawing.Point(550, 103)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(120, 20)
@@ -232,6 +238,8 @@ Partial Class Ventas
         '
         Me.ComboBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.ComboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.ComboBox2.BackColor = System.Drawing.Color.LemonChiffon
         Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox2.FormattingEnabled = True
@@ -374,6 +382,7 @@ Partial Class Ventas
         '
         Me.TextBox6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox6.Enabled = False
         Me.TextBox6.Location = New System.Drawing.Point(99, 225)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(214, 20)
@@ -394,6 +403,7 @@ Partial Class Ventas
         'TextBox5
         '
         Me.TextBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox5.Enabled = False
         Me.TextBox5.Location = New System.Drawing.Point(194, 148)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(100, 20)
@@ -402,6 +412,7 @@ Partial Class Ventas
         'TextBox4
         '
         Me.TextBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox4.Enabled = False
         Me.TextBox4.Location = New System.Drawing.Point(194, 108)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 20)
@@ -459,6 +470,7 @@ Partial Class Ventas
         'TextBox3
         '
         Me.TextBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox3.Enabled = False
         Me.TextBox3.Location = New System.Drawing.Point(194, 63)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
@@ -491,9 +503,11 @@ Partial Class Ventas
         '
         Me.DataGridINVENTARIO.AllowUserToAddRows = False
         Me.DataGridINVENTARIO.AllowUserToDeleteRows = False
+        Me.DataGridINVENTARIO.AllowUserToOrderColumns = True
         Me.DataGridINVENTARIO.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.DataGridINVENTARIO.BackgroundColor = System.Drawing.Color.LightYellow
         Me.DataGridINVENTARIO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridINVENTARIO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Linea, Me.ID, Me.Nombre, Me.Precio, Me.Acc1})
         Me.DataGridINVENTARIO.Location = New System.Drawing.Point(48, 46)
         Me.DataGridINVENTARIO.Name = "DataGridINVENTARIO"
         Me.DataGridINVENTARIO.Size = New System.Drawing.Size(713, 328)
@@ -549,10 +563,11 @@ Partial Class Ventas
         '
         'ComboBoxBusqueda
         '
+        Me.ComboBoxBusqueda.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.ComboBoxBusqueda.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.ComboBoxBusqueda.BackColor = System.Drawing.Color.LemonChiffon
         Me.ComboBoxBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBoxBusqueda.FormattingEnabled = True
-        Me.ComboBoxBusqueda.Items.AddRange(New Object() {"Comun"})
         Me.ComboBoxBusqueda.Location = New System.Drawing.Point(110, 106)
         Me.ComboBoxBusqueda.Name = "ComboBoxBusqueda"
         Me.ComboBoxBusqueda.Size = New System.Drawing.Size(239, 21)
@@ -599,13 +614,42 @@ Partial Class Ventas
         Me.TextBoxBusqueda.BackColor = System.Drawing.Color.AntiqueWhite
         Me.TextBoxBusqueda.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBoxBusqueda.Enabled = False
-        Me.TextBoxBusqueda.Font = New System.Drawing.Font("Century", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxBusqueda.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxBusqueda.ForeColor = System.Drawing.Color.LightCoral
         Me.TextBoxBusqueda.Location = New System.Drawing.Point(999, 60)
         Me.TextBoxBusqueda.Name = "TextBoxBusqueda"
         Me.TextBoxBusqueda.Size = New System.Drawing.Size(155, 22)
         Me.TextBoxBusqueda.TabIndex = 5
         Me.TextBoxBusqueda.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Linea
+        '
+        Me.Linea.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Linea.HeaderText = "Linea"
+        Me.Linea.Name = "Linea"
+        '
+        'ID
+        '
+        Me.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.ID.HeaderText = "ID del producto"
+        Me.ID.Name = "ID"
+        '
+        'Nombre
+        '
+        Me.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        '
+        'Precio
+        '
+        Me.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Precio.HeaderText = "Precio"
+        Me.Precio.Name = "Precio"
+        '
+        'Acc1
+        '
+        Me.Acc1.HeaderText = "Acción 1"
+        Me.Acc1.Name = "Acc1"
         '
         'Ventas
         '
@@ -678,4 +722,9 @@ Partial Class Ventas
     Private WithEvents Label13 As Label
     Private WithEvents Label12 As Label
     Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents Linea As DataGridViewTextBoxColumn
+    Friend WithEvents ID As DataGridViewTextBoxColumn
+    Friend WithEvents Nombre As DataGridViewTextBoxColumn
+    Friend WithEvents Precio As DataGridViewTextBoxColumn
+    Friend WithEvents Acc1 As DataGridViewTextBoxColumn
 End Class

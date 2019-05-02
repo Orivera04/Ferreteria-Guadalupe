@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dai_Arqueo.vb" />
+    <Compile Include="Dai_Cliente.vb" />
     <Compile Include="Dai_Empleado.vb" />
     <Compile Include="Dai_Estadistica.vb" />
     <Compile Include="Dai_FacturaVenta.vb" />

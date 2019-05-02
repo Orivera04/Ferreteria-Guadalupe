@@ -96,4 +96,6 @@
     Private Sub BunifuFlatButton11_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton11.Click
         Abrirform(Configuracion)
     End Sub
+
+
 End Class
