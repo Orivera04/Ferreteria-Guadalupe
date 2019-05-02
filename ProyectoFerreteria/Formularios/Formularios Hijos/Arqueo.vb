@@ -46,6 +46,16 @@ Public Class Arqueo
 
 #Region "Metodos de apoyo :v "
 
+    Public Sub LlenarDataGridViewArqueo()
+        DataGridArqueo.Rows.Clear()
+        Dim ListaProveedores
+        ' ListaProveedores = _ArqueoBOL.ObtenerArqueo()
+        For I As Integer = 0 To ListaProveedores.Count() - 1
+            '   DataGridProveedores.Rows.Add(ListaProveedores(I).P_ID_Proveedor, ListaProveedores(I).P_Nombre, ListaProveedores(I).P_Telefono, ListaProveedores(I).P_Correo, ListaProveedores(I).P_Direccion, "Editar", "Eliminar")
+        Next
+        Label17.Hide()
+    End Sub
+
 
 #Region "VALIDACION"
     Public Sub Verificarnumeric()
@@ -217,7 +227,7 @@ INICIO:
 
         TextBox7.Text = Principal.UsuarioActivo
         ListarEmpleadoID(Principal.UsuarioActivo)
-        VentaDelDia = _EstadisticasBol.ObtenerEstadistica(8, DateTimePicker1.Value).ToString()
+        VentaDelDia = _EstadisticasBol.ObtenerEstadistica(5, DateTimePicker1.Value).ToString()
 
     End Sub
 

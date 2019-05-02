@@ -34,8 +34,7 @@ Public Class Bol_Estadistica
                     Return Dai_Estadistica.GetEstadisticaGananciaMensual(Fecha)
                 Case 7
                     Return Dai_Estadistica.GetEstadisticaGananciaAño(Fecha)
-                Case 8
-                    Return Dai_Estadistica.GetEstadisticaVentaTotal(Fecha)
+
             End Select
         Catch Ex As Exception
             Errores.Append("Hubo un error al obtener los datos")
