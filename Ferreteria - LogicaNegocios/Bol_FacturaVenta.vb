@@ -18,11 +18,18 @@ Public Class Bol_FacturaVenta
     'Inserta un producto'
     Public Sub InsertarFactura(ByVal Factura As E_FacturaVenta, ByVal Lineas As List(Of E_DetalleFactura))
         Errores.Clear()
-
-
-
-
-
+        Try
+            Dai_FacturaVenta.Insert(Factura, Lineas)
+        Catch Ex As Exception
+            If (Ex.HResult <> -2146232060) Then
+                Errores.Append("Hubo un error al insertar la factura")
+            Else
+                Errores.Append("El ID que trata insertar ya se encuentra registrado en la base de datos, por favor escriba otro.")
+            End If
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+        End Try
     End Sub
 
 
