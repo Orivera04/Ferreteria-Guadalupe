@@ -29,6 +29,8 @@ Public Class Dai_Arqueo
                 CMD.Parameters.AddWithValue("@D10", Arqueo.AD10)
                 CMD.Parameters.AddWithValue("@D5", Arqueo.AD5)
                 CMD.Parameters.AddWithValue("@D1", Arqueo.AD1)
+                CMD.Parameters.AddWithValue("@Caja_Chica", Arqueo.P_Caja_Chica)
+                CMD.Parameters.AddWithValue("@Total", Arqueo.P_Total)
 
                 CMD.ExecuteNonQuery()
             End Using
