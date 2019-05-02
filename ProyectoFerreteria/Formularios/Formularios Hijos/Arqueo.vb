@@ -23,21 +23,13 @@ Public Class Arqueo
 
         Verificarnumeric()
         If SumaTemp = VentaDelDia Then
+            MsgBox("Arqueo correcto FINALIZAR")
 
+            TextBox2.Text = VentaDelDia
+            TextBox1.Text = 0
 
-            Dim resultado As Integer = MessageBox.Show("Arqueo Correto ¿Desea Guardar el Arqueo?", "Arqueo", MessageBoxButtons.YesNo)
-
-            If resultado = DialogResult.No Then
-                MsgBox("No se registro el ARQUEO", MsgBoxStyle.Information, "ARQUEO")
-            ElseIf resultado = DialogResult.Yes Then
-                TextBox2.Text = VentaDelDia
-                TextBox1.Text = 0
-                InsertarArqueo()
-                _ArqueoBOL.Insertar(_ArqueE)
-                MsgBox("Se registro el ARQUEO", MsgBoxStyle.Information, "ARQUEO")
-            End If
-
-
+            InsertarArqueo()
+            _ArqueoBOL.Insertar(_ArqueE)
         Else
             TextBox1.Text = ""
             TextBox1.Text = SumaTemp - VentaDelDia
@@ -156,7 +148,7 @@ Public Class Arqueo
 
 
         'Billete de 50
-        _ArqueE.AB50 = NumericUpDown8.Value
+        _ArqueE.AB1000 = NumericUpDown8.Value
 
 
         'Billete de 20
