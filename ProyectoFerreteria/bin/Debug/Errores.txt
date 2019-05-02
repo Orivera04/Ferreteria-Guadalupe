@@ -1803,3 +1803,168 @@ Error Number:208,State:1,Class:16
    en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
 ClientConnectionId:ab9fa046-1655-4dfb-9907-ccd40af4e900
 Error Number:208,State:1,Class:16
+[2019/05/01 21:07:46]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 21:07:49]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 21:07:54]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 21:07:58]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 21:08:35]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 21:08:40]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 21:10:06]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 21:10:11]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 21:10:12]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 21:11:43]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 21:12:28]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 21:12:32]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 21:13:28]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 21:15:22]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
+[2019/05/01 21:15:24]  System.ArgumentException: Palabra clave no admitida: '"data source'.
+   en System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   en System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   en System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   en System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   en System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   en System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   en Ferreteria___AccesoDatos.Dai_Empleado.VerificarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 10
+   en Ferreteria___LogicaNegocios.Bol_Empleado.AutenticarUsuario(E_Empleado Empleado) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 30
