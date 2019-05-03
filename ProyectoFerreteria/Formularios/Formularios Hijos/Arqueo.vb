@@ -13,6 +13,7 @@ Public Class Arqueo
     Dim Dolar As Double = 33.0
     Dim caja As Integer
     Dim VentaDelDia As Double
+    Dim boleano As Boolean
 
 
 
@@ -43,12 +44,15 @@ Public Class Arqueo
 
 
         Else
-            TextBox1.Text = ""
-            TextBox1.Text = SumaTemp - VentaDelDia
-            MsgBox("TIENE DIFERENCIAS DE " + TextBox1.Text, MsgBoxStyle.Critical, "ARQUEO")
+            If boleano = True Then
+                TextBox1.Text = ""
+                TextBox1.Text = SumaTemp - VentaDelDia
+                MsgBox("TIENE DIFERENCIAS DE " + TextBox1.Text, MsgBoxStyle.Critical, "ARQUEO")
+            Else
+                boleano = True
 
+            End If
         End If
-
 
     End Sub
 
@@ -74,64 +78,66 @@ Public Class Arqueo
 
         SumaTemp = caja
         '------------------------ Moneda -------------------------'
+        If TextBox9.Text > 32.3 Then
 
+            If NumericUpDown1.Value > 0 Then                                 'Moneda de  5
+                SumaTemp = 5 * NumericUpDown1.Value
+            End If
+            If NumericUpDown2.Value > 0 Then                             'Moneda de  1
+                SumaTemp = SumaTemp + NumericUpDown2.Value
+            End If
+            If NumericUpDown3.Value > 0 Then                             'Moneda de  50 centavos
+                SumaTemp = SumaTemp + (NumericUpDown3.Value * 0.5)
+            End If
+            '------------------------ Billete -------------------------'
+            If NumericUpDown4.Value > 0 Then                             'Billete de 1000
+                SumaTemp = SumaTemp + (NumericUpDown4.Value * 1000)
+            End If
 
-        If NumericUpDown1.Value > 0 Then                                 'Moneda de  5
-            SumaTemp = 5 * NumericUpDown1.Value
-        End If
-        If NumericUpDown2.Value > 0 Then                             'Moneda de  1
-            SumaTemp = SumaTemp + NumericUpDown2.Value
-        End If
-        If NumericUpDown3.Value > 0 Then                             'Moneda de  50 centavos
-            SumaTemp = SumaTemp + (NumericUpDown3.Value * 0.5)
-        End If
-        '------------------------ Billete -------------------------'
-        If NumericUpDown4.Value > 0 Then                             'Billete de 1000
-            SumaTemp = SumaTemp + (NumericUpDown4.Value * 1000)
-        End If
+            If NumericUpDown5.Value > 0 Then                             'Billete de 500
+                SumaTemp = SumaTemp + (NumericUpDown5.Value * 500)
+            End If
 
-        If NumericUpDown5.Value > 0 Then                             'Billete de 500
-            SumaTemp = SumaTemp + (NumericUpDown5.Value * 500)
-        End If
+            If NumericUpDown6.Value > 0 Then                             'Billete de 200
+                SumaTemp = SumaTemp + (NumericUpDown6.Value * 200)
+            End If
 
-        If NumericUpDown6.Value > 0 Then                             'Billete de 200
-            SumaTemp = SumaTemp + (NumericUpDown6.Value * 200)
-        End If
+            If NumericUpDown7.Value > 0 Then                             'Billete de 100
+                SumaTemp = SumaTemp + (NumericUpDown7.Value * 100)
+            End If
 
-        If NumericUpDown7.Value > 0 Then                             'Billete de 100
-            SumaTemp = SumaTemp + (NumericUpDown7.Value * 100)
-        End If
+            If NumericUpDown8.Value > 0 Then                             'Billete de 50
+                SumaTemp = SumaTemp + (NumericUpDown8.Value * 50)
+            End If
 
-        If NumericUpDown8.Value > 0 Then                             'Billete de 50
-            SumaTemp = SumaTemp + (NumericUpDown8.Value * 50)
-        End If
+            If NumericUpDown9.Value > 0 Then                              'Billete de 20
+                SumaTemp = SumaTemp + (NumericUpDown9.Value * 20)
+            End If
 
-        If NumericUpDown9.Value > 0 Then                              'Billete de 20
-            SumaTemp = SumaTemp + (NumericUpDown9.Value * 20)
-        End If
+            If NumericUpDown10.Value > 0 Then                              'Billete de 10
+                SumaTemp = SumaTemp + (NumericUpDown10.Value * 10)
+            End If
+            '------------------------ Dolar -------------------------'
+            If NumericUpDown11.Value > 0 Then                              'Billete de 50
+                SumaTemp = SumaTemp + (Dolar * (50 * NumericUpDown11.Value))
+            End If
+            If NumericUpDown12.Value > 0 Then                              'Billete de 20
+                SumaTemp = SumaTemp + (Dolar * (20 * NumericUpDown12.Value))
+            End If
+            If NumericUpDown13.Value > 0 Then                              'Billete de 10
+                SumaTemp = SumaTemp + (Dolar * (10 * NumericUpDown13.Value))
+            End If
+            If NumericUpDown14.Value > 0 Then                              'Billete de 5
+                SumaTemp = SumaTemp + (Dolar * (5 * NumericUpDown14.Value))
+            End If
+            If NumericUpDown15.Value > 0 Then                              'Billete de 1
+                SumaTemp = SumaTemp + (Dolar * (1 * NumericUpDown15.Value))
 
-        If NumericUpDown10.Value > 0 Then                              'Billete de 10
-            SumaTemp = SumaTemp + (NumericUpDown10.Value * 10)
+            End If
+        Else
+            MsgBox("El valor del Dolar es superior a la cantidad especificada", MsgBoxStyle.Information, "INFORMACION")
+            boleano = False
         End If
-        '------------------------ Dolar -------------------------'
-        If NumericUpDown11.Value > 0 Then                              'Billete de 50
-            SumaTemp = SumaTemp + (Dolar * (50 * NumericUpDown11.Value))
-        End If
-        If NumericUpDown12.Value > 0 Then                              'Billete de 20
-            SumaTemp = SumaTemp + (Dolar * (20 * NumericUpDown12.Value))
-        End If
-        If NumericUpDown13.Value > 0 Then                              'Billete de 10
-            SumaTemp = SumaTemp + (Dolar * (10 * NumericUpDown13.Value))
-        End If
-        If NumericUpDown14.Value > 0 Then                              'Billete de 5
-            SumaTemp = SumaTemp + (Dolar * (5 * NumericUpDown14.Value))
-        End If
-        If NumericUpDown15.Value > 0 Then                              'Billete de 1
-            SumaTemp = SumaTemp + (Dolar * (1 * NumericUpDown15.Value))
-
-        End If
-
-
 
 
     End Sub
