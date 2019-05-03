@@ -94,7 +94,7 @@ Partial Class Proveedores
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label15.Location = New System.Drawing.Point(153, 10)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(235, 25)
+        Me.Label15.Size = New System.Drawing.Size(235, 28)
         Me.Label15.TabIndex = 4
         Me.Label15.Text = "Gestion de Proveedores"
         '
@@ -154,7 +154,7 @@ Partial Class Proveedores
         Me.BunifuFlatButton2.IconVisible = True
         Me.BunifuFlatButton2.IconZoom = 50.0R
         Me.BunifuFlatButton2.IsTab = False
-        Me.BunifuFlatButton2.Location = New System.Drawing.Point(45, 320)
+        Me.BunifuFlatButton2.Location = New System.Drawing.Point(45, 321)
         Me.BunifuFlatButton2.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
         Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.SlateBlue
