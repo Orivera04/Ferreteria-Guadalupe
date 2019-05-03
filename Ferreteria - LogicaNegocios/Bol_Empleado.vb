@@ -28,7 +28,7 @@ Public Class Bol_Empleado
         If (Errores.Length = 0) Then
             Try
                 Dim EmpleadoR = Dai_Empleado.VerificarUsuario(Empleado)
-                If (IsNumeric(EmpleadoR)) Then
+                If (EmpleadoR Is Nothing) Then
                     Errores.Append("Los datos ingresados no coinciden con ningun usuario, Por favor escriba datos validos. ")
                 End If
                 Return EmpleadoR

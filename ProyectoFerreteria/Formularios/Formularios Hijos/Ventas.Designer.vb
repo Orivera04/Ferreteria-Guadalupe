@@ -41,12 +41,10 @@ Partial Class Ventas
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -75,6 +73,7 @@ Partial Class Ventas
         Me.GroupDataGrid.SuspendLayout()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridINVENTARIO, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -326,12 +325,10 @@ Partial Class Ventas
         '
         Me.GroupBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox2.Controls.Add(Me.NumericUpDown2)
         Me.GroupBox2.Controls.Add(Me.BunifuFlatButton2)
         Me.GroupBox2.Controls.Add(Me.TextBox6)
         Me.GroupBox2.Controls.Add(Me.Label16)
-        Me.GroupBox2.Controls.Add(Me.TextBox5)
-        Me.GroupBox2.Controls.Add(Me.TextBox4)
-        Me.GroupBox2.Controls.Add(Me.Label14)
         Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.Label5)
@@ -342,6 +339,13 @@ Partial Class Ventas
         Me.GroupBox2.Size = New System.Drawing.Size(319, 399)
         Me.GroupBox2.TabIndex = 38
         Me.GroupBox2.TabStop = False
+        '
+        'NumericUpDown2
+        '
+        Me.NumericUpDown2.Location = New System.Drawing.Point(130, 105)
+        Me.NumericUpDown2.Name = "NumericUpDown2"
+        Me.NumericUpDown2.Size = New System.Drawing.Size(164, 20)
+        Me.NumericUpDown2.TabIndex = 60
         '
         'BunifuFlatButton2
         '
@@ -384,9 +388,9 @@ Partial Class Ventas
         Me.TextBox6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox6.Enabled = False
-        Me.TextBox6.Location = New System.Drawing.Point(99, 225)
+        Me.TextBox6.Location = New System.Drawing.Point(130, 225)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(214, 20)
+        Me.TextBox6.Size = New System.Drawing.Size(141, 20)
         Me.TextBox6.TabIndex = 59
         '
         'Label16
@@ -400,36 +404,6 @@ Partial Class Ventas
         Me.Label16.Size = New System.Drawing.Size(49, 19)
         Me.Label16.TabIndex = 58
         Me.Label16.Text = "Total:"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox5.Enabled = False
-        Me.TextBox5.Location = New System.Drawing.Point(194, 148)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 57
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox4.Enabled = False
-        Me.TextBox4.Location = New System.Drawing.Point(194, 108)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 56
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.BackColor = System.Drawing.Color.White
-        Me.Label14.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label14.Location = New System.Drawing.Point(15, 148)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(40, 19)
-        Me.Label14.TabIndex = 55
-        Me.Label14.Text = "IVA:"
         '
         'Label13
         '
@@ -472,9 +446,9 @@ Partial Class Ventas
         '
         Me.TextBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox3.Enabled = False
-        Me.TextBox3.Location = New System.Drawing.Point(194, 63)
+        Me.TextBox3.Location = New System.Drawing.Point(102, 63)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(164, 20)
         Me.TextBox3.TabIndex = 51
         '
         'PictureBox3
@@ -628,29 +602,34 @@ Partial Class Ventas
         Me.Linea.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.Linea.HeaderText = "Linea"
         Me.Linea.Name = "Linea"
+        Me.Linea.ReadOnly = True
         '
         'ID
         '
         Me.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.ID.HeaderText = "ID del producto"
         Me.ID.Name = "ID"
+        Me.ID.ReadOnly = True
         '
         'Nombre
         '
         Me.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.Nombre.HeaderText = "Nombre"
         Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
         '
         'Precio
         '
         Me.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.Precio.HeaderText = "Precio"
         Me.Precio.Name = "Precio"
+        Me.Precio.ReadOnly = True
         '
         'Cantidad
         '
         Me.Cantidad.HeaderText = "Cantidad"
         Me.Cantidad.Name = "Cantidad"
+        Me.Cantidad.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         '
         'Acc1
         '
@@ -679,6 +658,7 @@ Partial Class Ventas
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -724,12 +704,10 @@ Partial Class Ventas
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents TextBox6 As TextBox
     Private WithEvents Label16 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Private WithEvents Label14 As Label
     Private WithEvents Label13 As Label
     Private WithEvents Label12 As Label
     Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents NumericUpDown2 As NumericUpDown
     Friend WithEvents Linea As DataGridViewTextBoxColumn
     Friend WithEvents ID As DataGridViewTextBoxColumn
     Friend WithEvents Nombre As DataGridViewTextBoxColumn

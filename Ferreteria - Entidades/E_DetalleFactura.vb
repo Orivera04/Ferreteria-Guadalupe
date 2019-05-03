@@ -3,7 +3,6 @@
     'Definición de la entidad DetalleFactura'
     Private ID_Factura As Integer
     Private N_Linea As Integer
-    Private Descuento As Decimal
     Private Cantidad As Integer
     Private ID_Producto As String
     Private Precio As Decimal
@@ -25,14 +24,7 @@
             N_Linea = value
         End Set
     End Property
-    Public Property P_Descuento As Decimal
-        Get
-            Return Descuento
-        End Get
-        Set(value As Decimal)
-            Descuento = value
-        End Set
-    End Property
+
     Public Property P_Cantidad As Integer
         Get
             Return Cantidad
