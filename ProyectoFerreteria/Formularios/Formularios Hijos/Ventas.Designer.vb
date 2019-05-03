@@ -67,7 +67,8 @@ Partial Class Ventas
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Acc1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Acc1 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -201,7 +202,7 @@ Partial Class Ventas
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 90.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(716, 146)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(715, 143)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.MediumSeaGreen
         Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.SeaGreen
@@ -230,9 +231,9 @@ Partial Class Ventas
         Me.Label10.ForeColor = System.Drawing.Color.CornflowerBlue
         Me.Label10.Location = New System.Drawing.Point(449, 100)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(71, 19)
+        Me.Label10.Size = New System.Drawing.Size(82, 19)
         Me.Label10.TabIndex = 47
-        Me.Label10.Text = "Codigo:"
+        Me.Label10.Text = "Producto:"
         '
         'ComboBox2
         '
@@ -507,7 +508,7 @@ Partial Class Ventas
         Me.DataGridINVENTARIO.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.DataGridINVENTARIO.BackgroundColor = System.Drawing.Color.LightYellow
         Me.DataGridINVENTARIO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridINVENTARIO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Linea, Me.ID, Me.Nombre, Me.Precio, Me.Acc1})
+        Me.DataGridINVENTARIO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Linea, Me.ID, Me.Nombre, Me.Precio, Me.Cantidad, Me.Acc1})
         Me.DataGridINVENTARIO.Location = New System.Drawing.Point(48, 46)
         Me.DataGridINVENTARIO.Name = "DataGridINVENTARIO"
         Me.DataGridINVENTARIO.Size = New System.Drawing.Size(713, 328)
@@ -646,10 +647,17 @@ Partial Class Ventas
         Me.Precio.HeaderText = "Precio"
         Me.Precio.Name = "Precio"
         '
+        'Cantidad
+        '
+        Me.Cantidad.HeaderText = "Cantidad"
+        Me.Cantidad.Name = "Cantidad"
+        '
         'Acc1
         '
         Me.Acc1.HeaderText = "Acción 1"
         Me.Acc1.Name = "Acc1"
+        Me.Acc1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Acc1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'Ventas
         '
@@ -726,5 +734,6 @@ Partial Class Ventas
     Friend WithEvents ID As DataGridViewTextBoxColumn
     Friend WithEvents Nombre As DataGridViewTextBoxColumn
     Friend WithEvents Precio As DataGridViewTextBoxColumn
-    Friend WithEvents Acc1 As DataGridViewTextBoxColumn
+    Friend WithEvents Cantidad As DataGridViewTextBoxColumn
+    Friend WithEvents Acc1 As DataGridViewButtonColumn
 End Class

@@ -44,9 +44,8 @@ Public Class Login
     Private Sub bunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles bunifuFlatButton1.Click
         _Empleado.Usuario_P = bunifuMaterialTextbox1.Text
         _Empleado.Contraseña_P = bunifuMaterialTextbox2.Text
-        _EmpleadoBoi.AutenticarUsuario(_Empleado)
+        Principal.EmpleadoActivo = _EmpleadoBoi.AutenticarUsuario(_Empleado)
         If (_EmpleadoBoi.Errores.Length = 0) Then
-            Principal.UsuarioActivo = bunifuMaterialTextbox1.Text
             Principal.Show()
             Me.Hide()
         Else

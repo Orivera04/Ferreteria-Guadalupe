@@ -238,8 +238,8 @@ INICIO:
         End Try
 
 
-        TextBox7.Text = Principal.UsuarioActivo
-        ListarEmpleadoID(Principal.UsuarioActivo)
+        TextBox7.Text = Principal.EmpleadoActivo.ID_P
+        ListarEmpleadoID(Principal.EmpleadoActivo.ID_P)
         VentaDelDia = _EstadisticasBol.ObtenerEstadistica(5, DateTimePicker1.Value).ToString()
         Dim HiloArqueo As New Thread(AddressOf LlenarDataGridViewArqueo)
         HiloArqueo.Start()

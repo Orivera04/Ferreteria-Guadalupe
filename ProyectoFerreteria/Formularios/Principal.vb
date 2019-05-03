@@ -1,6 +1,8 @@
-﻿Public Class Principal
+﻿Imports Ferreteria___Entidades
 
-    Public Shared UsuarioActivo As String
+Public Class Principal
+
+    Public Shared EmpleadoActivo As E_Empleado
 
     Private Inventario As New Inventario()
     Private UnidadMedida As New Medida()
@@ -13,7 +15,7 @@
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PictureBox2.Image = System.Drawing.Bitmap.FromFile("IconoLogin.PNG")
         PictureBox1.Image = System.Drawing.Bitmap.FromFile("Play1.PNG")
-        Nombre.Text = UsuarioActivo
+        Nombre.Text = EmpleadoActivo.Usuario_P
         Abrirform(New Menu)
     End Sub
 

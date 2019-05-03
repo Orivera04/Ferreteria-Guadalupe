@@ -37,21 +37,21 @@ Public Class Ventas
 
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
         ComboBoxBusqueda_Leave(Nothing, New EventArgs())
-
+        DataGridINVENTARIO.Rows.Add(DataGridINVENTARIO.Rows.Count + 1, TextBox2.Text.Split("#"c)(1).Split(":"c)(0), TextBox2.Text.Split("#"c)(0), TextBox2.Text.Split(":"c)(1), NumericUpDown1.Value, "Eliminar")
     End Sub
 
     Private Sub Ventas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LlenarComboboxCliente()
         LlenarComboboxProducto()
-        TextBox2.Text = ComboBox2.Text
-        Caja.Text = Principal.UsuarioActivo
+        TextBox2.Text = ComboBox2.SelectedItem
+        Caja.Text = Principal.EmpleadoActivo.Usuario_P
         TextBoxBusqueda.Text = _FacturaVentaBol.ObtenerUltimoID()
     End Sub
 
 
 
     Private Sub ComboBox2_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles ComboBox2.SelectionChangeCommitted
-        TextBox2.Text = ComboBox2.SelectedItem.Split("#"c)(1)
+        TextBox2.Text = ComboBox2.SelectedItem
     End Sub
 
     Private Sub ComboBoxBusqueda_Leave(sender As Object, e As EventArgs) Handles ComboBoxBusqueda.Leave
