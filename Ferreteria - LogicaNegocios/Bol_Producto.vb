@@ -133,7 +133,7 @@ Public Class Bol_Producto
             Dim ListaProductos = Dai_Producto.GetAll()
             Dim ListaID(ListaProductos.count - 1) As String
             For I As Integer = 0 To ListaProductos.count - 1
-                ListaID(I) = ListaProductos(I).P_Nombre + " #" + ListaProductos(I).P_ID_Producto + " : " + ListaProductos(I).P_PrecioVenta.ToString() + " C$"
+                ListaID(I) = ListaProductos(I).P_Nombre + " #" + ListaProductos(I).P_ID_Producto
             Next
             Return ListaID
         Catch Ex As Exception

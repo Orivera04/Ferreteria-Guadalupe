@@ -9,22 +9,16 @@ Public Class Dai_Empleado
     Public Function VerificarUsuario(ByVal Empleado As E_Empleado)
         Using Conn As New SqlConnection(My.Resources.CadenaConexion)
             Conn.Open()
-            Query = "SELECT ID,NOMBRE,APELLIDO FROM EMPLEADO
-                     WHERE USUARIO = @Usuario AND Contraseña = @Contraseña"
+            Query = "SELECT COUNT(*) FROM EMPLEADO
+                     WHERE USUARIO = @Usuario AND Contraseña = @Contraseña;"
             Using CMD As New SqlCommand(Query, Conn)
                 CMD.Parameters.AddWithValue("@Usuario", Empleado.Usuario_P)
                 CMD.Parameters.AddWithValue("@Contraseña", Empleado.Contraseña_P)
-                Using Lector As SqlDataReader = CMD.ExecuteReader()
-                    If (Lector.HasRows) Then
-                        Lector.Read()
-                        Empleado.ID_P = Lector("ID")
-                        Empleado.Nombre_P = Lector("NOMBRE")
-                        Empleado.Apellido_P = Lector("APELLIDO")
-                        Return Empleado
-                    Else
-                        Return Nothing
-                    End If
-                End Using
+                If (CMD.ExecuteScalar() = "1") Then
+                    Return 1
+                Else
+                    Return 0
+                End If
             End Using
         End Using
     End Function

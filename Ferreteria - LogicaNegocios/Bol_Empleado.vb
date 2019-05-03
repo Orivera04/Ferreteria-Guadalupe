@@ -16,7 +16,7 @@ Public Class Bol_Empleado
     Public Errores As New StringBuilder
 
     'Permite saber si un usuario existe'
-    Public Function AutenticarUsuario(ByVal Empleado As E_Empleado)
+    Public Sub AutenticarUsuario(ByVal Empleado As E_Empleado)
         Errores.Clear()
         If (Empleado.Usuario_P = "") Then
             Errores.Append("No se ingreso ningun usuario." + vbNewLine)
@@ -28,10 +28,9 @@ Public Class Bol_Empleado
         If (Errores.Length = 0) Then
             Try
                 Dim EmpleadoR = Dai_Empleado.VerificarUsuario(Empleado)
-                If (EmpleadoR Is Nothing) Then
+                If (EmpleadoR Is Nothing) Then   
                     Errores.Append("Los datos ingresados no coinciden con ningun usuario, Por favor escriba datos validos. ")
                 End If
-                Return EmpleadoR
             Catch Ex As Exception
                 Errores.Append("Hubo un error al realizar la operación")
                 If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
@@ -39,8 +38,7 @@ Public Class Bol_Empleado
                 End If
             End Try
         End If
-        Return Nothing
-    End Function
+    End Sub
 
     Public Function ObtenerEmpleados()
         Errores.Clear()

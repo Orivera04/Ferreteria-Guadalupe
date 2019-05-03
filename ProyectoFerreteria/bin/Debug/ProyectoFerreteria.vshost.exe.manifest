@@ -139,14 +139,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoFerreteria.exe" size="492032">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoFerreteria.exe" size="492544">
       <assemblyIdentity name="ProyectoFerreteria" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HVCZO1dujniNfU7Xe/jEckgaKV0R8nBylSTXVKnUboo=</dsig:DigestValue>
+        <dsig:DigestValue>7OdLHfyyHGsyne4JVeMX4vRYy1Rr9J+B+7K5/I6OmgM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
