@@ -1,1 +1,150 @@
-﻿
+﻿[2019/05/03 03:14:25]  System.ArgumentException: Error al efectuar factura : System.Data.SqlClient.SqlException (0x80131904): Instrucción INSERT en conflicto con la restricción FOREIGN KEY 'FK_DetalleFactura_FacturaVenta'. El conflicto ha aparecido en la base de datos 'Ferreteria', tabla 'dbo.FacturaVenta', column 'ID_Factura'.
+Se terminó la instrucción.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 41
+ClientConnectionId:2acb08f6-f7e0-4feb-a08a-1aa1e7ffce67
+Error Number:547,State:0,Class:16
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 47
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.InsertarFactura(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 22
+[2019/05/03 03:16:09]  System.ArgumentException: Error al efectuar factura : System.Data.SqlClient.SqlException (0x80131904): Instrucción INSERT en conflicto con la restricción FOREIGN KEY 'FK_DetalleFactura_FacturaVenta'. El conflicto ha aparecido en la base de datos 'Ferreteria', tabla 'dbo.FacturaVenta', column 'ID_Factura'.
+Se terminó la instrucción.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 41
+ClientConnectionId:9a64e913-2576-4049-8b62-1886231a10ca
+Error Number:547,State:0,Class:16
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 47
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.InsertarFactura(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 22
+[2019/05/03 03:26:39]  System.ArgumentException: Error al efectuar factura : System.Data.SqlClient.SqlException (0x80131904): Instrucción INSERT en conflicto con la restricción FOREIGN KEY 'FK_DetalleFactura_FacturaVenta'. El conflicto ha aparecido en la base de datos 'Ferreteria', tabla 'dbo.FacturaVenta', column 'ID_Factura'.
+Se terminó la instrucción.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 40
+ClientConnectionId:3ad3f759-d97b-4a01-8ea9-fed8ed77e540
+Error Number:547,State:0,Class:16
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 46
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.InsertarFactura(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 22
+[2019/05/03 03:28:07]  System.ArgumentException: Error al efectuar factura : System.Data.SqlClient.SqlException (0x80131904): Instrucción INSERT en conflicto con la restricción FOREIGN KEY 'FK_DetalleFactura_FacturaVenta'. El conflicto ha aparecido en la base de datos 'Ferreteria', tabla 'dbo.FacturaVenta', column 'ID_Factura'.
+Se terminó la instrucción.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 40
+ClientConnectionId:3ad3f759-d97b-4a01-8ea9-fed8ed77e540
+Error Number:547,State:0,Class:16
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 46
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.InsertarFactura(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 22
+[2019/05/03 03:28:11]  System.ArgumentException: Error al efectuar factura : System.Data.SqlClient.SqlException (0x80131904): Instrucción INSERT en conflicto con la restricción FOREIGN KEY 'FK_DetalleFactura_FacturaVenta'. El conflicto ha aparecido en la base de datos 'Ferreteria', tabla 'dbo.FacturaVenta', column 'ID_Factura'.
+Se terminó la instrucción.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 40
+ClientConnectionId:3ad3f759-d97b-4a01-8ea9-fed8ed77e540
+Error Number:547,State:0,Class:16
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 46
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.InsertarFactura(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 22
+[2019/05/03 03:31:30]  System.Data.SqlClient.SqlException (0x80131904): Sintaxis incorrecta cerca de '*'.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.GetLastID() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 59
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 40
+ClientConnectionId:b43dc497-8baf-4427-a5e7-6d5f8a3bba49
+Error Number:102,State:1,Class:15
+[2019/05/03 03:31:54]  System.Data.SqlClient.SqlException (0x80131904): Sintaxis incorrecta cerca de '*'.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.GetLastID() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 59
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 40
+ClientConnectionId:a0c25922-99bd-4f6d-8082-04b65794737a
+Error Number:102,State:1,Class:15
+[2019/05/03 03:32:43]  System.Data.SqlClient.SqlException (0x80131904): La función MAX requiere al menos 1 argumentos.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.GetLastID() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 59
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 40
+ClientConnectionId:2eecd51e-f7ba-43f6-be9d-227303d86300
+Error Number:174,State:1,Class:15
+[2019/05/03 03:35:04]  System.ArgumentException: Error al efectuar factura : System.Data.SqlClient.SqlException (0x80131904): Infracción de la restricción PRIMARY KEY 'PK_DetalleFactura'. No se puede insertar una clave duplicada en el objeto 'dbo.DetalleFactura'. El valor de la clave duplicada es (31, 1).
+Se terminó la instrucción.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 40
+ClientConnectionId:d1ab7aeb-ad08-43e0-acd6-b3a86c50ad28
+Error Number:2627,State:1,Class:14
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 46
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.InsertarFactura(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 22
+[2019/05/03 03:35:06]  System.ArgumentException: Error al efectuar factura : System.Data.SqlClient.SqlException (0x80131904): Infracción de la restricción PRIMARY KEY 'PK_DetalleFactura'. No se puede insertar una clave duplicada en el objeto 'dbo.DetalleFactura'. El valor de la clave duplicada es (31, 1).
+Se terminó la instrucción.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 40
+ClientConnectionId:d1ab7aeb-ad08-43e0-acd6-b3a86c50ad28
+Error Number:2627,State:1,Class:14
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 46
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.InsertarFactura(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 22

@@ -1,4 +1,6 @@
-﻿Public Class Principal
+﻿Imports Ferreteria___Entidades
+
+Public Class Principal
 
     Public Shared UsuarioActivo As String
 
@@ -7,7 +9,7 @@
     Private Provedor As New Proveedores()
     Private Configuracion As New Configuracion()
     Private Estadistica As New Estadisticas()
-
+    Public Shared EmpleadoActivo As New E_Empleado
 
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load

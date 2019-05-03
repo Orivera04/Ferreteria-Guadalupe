@@ -38,6 +38,7 @@ Public Class Ventas
             SubTotal = SubTotal + (Decimal.Parse(DataGridINVENTARIO.Rows(I).Cells(3).Value.ToString.Split("C"c)(0)) * DataGridINVENTARIO.Rows(I).Cells(4).Value)
         Next
         TextBox3.Text = Math.Round(SubTotal, 3).ToString()
+        TextBox6.Text = Math.Round(Math.Abs(((NumericUpDown2.Value / 100) - 1) * Decimal.Parse(TextBox3.Text)), 3)
     End Sub
 #End Region
 
@@ -46,7 +47,7 @@ Public Class Ventas
 
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
         ComboBoxBusqueda_Leave(Nothing, New EventArgs())
-
+        DataGridINVENTARIO.Rows.Add(DataGridINVENTARIO.Rows.Count + 1, TextBox2.Text.Split("#"c)(1).Split(":"c)(0), TextBox2.Text.Split("#"c)(0), TextBox2.Text.Split("#"c)(1).Split(":"c)(1), NumericUpDown1.Value, "Eliminar")
     End Sub
 
     Private Sub Ventas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -63,7 +64,7 @@ Public Class Ventas
 
 
     Private Sub ComboBox2_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles ComboBox2.SelectionChangeCommitted
-        TextBox2.Text = ComboBox2.SelectedItem.Split("#"c)(1)
+        TextBox2.Text = ComboBox2.SelectedItem
     End Sub
 
     Private Sub ComboBoxBusqueda_Leave(sender As Object, e As EventArgs) Handles ComboBoxBusqueda.Leave
@@ -79,7 +80,7 @@ Public Class Ventas
 
 
     Private Sub NumericUpDown2_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown2.ValueChanged
-        TextBox3.Text = Math.Round(Math.Abs(((NumericUpDown2.Value / 100) - 1) * Decimal.Parse(TextBox3.Text)), 3)
+        TextBox6.Text = Math.Round(Math.Abs(((NumericUpDown2.Value / 100) - 1) * Decimal.Parse(TextBox3.Text)), 3)
     End Sub
 
     Private Sub DataGridINVENTARIO_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridINVENTARIO.CellContentClick
@@ -99,6 +100,7 @@ Public Class Ventas
         _Factura.P_ID_Empleado = Principal.EmpleadoActivo.ID_P
         _Factura.P_ID_Cliente = ComboBoxBusqueda.Text.Split("#"c)(1)
         _Factura.P_Fecha = DateTimePicker1.Value
+        _Factura.P_Motivo_Anulacion = ""
         If (ComboBox1.SelectedItem = "Credito") Then
             _Factura.P_Estado = "Pendiente"
         Else
@@ -107,22 +109,31 @@ Public Class Ventas
         _Factura.P_Descuento = NumericUpDown2.Value
 
         Dim ListaItems As New List(Of E_DetalleFactura)
-        For I = 0 To DataGridINVENTARIO.Rows.Count
+        For I = 0 To DataGridINVENTARIO.Rows.Count - 1
             Dim LineaFactura As New E_DetalleFactura
             LineaFactura.P_ID_Factura = TextBoxBusqueda.Text
             LineaFactura.P_Cantidad = DataGridINVENTARIO.Rows(I).Cells(4).Value
-            LineaFactura.P_ID_Producto = DataGridINVENTARIO.Rows(I).Cells(1).Value
+            LineaFactura.P_ID_Producto = DataGridINVENTARIO.Rows(I).Cells(1).Value.split("C"c)(0)
             LineaFactura.P_N_Linea = (I + 1)
             LineaFactura.P_Precio = DataGridINVENTARIO.Rows(I).Cells(3).Value
             ListaItems.Add(LineaFactura)
         Next
-        Me.Cursor = Cursors.WaitCursor
-        _FacturaVentaBol.InsertarFactura(_Factura, ListaItems)
-        If (_FacturaVentaBol.Errores.Length = 0) Then
+        If (DataGridINVENTARIO.Rows.Count > 0) Then
+            _FacturaVentaBol.InsertarFactura(_Factura, ListaItems)
+            Me.Cursor = Cursors.WaitCursor
+            If (_FacturaVentaBol.Errores.Length = 0) Then
+                MsgBox("La factura fue insertada correctamente", MsgBoxStyle.OkOnly, "Exito")
+                TextBoxBusqueda.Text = Integer.Parse(TextBoxBusqueda.Text) + 1
+                TextBox3.Text = "0"
+                NumericUpDown2.Value = 0
+                TextBox6.Text = "0"
+                DataGridINVENTARIO.Rows.Clear()
+            Else
+                MsgBox(_FacturaVentaBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
+            End If
             Me.Cursor = Cursors.Default
-            MsgBox("La factura fue insertada correctamente", MsgBoxStyle.OkOnly, "Exito")
         Else
-            MsgBox(_FacturaVentaBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
+            MsgBox("Debe añadir al menos un elemento a la factura", MsgBoxStyle.Exclamation, "Aviso")
         End If
     End Sub
 

@@ -52,11 +52,6 @@ Partial Class Ventas
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.DataGridINVENTARIO = New System.Windows.Forms.DataGridView()
-        Me.Linea = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Acc1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -66,6 +61,12 @@ Partial Class Ventas
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
+        Me.Linea = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Acc1 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -112,7 +113,7 @@ Partial Class Ventas
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label15.Location = New System.Drawing.Point(153, 10)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(67, 28)
+        Me.Label15.Size = New System.Drawing.Size(67, 25)
         Me.Label15.TabIndex = 4
         Me.Label15.Text = "Venta"
         '
@@ -482,40 +483,11 @@ Partial Class Ventas
         Me.DataGridINVENTARIO.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.DataGridINVENTARIO.BackgroundColor = System.Drawing.Color.LightYellow
         Me.DataGridINVENTARIO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridINVENTARIO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Linea, Me.ID, Me.Nombre, Me.Precio, Me.Acc1})
+        Me.DataGridINVENTARIO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Linea, Me.ID, Me.Nombre, Me.Precio, Me.Cantidad, Me.Acc1})
         Me.DataGridINVENTARIO.Location = New System.Drawing.Point(48, 46)
         Me.DataGridINVENTARIO.Name = "DataGridINVENTARIO"
         Me.DataGridINVENTARIO.Size = New System.Drawing.Size(713, 328)
         Me.DataGridINVENTARIO.TabIndex = 0
-        '
-        'Linea
-        '
-        Me.Linea.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Linea.HeaderText = "Linea"
-        Me.Linea.Name = "Linea"
-        '
-        'ID
-        '
-        Me.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.ID.HeaderText = "ID del producto"
-        Me.ID.Name = "ID"
-        '
-        'Nombre
-        '
-        Me.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        '
-        'Precio
-        '
-        Me.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Precio.HeaderText = "Precio"
-        Me.Precio.Name = "Precio"
-        '
-        'Acc1
-        '
-        Me.Acc1.HeaderText = "Acción 1"
-        Me.Acc1.Name = "Acc1"
         '
         'Label4
         '
@@ -658,7 +630,6 @@ Partial Class Ventas
         '
         Me.Cantidad.HeaderText = "Cantidad"
         Me.Cantidad.Name = "Cantidad"
-        Me.Cantidad.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         '
         'Acc1
         '
@@ -741,5 +712,6 @@ Partial Class Ventas
     Friend WithEvents ID As DataGridViewTextBoxColumn
     Friend WithEvents Nombre As DataGridViewTextBoxColumn
     Friend WithEvents Precio As DataGridViewTextBoxColumn
-    Friend WithEvents Acc1 As DataGridViewTextBoxColumn
+    Friend WithEvents Cantidad As DataGridViewTextBoxColumn
+    Friend WithEvents Acc1 As DataGridViewButtonColumn
 End Class

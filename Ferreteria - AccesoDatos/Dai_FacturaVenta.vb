@@ -14,7 +14,7 @@ Public Class Dai_FacturaVenta
             Transaccion = Conn.BeginTransaction("Transaccion")
             Try
                 Query = "INSERT INTO FACTURAVENTA 
-                     VALUES(@ID_FACTURA,@SUBTOTAL,@DESCUENTO,@ESTADO,@TIPO,@ID_CLIENTE,@ID_EMPLEADO,@FECHA,@BANDERA_ANULACION,@MOTIVO_ANULACION);"
+                     VALUES(@SUBTOTAL,@DESCUENTO,@ESTADO,@TIPO,@ID_CLIENTE,@ID_EMPLEADO,@FECHA,@BANDERA_ANULACION,@MOTIVO_ANULACION);"
                 Using CMD As New SqlCommand(Query, Conn)
                     CMD.Transaction = Transaccion
                     CMD.Parameters.AddWithValue("@SUBTOTAL", Factura.P_SubTotal)
@@ -27,11 +27,11 @@ Public Class Dai_FacturaVenta
                     CMD.Parameters.AddWithValue("@BANDERA_ANULACION", Factura.P_Bandera_Anulacion)
                     CMD.Parameters.AddWithValue("@MOTIVO_ANULACION", Factura.P_Motivo_Anulacion)
                     CMD.ExecuteNonQuery()
-
                     Query = "INSERT INTO DETALLEFACTURA 
                          VALUES(@ID_FACTURA,@N_LINEA,@CANTIDAD,@ID_PRODUCTO,@PRECIO);"
                     CMD.CommandText = Query
                     For I As Integer = 0 To Lineas.Count() - 1 Step 1
+                        CMD.Parameters.Clear()
                         CMD.Parameters.AddWithValue("@ID_FACTURA", Lineas(I).P_ID_Factura)
                         CMD.Parameters.AddWithValue("@N_LINEA", (I + 1).ToString())
                         CMD.Parameters.AddWithValue("@CANTIDAD", Lineas(I).P_Cantidad)
@@ -39,6 +39,7 @@ Public Class Dai_FacturaVenta
                         CMD.Parameters.AddWithValue("@PRECIO", Lineas(I).P_Precio)
                         CMD.ExecuteNonQuery()
                     Next
+                    Transaccion.Commit()
                 End Using
             Catch Ex As SqlException
                 Transaccion.Rollback()
@@ -53,7 +54,7 @@ Public Class Dai_FacturaVenta
     Public Function GetLastID()
         Using Conn As New SqlConnection(My.Resources.CadenaConexion)
             Conn.Open()
-            Query = "SELECT COUNT(*) FROM FACTURAVENTA"
+            Query = "SELECT MAX(ID_Factura)  FROM FACTURAVENTA"
             Using CMD As New SqlCommand(Query, Conn)
                 Return CMD.ExecuteScalar()
             End Using
