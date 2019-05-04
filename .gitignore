@@ -146,3 +146,7 @@ Ferreteria - AccesoDatos/bin/Release/Ferreteria - Entidades.dll
 Ferreteria - AccesoDatos/bin/Release/Ferreteria - AccesoDatos.pdb
 Ferreteria - AccesoDatos/bin/Release/Ferreteria - AccesoDatos.dll
 .vs/ProyectoFerreteria/v16/.suo
+ProyectoFerreteria/obj/Debug/Ferreteria - Presentacion.vbprojAssemblyReference.cache
+ProyectoFerreteria/bin/Debug/Ferreteria - AccesoDatos.xml
+Ferreteria - Entidades/obj/Debug/Ferreteria - Entidades.vbproj.GenerateResource.cache
+.vs/ProyectoFerreteria/v16/.suo
