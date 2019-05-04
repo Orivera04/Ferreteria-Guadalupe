@@ -391,3 +391,17 @@ Error Number:208,State:1,Class:16
    en Ferreteria___LogicaNegocios.Bol_Gastos.EliminarGasto(Int32 ID) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Gastos.vb:línea 86
 ClientConnectionId:bc4c67d5-4027-466a-ac35-1f01c006db16
 Error Number:208,State:1,Class:16
+[2019/05/04 13:29:48]  System.ArgumentException: Error al efectuar factura : System.Data.SqlClient.SqlException (0x80131904): An explicit value for the identity column in table 'FACTURAVENTA' can only be specified when a column list is used and IDENTITY_INSERT is ON.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 29
+ClientConnectionId:2f2419c6-5238-433a-b400-8d229a7db135
+Error Number:8101,State:1,Class:16
+   en Ferreteria___AccesoDatos.Dai_FacturaVenta.Insert(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_FacturaVenta.vb:línea 46
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.InsertarFactura(E_FacturaVenta Factura, List`1 Lineas) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 22
