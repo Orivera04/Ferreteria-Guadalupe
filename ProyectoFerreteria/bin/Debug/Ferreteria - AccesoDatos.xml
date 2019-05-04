@@ -24,7 +24,8 @@ Ferreteria - AccesoDatos
 </member>
 <member name="P:Ferreteria___AccesoDatos.My.Resources.Resources.CadenaConexion">
 <summary>
-  Busca una cadena traducida similar a Data Source=.;Initial Catalog=Ferreteria;Integrated Security=True.
+
+  Busca una cadena traducida similar a Data Source=guadalupe.cucaxhq0asdg.us-east-2.rds.amazonaws.com;Initial Catalog=Ferreteria;Persist Security Info=True;User ID=Oscar;Password=root12345.
 </summary>
 </member>
 </members>
