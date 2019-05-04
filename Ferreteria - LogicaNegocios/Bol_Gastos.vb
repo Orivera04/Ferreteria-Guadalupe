@@ -88,12 +88,27 @@ Public Class Bol_Gastos
             If (Ex.HResult <> -2146232060) Then
                 Errores.Append("Hubo un error al eliminar el proveedor.")
             Else
-                Errores.Append("No se puede eliminar el proveedor porque tiene depedencias, si lo quiere eliminar proceda a quitarlas.")
+                Errores.Append("No se puede eliminar el Gasto porque tiene depedencias, si lo quiere eliminar proceda a quitarlas.")
             End If
             If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
                 Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
             End If
         End Try
     End Sub
+
+    Public Function ObtenerDato(ByVal Fecha As Date)
+        Errores.Clear()
+        Try
+
+            Return Dai_Gastos.GetGasto(Fecha)
+
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al obtener los datos")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+        End Try
+        Return 0
+    End Function
 
 End Class

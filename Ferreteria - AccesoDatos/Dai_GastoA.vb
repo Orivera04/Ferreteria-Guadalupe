@@ -94,4 +94,16 @@ Public Class Dai_GastoA
             End Using
         End Using
     End Sub
+    Public Function GetGasto(ByVal Dia As Date)
+        Using Conn As New SqlConnection(My.Resources.CadenaConexion)
+            Conn.Open()
+            Query = "SELECT SUM(Cantidad) 
+                     FROM GastosA
+                     WHERE FECHA = @FECHA;"
+            Using CMD As New SqlCommand(Query, Conn)
+                CMD.Parameters.AddWithValue("@FECHA", Dia.Year.ToString() + "-" + Dia.Month.ToString() + "-" + Dia.Day.ToString())
+                Return CMD.ExecuteScalar()
+            End Using
+        End Using
+    End Function
 End Class

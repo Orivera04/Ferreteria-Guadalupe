@@ -413,12 +413,20 @@ Public Class Arqueo
     End Sub
 
     Public Sub comprobarventa()
+
+
         Try
             VentaDelDia = _EstadisticasBol.ObtenerEstadistica(5, DateTimePicker1.Value)
+            Dim X As Double = _GastosBOL.ObtenerDato(DateTimePicker1.Value)
+            If X > 0 Then
+                MsgBox("Tiene Gastos que se reducira al arqueo", MsgBoxStyle.Information, "ARQUEO")
+                VentaDelDia = VentaDelDia - X
 
+            End If
 
+            Math.Abs(VentaDelDia)
         Catch ex As Exception
-            MsgBox("Para Arquear tiene que haber alguna venta en el dia")
+            MsgBox("Para Arquear tiene que haber alguna venta en el dia", MsgBoxStyle.Information, "ARQUEO")
             VentaDelDia = 0
             TextBox1.Text = ""
 
