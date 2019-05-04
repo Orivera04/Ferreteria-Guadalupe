@@ -15,7 +15,7 @@ Public Class Bol_Cliente
     Private Dai_Cliente As New Dai_Cliente()
     Public Errores As New StringBuilder
 
-    Public Function ObtenerCliente()
+    Public Function ObtenerListaClientes()
         Errores.Clear()
         Try
             Return Dai_Cliente.GetAll()
