@@ -86,7 +86,7 @@ Public Class Dai_GastoA
     Public Sub Delete(ByVal ID As Integer)
         Using Conn As New SqlConnection(My.Resources.CadenaConexion)
             Conn.Open()
-            Query = "DELETE FROM GastoA 
+            Query = "DELETE FROM GastosA 
                      WHERE ID = @ID"
             Using CMD As New SqlCommand(Query, Conn)
                 CMD.Parameters.AddWithValue("@ID", ID)
