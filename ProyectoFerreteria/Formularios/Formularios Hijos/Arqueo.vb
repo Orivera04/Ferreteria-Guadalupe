@@ -52,15 +52,16 @@ Public Class Arqueo
         Else
             If boleano = True Then
                 TextBox1.Text = ""
-                Dim RESL As Double = SumaTemp - VentaDelDia
 
-                If RESL < 0 Then
-                    TextBox1.Text = Math.Abs(RESL)
-                Else
-                    TextBox1.Text = RESL
-                End If
 
-                MsgBox("TIENE DIFERENCIAS DE " + TextBox1.Text, MsgBoxStyle.Critical, "ARQUEO")
+
+
+
+                TextBox1.Text = Math.Abs(VentaDelDia)
+
+
+
+                MsgBox("TIENE DIFERENCIAS DE " + VentaDelDia.ToString, MsgBoxStyle.Critical, "ARQUEO")
 
             Else
 
@@ -421,7 +422,12 @@ Public Class Arqueo
                 Dim X As Double = _GastosBOL.ObtenerDato(DateTimePicker1.Value)
                 If X > 0 Then
                     MsgBox("Tenga en cuenta que hay Gastos autorizados para el dia de HOY", MsgBoxStyle.Information, "ARQUEO")
-                    VentaDelDia = VentaDelDia - X
+                    If caja > X Then
+                        VentaDelDia = VentaDelDia + (caja - X)
+                    Else
+                        VentaDelDia = (VentaDelDia + caja) - X
+                    End If
+
 
                 End If
             Catch ex As Exception
@@ -530,7 +536,7 @@ INICIO:
                     TextBox1.Text = RESL
                 End If
                 MsgBox("TIENE DIFERENCIAS DE " + TextBox1.Text, MsgBoxStyle.Critical, "ARQUEO")
-
+                SumaTemp = 0
 
             End If
 
@@ -616,7 +622,7 @@ INICIO:
                 MsgBox("Se actualizo el Gasto", MsgBoxStyle.Information, "Informacion")
             Else
 
-                MsgBox("Es de utilidad escribir una descripcion para no tener problemas en el futuro", MsgBoxStyle.Critical, "Informacion")
+                MsgBox("La descripcion debe ser superior o igual a 10 caracteres", MsgBoxStyle.Critical, "Informacion")
             End If
         Else
             MsgBox("El gasto debe ser mayor a 0", MsgBoxStyle.Critical, "Informacion")
