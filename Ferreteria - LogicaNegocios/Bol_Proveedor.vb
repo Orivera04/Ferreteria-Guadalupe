@@ -35,7 +35,7 @@ Public Class Bol_Proveedor
         End Try
     End Function
 
-
+    'para el editar
     Public Function ObtenerProveedor(ByVal ID_Proveedor As Integer)
         Errores.Clear()
         Try
@@ -50,6 +50,7 @@ Public Class Bol_Proveedor
     End Function
 
 
+    'Para el datagrid
     Public Function ObtenerProveedores()
         Errores.Clear()
         Try

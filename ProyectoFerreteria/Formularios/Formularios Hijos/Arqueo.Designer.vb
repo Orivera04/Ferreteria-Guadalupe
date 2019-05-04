@@ -43,16 +43,45 @@ Partial Class Arqueo
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.DataGridArqueo = New System.Windows.Forms.DataGridView()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ID_Empleado = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.B1000 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.B500 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.B200 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.B100 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.B50 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.B20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.B10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.M5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.M1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.M050 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.D50 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.D20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.D10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.D5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.D1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Caja_Chica = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Accion = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.NumericUpDown16 = New System.Windows.Forms.NumericUpDown()
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DataGridGastos = New System.Windows.Forms.DataGridView()
+        Me.ID_GASTO = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ID_EmpleadoG = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaG = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Accion1 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Accion2 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
@@ -61,6 +90,7 @@ Partial Class Arqueo
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.NumericUpDown15 = New System.Windows.Forms.NumericUpDown()
@@ -97,28 +127,7 @@ Partial Class Arqueo
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.pictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ID_Empleado = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.B1000 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.B500 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.B200 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.B100 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.B50 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.B20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.B10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.M5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.M1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.M050 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.D50 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.D20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.D10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.D5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.D1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Caja_Chica = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Accion = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.BunifuFlatButton4 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -129,7 +138,8 @@ Partial Class Arqueo
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridGastos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.NumericUpDown15, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -411,6 +421,113 @@ Partial Class Arqueo
         Me.DataGridArqueo.Size = New System.Drawing.Size(747, 368)
         Me.DataGridArqueo.TabIndex = 55
         '
+        'ID
+        '
+        Me.ID.HeaderText = "ID"
+        Me.ID.Name = "ID"
+        '
+        'ID_Empleado
+        '
+        Me.ID_Empleado.HeaderText = "ID Empleado"
+        Me.ID_Empleado.Name = "ID_Empleado"
+        '
+        'Fecha
+        '
+        Me.Fecha.HeaderText = "Fecha"
+        Me.Fecha.Name = "Fecha"
+        '
+        'B1000
+        '
+        Me.B1000.HeaderText = "B1000"
+        Me.B1000.Name = "B1000"
+        '
+        'B500
+        '
+        Me.B500.HeaderText = "B500"
+        Me.B500.Name = "B500"
+        '
+        'B200
+        '
+        Me.B200.HeaderText = "B200"
+        Me.B200.Name = "B200"
+        '
+        'B100
+        '
+        Me.B100.HeaderText = "B100"
+        Me.B100.Name = "B100"
+        '
+        'B50
+        '
+        Me.B50.HeaderText = "B50"
+        Me.B50.Name = "B50"
+        '
+        'B20
+        '
+        Me.B20.HeaderText = "B20"
+        Me.B20.Name = "B20"
+        '
+        'B10
+        '
+        Me.B10.HeaderText = "B10"
+        Me.B10.Name = "B10"
+        '
+        'M5
+        '
+        Me.M5.HeaderText = "M5"
+        Me.M5.Name = "M5"
+        '
+        'M1
+        '
+        Me.M1.HeaderText = "M1"
+        Me.M1.Name = "M1"
+        '
+        'M050
+        '
+        Me.M050.HeaderText = "M050"
+        Me.M050.Name = "M050"
+        '
+        'D50
+        '
+        Me.D50.HeaderText = "D50"
+        Me.D50.Name = "D50"
+        '
+        'D20
+        '
+        Me.D20.HeaderText = "D20"
+        Me.D20.Name = "D20"
+        '
+        'D10
+        '
+        Me.D10.HeaderText = "D10"
+        Me.D10.Name = "D10"
+        '
+        'D5
+        '
+        Me.D5.HeaderText = "D5"
+        Me.D5.Name = "D5"
+        '
+        'D1
+        '
+        Me.D1.HeaderText = "D1"
+        Me.D1.Name = "D1"
+        '
+        'Caja_Chica
+        '
+        Me.Caja_Chica.HeaderText = "Caja Chica"
+        Me.Caja_Chica.Name = "Caja_Chica"
+        '
+        'Total
+        '
+        Me.Total.HeaderText = "Total"
+        Me.Total.Name = "Total"
+        '
+        'Accion
+        '
+        Me.Accion.HeaderText = "Accion"
+        Me.Accion.Name = "Accion"
+        Me.Accion.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Accion.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        '
         'Label23
         '
         Me.Label23.Anchor = System.Windows.Forms.AnchorStyles.Top
@@ -452,12 +569,14 @@ Partial Class Arqueo
         Me.GroupBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox3.BackColor = System.Drawing.Color.White
+        Me.GroupBox3.Controls.Add(Me.BunifuFlatButton4)
+        Me.GroupBox3.Controls.Add(Me.Label2)
+        Me.GroupBox3.Controls.Add(Me.NumericUpDown16)
         Me.GroupBox3.Controls.Add(Me.BunifuFlatButton2)
         Me.GroupBox3.Controls.Add(Me.TextBox6)
         Me.GroupBox3.Controls.Add(Me.Label12)
-        Me.GroupBox3.Controls.Add(Me.TextBox5)
         Me.GroupBox3.Controls.Add(Me.Label11)
-        Me.GroupBox3.Controls.Add(Me.DataGridView1)
+        Me.GroupBox3.Controls.Add(Me.DataGridGastos)
         Me.GroupBox3.Controls.Add(Me.Label10)
         Me.GroupBox3.Controls.Add(Me.PictureBox3)
         Me.GroupBox3.Location = New System.Drawing.Point(4, -5)
@@ -465,6 +584,25 @@ Partial Class Arqueo
         Me.GroupBox3.Size = New System.Drawing.Size(807, 537)
         Me.GroupBox3.TabIndex = 55
         Me.GroupBox3.TabStop = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label2.Location = New System.Drawing.Point(363, 353)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(96, 18)
+        Me.Label2.TabIndex = 79
+        Me.Label2.Text = "Cargando..."
+        '
+        'NumericUpDown16
+        '
+        Me.NumericUpDown16.Location = New System.Drawing.Point(158, 50)
+        Me.NumericUpDown16.Name = "NumericUpDown16"
+        Me.NumericUpDown16.Size = New System.Drawing.Size(130, 22)
+        Me.NumericUpDown16.TabIndex = 78
         '
         'BunifuFlatButton2
         '
@@ -525,13 +663,6 @@ Partial Class Arqueo
         Me.Label12.TabIndex = 60
         Me.Label12.Text = "Descripcion:"
         '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(158, 52)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox5.TabIndex = 54
-        '
         'Label11
         '
         Me.Label11.AutoSize = True
@@ -544,16 +675,60 @@ Partial Class Arqueo
         Me.Label11.TabIndex = 59
         Me.Label11.Text = "Cantidad:"
         '
-        'DataGridView1
+        'DataGridGastos
         '
-        Me.DataGridView1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.DataGridGastos.AllowUserToAddRows = False
+        Me.DataGridGastos.AllowUserToDeleteRows = False
+        Me.DataGridGastos.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.Linen
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(49, 185)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(718, 321)
-        Me.DataGridView1.TabIndex = 55
+        Me.DataGridGastos.BackgroundColor = System.Drawing.Color.Linen
+        Me.DataGridGastos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridGastos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID_GASTO, Me.ID_EmpleadoG, Me.FechaG, Me.Descripcion, Me.Cantidad, Me.Accion1, Me.Accion2})
+        Me.DataGridGastos.Location = New System.Drawing.Point(49, 185)
+        Me.DataGridGastos.Name = "DataGridGastos"
+        Me.DataGridGastos.Size = New System.Drawing.Size(718, 321)
+        Me.DataGridGastos.TabIndex = 55
+        '
+        'ID_GASTO
+        '
+        Me.ID_GASTO.HeaderText = "ID"
+        Me.ID_GASTO.Name = "ID_GASTO"
+        '
+        'ID_EmpleadoG
+        '
+        Me.ID_EmpleadoG.HeaderText = "ID Empleado"
+        Me.ID_EmpleadoG.Name = "ID_EmpleadoG"
+        '
+        'FechaG
+        '
+        Me.FechaG.HeaderText = "Fecha"
+        Me.FechaG.Name = "FechaG"
+        '
+        'Descripcion
+        '
+        Me.Descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.Descripcion.HeaderText = "Descripcion"
+        Me.Descripcion.Name = "Descripcion"
+        Me.Descripcion.Width = 300
+        '
+        'Cantidad
+        '
+        Me.Cantidad.HeaderText = "Cantidad"
+        Me.Cantidad.Name = "Cantidad"
+        '
+        'Accion1
+        '
+        Me.Accion1.HeaderText = "Accion"
+        Me.Accion1.Name = "Accion1"
+        Me.Accion1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Accion1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        '
+        'Accion2
+        '
+        Me.Accion2.HeaderText = "Accion"
+        Me.Accion2.Name = "Accion2"
+        Me.Accion2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Accion2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'Label10
         '
@@ -685,6 +860,44 @@ Partial Class Arqueo
         Me.GroupBox1.Size = New System.Drawing.Size(340, 542)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
+        '
+        'BunifuFlatButton3
+        '
+        Me.BunifuFlatButton3.Activecolor = System.Drawing.Color.Tomato
+        Me.BunifuFlatButton3.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BunifuFlatButton3.BackColor = System.Drawing.Color.Salmon
+        Me.BunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton3.BorderRadius = 0
+        Me.BunifuFlatButton3.ButtonText = "Editar"
+        Me.BunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton3.Font = New System.Drawing.Font("Century", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton3.Iconimage = Nothing
+        Me.BunifuFlatButton3.Iconimage_right = Nothing
+        Me.BunifuFlatButton3.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton3.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton3.IconMarginLeft = 0
+        Me.BunifuFlatButton3.IconMarginRight = 0
+        Me.BunifuFlatButton3.IconRightVisible = True
+        Me.BunifuFlatButton3.IconRightZoom = 0R
+        Me.BunifuFlatButton3.IconVisible = True
+        Me.BunifuFlatButton3.IconZoom = 50.0R
+        Me.BunifuFlatButton3.IsTab = False
+        Me.BunifuFlatButton3.Location = New System.Drawing.Point(35, 504)
+        Me.BunifuFlatButton3.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.BunifuFlatButton3.Name = "BunifuFlatButton3"
+        Me.BunifuFlatButton3.Normalcolor = System.Drawing.Color.Salmon
+        Me.BunifuFlatButton3.OnHovercolor = System.Drawing.Color.Coral
+        Me.BunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton3.selected = False
+        Me.BunifuFlatButton3.Size = New System.Drawing.Size(281, 30)
+        Me.BunifuFlatButton3.TabIndex = 77
+        Me.BunifuFlatButton3.Text = "Editar"
+        Me.BunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton3.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton3.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton3.Visible = False
         '
         'BunifuFlatButton1
         '
@@ -1067,150 +1280,44 @@ Partial Class Arqueo
         Me.pictureBox8.TabIndex = 27
         Me.pictureBox8.TabStop = False
         '
-        'ID
+        'BunifuFlatButton4
         '
-        Me.ID.HeaderText = "ID"
-        Me.ID.Name = "ID"
-        '
-        'ID_Empleado
-        '
-        Me.ID_Empleado.HeaderText = "ID Empleado"
-        Me.ID_Empleado.Name = "ID_Empleado"
-        '
-        'Fecha
-        '
-        Me.Fecha.HeaderText = "Fecha"
-        Me.Fecha.Name = "Fecha"
-        '
-        'B1000
-        '
-        Me.B1000.HeaderText = "B1000"
-        Me.B1000.Name = "B1000"
-        '
-        'B500
-        '
-        Me.B500.HeaderText = "B500"
-        Me.B500.Name = "B500"
-        '
-        'B200
-        '
-        Me.B200.HeaderText = "B200"
-        Me.B200.Name = "B200"
-        '
-        'B100
-        '
-        Me.B100.HeaderText = "B100"
-        Me.B100.Name = "B100"
-        '
-        'B50
-        '
-        Me.B50.HeaderText = "B50"
-        Me.B50.Name = "B50"
-        '
-        'B20
-        '
-        Me.B20.HeaderText = "B20"
-        Me.B20.Name = "B20"
-        '
-        'B10
-        '
-        Me.B10.HeaderText = "B10"
-        Me.B10.Name = "B10"
-        '
-        'M5
-        '
-        Me.M5.HeaderText = "M5"
-        Me.M5.Name = "M5"
-        '
-        'M1
-        '
-        Me.M1.HeaderText = "M1"
-        Me.M1.Name = "M1"
-        '
-        'M050
-        '
-        Me.M050.HeaderText = "M050"
-        Me.M050.Name = "M050"
-        '
-        'D50
-        '
-        Me.D50.HeaderText = "D50"
-        Me.D50.Name = "D50"
-        '
-        'D20
-        '
-        Me.D20.HeaderText = "D20"
-        Me.D20.Name = "D20"
-        '
-        'D10
-        '
-        Me.D10.HeaderText = "D10"
-        Me.D10.Name = "D10"
-        '
-        'D5
-        '
-        Me.D5.HeaderText = "D5"
-        Me.D5.Name = "D5"
-        '
-        'D1
-        '
-        Me.D1.HeaderText = "D1"
-        Me.D1.Name = "D1"
-        '
-        'Caja_Chica
-        '
-        Me.Caja_Chica.HeaderText = "Caja Chica"
-        Me.Caja_Chica.Name = "Caja_Chica"
-        '
-        'Total
-        '
-        Me.Total.HeaderText = "Total"
-        Me.Total.Name = "Total"
-        '
-        'Accion
-        '
-        Me.Accion.HeaderText = "Accion"
-        Me.Accion.Name = "Accion"
-        Me.Accion.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Accion.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        '
-        'BunifuFlatButton3
-        '
-        Me.BunifuFlatButton3.Activecolor = System.Drawing.Color.Tomato
-        Me.BunifuFlatButton3.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BunifuFlatButton3.BackColor = System.Drawing.Color.Salmon
-        Me.BunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton3.BorderRadius = 0
-        Me.BunifuFlatButton3.ButtonText = "Editar"
-        Me.BunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton3.Font = New System.Drawing.Font("Century", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton3.Iconimage = Nothing
-        Me.BunifuFlatButton3.Iconimage_right = Nothing
-        Me.BunifuFlatButton3.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton3.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton3.IconMarginLeft = 0
-        Me.BunifuFlatButton3.IconMarginRight = 0
-        Me.BunifuFlatButton3.IconRightVisible = True
-        Me.BunifuFlatButton3.IconRightZoom = 0R
-        Me.BunifuFlatButton3.IconVisible = True
-        Me.BunifuFlatButton3.IconZoom = 50.0R
-        Me.BunifuFlatButton3.IsTab = False
-        Me.BunifuFlatButton3.Location = New System.Drawing.Point(35, 504)
-        Me.BunifuFlatButton3.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
-        Me.BunifuFlatButton3.Name = "BunifuFlatButton3"
-        Me.BunifuFlatButton3.Normalcolor = System.Drawing.Color.Salmon
-        Me.BunifuFlatButton3.OnHovercolor = System.Drawing.Color.Coral
-        Me.BunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton3.selected = False
-        Me.BunifuFlatButton3.Size = New System.Drawing.Size(281, 30)
-        Me.BunifuFlatButton3.TabIndex = 77
-        Me.BunifuFlatButton3.Text = "Editar"
-        Me.BunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuFlatButton3.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton3.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuFlatButton3.Visible = False
+        Me.BunifuFlatButton4.Activecolor = System.Drawing.Color.Tomato
+        Me.BunifuFlatButton4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuFlatButton4.BackColor = System.Drawing.Color.Salmon
+        Me.BunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton4.BorderRadius = 0
+        Me.BunifuFlatButton4.ButtonText = "Actualizar"
+        Me.BunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton4.Font = New System.Drawing.Font("Century", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton4.Iconimage = Nothing
+        Me.BunifuFlatButton4.Iconimage_right = Nothing
+        Me.BunifuFlatButton4.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton4.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton4.IconMarginLeft = 0
+        Me.BunifuFlatButton4.IconMarginRight = 0
+        Me.BunifuFlatButton4.IconRightVisible = False
+        Me.BunifuFlatButton4.IconRightZoom = 0R
+        Me.BunifuFlatButton4.IconVisible = False
+        Me.BunifuFlatButton4.IconZoom = 50.0R
+        Me.BunifuFlatButton4.IsTab = False
+        Me.BunifuFlatButton4.Location = New System.Drawing.Point(190, 127)
+        Me.BunifuFlatButton4.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.BunifuFlatButton4.Name = "BunifuFlatButton4"
+        Me.BunifuFlatButton4.Normalcolor = System.Drawing.Color.Salmon
+        Me.BunifuFlatButton4.OnHovercolor = System.Drawing.Color.Coral
+        Me.BunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton4.selected = False
+        Me.BunifuFlatButton4.Size = New System.Drawing.Size(474, 34)
+        Me.BunifuFlatButton4.TabIndex = 80
+        Me.BunifuFlatButton4.Text = "Actualizar"
+        Me.BunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton4.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton4.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton4.Visible = False
         '
         'Arqueo
         '
@@ -1237,7 +1344,8 @@ Partial Class Arqueo
         Me.TabPage2.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridGastos, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -1280,12 +1388,11 @@ Partial Class Arqueo
     Private WithEvents Label9 As Label
     Private WithEvents Label8 As Label
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DataGridGastos As DataGridView
     Private WithEvents Label10 As Label
     Private WithEvents PictureBox3 As PictureBox
     Friend WithEvents TextBox6 As TextBox
     Private WithEvents Label12 As Label
-    Friend WithEvents TextBox5 As TextBox
     Private WithEvents Label11 As Label
     Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents TabControl1 As TabControl
@@ -1358,4 +1465,14 @@ Partial Class Arqueo
     Friend WithEvents Total As DataGridViewTextBoxColumn
     Friend WithEvents Accion As DataGridViewButtonColumn
     Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents NumericUpDown16 As NumericUpDown
+    Private WithEvents Label2 As Label
+    Friend WithEvents ID_GASTO As DataGridViewTextBoxColumn
+    Friend WithEvents ID_EmpleadoG As DataGridViewTextBoxColumn
+    Friend WithEvents FechaG As DataGridViewTextBoxColumn
+    Friend WithEvents Descripcion As DataGridViewTextBoxColumn
+    Friend WithEvents Cantidad As DataGridViewTextBoxColumn
+    Friend WithEvents Accion1 As DataGridViewButtonColumn
+    Friend WithEvents Accion2 As DataGridViewButtonColumn
+    Friend WithEvents BunifuFlatButton4 As Bunifu.Framework.UI.BunifuFlatButton
 End Class

@@ -90,6 +90,7 @@
     <Compile Include="Bol_Cliente.vb" />
     <Compile Include="Bol_Estadistica.vb" />
     <Compile Include="Bol_FacturaVenta.vb" />
+    <Compile Include="Bol_Gastos.vb" />
     <Compile Include="Bol_UnidadMedida.vb" />
     <Compile Include="Bol_Empleado.vb" />
     <Compile Include="Bol_Producto.vb" />

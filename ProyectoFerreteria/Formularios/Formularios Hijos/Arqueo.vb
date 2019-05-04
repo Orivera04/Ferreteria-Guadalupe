@@ -5,6 +5,8 @@ Imports Ferreteria___LogicaNegocios
 Public Class Arqueo
     Dim CONTEO As Integer = 0
     Private _ArqueoBOL As New Bol_Arqueo()
+    Private _GastosBOL As New Bol_Gastos
+    Private _GastosE As New E_Gastos
     Private _ArqueE As New E_Arqueo
     Private _EmpleadoBol As New Bol_Empleado
     Private _Empleado As New E_Empleado
@@ -26,7 +28,7 @@ Public Class Arqueo
     'Oca si lees esto chupala :V
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
 
-
+        comprobarventa()
         Verificarnumeric()
         If SumaTemp = VentaDelDia Then
             Dim result As Integer = MessageBox.Show("Arqueo Completo ¿Desea GUARDAR el arqueo?", "Arqueo", MessageBoxButtons.YesNo)
@@ -85,8 +87,28 @@ Public Class Arqueo
         Label32.Hide()
     End Sub
 
+    Public Sub LlenarDataGridViewGastos()
+        DataGridGastos.Rows.Clear()
+        Dim ListaGastos
+        ListaGastos = _GastosBOL.ObtenerGastos()
+        For I As Integer = 0 To ListaGastos.Count() - 1
+            DataGridGastos.Rows.Add(ListaGastos(I).P_ID, ListaGastos(I).P_ID_EMPLEADO, ListaGastos(I).P_Fecha, ListaGastos(I).P_Descripcion, ListaGastos(I).P_Cantidad, "Editar", "Eliminar")
 
-#Region "VALIDACION"
+        Next
+        Label2.Hide()
+    End Sub
+
+
+    Public Sub ListarEmpleadoID(ByVal Nombre As String)
+        Dim Empleado = _EmpleadoBol.ObtenerNameEmpleado(Nombre)
+        Dim _EmpleadoID As Integer
+
+
+        _EmpleadoID = Empleado.ID_P
+        TextBox8.Text = Empleado.ID_P
+    End Sub
+
+
     Public Sub Verificarnumeric()
 
         SumaTemp = caja
@@ -154,13 +176,10 @@ Public Class Arqueo
 
 
     End Sub
-#End Region
 
-#Region "Metodo Insertar--Actualizar"
+
 
     Public Sub InsertarArqueo()
-
-
 
         'Moneda de  5
         _ArqueE.AM5 = NumericUpDown1.Value
@@ -227,6 +246,13 @@ Public Class Arqueo
         _ArqueE.P_Fecha = DateTimePicker1.Value
 
 
+    End Sub
+
+    Public Sub InsertarGasto()
+        _GastosE.P_ID_Empleado = TextBox8.Text
+        _GastosE.P_Fecha = DateTimePicker1.Value
+        _GastosE.P_Descripcion = TextBox6.Text
+        _GastosE.P_Cantidad = NumericUpDown16.Value
     End Sub
     Public Sub ActualizarArqueo()
 
@@ -299,120 +325,14 @@ Public Class Arqueo
 
     End Sub
 
-#End Region
-
-
-#End Region
-
-
-
-
-    Private Sub Arqueo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        CheckForIllegalCrossThreadCalls = False
-
-        Try
-INICIO:
-            caja = InputBox("Saldo Inicial(Caja Chica)", "SALDO")
-
-            If caja < 1000 Then
-                MsgBox("CAJA DEBE SER MAYOR A 1000", MsgBoxStyle.Information, "CAJA")
-                GoTo INICIO
-            Else
-                TextBox4.Text = caja
-            End If
-        Catch ex As Exception
-            MsgBox("Debe ingresar solo numeros", MsgBoxStyle.Exclamation, "CAJA")
-            GoTo INICIO
-        End Try
-
-
-        TextBox7.Text = Principal.UsuarioActivo
-        ListarEmpleadoID(Principal.UsuarioActivo)
-
-
-        comprobarventa()
-
-        Dim HiloArqueo As New Thread(AddressOf LlenarDataGridViewArqueo)
-        HiloArqueo.Start()
+    Public Sub ActualizarGasto()
+        _GastosE.P_ID = IDTemp
+        _GastosE.P_ID_Empleado = ID_Empl
+        _GastosE.P_Fecha = FechaT
+        _GastosE.P_Descripcion = TextBox6.Text
+        _GastosE.P_Cantidad = NumericUpDown16.Value
     End Sub
 
-    Public Sub ListarEmpleadoID(ByVal Nombre As String)
-        Dim Empleado = _EmpleadoBol.ObtenerNameEmpleado(Nombre)
-        Dim _EmpleadoID As Integer
-
-
-        _EmpleadoID = Empleado.ID_P
-        TextBox8.Text = Empleado.ID_P
-    End Sub
-
-    Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
-        Dim VentaSeleccionada As Double
-        VentaSeleccionada = _EstadisticasBol.ObtenerEstadistica(5, FechaT).ToString()
-        boleano = True
-
-        Verificarnumeric()
-        If SumaTemp = VentaSeleccionada Then
-            Dim resulta As Integer = MessageBox.Show("Arqueo Completo ¿Desea ACTUALIZAR el arqueo?", "Arqueo", MessageBoxButtons.YesNo)
-
-            If resulta = DialogResult.No Then
-                MessageBox.Show("No se guardaron los cambios")
-
-            ElseIf resulta = DialogResult.Yes Then
-
-
-                ActualizarArqueo()
-                _ArqueoBOL.ActualizarArqueo(_ArqueE)
-                comprobarventa()
-                TextBox1.Text = 0
-                TextBox2.Text = ""
-                MsgBox("Se actualizaron los DATOS", MsgBoxStyle.Information, "ARQUEO")
-                LlenarDataGridViewArqueo()
-                boleano = False
-                If (_ArqueoBOL.Errores.Length = 0) Then
-                    LlenarDataGridViewArqueo()
-                    BunifuFlatButton3.Visible = False
-
-                Else
-                    MsgBox("Ocurrio un error", MsgBoxStyle.Information, "Informacion")
-                    MsgBox(_ArqueoBOL.Errores.ToString(), MsgBoxStyle.Critical, "Error")
-                End If
-
-            End If
-
-
-
-        Else
-            If boleano = True Then
-                TextBox1.Text = ""
-                Dim RESL As Double = SumaTemp - VentaSeleccionada
-
-                If RESL < 0 Then
-                    TextBox1.Text = Math.Abs(RESL)
-                Else
-                    TextBox1.Text = RESL
-                End If
-                MsgBox("TIENE DIFERENCIAS DE " + TextBox1.Text, MsgBoxStyle.Critical, "ARQUEO")
-
-
-            End If
-
-
-
-        End If
-    End Sub
-
-
-    Private Sub DataGridArqueo_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridArqueo.CellContentClick
-
-        If (e.ColumnIndex = 20) Then
-            BunifuFlatButton3.Visible = True
-            Me.Cursor = Cursors.WaitCursor
-            IDTemp = DataGridArqueo.Rows(e.RowIndex).Cells(0).Value
-            ListarArqueo(IDTemp)
-            Me.Cursor = Cursors.Default
-
-        End If
-    End Sub
 
     Public Sub ListarArqueo(ByVal ID As Integer)
 
@@ -483,6 +403,15 @@ INICIO:
         FechaT = arqueo.P_Fecha
     End Sub
 
+    Public Sub ListarGastos(ByVal ID As Integer)
+
+        Dim Gasto = _GastosBOL.ObtenerIDGastos(ID)
+        ID_Empl = Gasto.P_ID_EMPLEADO
+        NumericUpDown16.Value = Gasto.P_Cantidad
+        TextBox6.Text = Gasto.P_Descripcion
+        FechaT = Gasto.P_Fecha
+    End Sub
+
     Public Sub comprobarventa()
         Try
             VentaDelDia = _EstadisticasBol.ObtenerEstadistica(5, DateTimePicker1.Value)
@@ -491,9 +420,192 @@ INICIO:
         Catch ex As Exception
             MsgBox("Para Arquear tiene que haber alguna venta en el dia")
             VentaDelDia = 0
+            TextBox1.Text = ""
 
         End Try
 
     End Sub
 
+
+#End Region
+
+
+
+
+
+
+
+    Private Sub Arqueo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        CheckForIllegalCrossThreadCalls = False
+        DataGridGastos.AutoResizeColumns()
+        Try
+INICIO:
+            caja = InputBox("Saldo Inicial(Caja Chica)", "SALDO")
+
+            If caja < 1000 Then
+                MsgBox("CAJA DEBE SER MAYOR A 1000", MsgBoxStyle.Information, "CAJA")
+                GoTo INICIO
+            Else
+                TextBox4.Text = caja
+            End If
+        Catch ex As Exception
+            MsgBox("Debe ingresar solo numeros", MsgBoxStyle.Exclamation, "CAJA")
+            GoTo INICIO
+        End Try
+
+
+        TextBox7.Text = Principal.UsuarioActivo
+        ListarEmpleadoID(Principal.UsuarioActivo)
+
+
+        comprobarventa()
+
+        Dim HiloArqueo As New Thread(AddressOf LlenarDataGridViewArqueo)
+        Dim HiloGastos As New Thread(AddressOf LlenarDataGridViewGastos)
+        HiloArqueo.Start()
+        HiloGastos.Start()
+    End Sub
+
+
+
+    Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
+        Dim VentaSeleccionada As Double
+        VentaSeleccionada = _EstadisticasBol.ObtenerEstadistica(5, FechaT).ToString()
+        boleano = True
+
+        Verificarnumeric()
+        If SumaTemp = VentaSeleccionada Then
+            Dim resulta As Integer = MessageBox.Show("Arqueo Completo ¿Desea ACTUALIZAR el arqueo?", "Arqueo", MessageBoxButtons.YesNo)
+
+            If resulta = DialogResult.No Then
+                MessageBox.Show("No se guardaron los cambios")
+
+            ElseIf resulta = DialogResult.Yes Then
+
+
+                ActualizarArqueo()
+                _ArqueoBOL.ActualizarArqueo(_ArqueE)
+                comprobarventa()
+                TextBox1.Text = 0
+                TextBox2.Text = ""
+                MsgBox("Se actualizaron los DATOS", MsgBoxStyle.Information, "ARQUEO")
+                LlenarDataGridViewArqueo()
+                boleano = False
+                If (_ArqueoBOL.Errores.Length = 0) Then
+                    LlenarDataGridViewArqueo()
+                    BunifuFlatButton3.Visible = False
+
+                Else
+                    MsgBox("Ocurrio un error", MsgBoxStyle.Information, "Informacion")
+                    MsgBox(_ArqueoBOL.Errores.ToString(), MsgBoxStyle.Critical, "Error")
+                End If
+
+            End If
+
+
+
+        Else
+            If boleano = True Then
+                TextBox1.Text = ""
+                Dim RESL As Double = SumaTemp - VentaSeleccionada
+
+                If RESL < 0 Then
+                    TextBox1.Text = Math.Abs(RESL)
+                Else
+                    TextBox1.Text = RESL
+                End If
+                MsgBox("TIENE DIFERENCIAS DE " + TextBox1.Text, MsgBoxStyle.Critical, "ARQUEO")
+
+
+            End If
+
+
+
+        End If
+    End Sub
+
+
+    Private Sub DataGridArqueo_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridArqueo.CellContentClick
+
+        If (e.ColumnIndex = 20) Then
+            BunifuFlatButton3.Visible = True
+            Me.Cursor = Cursors.WaitCursor
+            IDTemp = DataGridArqueo.Rows(e.RowIndex).Cells(0).Value
+            ListarArqueo(IDTemp)
+            Me.Cursor = Cursors.Default
+
+        End If
+    End Sub
+
+    Private Sub DataGridaGastos_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridGastos.CellContentClick
+
+        If (e.ColumnIndex = 5) Then
+
+            Me.Cursor = Cursors.WaitCursor
+            IDTemp = DataGridGastos.Rows(e.RowIndex).Cells(0).Value
+            ListarGastos(IDTemp)
+            BunifuFlatButton4.Visible = True
+            Me.Cursor = Cursors.Default
+        ElseIf (e.ColumnIndex = 6) Then
+            Dim resulta As Integer = MessageBox.Show("¿Esta seguro que desea eliminar?", "Gasto", MessageBoxButtons.YesNo)
+
+            If resulta = DialogResult.No Then
+                MessageBox.Show("No se elimino el gasto")
+
+            ElseIf resulta = DialogResult.Yes Then
+                Me.Cursor = Cursors.WaitCursor
+                _GastosBOL.EliminarGasto(DataGridGastos.Rows(e.RowIndex).Cells(0).Value)
+                If (_GastosBOL.Errores.Length = 0) Then
+                    LlenarDataGridViewGastos()
+                    MsgBox("El proveedor fue eliminado exitosamente", MsgBoxStyle.OkOnly, "Exito")
+                Else
+                    MsgBox(_GastosBOL.Errores.ToString(), MsgBoxStyle.Critical, "Error")
+                End If
+                Me.Cursor = Cursors.Default
+
+            End If
+        End If
+    End Sub
+
+
+    Private Sub BunifuFlatButton2_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton2.Click
+
+        If NumericUpDown16.Value > 0 Then
+            Dim descripciontext As String = TextBox6.Text
+
+            Dim longitud As Integer = Len(descripciontext)
+            If longitud > 10 Then
+                InsertarGasto()
+                _GastosBOL.InsertarGastos(_GastosE)
+                LlenarDataGridViewGastos()
+            Else
+                MsgBox("Es de utilidad escribir una descripcion para no tener problemas en el futuro", MsgBoxStyle.Critical, "Informacion")
+            End If
+        Else
+            MsgBox("El gasto debe ser mayor a 0", MsgBoxStyle.Critical, "Informacion")
+            NumericUpDown16.Focus()
+        End If
+
+
+    End Sub
+
+    Private Sub BunifuFlatButton4_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton4.Click
+        If NumericUpDown16.Value > 0 Then
+            Dim descripciontext As String = TextBox6.Text
+            ' Returns 11.
+            Dim longitud As Integer = Len(descripciontext)
+            If longitud > 10 Then
+                ActualizarGasto()
+                _GastosBOL.ActualizarGasto(_GastosE)
+                LlenarDataGridViewGastos()
+                MsgBox("Se actualizo el Gasto", MsgBoxStyle.Information, "Informacion")
+            Else
+
+                MsgBox("Es de utilidad escribir una descripcion para no tener problemas en el futuro", MsgBoxStyle.Critical, "Informacion")
+            End If
+        Else
+            MsgBox("El gasto debe ser mayor a 0", MsgBoxStyle.Critical, "Informacion")
+            NumericUpDown16.Focus()
+        End If
+    End Sub
 End Class

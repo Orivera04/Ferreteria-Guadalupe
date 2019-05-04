@@ -93,6 +93,7 @@
     <Compile Include="Dai_Empleado.vb" />
     <Compile Include="Dai_Estadistica.vb" />
     <Compile Include="Dai_FacturaVenta.vb" />
+    <Compile Include="Dai_GastoA.vb" />
     <Compile Include="Dai_Producto.vb" />
     <Compile Include="Dai_Proveedor.vb" />
     <Compile Include="Dai_UnidadMedida.vb" />
