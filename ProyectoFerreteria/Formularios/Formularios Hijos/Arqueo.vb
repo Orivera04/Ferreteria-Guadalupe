@@ -35,7 +35,15 @@ Public Class Arqueo
         ComprobarArqueExistente(DateTimePicker1.Value)
         comprobarventa()
         If Arqueodia = 0 Then
-
+            Dim redon As Decimal
+            redon = Math.Round(SumaGANACIA)
+            redon = SumaGANACIA - redon
+            redon = Math.Abs(redon)
+            If redon > 0.4 Then
+                SumaGANACIA = Math.Round(SumaGANACIA) + 1
+            ElseIf redon < 0.5 Then
+                SumaGANACIA = Math.Round(SumaGANACIA)
+            End If
             If SumaNumeric = SumaGANACIA Then
                 Dim result As Integer = MessageBox.Show("Arqueo Completo ¿Desea GUARDAR el arqueo?", "Arqueo", MessageBoxButtons.YesNo)
 
@@ -505,7 +513,7 @@ INICIO:
         End Try
 
 
-        TextBox7.Text = Principal.UsuarioActivo
+        TextBox7.Text = Principal.UsuarioActivo.ToUpper
         ListarEmpleadoID(Principal.UsuarioActivo)
 
 
@@ -524,7 +532,15 @@ INICIO:
 
         Verificarnumeric()
         comprobarventa()
-
+        Dim redon As Decimal
+        redon = Math.Round(SumaGANACIA)
+        redon = SumaGANACIA - redon
+        redon = Math.Abs(redon)
+        If redon > 0.4 Then
+            SumaGANACIA = Math.Round(SumaGANACIA) + 1
+        ElseIf redon < 0.5 Then
+            SumaGANACIA = Math.Round(SumaGANACIA)
+        End If
         If SumaNumeric = SumaGANACIA Then
             Dim resulta As Integer = MessageBox.Show("Arqueo Completo ¿Desea ACTUALIZAR el arqueo?", "Arqueo", MessageBoxButtons.YesNo)
 
