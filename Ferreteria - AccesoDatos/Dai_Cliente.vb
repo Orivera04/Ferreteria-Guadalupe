@@ -29,6 +29,40 @@ Public Class Dai_Cliente
         End Using
     End Function
 
+    Public Function Filtro(ByVal TipoFiltro As Integer, ByVal FiltroCadena As String)
+        Using Conn As New SqlConnection(My.Resources.CadenaConexion)
+            Conn.Open()
+            Dim listaClientes As New List(Of E_Cliente)
+            Query = "SELECT * FROM CLIENTE
+                     WHERE"
+            If (TipoFiltro = 0) Then
+                Query = Query + " ID = @PA;"
+            ElseIf (TipoFiltro = 1) Then
+                Query = Query + " CEDULA = @PA"
+            Else
+                Query = Query + " TELEFONO =  @PA"
+            End If
+            Using CMD As New SqlCommand(Query, Conn)
+                CMD.Parameters.AddWithValue("@PA", FiltroCadena)
+                Using Lector As SqlDataReader = CMD.ExecuteReader()
+                    While Lector.Read()
+                        Dim _Cliente As New E_Cliente
+                        _Cliente.ID_P = Lector("ID")
+                        _Cliente.Nombre_P = Lector("Nombre")
+                        _Cliente.Apellido_P = Lector("Apellido")
+                        _Cliente.Cedula_P = Lector("Cedula")
+                        _Cliente.Telefono_P = Lector("Telefono")
+                        _Cliente.Direccion_P = Lector("Direccion")
+                        ListaClientes.Add(_Cliente)
+                    End While
+                    Return ListaClientes
+                End Using
+            End Using
+        End Using
+    End Function
+
+
+
     'Listar un cliente en concreto ' 
     Public Function GetByID(ByVal ID As Integer)
         Using Conn As New SqlConnection(My.Resources.CadenaConexion)

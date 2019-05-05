@@ -86,12 +86,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="E_AbonoCliente.vb" />
     <Compile Include="E_Arqueo.vb" />
     <Compile Include="E_Cliente.vb" />
     <Compile Include="E_DetalleFactura.vb" />
     <Compile Include="E_Empleado.vb" />
     <Compile Include="E_FacturaVenta.vb" />
     <Compile Include="E_Gastos.vb" />
+    <Compile Include="E_MontoFactura.vb" />
     <Compile Include="E_Producto.vb" />
     <Compile Include="E_Proveedor.vb" />
     <Compile Include="E_UnidadMedida.vb" />

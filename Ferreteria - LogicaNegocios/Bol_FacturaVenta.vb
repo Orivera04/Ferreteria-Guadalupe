@@ -32,6 +32,60 @@ Public Class Bol_FacturaVenta
         End Try
     End Sub
 
+    'Inserta un abono'
+    Public Sub InsertarAbono(ByVal Abono As E_AbonoCliente)
+        Errores.Clear()
+        Try
+            If (Abono.P_Descripcion = "") Then
+                Errores.Append("La descripción no puede estar vacia.")
+            End If
+
+
+
+            If (Errores.Length = 0) Then
+                Dai_FacturaVenta.InsertAbono(Abono)
+            End If
+        Catch Ex As Exception
+            If (Ex.HResult <> -2146232060) Then
+                Errores.Append("Hubo un error al insertar el abono")
+            Else
+                Errores.Append("El ID que trata insertar ya se encuentra registrado en la base de datos, por favor escriba otro.")
+            End If
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+        End Try
+    End Sub
+
+
+
+    'Obtiene la lista de facturas pendientes de pagar'
+    Public Function ObtenerMontosFacturaPendiente(ByVal ID As Integer)
+        Errores.Clear()
+        Try
+            Return Dai_FacturaVenta.GetFacturasPendientes(ID)
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al leer las facturas pendientes de paga")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+        End Try
+        Return Nothing
+    End Function
+
+    'Lista los abonos de una factura'
+    Public Function ObtenerAbonosFactura(ByVal ID As Integer)
+        Errores.Clear()
+        Try
+            Return Dai_FacturaVenta.GetAbonosFactura(ID)
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al leer la lista de abonos")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+        End Try
+        Return Nothing
+    End Function
 
     'Obtiene el ID de la ultima factura'
     Public Function ObtenerUltimoID()

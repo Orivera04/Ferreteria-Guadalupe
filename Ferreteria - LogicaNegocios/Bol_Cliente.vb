@@ -117,6 +117,20 @@ Public Class Bol_Cliente
         End Try
     End Sub
 
+    Public Function FiltrosCliente(ByVal Tipo_Filtro As Integer, ByVal CadenaFiltro As String)
+        Errores.Clear()
+        Try
+            Return Dai_Cliente.Filtro(Tipo_Filtro, CadenaFiltro)
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al realizar el filtro")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+        End Try
+        Return Nothing
+    End Function
+
+
     Public Function ObtenerIDClientes()
         Errores.Clear()
         Try
