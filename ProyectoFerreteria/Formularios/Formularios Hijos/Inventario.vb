@@ -210,15 +210,24 @@ Public Class Inventario
             ListarProducto(DataGridINVENTARIO.Rows(e.RowIndex).Cells(0).Value)
             Me.Cursor = Cursors.Default
         ElseIf (e.ColumnIndex = 14) Then
-            Me.Cursor = Cursors.WaitCursor
-            _ProductoBol.EliminarProducto(DataGridINVENTARIO.Rows(e.RowIndex).Cells(0).Value)
-            If (_ProductoBol.Errores.Length = 0) Then
-                LlenarDataGridViewProductos(False, 0, "")
-                MsgBox("El producto fue eliminado exitosamente", MsgBoxStyle.OkOnly, "Exito")
-            Else
-                MsgBox(_ProductoBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
+            Dim resulta As Integer = MessageBox.Show("¿Esta seguro que desea eliminar?", "Gasto", MessageBoxButtons.YesNo)
+
+            If resulta = DialogResult.No Then
+                MsgBox("El producto no se elimino", MsgBoxStyle.Information, "INVENTARIO")
+            ElseIf resulta = DialogResult.Yes Then
+                Me.Cursor = Cursors.WaitCursor
+                _ProductoBol.EliminarProducto(DataGridINVENTARIO.Rows(e.RowIndex).Cells(0).Value)
+                If (_ProductoBol.Errores.Length = 0) Then
+                    LlenarDataGridViewProductos(False, 0, "")
+                    MsgBox("El producto fue eliminado exitosamente", MsgBoxStyle.OkOnly, "Exito")
+                Else
+                    MsgBox(_ProductoBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
+                End If
+                Me.Cursor = Cursors.Default
             End If
-            Me.Cursor = Cursors.Default
+
+
+
         End If
     End Sub
 

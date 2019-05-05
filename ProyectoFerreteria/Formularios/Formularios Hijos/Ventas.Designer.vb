@@ -52,6 +52,12 @@ Partial Class Ventas
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.DataGridINVENTARIO = New System.Windows.Forms.DataGridView()
+        Me.Linea = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Acc1 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -61,12 +67,8 @@ Partial Class Ventas
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
-        Me.Linea = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Acc1 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -113,7 +115,7 @@ Partial Class Ventas
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label15.Location = New System.Drawing.Point(153, 10)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(67, 25)
+        Me.Label15.Size = New System.Drawing.Size(67, 28)
         Me.Label15.TabIndex = 4
         Me.Label15.Text = "Venta"
         '
@@ -326,6 +328,8 @@ Partial Class Ventas
         '
         Me.GroupBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox2.Controls.Add(Me.TextBox1)
+        Me.GroupBox2.Controls.Add(Me.Label14)
         Me.GroupBox2.Controls.Add(Me.NumericUpDown2)
         Me.GroupBox2.Controls.Add(Me.BunifuFlatButton2)
         Me.GroupBox2.Controls.Add(Me.TextBox6)
@@ -343,6 +347,8 @@ Partial Class Ventas
         '
         'NumericUpDown2
         '
+        Me.NumericUpDown2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.NumericUpDown2.Location = New System.Drawing.Point(130, 105)
         Me.NumericUpDown2.Name = "NumericUpDown2"
         Me.NumericUpDown2.Size = New System.Drawing.Size(164, 20)
@@ -389,9 +395,9 @@ Partial Class Ventas
         Me.TextBox6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox6.Enabled = False
-        Me.TextBox6.Location = New System.Drawing.Point(130, 225)
+        Me.TextBox6.Location = New System.Drawing.Point(130, 180)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(141, 20)
+        Me.TextBox6.Size = New System.Drawing.Size(164, 20)
         Me.TextBox6.TabIndex = 59
         '
         'Label16
@@ -400,7 +406,7 @@ Partial Class Ventas
         Me.Label16.BackColor = System.Drawing.Color.White
         Me.Label16.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label16.Location = New System.Drawing.Point(15, 226)
+        Me.Label16.Location = New System.Drawing.Point(15, 181)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(49, 19)
         Me.Label16.TabIndex = 58
@@ -445,9 +451,10 @@ Partial Class Ventas
         '
         'TextBox3
         '
-        Me.TextBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox3.Enabled = False
-        Me.TextBox3.Location = New System.Drawing.Point(102, 63)
+        Me.TextBox3.Location = New System.Drawing.Point(130, 66)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(164, 20)
         Me.TextBox3.TabIndex = 51
@@ -488,6 +495,46 @@ Partial Class Ventas
         Me.DataGridINVENTARIO.Name = "DataGridINVENTARIO"
         Me.DataGridINVENTARIO.Size = New System.Drawing.Size(713, 328)
         Me.DataGridINVENTARIO.TabIndex = 0
+        '
+        'Linea
+        '
+        Me.Linea.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Linea.HeaderText = "Linea"
+        Me.Linea.Name = "Linea"
+        Me.Linea.ReadOnly = True
+        '
+        'ID
+        '
+        Me.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.ID.HeaderText = "ID del producto"
+        Me.ID.Name = "ID"
+        Me.ID.ReadOnly = True
+        '
+        'Nombre
+        '
+        Me.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        '
+        'Precio
+        '
+        Me.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Precio.HeaderText = "Precio"
+        Me.Precio.Name = "Precio"
+        Me.Precio.ReadOnly = True
+        '
+        'Cantidad
+        '
+        Me.Cantidad.HeaderText = "Cantidad"
+        Me.Cantidad.Name = "Cantidad"
+        '
+        'Acc1
+        '
+        Me.Acc1.HeaderText = "Acción 1"
+        Me.Acc1.Name = "Acc1"
+        Me.Acc1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Acc1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'Label4
         '
@@ -564,10 +611,12 @@ Partial Class Ventas
         '
         'PictureBox2
         '
+        Me.PictureBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox2.BackColor = System.Drawing.Color.CornflowerBlue
         Me.PictureBox2.Location = New System.Drawing.Point(2, 7)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(1236, 29)
+        Me.PictureBox2.Size = New System.Drawing.Size(1198, 29)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 26
         Me.PictureBox2.TabStop = False
@@ -598,45 +647,26 @@ Partial Class Ventas
         Me.TextBoxBusqueda.TabIndex = 5
         Me.TextBoxBusqueda.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Linea
+        'Label14
         '
-        Me.Linea.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Linea.HeaderText = "Linea"
-        Me.Linea.Name = "Linea"
-        Me.Linea.ReadOnly = True
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.White
+        Me.Label14.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.CornflowerBlue
+        Me.Label14.Location = New System.Drawing.Point(15, 237)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(54, 19)
+        Me.Label14.TabIndex = 61
+        Me.Label14.Text = "Pago:"
         '
-        'ID
+        'TextBox1
         '
-        Me.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.ID.HeaderText = "ID del producto"
-        Me.ID.Name = "ID"
-        Me.ID.ReadOnly = True
-        '
-        'Nombre
-        '
-        Me.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.ReadOnly = True
-        '
-        'Precio
-        '
-        Me.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Precio.HeaderText = "Precio"
-        Me.Precio.Name = "Precio"
-        Me.Precio.ReadOnly = True
-        '
-        'Cantidad
-        '
-        Me.Cantidad.HeaderText = "Cantidad"
-        Me.Cantidad.Name = "Cantidad"
-        '
-        'Acc1
-        '
-        Me.Acc1.HeaderText = "Acción 1"
-        Me.Acc1.Name = "Acc1"
-        Me.Acc1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Acc1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.TextBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox1.Location = New System.Drawing.Point(130, 239)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(164, 20)
+        Me.TextBox1.TabIndex = 62
         '
         'Ventas
         '
@@ -714,4 +744,6 @@ Partial Class Ventas
     Friend WithEvents Precio As DataGridViewTextBoxColumn
     Friend WithEvents Cantidad As DataGridViewTextBoxColumn
     Friend WithEvents Acc1 As DataGridViewButtonColumn
+    Friend WithEvents TextBox1 As TextBox
+    Private WithEvents Label14 As Label
 End Class

@@ -3,7 +3,7 @@
 Public Class Principal
 
     Public Shared UsuarioActivo As String
-
+    Dim Nombrea As String
     Private Inventario As New Inventario()
     Private UnidadMedida As New Medida()
     Private Provedor As New Proveedores()
@@ -15,7 +15,9 @@ Public Class Principal
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PictureBox2.Image = System.Drawing.Bitmap.FromFile("IconoLogin.PNG")
         PictureBox1.Image = System.Drawing.Bitmap.FromFile("Play1.PNG")
-        Nombre.Text = UsuarioActivo
+        Nombrea = UsuarioActivo
+
+        Nombre.Text = Nombrea.ToUpper()
         Abrirform(New Menu)
     End Sub
 

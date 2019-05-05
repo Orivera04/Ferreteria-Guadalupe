@@ -607,7 +607,7 @@ INICIO:
                 _GastosBOL.EliminarGasto(DataGridGastos.Rows(e.RowIndex).Cells(0).Value)
                 If (_GastosBOL.Errores.Length = 0) Then
                     LlenarDataGridViewGastos()
-                    MsgBox("El proveedor fue eliminado exitosamente", MsgBoxStyle.OkOnly, "Exito")
+                    MsgBox("El Gasto fue eliminado exitosamente", MsgBoxStyle.OkOnly, "Exito")
                 Else
                     MsgBox(_GastosBOL.Errores.ToString(), MsgBoxStyle.Critical, "Error")
                 End If

@@ -101,6 +101,23 @@ Public Class Ventas
         _Factura.P_ID_Cliente = ComboBoxBusqueda.Text.Split("#"c)(1)
         _Factura.P_Fecha = DateTimePicker1.Value
         _Factura.P_Motivo_Anulacion = ""
+
+        Try
+            If TextBox1.Text > TextBox6.Text Then
+                Dim resl As Double
+                resl = TextBox1.Text - TextBox6.Text
+                Math.Abs(resl)
+                MsgBox("Su cambio es: " + resl.ToString, MsgBoxStyle.Information, "Cambio")
+            Else
+                TextBox1.Clear()
+
+            End If
+
+        Catch ex As Exception
+
+        End Try
+
+
         If (ComboBox1.SelectedItem = "Credito") Then
             _Factura.P_Estado = "Pendiente"
         Else
@@ -135,6 +152,7 @@ Public Class Ventas
         Else
             MsgBox("Debe añadir al menos un elemento a la factura", MsgBoxStyle.Exclamation, "Aviso")
         End If
+
     End Sub
 
 #End Region
