@@ -16,7 +16,6 @@ Public Class Principal
         PictureBox2.Image = System.Drawing.Bitmap.FromFile("IconoLogin.PNG")
         PictureBox1.Image = System.Drawing.Bitmap.FromFile("Play1.PNG")
         Nombrea = UsuarioActivo
-
         Nombre.Text = Nombrea.ToUpper()
         Abrirform(New Menu)
     End Sub
