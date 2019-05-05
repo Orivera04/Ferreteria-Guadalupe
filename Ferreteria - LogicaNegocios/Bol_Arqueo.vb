@@ -159,7 +159,20 @@ Public Class Bol_Arqueo
     End Sub
 
 
+    Public Function ObtenerDato(ByVal Fecha As Date)
+        Errores.Clear()
+        Try
 
+            Return Dai_Arqueo.GetRes(Fecha)
+
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al obtener los datos")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+        End Try
+        Return 0
+    End Function
 
 
 End Class

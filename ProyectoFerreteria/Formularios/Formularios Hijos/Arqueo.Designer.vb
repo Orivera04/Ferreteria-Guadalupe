@@ -68,6 +68,7 @@ Partial Class Arqueo
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.BunifuFlatButton4 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.NumericUpDown16 = New System.Windows.Forms.NumericUpDown()
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -127,7 +128,6 @@ Partial Class Arqueo
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.pictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.BunifuFlatButton4 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -585,6 +585,45 @@ Partial Class Arqueo
         Me.GroupBox3.TabIndex = 55
         Me.GroupBox3.TabStop = False
         '
+        'BunifuFlatButton4
+        '
+        Me.BunifuFlatButton4.Activecolor = System.Drawing.Color.Tomato
+        Me.BunifuFlatButton4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuFlatButton4.BackColor = System.Drawing.Color.Salmon
+        Me.BunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton4.BorderRadius = 0
+        Me.BunifuFlatButton4.ButtonText = "Actualizar"
+        Me.BunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton4.Font = New System.Drawing.Font("Century", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton4.Iconimage = Nothing
+        Me.BunifuFlatButton4.Iconimage_right = Nothing
+        Me.BunifuFlatButton4.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton4.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton4.IconMarginLeft = 0
+        Me.BunifuFlatButton4.IconMarginRight = 0
+        Me.BunifuFlatButton4.IconRightVisible = False
+        Me.BunifuFlatButton4.IconRightZoom = 0R
+        Me.BunifuFlatButton4.IconVisible = False
+        Me.BunifuFlatButton4.IconZoom = 50.0R
+        Me.BunifuFlatButton4.IsTab = False
+        Me.BunifuFlatButton4.Location = New System.Drawing.Point(190, 127)
+        Me.BunifuFlatButton4.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.BunifuFlatButton4.Name = "BunifuFlatButton4"
+        Me.BunifuFlatButton4.Normalcolor = System.Drawing.Color.Salmon
+        Me.BunifuFlatButton4.OnHovercolor = System.Drawing.Color.Coral
+        Me.BunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton4.selected = False
+        Me.BunifuFlatButton4.Size = New System.Drawing.Size(474, 34)
+        Me.BunifuFlatButton4.TabIndex = 80
+        Me.BunifuFlatButton4.Text = "Actualizar"
+        Me.BunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton4.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton4.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton4.Visible = False
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -600,6 +639,7 @@ Partial Class Arqueo
         'NumericUpDown16
         '
         Me.NumericUpDown16.Location = New System.Drawing.Point(158, 50)
+        Me.NumericUpDown16.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
         Me.NumericUpDown16.Name = "NumericUpDown16"
         Me.NumericUpDown16.Size = New System.Drawing.Size(130, 22)
         Me.NumericUpDown16.TabIndex = 78
@@ -951,6 +991,7 @@ Partial Class Arqueo
         'NumericUpDown15
         '
         Me.NumericUpDown15.Location = New System.Drawing.Point(64, 477)
+        Me.NumericUpDown15.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown15.Name = "NumericUpDown15"
         Me.NumericUpDown15.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown15.TabIndex = 75
@@ -958,6 +999,7 @@ Partial Class Arqueo
         'NumericUpDown14
         '
         Me.NumericUpDown14.Location = New System.Drawing.Point(64, 451)
+        Me.NumericUpDown14.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown14.Name = "NumericUpDown14"
         Me.NumericUpDown14.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown14.TabIndex = 15
@@ -965,6 +1007,7 @@ Partial Class Arqueo
         'NumericUpDown13
         '
         Me.NumericUpDown13.Location = New System.Drawing.Point(64, 425)
+        Me.NumericUpDown13.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown13.Name = "NumericUpDown13"
         Me.NumericUpDown13.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown13.TabIndex = 14
@@ -972,6 +1015,7 @@ Partial Class Arqueo
         'NumericUpDown12
         '
         Me.NumericUpDown12.Location = New System.Drawing.Point(64, 402)
+        Me.NumericUpDown12.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown12.Name = "NumericUpDown12"
         Me.NumericUpDown12.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown12.TabIndex = 13
@@ -979,6 +1023,7 @@ Partial Class Arqueo
         'NumericUpDown11
         '
         Me.NumericUpDown11.Location = New System.Drawing.Point(64, 379)
+        Me.NumericUpDown11.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown11.Name = "NumericUpDown11"
         Me.NumericUpDown11.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown11.TabIndex = 12
@@ -986,6 +1031,7 @@ Partial Class Arqueo
         'NumericUpDown10
         '
         Me.NumericUpDown10.Location = New System.Drawing.Point(64, 326)
+        Me.NumericUpDown10.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown10.Name = "NumericUpDown10"
         Me.NumericUpDown10.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown10.TabIndex = 10
@@ -993,6 +1039,7 @@ Partial Class Arqueo
         'NumericUpDown9
         '
         Me.NumericUpDown9.Location = New System.Drawing.Point(64, 303)
+        Me.NumericUpDown9.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown9.Name = "NumericUpDown9"
         Me.NumericUpDown9.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown9.TabIndex = 9
@@ -1000,6 +1047,7 @@ Partial Class Arqueo
         'NumericUpDown8
         '
         Me.NumericUpDown8.Location = New System.Drawing.Point(64, 280)
+        Me.NumericUpDown8.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown8.Name = "NumericUpDown8"
         Me.NumericUpDown8.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown8.TabIndex = 8
@@ -1007,6 +1055,7 @@ Partial Class Arqueo
         'NumericUpDown7
         '
         Me.NumericUpDown7.Location = New System.Drawing.Point(64, 257)
+        Me.NumericUpDown7.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown7.Name = "NumericUpDown7"
         Me.NumericUpDown7.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown7.TabIndex = 7
@@ -1014,6 +1063,7 @@ Partial Class Arqueo
         'NumericUpDown6
         '
         Me.NumericUpDown6.Location = New System.Drawing.Point(64, 234)
+        Me.NumericUpDown6.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown6.Name = "NumericUpDown6"
         Me.NumericUpDown6.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown6.TabIndex = 6
@@ -1021,6 +1071,7 @@ Partial Class Arqueo
         'NumericUpDown5
         '
         Me.NumericUpDown5.Location = New System.Drawing.Point(64, 211)
+        Me.NumericUpDown5.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown5.Name = "NumericUpDown5"
         Me.NumericUpDown5.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown5.TabIndex = 5
@@ -1028,6 +1079,7 @@ Partial Class Arqueo
         'NumericUpDown4
         '
         Me.NumericUpDown4.Location = New System.Drawing.Point(64, 188)
+        Me.NumericUpDown4.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown4.Name = "NumericUpDown4"
         Me.NumericUpDown4.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown4.TabIndex = 4
@@ -1035,6 +1087,7 @@ Partial Class Arqueo
         'NumericUpDown3
         '
         Me.NumericUpDown3.Location = New System.Drawing.Point(64, 127)
+        Me.NumericUpDown3.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown3.Name = "NumericUpDown3"
         Me.NumericUpDown3.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown3.TabIndex = 3
@@ -1042,6 +1095,7 @@ Partial Class Arqueo
         'NumericUpDown2
         '
         Me.NumericUpDown2.Location = New System.Drawing.Point(64, 103)
+        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown2.Name = "NumericUpDown2"
         Me.NumericUpDown2.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown2.TabIndex = 2
@@ -1049,6 +1103,7 @@ Partial Class Arqueo
         'NumericUpDown1
         '
         Me.NumericUpDown1.Location = New System.Drawing.Point(64, 80)
+        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown1.TabIndex = 1
@@ -1279,45 +1334,6 @@ Partial Class Arqueo
         Me.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pictureBox8.TabIndex = 27
         Me.pictureBox8.TabStop = False
-        '
-        'BunifuFlatButton4
-        '
-        Me.BunifuFlatButton4.Activecolor = System.Drawing.Color.Tomato
-        Me.BunifuFlatButton4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BunifuFlatButton4.BackColor = System.Drawing.Color.Salmon
-        Me.BunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuFlatButton4.BorderRadius = 0
-        Me.BunifuFlatButton4.ButtonText = "Actualizar"
-        Me.BunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray
-        Me.BunifuFlatButton4.Font = New System.Drawing.Font("Century", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton4.Iconimage = Nothing
-        Me.BunifuFlatButton4.Iconimage_right = Nothing
-        Me.BunifuFlatButton4.Iconimage_right_Selected = Nothing
-        Me.BunifuFlatButton4.Iconimage_Selected = Nothing
-        Me.BunifuFlatButton4.IconMarginLeft = 0
-        Me.BunifuFlatButton4.IconMarginRight = 0
-        Me.BunifuFlatButton4.IconRightVisible = False
-        Me.BunifuFlatButton4.IconRightZoom = 0R
-        Me.BunifuFlatButton4.IconVisible = False
-        Me.BunifuFlatButton4.IconZoom = 50.0R
-        Me.BunifuFlatButton4.IsTab = False
-        Me.BunifuFlatButton4.Location = New System.Drawing.Point(190, 127)
-        Me.BunifuFlatButton4.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
-        Me.BunifuFlatButton4.Name = "BunifuFlatButton4"
-        Me.BunifuFlatButton4.Normalcolor = System.Drawing.Color.Salmon
-        Me.BunifuFlatButton4.OnHovercolor = System.Drawing.Color.Coral
-        Me.BunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White
-        Me.BunifuFlatButton4.selected = False
-        Me.BunifuFlatButton4.Size = New System.Drawing.Size(474, 34)
-        Me.BunifuFlatButton4.TabIndex = 80
-        Me.BunifuFlatButton4.Text = "Actualizar"
-        Me.BunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.BunifuFlatButton4.Textcolor = System.Drawing.Color.White
-        Me.BunifuFlatButton4.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuFlatButton4.Visible = False
         '
         'Arqueo
         '

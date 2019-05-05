@@ -11,7 +11,8 @@ Public Class Arqueo
     Private _EmpleadoBol As New Bol_Empleado
     Private _Empleado As New E_Empleado
     Private _EstadisticasBol As New Bol_Estadistica()
-    Dim SumaTemp As Double
+    Dim SumaNumeric As Double
+    Dim SumaGANACIA As Double
     Dim ID_Empl As Integer
     Dim FechaT As Date
     Dim Dolar As Double = 33.0
@@ -19,6 +20,8 @@ Public Class Arqueo
     Dim VentaDelDia As Double
     Dim boleano As Boolean = True
     Dim IDTemp As Integer
+    Dim Arqueodia As Integer
+    Dim mensaje As Boolean = False
 
 
 
@@ -27,49 +30,56 @@ Public Class Arqueo
 
     'Oca si lees esto chupala :V
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
-
-        comprobarventa()
         Verificarnumeric()
-        If SumaTemp = VentaDelDia Then
-            Dim result As Integer = MessageBox.Show("Arqueo Completo ¿Desea GUARDAR el arqueo?", "Arqueo", MessageBoxButtons.YesNo)
 
-            If result = DialogResult.No Then
-                MessageBox.Show("No se guardaron los cambios")
-            ElseIf result = DialogResult.Yes Then
-                TextBox2.Text = VentaDelDia
-                TextBox1.Text = 0
+        ComprobarArqueExistente(DateTimePicker1.Value)
+        comprobarventa()
+        If Arqueodia = 0 Then
 
-                InsertarArqueo()
-                _ArqueoBOL.Insertar(_ArqueE)
-                MsgBox("Se guardaron los cambios", MsgBoxStyle.Information, "ARQUEO")
-                LlenarDataGridViewArqueo()
+            If SumaNumeric = SumaGANACIA Then
+                Dim result As Integer = MessageBox.Show("Arqueo Completo ¿Desea GUARDAR el arqueo?", "Arqueo", MessageBoxButtons.YesNo)
 
-            End If
+                If result = DialogResult.No Then
+                    MessageBox.Show("No se guardaron los cambios")
+                ElseIf result = DialogResult.Yes Then
+                    TextBox2.Text = SumaGANACIA
+                    TextBox1.Text = 0
 
-        ElseIf VentaDelDia = 0 Then
-            MsgBox("No hay ventas", MsgBoxStyle.Exclamation, "VENTAS")
+                    InsertarArqueo()
+                    _ArqueoBOL.Insertar(_ArqueE)
+                    MsgBox("Se guardaron los cambios", MsgBoxStyle.Information, "ARQUEO")
+                    LlenarDataGridViewArqueo()
 
-        Else
-            If boleano = True Then
-                TextBox1.Text = ""
+                End If
 
-
-
-
-
-                TextBox1.Text = Math.Abs(VentaDelDia)
-
-
-
-                MsgBox("TIENE DIFERENCIAS DE " + VentaDelDia.ToString, MsgBoxStyle.Critical, "ARQUEO")
+            ElseIf VentaDelDia = 0 Then
+                MsgBox("No hay ventas", MsgBoxStyle.Exclamation, "VENTAS")
 
             Else
+                If boleano = True Then
+                    TextBox1.Text = ""
 
-                boleano = True
 
+
+                    Dim RESL As Double = SumaNumeric - SumaGANACIA
+
+                    If RESL < 0 Then
+                        TextBox1.Text = Math.Abs(RESL)
+                    Else
+                        TextBox1.Text = RESL
+                    End If
+
+
+
+                    MsgBox("TIENE DIFERENCIAS DE " + TextBox1.Text.ToString, MsgBoxStyle.Critical, "ARQUEO")
+
+                Else
+
+                    boleano = True
+
+                End If
             End If
         End If
-
     End Sub
 
 #End Region
@@ -77,6 +87,26 @@ Public Class Arqueo
 
 
 #Region "Metodos de apoyo :v "
+
+
+    Public Sub ComprobarArqueExistente(fechaDia As Date)
+        Try
+            Arqueodia = _ArqueoBOL.ObtenerDato(fechaDia)
+            If Arqueodia > 0 Then
+                Arqueodia = 1
+                MsgBox("Ya se realizo el arqueo si ingreso una nueva venta o gasto edite el arqueo del dia de hoy para actualizar", MsgBoxStyle.Information, "ARQUEO")
+                mensaje = False
+            Else
+                Arqueodia = 0
+                mensaje = True
+            End If
+
+        Catch ex As Exception
+
+        End Try
+
+
+    End Sub
 
     Public Sub LlenarDataGridViewArqueo()
         DataGridArqueo.Rows.Clear()
@@ -99,7 +129,6 @@ Public Class Arqueo
         Label2.Hide()
     End Sub
 
-
     Public Sub ListarEmpleadoID(ByVal Nombre As String)
         Dim Empleado = _EmpleadoBol.ObtenerNameEmpleado(Nombre)
         Dim _EmpleadoID As Integer
@@ -109,76 +138,73 @@ Public Class Arqueo
         TextBox8.Text = Empleado.ID_P
     End Sub
 
-
     Public Sub Verificarnumeric()
 
-        SumaTemp = caja
+        SumaNumeric = 0
         '------------------------ Moneda -------------------------'
         If TextBox9.Text > 32.0 Then
 
             If NumericUpDown1.Value > 0 Then                                 'Moneda de  5
-                SumaTemp = 5 * NumericUpDown1.Value
+                SumaNumeric = 5 * NumericUpDown1.Value
             End If
             If NumericUpDown2.Value > 0 Then                             'Moneda de  1
-                SumaTemp = SumaTemp + NumericUpDown2.Value
+                SumaNumeric = SumaNumeric + NumericUpDown2.Value
             End If
             If NumericUpDown3.Value > 0 Then                             'Moneda de  50 centavos
-                SumaTemp = SumaTemp + (NumericUpDown3.Value * 0.5)
+                SumaNumeric = SumaNumeric + (NumericUpDown3.Value * 0.5)
             End If
             '------------------------ Billete -------------------------'
             If NumericUpDown4.Value > 0 Then                             'Billete de 1000
-                SumaTemp = SumaTemp + (NumericUpDown4.Value * 1000)
+                SumaNumeric = SumaNumeric + (NumericUpDown4.Value * 1000)
             End If
 
             If NumericUpDown5.Value > 0 Then                             'Billete de 500
-                SumaTemp = SumaTemp + (NumericUpDown5.Value * 500)
+                SumaNumeric = SumaNumeric + (NumericUpDown5.Value * 500)
             End If
 
             If NumericUpDown6.Value > 0 Then                             'Billete de 200
-                SumaTemp = SumaTemp + (NumericUpDown6.Value * 200)
+                SumaNumeric = SumaNumeric + (NumericUpDown6.Value * 200)
             End If
 
             If NumericUpDown7.Value > 0 Then                             'Billete de 100
-                SumaTemp = SumaTemp + (NumericUpDown7.Value * 100)
+                SumaNumeric = SumaNumeric + (NumericUpDown7.Value * 100)
             End If
 
             If NumericUpDown8.Value > 0 Then                             'Billete de 50
-                SumaTemp = SumaTemp + (NumericUpDown8.Value * 50)
+                SumaNumeric = SumaNumeric + (NumericUpDown8.Value * 50)
             End If
 
             If NumericUpDown9.Value > 0 Then                              'Billete de 20
-                SumaTemp = SumaTemp + (NumericUpDown9.Value * 20)
+                SumaNumeric = SumaNumeric + (NumericUpDown9.Value * 20)
             End If
 
             If NumericUpDown10.Value > 0 Then                              'Billete de 10
-                SumaTemp = SumaTemp + (NumericUpDown10.Value * 10)
+                SumaNumeric = SumaNumeric + (NumericUpDown10.Value * 10)
             End If
             '------------------------ Dolar -------------------------'
             If NumericUpDown11.Value > 0 Then                              'Billete de 50
-                SumaTemp = SumaTemp + (Dolar * (50 * NumericUpDown11.Value))
+                SumaNumeric = SumaNumeric + (Dolar * (50 * NumericUpDown11.Value))
             End If
             If NumericUpDown12.Value > 0 Then                              'Billete de 20
-                SumaTemp = SumaTemp + (Dolar * (20 * NumericUpDown12.Value))
+                SumaNumeric = SumaNumeric + (Dolar * (20 * NumericUpDown12.Value))
             End If
             If NumericUpDown13.Value > 0 Then                              'Billete de 10
-                SumaTemp = SumaTemp + (Dolar * (10 * NumericUpDown13.Value))
+                SumaNumeric = SumaNumeric + (Dolar * (10 * NumericUpDown13.Value))
             End If
             If NumericUpDown14.Value > 0 Then                              'Billete de 5
-                SumaTemp = SumaTemp + (Dolar * (5 * NumericUpDown14.Value))
+                SumaNumeric = SumaNumeric + (Dolar * (5 * NumericUpDown14.Value))
             End If
             If NumericUpDown15.Value > 0 Then                              'Billete de 1
-                SumaTemp = SumaTemp + (Dolar * (1 * NumericUpDown15.Value))
+                SumaNumeric = SumaNumeric + (Dolar * (1 * NumericUpDown15.Value))
 
             End If
         Else
-            MsgBox("El valor del Dolar es superior a la cantidad especificada", MsgBoxStyle.Information, "INFORMACION")
+            MsgBox("El valor del Dolar es menor a la cantidad valida", MsgBoxStyle.Information, "INFORMACION")
             boleano = False
         End If
 
 
     End Sub
-
-
 
     Public Sub InsertarArqueo()
 
@@ -255,6 +281,7 @@ Public Class Arqueo
         _GastosE.P_Descripcion = TextBox6.Text
         _GastosE.P_Cantidad = NumericUpDown16.Value
     End Sub
+
     Public Sub ActualizarArqueo()
 
 
@@ -316,7 +343,7 @@ Public Class Arqueo
         _ArqueE.P_Caja_Chica = TextBox4.Text
 
         'Total
-        _ArqueE.P_Total = TextBox2.Text
+        _ArqueE.P_Total = SumaNumeric
 
         'Conserva los mismos datos
         _ArqueE.P_ID_EMPLEADO = ID_Empl
@@ -333,7 +360,6 @@ Public Class Arqueo
         _GastosE.P_Descripcion = TextBox6.Text
         _GastosE.P_Cantidad = NumericUpDown16.Value
     End Sub
-
 
     Public Sub ListarArqueo(ByVal ID As Integer)
 
@@ -418,29 +444,33 @@ Public Class Arqueo
 
         Try
             VentaDelDia = _EstadisticasBol.ObtenerEstadistica(5, DateTimePicker1.Value)
+            SumaGANACIA = caja + VentaDelDia
             Try
                 Dim X As Double = _GastosBOL.ObtenerDato(DateTimePicker1.Value)
                 If X > 0 Then
-                    MsgBox("Tenga en cuenta que hay Gastos autorizados para el dia de HOY", MsgBoxStyle.Information, "ARQUEO")
-                    If caja > X Then
-                        VentaDelDia = VentaDelDia + (caja - X)
-                    Else
-                        VentaDelDia = (VentaDelDia + caja) - X
+                    If MENSAJE = True Then
+                        MsgBox("Tenga en cuenta que hay Gastos autorizados para el dia de HOY", MsgBoxStyle.Information, "ARQUEO")
                     End If
 
+                    If caja > X Then
+                            SumaGANACIA = VentaDelDia + (caja - X)
+                        Else
+                            SumaGANACIA = (VentaDelDia + caja) - X
+                        End If
 
-                End If
+
+                    End If
             Catch ex As Exception
 
             End Try
 
 
 
-            Math.Abs(VentaDelDia)
+            Math.Abs(SumaGANACIA)
         Catch ex As Exception
             MsgBox("Para Arquear tiene que haber alguna venta en el dia", MsgBoxStyle.Information, "ARQUEO")
             VentaDelDia = 0
-            MsgBox(ex.Message)
+
             TextBox1.Text = ""
 
         End Try
@@ -458,7 +488,7 @@ Public Class Arqueo
 
     Private Sub Arqueo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForIllegalCrossThreadCalls = False
-        DataGridGastos.AutoResizeColumns()
+
         Try
 INICIO:
             caja = InputBox("Saldo Inicial(Caja Chica)", "SALDO")
@@ -487,15 +517,15 @@ INICIO:
         HiloGastos.Start()
     End Sub
 
-
-
     Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
         Dim VentaSeleccionada As Double
         VentaSeleccionada = _EstadisticasBol.ObtenerEstadistica(5, FechaT).ToString()
         boleano = True
 
         Verificarnumeric()
-        If SumaTemp = VentaSeleccionada Then
+        comprobarventa()
+
+        If SumaNumeric = SumaGANACIA Then
             Dim resulta As Integer = MessageBox.Show("Arqueo Completo ¿Desea ACTUALIZAR el arqueo?", "Arqueo", MessageBoxButtons.YesNo)
 
             If resulta = DialogResult.No Then
@@ -528,7 +558,7 @@ INICIO:
         Else
             If boleano = True Then
                 TextBox1.Text = ""
-                Dim RESL As Double = SumaTemp - VentaSeleccionada
+                Dim RESL As Double = SumaNumeric - SumaGANACIA
 
                 If RESL < 0 Then
                     TextBox1.Text = Math.Abs(RESL)
@@ -536,7 +566,7 @@ INICIO:
                     TextBox1.Text = RESL
                 End If
                 MsgBox("TIENE DIFERENCIAS DE " + TextBox1.Text, MsgBoxStyle.Critical, "ARQUEO")
-                SumaTemp = 0
+                SumaNumeric = 0
 
             End If
 
@@ -544,7 +574,6 @@ INICIO:
 
         End If
     End Sub
-
 
     Private Sub DataGridArqueo_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridArqueo.CellContentClick
 
@@ -587,7 +616,6 @@ INICIO:
             End If
         End If
     End Sub
-
 
     Private Sub BunifuFlatButton2_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton2.Click
 

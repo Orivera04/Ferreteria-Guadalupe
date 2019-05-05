@@ -162,6 +162,18 @@ Public Class Dai_Arqueo
         End Using
     End Sub
 
+    Public Function GetRes(ByVal Dia As Date)
+        Using Conn As New SqlConnection(My.Resources.CadenaConexion)
+            Conn.Open()
+            Query = "SELECT count(*) 
+                     FROM Arqueo
+                     WHERE FECHA = @Fecha;"
+            Using CMD As New SqlCommand(Query, Conn)
+                CMD.Parameters.AddWithValue("@Fecha", Dia.Year.ToString() + "-" + Dia.Month.ToString() + "-" + Dia.Day.ToString())
+                Return CMD.ExecuteScalar()
+            End Using
+        End Using
+    End Function
 
 
 
