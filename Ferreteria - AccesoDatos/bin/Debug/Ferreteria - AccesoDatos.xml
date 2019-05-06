@@ -22,12 +22,5 @@ Ferreteria - AccesoDatos
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
-<member name="P:Ferreteria___AccesoDatos.My.Resources.Resources.CadenaConexion">
-<summary>
-  Busca una cadena traducida similar a Data Source=.;Initial Catalog=Ferreteria;Integrated Security=True.
-
-  Busca una cadena traducida similar a Data Source=DESKTOP-QPBISI6;Initial Catalog=Ferreteria;Integrated Security=True.
-</summary>
-</member>
 </members>
 </doc>
