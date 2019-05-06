@@ -6,6 +6,8 @@ Imports Ferreteria___Entidades
 Public Class Dai_FacturaVenta
     Dim Query As String
 
+
+
     'Inserta una factura de venta'
     Public Sub Insert(ByVal Factura As E_FacturaVenta, ByVal Lineas As List(Of E_DetalleFactura))
         Using Conn As New SqlConnection(My.Resources.CadenaConexion)

@@ -55,6 +55,7 @@ Partial Class Factura_Compra
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -62,16 +63,17 @@ Partial Class Factura_Compra
         Me.Label8 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Proveedor = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IDProve = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Fech = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Es = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.pictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -85,6 +87,7 @@ Partial Class Factura_Compra
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -119,7 +122,7 @@ Partial Class Factura_Compra
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label15.Location = New System.Drawing.Point(153, 10)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(164, 28)
+        Me.Label15.Size = New System.Drawing.Size(164, 25)
         Me.Label15.TabIndex = 4
         Me.Label15.Text = "Factura Compra"
         '
@@ -173,9 +176,9 @@ Partial Class Factura_Compra
         Me.Label10.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.Label10.Location = New System.Drawing.Point(61, 39)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(212, 23)
+        Me.Label10.Size = New System.Drawing.Size(182, 23)
         Me.Label10.TabIndex = 55
-        Me.Label10.Text = "Facturas no pagadas:"
+        Me.Label10.Text = "Detalle de factura:"
         '
         'DataGridView2
         '
@@ -454,6 +457,8 @@ Partial Class Factura_Compra
         Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.BackColor = System.Drawing.Color.White
+        Me.GroupBox1.Controls.Add(Me.NumericUpDown2)
+        Me.GroupBox1.Controls.Add(Me.Label17)
         Me.GroupBox1.Controls.Add(Me.ComboBox3)
         Me.GroupBox1.Controls.Add(Me.ComboBox2)
         Me.GroupBox1.Controls.Add(Me.Label12)
@@ -461,7 +466,6 @@ Partial Class Factura_Compra
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.BunifuFlatButton1)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -471,6 +475,18 @@ Partial Class Factura_Compra
         Me.GroupBox1.Size = New System.Drawing.Size(1195, 256)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label17.Location = New System.Drawing.Point(772, 130)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(96, 18)
+        Me.Label17.TabIndex = 67
+        Me.Label17.Text = "Cargando..."
         '
         'ComboBox3
         '
@@ -539,7 +555,7 @@ Partial Class Factura_Compra
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Proveedor, Me.Total, Me.Fech, Me.Es})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.IDProve, Me.Nombre, Me.Total, Me.Fech, Me.Es})
         Me.DataGridView1.Location = New System.Drawing.Point(436, 51)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(739, 192)
@@ -551,11 +567,16 @@ Partial Class Factura_Compra
         Me.ID.HeaderText = "ID"
         Me.ID.Name = "ID"
         '
-        'Proveedor
+        'IDProve
         '
-        Me.Proveedor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Proveedor.HeaderText = "Proveedor"
-        Me.Proveedor.Name = "Proveedor"
+        Me.IDProve.HeaderText = "ID Proveedor"
+        Me.IDProve.Name = "IDProve"
+        '
+        'Nombre
+        '
+        Me.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Nombre.HeaderText = "Nombre Proveedor"
+        Me.Nombre.Name = "Nombre"
         '
         'Total
         '
@@ -586,13 +607,6 @@ Partial Class Factura_Compra
         Me.Label7.Size = New System.Drawing.Size(59, 23)
         Me.Label7.TabIndex = 51
         Me.Label7.Text = "Total:"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(143, 163)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(239, 20)
-        Me.TextBox1.TabIndex = 45
         '
         'BunifuFlatButton1
         '
@@ -667,6 +681,16 @@ Partial Class Factura_Compra
         Me.pictureBox8.TabIndex = 27
         Me.pictureBox8.TabStop = False
         '
+        'NumericUpDown2
+        '
+        Me.NumericUpDown2.Location = New System.Drawing.Point(143, 160)
+        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
+        Me.NumericUpDown2.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.NumericUpDown2.Name = "NumericUpDown2"
+        Me.NumericUpDown2.Size = New System.Drawing.Size(239, 20)
+        Me.NumericUpDown2.TabIndex = 68
+        Me.NumericUpDown2.Value = New Decimal(New Integer() {50, 0, 0, 0})
+        '
         'Factura_Compra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -694,6 +718,7 @@ Partial Class Factura_Compra
         Me.GroupBox1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -706,7 +731,6 @@ Partial Class Factura_Compra
     Friend WithEvents GroupBox1 As GroupBox
     Private WithEvents Label8 As Label
     Private WithEvents Label7 As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
     Private WithEvents Label6 As Label
     Private WithEvents Label5 As Label
@@ -743,9 +767,12 @@ Partial Class Factura_Compra
     Private WithEvents Label2 As Label
     Private WithEvents PictureBox1 As PictureBox
     Friend WithEvents DataGridView1 As DataGridView
+    Private WithEvents Label17 As Label
     Friend WithEvents ID As DataGridViewTextBoxColumn
-    Friend WithEvents Proveedor As DataGridViewTextBoxColumn
+    Friend WithEvents IDProve As DataGridViewTextBoxColumn
+    Friend WithEvents Nombre As DataGridViewTextBoxColumn
     Friend WithEvents Total As DataGridViewTextBoxColumn
     Friend WithEvents Fech As DataGridViewTextBoxColumn
     Friend WithEvents Es As DataGridViewTextBoxColumn
+    Friend WithEvents NumericUpDown2 As NumericUpDown
 End Class

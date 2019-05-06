@@ -2,8 +2,8 @@
 Imports Ferreteria___AccesoDatos
 Imports Ferreteria___Entidades
 
-' Logica de negocios con la entidad FacturaVenta'
-Public Class Bol_FacturaVenta
+' Logica de negocios con la entidad FacturaCompra'
+Public Class Bol_FacturaCompra
 
     'Definicion de valores retornados en funciones :
     '  1  -> Exito en la operación
@@ -12,16 +12,28 @@ Public Class Bol_FacturaVenta
     ' -2  -> Error controlado por la aplicación (Por ejemplo datos mal ingresados etc.)
 
     'Importacion de la clase Dai y creación de variable que contendra los errores'
-    Private Dai_FacturaVenta As New Dai_FacturaVenta()
+    Private Dai_FacturaCompra As New Dai_FacturaCompra()
     Public Errores As New StringBuilder
 
-
-
-    'Inserta un producto'
-    Public Sub InsertarFactura(ByVal Factura As E_FacturaVenta, ByVal Lineas As List(Of E_DetalleFactura))
+    'Devuelve lista de facturas'
+    Public Function LeerFacturas()
         Errores.Clear()
         Try
-            Dai_FacturaVenta.Insert(Factura, Lineas)
+            Return Dai_FacturaCompra.GetAll()
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al leer la lista de facturas")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+            Return Nothing
+        End Try
+    End Function
+
+    'Inserta una factura'
+    Public Sub InsertarFactura(ByVal Factura As E_FacturaCompra)
+        Errores.Clear()
+        Try
+            Dai_FacturaCompra.Insert(Factura)
         Catch Ex As Exception
             If (Ex.HResult <> -2146232060) Then
                 Errores.Append("Hubo un error al insertar la factura")
@@ -35,14 +47,15 @@ Public Class Bol_FacturaVenta
     End Sub
 
     'Inserta un abono'
-    Public Sub InsertarAbono(ByVal Abono As E_AbonoCliente)
+    Public Sub InsertarAbono(ByVal Abono As E_AbonoProveedor)
         Errores.Clear()
         Try
             If (Abono.P_Descripcion = "") Then
                 Errores.Append("La descripción no puede estar vacia.")
             End If
+
             If (Errores.Length = 0) Then
-                Dai_FacturaVenta.InsertAbono(Abono)
+                Dai_FacturaCompra.InsertAbono(Abono)
             End If
         Catch Ex As Exception
             If (Ex.HResult <> -2146232060) Then
@@ -62,7 +75,7 @@ Public Class Bol_FacturaVenta
     Public Function ObtenerMontosFacturaPendiente(ByVal ID As Integer)
         Errores.Clear()
         Try
-            Return Dai_FacturaVenta.GetFacturasPendientes(ID)
+            Return Dai_FacturaCompra.GetFacturasPendientes(ID)
         Catch Ex As Exception
             Errores.Append("Hubo un error al leer las facturas pendientes de paga")
             If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
@@ -76,7 +89,7 @@ Public Class Bol_FacturaVenta
     Public Function ObtenerAbonosFactura(ByVal ID As Integer)
         Errores.Clear()
         Try
-            Return Dai_FacturaVenta.GetAbonosFactura(ID)
+            Return Dai_FacturaCompra.GetAbonosFactura(ID)
         Catch Ex As Exception
             Errores.Append("Hubo un error al leer la lista de abonos")
             If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
@@ -90,7 +103,7 @@ Public Class Bol_FacturaVenta
     Public Function ObtenerUltimoID()
         Errores.Clear()
         Try
-            Return Dai_FacturaVenta.GetLastID() + 1
+            Return Dai_FacturaCompra.GetLastID() + 1
         Catch Ex As Exception
             Errores.Append("Ocurrio un error al obtener los datos de la ultima factura")
             If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
