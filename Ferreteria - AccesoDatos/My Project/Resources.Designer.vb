@@ -61,7 +61,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Data Source=guadalupe.cucaxhq0asdg.us-east-2.rds.amazonaws.com;Initial Catalog=Ferreteria;Persist Security Info=True;User ID=Oscar;Password=root12345.
+        '''  Busca una cadena traducida similar a Data Source=DESKTOP-QPBISI6;Initial Catalog=Ferreteria;Integrated Security=True.
         '''</summary>
         Friend ReadOnly Property CadenaConexion() As String
             Get

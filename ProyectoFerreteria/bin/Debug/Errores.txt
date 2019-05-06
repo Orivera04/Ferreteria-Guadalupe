@@ -349,3 +349,17 @@ The statement has been terminated.
    en Ferreteria___LogicaNegocios.Bol_Cliente.EliminarCliente(Int32 ID) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Cliente.vb:línea 107
 ClientConnectionId:30d58ed2-70f2-4c9f-a62e-d4be744c6135
 Error Number:547,State:0,Class:16
+[2019/05/05 23:36:45]  System.InvalidOperationException: Error de lectura porque no hay datos.
+   en System.Data.SqlClient.SqlDataReader.CheckDataIsReady(Int32 columnIndex, Boolean allowPartiallyReadColumn, Boolean permitAsync, String methodName)
+   en System.Data.SqlClient.SqlDataReader.TryReadColumn(Int32 i, Boolean setTimeout, Boolean allowPartiallyReadColumn)
+   en System.Data.SqlClient.SqlDataReader.GetValueInternal(Int32 i)
+   en System.Data.SqlClient.SqlDataReader.GetValue(Int32 i)
+   en Ferreteria___AccesoDatos.Dai_Empleado.GetByName(String Name) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 154
+   en Ferreteria___LogicaNegocios.Bol_Empleado.ObtenerNameEmpleado(String Name) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 166
+[2019/05/05 23:37:21]  System.InvalidOperationException: Error de lectura porque no hay datos.
+   en System.Data.SqlClient.SqlDataReader.CheckDataIsReady(Int32 columnIndex, Boolean allowPartiallyReadColumn, Boolean permitAsync, String methodName)
+   en System.Data.SqlClient.SqlDataReader.TryReadColumn(Int32 i, Boolean setTimeout, Boolean allowPartiallyReadColumn)
+   en System.Data.SqlClient.SqlDataReader.GetValueInternal(Int32 i)
+   en System.Data.SqlClient.SqlDataReader.GetValue(Int32 i)
+   en Ferreteria___AccesoDatos.Dai_Empleado.GetByName(String Name) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 154
+   en Ferreteria___LogicaNegocios.Bol_Empleado.ObtenerNameEmpleado(String Name) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 166

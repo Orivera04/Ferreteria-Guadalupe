@@ -686,6 +686,7 @@ Partial Class Arqueo
         '
         Me.TextBox6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox6.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox6.Location = New System.Drawing.Point(158, 95)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(534, 22)

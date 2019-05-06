@@ -138,12 +138,17 @@ Public Class Arqueo
     End Sub
 
     Public Sub ListarEmpleadoID(ByVal Nombre As String)
-        Dim Empleado = _EmpleadoBol.ObtenerNameEmpleado(Nombre)
-        Dim _EmpleadoID As Integer
+        Try
+            Dim Empleado = _EmpleadoBol.ObtenerNameEmpleado(Nombre)
+            Dim _EmpleadoID As Integer
 
 
-        _EmpleadoID = Empleado.ID_P
-        TextBox8.Text = Empleado.ID_P
+            _EmpleadoID = Empleado.ID_P
+            TextBox8.Text = Empleado.ID_P
+        Catch ex As Exception
+            MsgBox("hay un problema con al IDENTIFICAR el usuario", MsgBoxStyle.Critical, "ARQUEO")
+        End Try
+
     End Sub
 
     Public Sub Verificarnumeric()
