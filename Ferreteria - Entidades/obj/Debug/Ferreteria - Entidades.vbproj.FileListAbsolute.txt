@@ -8,3 +8,12 @@ C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - Entidades\obj\
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - Entidades\obj\Debug\Ferreteria - Entidades.xml
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - Entidades\obj\Debug\Ferreteria - Entidades.pdb
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - Entidades\obj\Debug\Ferreteria - Entidades.vbprojAssemblyReference.cache
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - Entidades\bin\Debug\Ferreteria - Entidades.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - Entidades\bin\Debug\Ferreteria - Entidades.pdb
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - Entidades\bin\Debug\Ferreteria - Entidades.xml
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - Entidades\obj\Debug\Ferreteria - Entidades.vbprojResolveAssemblyReference.cache
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - Entidades\obj\Debug\Ferreteria___Entidades.Resources.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - Entidades\obj\Debug\Ferreteria - Entidades.vbproj.GenerateResource.Cache
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - Entidades\obj\Debug\Ferreteria - Entidades.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - Entidades\obj\Debug\Ferreteria - Entidades.xml
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - Entidades\obj\Debug\Ferreteria - Entidades.pdb
