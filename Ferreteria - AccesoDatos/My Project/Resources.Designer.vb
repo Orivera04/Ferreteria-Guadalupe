@@ -62,6 +62,7 @@ Namespace My.Resources
         
         '''<summary>
         '''  Busca una cadena traducida similar a Data Source=.;Initial Catalog=Ferreteria;Integrated Security=True.
+
         '''</summary>
         Friend ReadOnly Property CadenaConexion() As String
             Get

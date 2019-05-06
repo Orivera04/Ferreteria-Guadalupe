@@ -15,17 +15,25 @@ Public Class Inventario
 
     'Actualiza el listado de proveedores'
     Public Sub LlenarComboboxProveedores()
-        Dim ListaProveedores = _ProveedorBol.ObtenerIDProveedores()
-        ProveedorCombo.Items.Clear()
-        If (_ProveedorBol.Errores.Length = 0) Then
-            For I As Integer = 0 To ListaProveedores.length - 1
-                ProveedorCombo.Items.Add(ListaProveedores(I))
-            Next
-            ProveedorCombo.SelectedIndex = 0
-            LlenarComboboxUnidadesDeMedida()
-        Else
-            MsgBox(_ProveedorBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
-        End If
+        Try
+            Dim ListaProveedores = _ProveedorBol.ObtenerIDProveedores()
+            ProveedorCombo.Items.Clear()
+            If (_ProveedorBol.Errores.Length = 0) Then
+                For I As Integer = 0 To ListaProveedores.length - 1
+                    ProveedorCombo.Items.Add(ListaProveedores(I))
+                Next
+                ProveedorCombo.SelectedIndex = 0
+                LlenarComboboxUnidadesDeMedida()
+            Else
+                MsgBox(_ProveedorBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
+            End If
+            BunifuFlatButton1.Enabled = True
+
+        Catch ex As Exception
+            MsgBox("Antes de agregar un producto agrege proveedor y unidades", MsgBoxStyle.Exclamation, "INVENTARIO")
+            BunifuFlatButton1.Enabled = False
+        End Try
+
     End Sub
 
     'Actualiza el listado de unidades de medida'

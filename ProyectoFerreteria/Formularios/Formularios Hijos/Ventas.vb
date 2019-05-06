@@ -51,14 +51,20 @@ Public Class Ventas
     End Sub
 
     Private Sub Ventas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LlenarComboboxCliente()
-        LlenarComboboxProducto()
+        Try
+            LlenarComboboxCliente()
+            LlenarComboboxProducto()
 
-        TextBox2.Text = ComboBox2.SelectedItem
-        Caja.Text = Principal.EmpleadoActivo.Usuario_P
+            TextBox2.Text = ComboBox2.SelectedItem
+            Caja.Text = Principal.EmpleadoActivo.Usuario_P
 
 
-        TextBoxBusqueda.Text = _FacturaVentaBol.ObtenerUltimoID()
+            TextBoxBusqueda.Text = _FacturaVentaBol.ObtenerUltimoID()
+        Catch ex As Exception
+
+        End Try
+
+
     End Sub
 
 
@@ -95,12 +101,17 @@ Public Class Ventas
     End Sub
 
     Private Sub BunifuFlatButton2_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton2.Click
-        _Factura.P_Tipo = ComboBox1.SelectedItem
-        _Factura.P_SubTotal = TextBox3.Text
-        _Factura.P_ID_Empleado = Principal.EmpleadoActivo.ID_P
-        _Factura.P_ID_Cliente = ComboBoxBusqueda.Text.Split("#"c)(1)
-        _Factura.P_Fecha = DateTimePicker1.Value
-        _Factura.P_Motivo_Anulacion = ""
+        Try
+            _Factura.P_Tipo = ComboBox1.SelectedItem
+            _Factura.P_SubTotal = TextBox3.Text
+            _Factura.P_ID_Empleado = Principal.EmpleadoActivo.ID_P
+            _Factura.P_ID_Cliente = ComboBoxBusqueda.Text.Split("#"c)(1)
+            _Factura.P_Fecha = DateTimePicker1.Value
+            _Factura.P_Motivo_Anulacion = ""
+        Catch ex As Exception
+            MsgBox("algunos campos estan vacios verifique", MsgBoxStyle.Critical, "FACTURA")
+        End Try
+
 
         Try
             If TextBox1.Text > TextBox6.Text Then
