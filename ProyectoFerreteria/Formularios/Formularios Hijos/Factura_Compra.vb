@@ -47,17 +47,22 @@ Public Class Factura_Compra
     End Sub
 
     Public Sub LlenarComboboxProveedores()
-        Dim ListaProveedores = _ProveedorBol.ObtenerIDProveedores()
-        ComboBox2.Items.Clear()
-        If (_ProveedorBol.Errores.Length = 0) Then
-            For I As Integer = 0 To ListaProveedores.length - 1
-                ComboBox2.Items.Add(ListaProveedores(I))
-            Next
-            ComboBox2.SelectedIndex = 0
-            ComboBox3.SelectedIndex = 0
-        Else
-            MsgBox(_ProveedorBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
-        End If
+        Try
+            Dim ListaProveedores = _ProveedorBol.ObtenerIDProveedores()
+            ComboBox2.Items.Clear()
+            If (_ProveedorBol.Errores.Length = 0) Then
+                For I As Integer = 0 To ListaProveedores.length - 1
+                    ComboBox2.Items.Add(ListaProveedores(I))
+                Next
+                ComboBox2.SelectedIndex = 0
+                ComboBox3.SelectedIndex = 0
+            Else
+                MsgBox(_ProveedorBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
+            End If
+        Catch ex As Exception
+
+        End Try
+
     End Sub
 
 #End Region
