@@ -41,6 +41,8 @@ Partial Class Ventas
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
@@ -67,8 +69,6 @@ Partial Class Ventas
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -165,6 +165,8 @@ Partial Class Ventas
         'NumericUpDown1
         '
         Me.NumericUpDown1.Location = New System.Drawing.Point(550, 147)
+        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.NumericUpDown1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(120, 20)
         Me.NumericUpDown1.TabIndex = 52
@@ -221,8 +223,9 @@ Partial Class Ventas
         Me.TextBox2.Enabled = False
         Me.TextBox2.Location = New System.Drawing.Point(550, 103)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(120, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(167, 20)
         Me.TextBox2.TabIndex = 48
+        Me.TextBox2.Visible = False
         '
         'Label10
         '
@@ -235,6 +238,7 @@ Partial Class Ventas
         Me.Label10.Size = New System.Drawing.Size(71, 19)
         Me.Label10.TabIndex = 47
         Me.Label10.Text = "Codigo:"
+        Me.Label10.Visible = False
         '
         'ComboBox2
         '
@@ -245,7 +249,7 @@ Partial Class Ventas
         Me.ComboBox2.BackColor = System.Drawing.Color.LemonChiffon
         Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(550, 60)
+        Me.ComboBox2.Location = New System.Drawing.Point(532, 58)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(263, 21)
         Me.ComboBox2.TabIndex = 46
@@ -344,6 +348,27 @@ Partial Class Ventas
         Me.GroupBox2.Size = New System.Drawing.Size(319, 399)
         Me.GroupBox2.TabIndex = 38
         Me.GroupBox2.TabStop = False
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox1.Location = New System.Drawing.Point(130, 239)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(164, 20)
+        Me.TextBox1.TabIndex = 62
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.White
+        Me.Label14.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.CornflowerBlue
+        Me.Label14.Location = New System.Drawing.Point(15, 237)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(54, 19)
+        Me.Label14.TabIndex = 61
+        Me.Label14.Text = "Pago:"
         '
         'NumericUpDown2
         '
@@ -491,35 +516,34 @@ Partial Class Ventas
         Me.DataGridINVENTARIO.BackgroundColor = System.Drawing.Color.LightYellow
         Me.DataGridINVENTARIO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridINVENTARIO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Linea, Me.ID, Me.Nombre, Me.Precio, Me.Cantidad, Me.Acc1})
-        Me.DataGridINVENTARIO.Location = New System.Drawing.Point(48, 46)
+        Me.DataGridINVENTARIO.Location = New System.Drawing.Point(14, 46)
         Me.DataGridINVENTARIO.Name = "DataGridINVENTARIO"
-        Me.DataGridINVENTARIO.Size = New System.Drawing.Size(713, 328)
+        Me.DataGridINVENTARIO.Size = New System.Drawing.Size(793, 328)
         Me.DataGridINVENTARIO.TabIndex = 0
         '
         'Linea
         '
-        Me.Linea.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.Linea.HeaderText = "Linea"
         Me.Linea.Name = "Linea"
         Me.Linea.ReadOnly = True
+        Me.Linea.Width = 60
         '
         'ID
         '
-        Me.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.ID.HeaderText = "ID del producto"
         Me.ID.Name = "ID"
         Me.ID.ReadOnly = True
+        Me.ID.Width = 120
         '
         'Nombre
         '
         Me.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.HeaderText = "Descripcion"
         Me.Nombre.Name = "Nombre"
         Me.Nombre.ReadOnly = True
         '
         'Precio
         '
-        Me.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.Precio.HeaderText = "Precio"
         Me.Precio.Name = "Precio"
         Me.Precio.ReadOnly = True
@@ -647,27 +671,6 @@ Partial Class Ventas
         Me.TextBoxBusqueda.TabIndex = 5
         Me.TextBoxBusqueda.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.BackColor = System.Drawing.Color.White
-        Me.Label14.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label14.Location = New System.Drawing.Point(15, 237)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(54, 19)
-        Me.Label14.TabIndex = 61
-        Me.Label14.Text = "Pago:"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.Location = New System.Drawing.Point(130, 239)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox1.TabIndex = 62
-        '
         'Ventas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -738,12 +741,12 @@ Partial Class Ventas
     Private WithEvents Label12 As Label
     Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents NumericUpDown2 As NumericUpDown
+    Friend WithEvents TextBox1 As TextBox
+    Private WithEvents Label14 As Label
     Friend WithEvents Linea As DataGridViewTextBoxColumn
     Friend WithEvents ID As DataGridViewTextBoxColumn
     Friend WithEvents Nombre As DataGridViewTextBoxColumn
     Friend WithEvents Precio As DataGridViewTextBoxColumn
     Friend WithEvents Cantidad As DataGridViewTextBoxColumn
     Friend WithEvents Acc1 As DataGridViewButtonColumn
-    Friend WithEvents TextBox1 As TextBox
-    Private WithEvents Label14 As Label
 End Class

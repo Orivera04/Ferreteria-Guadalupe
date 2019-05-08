@@ -6,7 +6,7 @@
     Private Marca As String
     Private Descripcion As String
     Private Categoria As String
-    Private Nombre As String
+    '  Private Nombre As String
     Private Stock_Minimo As Integer
     Private Stock_Maximo As Integer
     Private Existencia As Integer
@@ -52,14 +52,14 @@
             Categoria = value
         End Set
     End Property
-    Public Property P_Nombre As String
-        Get
-            Return Nombre
-        End Get
-        Set(value As String)
-            Nombre = value
-        End Set
-    End Property
+    ' Public Property P_Nombre As String
+    'Get
+    'Return Nombre
+    'End Get
+    'Set(value As String)
+    '      Nombre = value
+    'End Set
+    'End Property
     Public Property P_Stock_Minimo As Integer
         Get
             Return Stock_Minimo

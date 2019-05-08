@@ -61,7 +61,7 @@ Public Class Inventario
             ListaProductos = _ProductoBol.LeerTodo(True, TipoFiltro, Cadena)
         End If
         For I As Integer = 0 To ListaProductos.Count() - 1
-            DataGridINVENTARIO.Rows.Add(ListaProductos(I).P_ID_Producto, ListaProductos(I).P_Marca, ListaProductos(I).P_Descripcion, ListaProductos(I).P_Categoria, ListaProductos(I).P_Nombre, ListaProductos(I).P_Stock_Minimo, ListaProductos(I).P_Stock_Maximo, ListaProductos(I).P_Existencia, ListaProductos(I).P_NombreUnidadMedida, ListaProductos(I).P_PrecioCompra, ListaProductos(I).P_PrecioVenta, ListaProductos(I).P_FechaIngreso, ListaProductos(I).P_NombreProveedor, "Editar", "Eliminar")
+            DataGridINVENTARIO.Rows.Add(ListaProductos(I).P_ID_Producto, ListaProductos(I).P_Marca, ListaProductos(I).P_Descripcion, ListaProductos(I).P_Categoria, ListaProductos(I).P_Stock_Minimo, ListaProductos(I).P_Stock_Maximo, ListaProductos(I).P_Existencia, ListaProductos(I).P_NombreUnidadMedida, ListaProductos(I).P_PrecioCompra, ListaProductos(I).P_PrecioVenta, ListaProductos(I).P_FechaIngreso, ListaProductos(I).P_NombreProveedor, "Editar", "Eliminar")
         Next
         Label17.Hide()
         Listo = True
@@ -74,7 +74,7 @@ Public Class Inventario
         Marcabox.Text = Producto.P_Marca
         DescripcionBox.Text = Producto.P_Descripcion
         CategoriaCombo.SelectedItem = Producto.P_Categoria
-        Nombrebox.Text = Producto.P_Nombre
+        '  Nombrebox.Text = Producto.P_Nombre
         MinStockDown1.Value = Producto.P_Stock_Minimo
         MaxStockDown2.Value = Producto.P_Stock_Maximo
         ExistenciaDown1.Value = Producto.P_Existencia
@@ -107,7 +107,7 @@ Public Class Inventario
             _Producto.P_Marca = Marcabox.Text
             _Producto.P_Descripcion = DescripcionBox.Text
             _Producto.P_Categoria = CategoriaCombo.SelectedItem
-            _Producto.P_Nombre = Nombrebox.Text
+            ' _Producto.P_Nombre = Nombrebox.Text
             _Producto.P_Stock_Minimo = MinStockDown1.Value
             _Producto.P_Stock_Maximo = MaxStockDown2.Value
             _Producto.P_Existencia = ExistenciaDown1.Value
@@ -173,10 +173,10 @@ Public Class Inventario
     End Sub
     Private Sub DescripcionBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles DescripcionBox.KeyPress
         If (e.KeyChar = ChrW(Keys.Enter)) Then
-            Nombrebox.Select()
+            'Nombrebox.Select()
         End If
     End Sub
-    Private Sub Nombrebox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Nombrebox.KeyPress
+    Private Sub Nombrebox_KeyPress(sender As Object, e As KeyPressEventArgs)
         If (e.KeyChar = ChrW(Keys.Enter)) Then
             MinStockDown1.Select()
         End If
@@ -212,12 +212,12 @@ Public Class Inventario
 
     'Evento del DatagridView mas exactamente de los botones eliminar y actualizar de cada fila'
     Private Sub DataGridINVENTARIO_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridINVENTARIO.CellContentClick
-        If (e.ColumnIndex = 13) Then
+        If (e.ColumnIndex = 12) Then
             EditarButton.Visible = True
             Me.Cursor = Cursors.WaitCursor
             ListarProducto(DataGridINVENTARIO.Rows(e.RowIndex).Cells(0).Value)
             Me.Cursor = Cursors.Default
-        ElseIf (e.ColumnIndex = 14) Then
+        ElseIf (e.ColumnIndex = 13) Then
             Dim resulta As Integer = MessageBox.Show("¿Esta seguro que desea eliminar?", "Gasto", MessageBoxButtons.YesNo)
 
             If resulta = DialogResult.No Then
@@ -245,7 +245,7 @@ Public Class Inventario
         _Producto.P_Marca = Marcabox.Text
         _Producto.P_Descripcion = DescripcionBox.Text
         _Producto.P_Categoria = CategoriaCombo.SelectedItem
-        _Producto.P_Nombre = Nombrebox.Text
+        ' _Producto.P_Nombre = Nombrebox.Text
         _Producto.P_Stock_Minimo = MinStockDown1.Value
         _Producto.P_Stock_Maximo = MaxStockDown2.Value
         _Producto.P_Existencia = ExistenciaDown1.Value
@@ -270,7 +270,7 @@ Public Class Inventario
     Private Sub FiltrarBoton_Click(sender As Object, e As EventArgs) Handles FiltrarBoton.Click
         If (ComboBoxBusqueda.SelectedItem = "Codigo") Then
             LlenarDataGridViewProductos(True, 0, TextBoxBusqueda.Text)
-        ElseIf (ComboBoxBusqueda.SelectedItem = "Nombre") Then
+        ElseIf (ComboBoxBusqueda.SelectedItem = "Descripcion") Then
             LlenarDataGridViewProductos(True, 1, TextBoxBusqueda.Text)
         ElseIf (ComboBoxBusqueda.SelectedItem = "Marca") Then
             LlenarDataGridViewProductos(True, 2, TextBoxBusqueda.Text)

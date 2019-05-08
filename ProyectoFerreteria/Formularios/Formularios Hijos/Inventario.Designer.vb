@@ -42,8 +42,6 @@ Partial Class Inventario
         Me.Label12 = New System.Windows.Forms.Label()
         Me.MaxStockDown2 = New System.Windows.Forms.NumericUpDown()
         Me.MinStockDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.Nombrebox = New System.Windows.Forms.TextBox()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.Porcentaje = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -67,11 +65,11 @@ Partial Class Inventario
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.DataGridINVENTARIO = New System.Windows.Forms.DataGridView()
+        Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Categoria = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Stock_Min = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Stock_Max = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Existencia = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -82,7 +80,6 @@ Partial Class Inventario
         Me.Proveedor_ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Edit = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Elim = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -163,8 +160,6 @@ Partial Class Inventario
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.MaxStockDown2)
         Me.GroupBox1.Controls.Add(Me.MinStockDown1)
-        Me.GroupBox1.Controls.Add(Me.Nombrebox)
-        Me.GroupBox1.Controls.Add(Me.Label13)
         Me.GroupBox1.Controls.Add(Me.Porcentaje)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.Label11)
@@ -240,6 +235,7 @@ Partial Class Inventario
         '
         Me.VentaBox.DecimalPlaces = 2
         Me.VentaBox.Location = New System.Drawing.Point(145, 375)
+        Me.VentaBox.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.VentaBox.Name = "VentaBox"
         Me.VentaBox.Size = New System.Drawing.Size(216, 20)
         Me.VentaBox.TabIndex = 64
@@ -248,6 +244,7 @@ Partial Class Inventario
         '
         Me.CompraBox.DecimalPlaces = 2
         Me.CompraBox.Location = New System.Drawing.Point(144, 348)
+        Me.CompraBox.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
         Me.CompraBox.Name = "CompraBox"
         Me.CompraBox.Size = New System.Drawing.Size(43, 20)
         Me.CompraBox.TabIndex = 63
@@ -322,6 +319,7 @@ Partial Class Inventario
         'ExistenciaDown1
         '
         Me.ExistenciaDown1.Location = New System.Drawing.Point(144, 285)
+        Me.ExistenciaDown1.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
         Me.ExistenciaDown1.Name = "ExistenciaDown1"
         Me.ExistenciaDown1.Size = New System.Drawing.Size(217, 20)
         Me.ExistenciaDown1.TabIndex = 54
@@ -341,6 +339,7 @@ Partial Class Inventario
         'MaxStockDown2
         '
         Me.MaxStockDown2.Location = New System.Drawing.Point(264, 255)
+        Me.MaxStockDown2.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
         Me.MaxStockDown2.Name = "MaxStockDown2"
         Me.MaxStockDown2.Size = New System.Drawing.Size(97, 20)
         Me.MaxStockDown2.TabIndex = 52
@@ -348,31 +347,10 @@ Partial Class Inventario
         'MinStockDown1
         '
         Me.MinStockDown1.Location = New System.Drawing.Point(144, 255)
+        Me.MinStockDown1.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
         Me.MinStockDown1.Name = "MinStockDown1"
         Me.MinStockDown1.Size = New System.Drawing.Size(96, 20)
         Me.MinStockDown1.TabIndex = 51
-        '
-        'Nombrebox
-        '
-        Me.Nombrebox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Nombrebox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.Nombrebox.Location = New System.Drawing.Point(144, 224)
-        Me.Nombrebox.MaxLength = 50
-        Me.Nombrebox.Name = "Nombrebox"
-        Me.Nombrebox.Size = New System.Drawing.Size(217, 20)
-        Me.Nombrebox.TabIndex = 50
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.Color.White
-        Me.Label13.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label13.Location = New System.Drawing.Point(14, 225)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(72, 18)
-        Me.Label13.TabIndex = 49
-        Me.Label13.Text = "Nombre:"
         '
         'Porcentaje
         '
@@ -618,7 +596,7 @@ Partial Class Inventario
         Me.ComboBoxBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBoxBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBoxBusqueda.FormattingEnabled = True
-        Me.ComboBoxBusqueda.Items.AddRange(New Object() {"Codigo", "Nombre", "Marca", "Todo"})
+        Me.ComboBoxBusqueda.Items.AddRange(New Object() {"Codigo", "Marca", "Descripcion", "Todo"})
         Me.ComboBoxBusqueda.Location = New System.Drawing.Point(243, 55)
         Me.ComboBoxBusqueda.Name = "ComboBoxBusqueda"
         Me.ComboBoxBusqueda.Size = New System.Drawing.Size(121, 21)
@@ -670,11 +648,19 @@ Partial Class Inventario
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridINVENTARIO.BackgroundColor = System.Drawing.Color.White
         Me.DataGridINVENTARIO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridINVENTARIO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Marca, Me.Descripcion, Me.Categoria, Me.Nombre, Me.Stock_Min, Me.Stock_Max, Me.Existencia, Me.Unidad_M, Me.Precio_C, Me.Precio_Venta, Me.Fecha_Ing, Me.Proveedor_ID, Me.Edit, Me.Elim})
+        Me.DataGridINVENTARIO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Marca, Me.Descripcion, Me.Categoria, Me.Stock_Min, Me.Stock_Max, Me.Existencia, Me.Unidad_M, Me.Precio_C, Me.Precio_Venta, Me.Fecha_Ing, Me.Proveedor_ID, Me.Edit, Me.Elim})
         Me.DataGridINVENTARIO.Location = New System.Drawing.Point(6, 84)
         Me.DataGridINVENTARIO.Name = "DataGridINVENTARIO"
         Me.DataGridINVENTARIO.Size = New System.Drawing.Size(827, 459)
         Me.DataGridINVENTARIO.TabIndex = 0
+        '
+        'TextBoxBusqueda
+        '
+        Me.TextBoxBusqueda.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextBoxBusqueda.Location = New System.Drawing.Point(379, 55)
+        Me.TextBoxBusqueda.Name = "TextBoxBusqueda"
+        Me.TextBoxBusqueda.Size = New System.Drawing.Size(265, 20)
+        Me.TextBoxBusqueda.TabIndex = 5
         '
         'ID
         '
@@ -690,31 +676,30 @@ Partial Class Inventario
         '
         Me.Descripcion.HeaderText = "Descripción"
         Me.Descripcion.Name = "Descripcion"
+        Me.Descripcion.Width = 140
         '
         'Categoria
         '
         Me.Categoria.HeaderText = "Categoria"
         Me.Categoria.Name = "Categoria"
         '
-        'Nombre
-        '
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        '
         'Stock_Min
         '
         Me.Stock_Min.HeaderText = "Stock Minimo"
         Me.Stock_Min.Name = "Stock_Min"
+        Me.Stock_Min.Width = 60
         '
         'Stock_Max
         '
         Me.Stock_Max.HeaderText = "Stock Maximo"
         Me.Stock_Max.Name = "Stock_Max"
+        Me.Stock_Max.Width = 60
         '
         'Existencia
         '
         Me.Existencia.HeaderText = "Existencia Actual"
         Me.Existencia.Name = "Existencia"
+        Me.Existencia.Width = 60
         '
         'Unidad_M
         '
@@ -752,14 +737,6 @@ Partial Class Inventario
         Me.Elim.HeaderText = "Acción 2"
         Me.Elim.Name = "Elim"
         Me.Elim.Text = "Eliminar"
-        '
-        'TextBoxBusqueda
-        '
-        Me.TextBoxBusqueda.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TextBoxBusqueda.Location = New System.Drawing.Point(379, 55)
-        Me.TextBoxBusqueda.Name = "TextBoxBusqueda"
-        Me.TextBoxBusqueda.Size = New System.Drawing.Size(265, 20)
-        Me.TextBoxBusqueda.TabIndex = 5
         '
         'Inventario
         '
@@ -827,8 +804,6 @@ Partial Class Inventario
     Private WithEvents Label12 As Label
     Friend WithEvents MaxStockDown2 As NumericUpDown
     Friend WithEvents MinStockDown1 As NumericUpDown
-    Friend WithEvents Nombrebox As TextBox
-    Private WithEvents Label13 As Label
     Private WithEvents Label14 As Label
     Private WithEvents Label16 As Label
     Friend WithEvents IDBox As TextBox
@@ -838,11 +813,12 @@ Partial Class Inventario
     Friend WithEvents CompraBox As NumericUpDown
     Friend WithEvents ProveedorCombo As ComboBox
     Private WithEvents Label17 As Label
+    Friend WithEvents EditarButton As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents FiltrarBoton As Button
     Friend WithEvents ID As DataGridViewTextBoxColumn
     Friend WithEvents Marca As DataGridViewTextBoxColumn
     Friend WithEvents Descripcion As DataGridViewTextBoxColumn
     Friend WithEvents Categoria As DataGridViewTextBoxColumn
-    Friend WithEvents Nombre As DataGridViewTextBoxColumn
     Friend WithEvents Stock_Min As DataGridViewTextBoxColumn
     Friend WithEvents Stock_Max As DataGridViewTextBoxColumn
     Friend WithEvents Existencia As DataGridViewTextBoxColumn
@@ -853,6 +829,4 @@ Partial Class Inventario
     Friend WithEvents Proveedor_ID As DataGridViewTextBoxColumn
     Friend WithEvents Edit As DataGridViewButtonColumn
     Friend WithEvents Elim As DataGridViewButtonColumn
-    Friend WithEvents EditarButton As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents FiltrarBoton As Button
 End Class
