@@ -24,6 +24,7 @@ Partial Class Inventario
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Inventario))
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -65,7 +66,6 @@ Partial Class Inventario
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.DataGridINVENTARIO = New System.Windows.Forms.DataGridView()
-        Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -80,6 +80,7 @@ Partial Class Inventario
         Me.Proveedor_ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Edit = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Elim = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -100,6 +101,7 @@ Partial Class Inventario
         Me.Panel2.AutoSize = True
         Me.Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), System.Drawing.Image)
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel2.Controls.Add(Me.BunifuFlatButton2)
         Me.Panel2.Controls.Add(Me.PictureBox7)
         Me.Panel2.Controls.Add(Me.Label15)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -107,6 +109,41 @@ Partial Class Inventario
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1307, 45)
         Me.Panel2.TabIndex = 68
+        '
+        'BunifuFlatButton2
+        '
+        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.BunifuFlatButton2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BunifuFlatButton2.BackColor = System.Drawing.Color.SlateBlue
+        Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton2.BorderRadius = 0
+        Me.BunifuFlatButton2.ButtonText = "Actualizar"
+        Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton2.Iconimage = Nothing
+        Me.BunifuFlatButton2.Iconimage_right = Nothing
+        Me.BunifuFlatButton2.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton2.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton2.IconMarginLeft = 0
+        Me.BunifuFlatButton2.IconMarginRight = 0
+        Me.BunifuFlatButton2.IconRightVisible = True
+        Me.BunifuFlatButton2.IconRightZoom = 0R
+        Me.BunifuFlatButton2.IconVisible = True
+        Me.BunifuFlatButton2.IconZoom = 90.0R
+        Me.BunifuFlatButton2.IsTab = False
+        Me.BunifuFlatButton2.Location = New System.Drawing.Point(1102, 10)
+        Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
+        Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.SlateBlue
+        Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.MediumPurple
+        Me.BunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.selected = False
+        Me.BunifuFlatButton2.Size = New System.Drawing.Size(138, 29)
+        Me.BunifuFlatButton2.TabIndex = 50
+        Me.BunifuFlatButton2.Text = "Actualizar"
+        Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'PictureBox7
         '
@@ -177,7 +214,7 @@ Partial Class Inventario
         Me.GroupBox1.Controls.Add(Me.pictureBox8)
         Me.GroupBox1.Location = New System.Drawing.Point(39, 28)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(367, 550)
+        Me.GroupBox1.Size = New System.Drawing.Size(367, 629)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         '
@@ -204,7 +241,7 @@ Partial Class Inventario
         Me.EditarButton.IconVisible = True
         Me.EditarButton.IconZoom = 50.0R
         Me.EditarButton.IsTab = False
-        Me.EditarButton.Location = New System.Drawing.Point(46, 475)
+        Me.EditarButton.Location = New System.Drawing.Point(46, 503)
         Me.EditarButton.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.EditarButton.Name = "EditarButton"
         Me.EditarButton.Normalcolor = System.Drawing.Color.Salmon
@@ -226,7 +263,7 @@ Partial Class Inventario
         Me.ProveedorCombo.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.ProveedorCombo.FormattingEnabled = True
         Me.ProveedorCombo.Items.AddRange(New Object() {"Cargando..."})
-        Me.ProveedorCombo.Location = New System.Drawing.Point(144, 433)
+        Me.ProveedorCombo.Location = New System.Drawing.Point(143, 398)
         Me.ProveedorCombo.Name = "ProveedorCombo"
         Me.ProveedorCombo.Size = New System.Drawing.Size(217, 21)
         Me.ProveedorCombo.TabIndex = 65
@@ -234,7 +271,7 @@ Partial Class Inventario
         'VentaBox
         '
         Me.VentaBox.DecimalPlaces = 2
-        Me.VentaBox.Location = New System.Drawing.Point(145, 375)
+        Me.VentaBox.Location = New System.Drawing.Point(144, 340)
         Me.VentaBox.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.VentaBox.Name = "VentaBox"
         Me.VentaBox.Size = New System.Drawing.Size(216, 20)
@@ -243,16 +280,16 @@ Partial Class Inventario
         'CompraBox
         '
         Me.CompraBox.DecimalPlaces = 2
-        Me.CompraBox.Location = New System.Drawing.Point(144, 348)
+        Me.CompraBox.Location = New System.Drawing.Point(143, 313)
         Me.CompraBox.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
         Me.CompraBox.Name = "CompraBox"
-        Me.CompraBox.Size = New System.Drawing.Size(43, 20)
+        Me.CompraBox.Size = New System.Drawing.Size(76, 20)
         Me.CompraBox.TabIndex = 63
         '
         'DateTimePicker1
         '
         Me.DateTimePicker1.Enabled = False
-        Me.DateTimePicker1.Location = New System.Drawing.Point(144, 404)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(143, 369)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(217, 20)
         Me.DateTimePicker1.TabIndex = 62
@@ -298,7 +335,7 @@ Partial Class Inventario
         Me.Label14.BackColor = System.Drawing.Color.White
         Me.Label14.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label14.Location = New System.Drawing.Point(17, 433)
+        Me.Label14.Location = New System.Drawing.Point(16, 398)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(88, 18)
         Me.Label14.TabIndex = 57
@@ -310,7 +347,7 @@ Partial Class Inventario
         Me.Label8.BackColor = System.Drawing.Color.White
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label8.Location = New System.Drawing.Point(16, 284)
+        Me.Label8.Location = New System.Drawing.Point(15, 249)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(81, 18)
         Me.Label8.TabIndex = 55
@@ -318,7 +355,7 @@ Partial Class Inventario
         '
         'ExistenciaDown1
         '
-        Me.ExistenciaDown1.Location = New System.Drawing.Point(144, 285)
+        Me.ExistenciaDown1.Location = New System.Drawing.Point(143, 250)
         Me.ExistenciaDown1.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
         Me.ExistenciaDown1.Name = "ExistenciaDown1"
         Me.ExistenciaDown1.Size = New System.Drawing.Size(217, 20)
@@ -330,7 +367,7 @@ Partial Class Inventario
         Me.Label12.BackColor = System.Drawing.Color.White
         Me.Label12.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label12.Location = New System.Drawing.Point(15, 255)
+        Me.Label12.Location = New System.Drawing.Point(14, 220)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(127, 18)
         Me.Label12.TabIndex = 53
@@ -338,7 +375,7 @@ Partial Class Inventario
         '
         'MaxStockDown2
         '
-        Me.MaxStockDown2.Location = New System.Drawing.Point(264, 255)
+        Me.MaxStockDown2.Location = New System.Drawing.Point(263, 220)
         Me.MaxStockDown2.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
         Me.MaxStockDown2.Name = "MaxStockDown2"
         Me.MaxStockDown2.Size = New System.Drawing.Size(97, 20)
@@ -346,7 +383,7 @@ Partial Class Inventario
         '
         'MinStockDown1
         '
-        Me.MinStockDown1.Location = New System.Drawing.Point(144, 255)
+        Me.MinStockDown1.Location = New System.Drawing.Point(143, 220)
         Me.MinStockDown1.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
         Me.MinStockDown1.Name = "MinStockDown1"
         Me.MinStockDown1.Size = New System.Drawing.Size(96, 20)
@@ -355,9 +392,9 @@ Partial Class Inventario
         'Porcentaje
         '
         Me.Porcentaje.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Porcentaje.Location = New System.Drawing.Point(193, 348)
+        Me.Porcentaje.Location = New System.Drawing.Point(229, 313)
         Me.Porcentaje.Name = "Porcentaje"
-        Me.Porcentaje.Size = New System.Drawing.Size(110, 20)
+        Me.Porcentaje.Size = New System.Drawing.Size(73, 20)
         Me.Porcentaje.TabIndex = 46
         Me.Porcentaje.Text = "15"
         Me.Porcentaje.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -365,7 +402,7 @@ Partial Class Inventario
         'Button1
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Button1.Location = New System.Drawing.Point(309, 346)
+        Me.Button1.Location = New System.Drawing.Point(308, 311)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(52, 23)
         Me.Button1.TabIndex = 45
@@ -378,7 +415,7 @@ Partial Class Inventario
         Me.Label11.BackColor = System.Drawing.Color.White
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label11.Location = New System.Drawing.Point(16, 374)
+        Me.Label11.Location = New System.Drawing.Point(15, 339)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(56, 18)
         Me.Label11.TabIndex = 42
@@ -390,7 +427,7 @@ Partial Class Inventario
         Me.Label10.BackColor = System.Drawing.Color.White
         Me.Label10.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label10.Location = New System.Drawing.Point(16, 345)
+        Me.Label10.Location = New System.Drawing.Point(15, 310)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(73, 18)
         Me.Label10.TabIndex = 41
@@ -402,7 +439,7 @@ Partial Class Inventario
         Me.Label9.BackColor = System.Drawing.Color.White
         Me.Label9.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label9.Location = New System.Drawing.Point(19, 404)
+        Me.Label9.Location = New System.Drawing.Point(18, 369)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(58, 18)
         Me.Label9.TabIndex = 40
@@ -431,7 +468,7 @@ Partial Class Inventario
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 50.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(46, 475)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(46, 503)
         Me.BunifuFlatButton1.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.Salmon
@@ -463,7 +500,7 @@ Partial Class Inventario
         Me.Label6.BackColor = System.Drawing.Color.White
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label6.Location = New System.Drawing.Point(16, 315)
+        Me.Label6.Location = New System.Drawing.Point(15, 280)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(70, 18)
         Me.Label6.TabIndex = 33
@@ -476,7 +513,7 @@ Partial Class Inventario
         Me.MedidaCombo.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.MedidaCombo.FormattingEnabled = True
         Me.MedidaCombo.Items.AddRange(New Object() {"Cargando..."})
-        Me.MedidaCombo.Location = New System.Drawing.Point(144, 315)
+        Me.MedidaCombo.Location = New System.Drawing.Point(143, 280)
         Me.MedidaCombo.Name = "MedidaCombo"
         Me.MedidaCombo.Size = New System.Drawing.Size(217, 21)
         Me.MedidaCombo.TabIndex = 32
@@ -565,7 +602,7 @@ Partial Class Inventario
         Me.GroupDataGrid.Controls.Add(Me.TextBoxBusqueda)
         Me.GroupDataGrid.Location = New System.Drawing.Point(412, 29)
         Me.GroupDataGrid.Name = "GroupDataGrid"
-        Me.GroupDataGrid.Size = New System.Drawing.Size(839, 549)
+        Me.GroupDataGrid.Size = New System.Drawing.Size(853, 628)
         Me.GroupDataGrid.TabIndex = 10
         Me.GroupDataGrid.TabStop = False
         '
@@ -609,7 +646,7 @@ Partial Class Inventario
         Me.label1.BackColor = System.Drawing.Color.LightCoral
         Me.label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.label1.ForeColor = System.Drawing.Color.White
-        Me.label1.Location = New System.Drawing.Point(273, 9)
+        Me.label1.Location = New System.Drawing.Point(280, 9)
         Me.label1.Name = "label1"
         Me.label1.Size = New System.Drawing.Size(277, 26)
         Me.label1.TabIndex = 9
@@ -622,7 +659,7 @@ Partial Class Inventario
         Me.PictureBox2.BackColor = System.Drawing.Color.LightCoral
         Me.PictureBox2.Location = New System.Drawing.Point(2, 7)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(836, 29)
+        Me.PictureBox2.Size = New System.Drawing.Size(850, 29)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 26
         Me.PictureBox2.TabStop = False
@@ -651,21 +688,14 @@ Partial Class Inventario
         Me.DataGridINVENTARIO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Marca, Me.Descripcion, Me.Categoria, Me.Stock_Min, Me.Stock_Max, Me.Existencia, Me.Unidad_M, Me.Precio_C, Me.Precio_Venta, Me.Fecha_Ing, Me.Proveedor_ID, Me.Edit, Me.Elim})
         Me.DataGridINVENTARIO.Location = New System.Drawing.Point(6, 84)
         Me.DataGridINVENTARIO.Name = "DataGridINVENTARIO"
-        Me.DataGridINVENTARIO.Size = New System.Drawing.Size(827, 459)
+        Me.DataGridINVENTARIO.Size = New System.Drawing.Size(841, 522)
         Me.DataGridINVENTARIO.TabIndex = 0
-        '
-        'TextBoxBusqueda
-        '
-        Me.TextBoxBusqueda.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TextBoxBusqueda.Location = New System.Drawing.Point(379, 55)
-        Me.TextBoxBusqueda.Name = "TextBoxBusqueda"
-        Me.TextBoxBusqueda.Size = New System.Drawing.Size(265, 20)
-        Me.TextBoxBusqueda.TabIndex = 5
         '
         'ID
         '
         Me.ID.HeaderText = "ID"
         Me.ID.Name = "ID"
+        Me.ID.Width = 80
         '
         'Marca
         '
@@ -676,7 +706,7 @@ Partial Class Inventario
         '
         Me.Descripcion.HeaderText = "Descripción"
         Me.Descripcion.Name = "Descripcion"
-        Me.Descripcion.Width = 140
+        Me.Descripcion.Width = 200
         '
         'Categoria
         '
@@ -737,6 +767,14 @@ Partial Class Inventario
         Me.Elim.HeaderText = "Acción 2"
         Me.Elim.Name = "Elim"
         Me.Elim.Text = "Eliminar"
+        '
+        'TextBoxBusqueda
+        '
+        Me.TextBoxBusqueda.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextBoxBusqueda.Location = New System.Drawing.Point(379, 55)
+        Me.TextBoxBusqueda.Name = "TextBoxBusqueda"
+        Me.TextBoxBusqueda.Size = New System.Drawing.Size(265, 20)
+        Me.TextBoxBusqueda.TabIndex = 5
         '
         'Inventario
         '
@@ -829,4 +867,5 @@ Partial Class Inventario
     Friend WithEvents Proveedor_ID As DataGridViewTextBoxColumn
     Friend WithEvents Edit As DataGridViewButtonColumn
     Friend WithEvents Elim As DataGridViewButtonColumn
+    Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
 End Class

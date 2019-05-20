@@ -164,11 +164,11 @@ Partial Class Ventas
         '
         'NumericUpDown1
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(550, 147)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(497, 121)
         Me.NumericUpDown1.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.NumericUpDown1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown1.Size = New System.Drawing.Size(318, 20)
         Me.NumericUpDown1.TabIndex = 52
         Me.NumericUpDown1.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
@@ -178,7 +178,7 @@ Partial Class Ventas
         Me.Label11.BackColor = System.Drawing.Color.White
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label11.Location = New System.Drawing.Point(449, 148)
+        Me.Label11.Location = New System.Drawing.Point(404, 122)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(87, 19)
         Me.Label11.TabIndex = 50
@@ -194,7 +194,7 @@ Partial Class Ventas
         Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
-        Me.BunifuFlatButton1.Iconimage = CType(resources.GetObject("BunifuFlatButton1.Iconimage"), System.Drawing.Image)
+        Me.BunifuFlatButton1.Iconimage = Nothing
         Me.BunifuFlatButton1.Iconimage_right = Nothing
         Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
         Me.BunifuFlatButton1.Iconimage_Selected = Nothing
@@ -205,23 +205,23 @@ Partial Class Ventas
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 90.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(716, 146)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(497, 156)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.MediumSeaGreen
         Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.SeaGreen
         Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
         Me.BunifuFlatButton1.selected = False
-        Me.BunifuFlatButton1.Size = New System.Drawing.Size(140, 29)
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(280, 29)
         Me.BunifuFlatButton1.TabIndex = 49
         Me.BunifuFlatButton1.Text = "Agregar"
-        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'TextBox2
         '
         Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(550, 103)
+        Me.TextBox2.Location = New System.Drawing.Point(497, 83)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(167, 20)
         Me.TextBox2.TabIndex = 48
@@ -233,7 +233,7 @@ Partial Class Ventas
         Me.Label10.BackColor = System.Drawing.Color.White
         Me.Label10.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label10.Location = New System.Drawing.Point(449, 100)
+        Me.Label10.Location = New System.Drawing.Point(420, 84)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(71, 19)
         Me.Label10.TabIndex = 47
@@ -249,9 +249,9 @@ Partial Class Ventas
         Me.ComboBox2.BackColor = System.Drawing.Color.LemonChiffon
         Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(532, 58)
+        Me.ComboBox2.Location = New System.Drawing.Point(497, 56)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(263, 21)
+        Me.ComboBox2.Size = New System.Drawing.Size(327, 21)
         Me.ComboBox2.TabIndex = 46
         '
         'Label9
@@ -260,7 +260,7 @@ Partial Class Ventas
         Me.Label9.BackColor = System.Drawing.Color.White
         Me.Label9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label9.Location = New System.Drawing.Point(449, 58)
+        Me.Label9.Location = New System.Drawing.Point(413, 56)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(78, 19)
         Me.Label9.TabIndex = 45

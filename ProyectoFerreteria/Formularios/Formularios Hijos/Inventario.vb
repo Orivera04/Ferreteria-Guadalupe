@@ -127,15 +127,7 @@ Public Class Inventario
         End If
     End Sub
 
-    Private Sub Panel1_Resize(sender As Object, e As EventArgs) Handles Panel1.Resize
-        If Panel1.Width = 1226 Then
-            GroupBox1.Width = 328
-            GroupDataGrid.Width = 790
-        ElseIf Panel1.Width = 1346 Then
-            GroupBox1.Width = 367
-            GroupDataGrid.Width = 839
-        End If
-    End Sub
+
 
     'Calcula el porcentaje con la formula magica de Richard :V'
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles DescripcionBox.TextChanged, Button1.Click
@@ -286,6 +278,17 @@ Public Class Inventario
             TextBoxBusqueda.Enabled = True
         End If
     End Sub
+
+    Private Sub BunifuFlatButton2_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton2.Click
+        MedidaCombo.Items.Clear()
+        ProveedorCombo.Items.Clear()
+        LlenarComboboxUnidadesDeMedida()
+        LlenarComboboxProveedores()
+
+
+    End Sub
+
+
 
 
 

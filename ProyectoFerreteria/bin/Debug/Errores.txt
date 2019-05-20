@@ -87,3 +87,12 @@ The statement has been terminated.
    en Ferreteria___LogicaNegocios.Bol_Producto.EliminarProducto(String ID_Producto) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Producto.vb:línea 114
 ClientConnectionId:3d21507a-7b12-435b-9fce-28881c0ee0ce
 Error Number:547,State:0,Class:16
+[2019/05/19 21:44:27]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/19 21:47:03]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/19 22:03:07]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
