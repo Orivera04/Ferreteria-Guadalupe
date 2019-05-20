@@ -112,7 +112,7 @@ Partial Class Inventario
         '
         'BunifuFlatButton2
         '
-        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.BunifuFlatButton2.Activecolor = System.Drawing.Color.MediumPurple
         Me.BunifuFlatButton2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuFlatButton2.BackColor = System.Drawing.Color.SlateBlue
         Me.BunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch

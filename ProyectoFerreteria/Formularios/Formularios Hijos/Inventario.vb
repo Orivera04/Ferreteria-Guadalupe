@@ -10,6 +10,7 @@ Public Class Inventario
     Private _UnidadesMedidasBol As New Bol_UnidadMedida()
     Private _Producto As New E_Producto()
     Private Listo As Boolean
+    Private _funcion As New Func
 
 #Region "Metodos de apoyo"
 
@@ -91,6 +92,7 @@ Public Class Inventario
 
     'Evento de carga, se inicializan todos los controles'
     Private Sub Inventario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        _funcion.ALTERNARColorDataGrid(DataGridINVENTARIO)
         CheckForIllegalCrossThreadCalls = False
         MedidaCombo.SelectedIndex = 0
         CategoriaCombo.SelectedIndex = 0
