@@ -119,7 +119,6 @@
   </resheader>
   <data name="CadenaConexion" xml:space="preserve">
     <value>Data Source=.;Initial Catalog=Ferreteria;Integrated Security=True</value>
-   
   </data>
 </root>
 

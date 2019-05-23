@@ -23,7 +23,7 @@ Public Class Dai_Producto
                         _Producto.P_Marca = Lector("Marca")
                         _Producto.P_Descripcion = Lector("Descripcion")
                         _Producto.P_Categoria = Lector("Categoria")
-                        _Producto.P_Nombre = Lector("Nombre")
+                        '_Producto.P_Nombre = Lector("Nombre")
                         _Producto.P_Stock_Minimo = Lector("Stock_Min")
                         _Producto.P_Stock_Maximo = Lector("Stock_Max")
                         _Producto.P_Existencia = Lector("Existencia")
@@ -57,7 +57,7 @@ Public Class Dai_Producto
                     _Producto.P_Marca = Lector("Marca")
                     _Producto.P_Descripcion = Lector("Descripcion")
                     _Producto.P_Categoria = Lector("Categoria")
-                    _Producto.P_Nombre = Lector("Nombre")
+                    '    _Producto.P_Nombre = Lector("Nombre")
                     _Producto.P_Stock_Minimo = Lector("Stock_Min")
                     _Producto.P_Stock_Maximo = Lector("Stock_Max")
                     _Producto.P_Existencia = Lector("Existencia")
@@ -78,13 +78,13 @@ Public Class Dai_Producto
         Using Conn As New SqlConnection(My.Resources.CadenaConexion)
             Conn.Open()
             Query = "INSERT INTO PRODUCTO 
-                     VALUES(@ID_Producto,@Marca,@Descripcion,@Categoria,@Nombre,@Stock_Min,@Stock_Max,@Existencia,@ID_Unidad_De_Medida,@PrecioCompra,@PrecioVenta,@FechaIngreso,@ID_Proveedor)"
+                     VALUES(@ID_Producto,@Marca,@Descripcion,@Categoria,@Stock_Min,@Stock_Max,@Existencia,@ID_Unidad_De_Medida,@PrecioCompra,@PrecioVenta,@FechaIngreso,@ID_Proveedor)"
             Using CMD As New SqlCommand(Query, Conn)
                 CMD.Parameters.AddWithValue("@ID_Producto", Producto.P_ID_Producto)
                 CMD.Parameters.AddWithValue("@Marca", Producto.P_Marca)
                 CMD.Parameters.AddWithValue("@Descripcion", Producto.P_Descripcion)
                 CMD.Parameters.AddWithValue("@Categoria", Producto.P_Categoria)
-                CMD.Parameters.AddWithValue("@Nombre", Producto.P_Nombre)
+                'CMD.Parameters.AddWithValue("@Nombre", Producto.P_Nombre)
                 CMD.Parameters.AddWithValue("@Stock_Min", Producto.P_Stock_Minimo)
                 CMD.Parameters.AddWithValue("@Stock_Max", Producto.P_Stock_Maximo)
                 CMD.Parameters.AddWithValue("@Existencia", Producto.P_Existencia)
@@ -103,14 +103,14 @@ Public Class Dai_Producto
         Using Conn As New SqlConnection(My.Resources.CadenaConexion)
             Conn.Open()
             Query = "UPDATE  PRODUCTO 
-                    SET Marca = @Marca,Descripcion = @Descripcion,Categoria = @Categoria,Nombre = @Nombre,Stock_Min = @Stock_Min,Stock_Max = @Stock_Max,Existencia = @Existencia,ID_Unidad_De_Medida = @ID_Unidad_De_Medida,PrecioCompra = @PrecioCompra,PrecioVenta = @PrecioVenta,FechaIngreso = @FechaIngreso,ID_Proveedor = @ID_Proveedor
+                    SET Marca = @Marca,Descripcion = @Descripcion,Categoria = @Categoria,Stock_Min = @Stock_Min,Stock_Max = @Stock_Max,Existencia = @Existencia,ID_Unidad_De_Medida = @ID_Unidad_De_Medida,PrecioCompra = @PrecioCompra,PrecioVenta = @PrecioVenta,FechaIngreso = @FechaIngreso,ID_Proveedor = @ID_Proveedor
                     WHERE ID_PRODUCTO = @ID_Producto "
             Using CMD As New SqlCommand(Query, Conn)
                 CMD.Parameters.AddWithValue("@ID_Producto", Producto.P_ID_Producto)
                 CMD.Parameters.AddWithValue("@Marca", Producto.P_Marca)
                 CMD.Parameters.AddWithValue("@Descripcion", Producto.P_Descripcion)
                 CMD.Parameters.AddWithValue("@Categoria", Producto.P_Categoria)
-                CMD.Parameters.AddWithValue("@Nombre", Producto.P_Nombre)
+                ' CMD.Parameters.AddWithValue("@Nombre", Producto.P_Nombre)
                 CMD.Parameters.AddWithValue("@Stock_Min", Producto.P_Stock_Minimo)
                 CMD.Parameters.AddWithValue("@Stock_Max", Producto.P_Stock_Maximo)
                 CMD.Parameters.AddWithValue("@Existencia", Producto.P_Existencia)
@@ -141,16 +141,16 @@ Public Class Dai_Producto
         Using Conn As New SqlConnection(My.Resources.CadenaConexion)
             Conn.Open()
             Dim ListaProductos As New List(Of E_Producto)
-            Query = "SELECT PR.*,P.NOMBRE AS PROVEEDORNOMBRE,U.NOMBRE AS UNIDADMEDIDA
+            Query = "SELECT PR.*,P.Nombre AS PROVEEDORNOMBRE,U.NOMBRE AS UNIDADMEDIDA
                      FROM PRODUCTO PR, PROVEEDOR P,UNIDAD_DE_MEDIDA U
                      WHERE P.ID = PR.ID_PROVEEDOR And U.ID_UNIDAD_DE_MEDIDA = PR.ID_UNIDAD_DE_MEDIDA
                     "
             If (TipoFiltro = 0) Then
-                Query = Query + " AND PR.ID_PRODUCTO = @PA;"
+                Query = Query + " AND PR.ID_PRODUCTO like '%'+@PA+'%'"
             ElseIf (TipoFiltro = 1) Then
-                Query = Query + "AND PR.NOMBRE = @PA"
+                Query = Query + "AND PR.Descripcion like  '%'+@PA+'%'"
             Else
-                Query = Query + "AND PR.MARCA =  @PA"
+                Query = Query + "AND PR.MARCA like  '%'+@PA+'%'"
             End If
             Using CMD As New SqlCommand(Query, Conn)
                 CMD.Parameters.AddWithValue("@PA", FiltroCadena)
@@ -161,7 +161,7 @@ Public Class Dai_Producto
                         _Producto.P_Marca = Lector("Marca")
                         _Producto.P_Descripcion = Lector("Descripcion")
                         _Producto.P_Categoria = Lector("Categoria")
-                        _Producto.P_Nombre = Lector("Nombre")
+                        ' _Producto.P_Nombre = Lector("Nombre")
                         _Producto.P_Stock_Minimo = Lector("Stock_Min")
                         _Producto.P_Stock_Maximo = Lector("Stock_Max")
                         _Producto.P_Existencia = Lector("Existencia")

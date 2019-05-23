@@ -122,7 +122,7 @@ Public Class Dai_Proveedor
                         _Producto.P_Marca = Lector("Marca")
                         _Producto.P_Descripcion = Lector("Descripcion")
                         _Producto.P_Categoria = Lector("Categoria")
-                        _Producto.P_Nombre = Lector("Nombre")
+                        '_Producto.P_Nombre = Lector("Nombre")
                         _Producto.P_Stock_Minimo = Lector("Stock_Min")
                         _Producto.P_Stock_Maximo = Lector("Stock_Max")
                         _Producto.P_Existencia = Lector("Existencia")

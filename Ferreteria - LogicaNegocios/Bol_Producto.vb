@@ -30,9 +30,6 @@ Public Class Bol_Producto
         If (Producto.P_Categoria = "") Then
             Errores.Append("Debe ingresar una categoria" + vbNewLine)
         End If
-        If (Producto.P_Nombre = "") Then
-            Errores.Append("Debe ingresar un nombre" + vbNewLine)
-        End If
         If (Producto.P_Stock_Minimo <= 0) Then
             Errores.Append("El stock minimo debe ser mayor que 0" + vbNewLine)
         End If
@@ -133,7 +130,7 @@ Public Class Bol_Producto
             Dim ListaProductos = Dai_Producto.GetAll()
             Dim ListaID(ListaProductos.count - 1) As String
             For I As Integer = 0 To ListaProductos.count - 1
-                ListaID(I) = ListaProductos(I).P_Nombre + " #" + ListaProductos(I).P_ID_Producto + " : " + ListaProductos(I).P_PrecioVenta.ToString() + " C$"
+                ListaID(I) = ListaProductos(I).P_Descripcion + " #" + ListaProductos(I).P_ID_Producto + " : " + ListaProductos(I).P_PrecioVenta.ToString() + " C$"
             Next
             Return ListaID
         Catch Ex As Exception

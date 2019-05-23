@@ -9,7 +9,6 @@ Public Class Ventas
     Private _ProductosBol As New Bol_Producto()
     Private _ClientesBol As New Bol_Cliente()
     Private _FacturaVentaBol As New Bol_FacturaVenta()
-
     Private _Factura As New E_FacturaVenta()
 
 #Region "Metodos de apoyo"
@@ -151,7 +150,9 @@ Public Class Ventas
             Me.Cursor = Cursors.WaitCursor
             If (_FacturaVentaBol.Errores.Length = 0) Then
                 MsgBox("La factura fue insertada correctamente", MsgBoxStyle.OkOnly, "Exito")
-                TextBoxBusqueda.Text = Integer.Parse(TextBoxBusqueda.Text) + 1
+                Dim resl As Integer
+                resl = Integer.Parse(TextBoxBusqueda.Text) + 1
+                TextBoxBusqueda.Text = Math.Abs(resl)
                 TextBox3.Text = "0"
                 NumericUpDown2.Value = 0
                 TextBox6.Text = "0"
