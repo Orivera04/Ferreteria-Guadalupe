@@ -121,7 +121,7 @@ Public Class Ventas
     Private Sub DataGridINVENTARIO_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridINVENTARIO.CellValueChanged
         Try
             If (e.ColumnIndex = 4) Then
-                If Not ((_ProductosBol.ObtenerStockProducto(DataGridINVENTARIO.Rows(e.RowIndex).Cells(1).Value) - DataGridINVENTARIO.Rows(e.RowIndex).Cells(4)) >= 0) Then
+                If Not ((_ProductosBol.ObtenerStockProducto(DataGridINVENTARIO.Rows(e.RowIndex).Cells(1).Value) - DataGridINVENTARIO.Rows(e.RowIndex).Cells(4).Value) >= 0) Then
                     DataGridINVENTARIO.Rows(e.RowIndex).Cells(4).Value = AuxCantidad
                     MsgBox("No hay suficiente stock para este producto", MsgBoxStyle.Critical, "FACTURA")
                 End If
