@@ -151,25 +151,13 @@ Public Class Inventario
             End If
         End If
     End Sub
-    Private Sub IDBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles IDBox.KeyPress
-        If Asc(e.KeyChar) <> 8 Then
-            If (Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57) And Asc(e.KeyChar) <> 13 Then
-                e.Handled = True
-            ElseIf (e.KeyChar = ChrW(Keys.Enter)) Then
-                Marcabox.Select()
-            End If
-        End If
-    End Sub
+
     Private Sub Marcabox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Marcabox.KeyPress
         If (e.KeyChar = ChrW(Keys.Enter)) Then
             DescripcionBox.Select()
         End If
     End Sub
-    Private Sub DescripcionBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles DescripcionBox.KeyPress
-        If (e.KeyChar = ChrW(Keys.Enter)) Then
-            'Nombrebox.Select()
-        End If
-    End Sub
+
     Private Sub Nombrebox_KeyPress(sender As Object, e As KeyPressEventArgs)
         If (e.KeyChar = ChrW(Keys.Enter)) Then
             MinStockDown1.Select()
@@ -258,6 +246,7 @@ Public Class Inventario
         Else
             MsgBox(_ProductoBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
         End If
+        DateTimePicker1.Value = Today
 
     End Sub
 

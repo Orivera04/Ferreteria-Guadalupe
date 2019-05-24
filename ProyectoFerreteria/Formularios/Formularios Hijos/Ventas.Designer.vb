@@ -115,7 +115,7 @@ Partial Class Ventas
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label15.Location = New System.Drawing.Point(153, 10)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(67, 28)
+        Me.Label15.Size = New System.Drawing.Size(67, 25)
         Me.Label15.TabIndex = 4
         Me.Label15.Text = "Venta"
         '

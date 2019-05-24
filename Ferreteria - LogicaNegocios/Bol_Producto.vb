@@ -142,4 +142,18 @@ Public Class Bol_Producto
         Return -2
     End Function
 
+
+    Public Function ObtenerStockProducto(ByVal ID As Integer)
+        Errores.Clear()
+        Try
+            Return Dai_Producto.GetStockProducto(ID)
+        Catch Ex As Exception
+            Errores.Append("Hubo un error al obtener el stock del producto")
+            If (Not Log.GenerarLog(Ex.ToString()) = 1) Then
+                Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
+            End If
+        End Try
+        Return 0
+    End Function
+
 End Class

@@ -11,6 +11,7 @@ Public Class Ventas
     Private _FacturaVentaBol As New Bol_FacturaVenta()
     Private _Factura As New E_FacturaVenta()
     Dim _Funcion As New Func
+    Dim AuxCantidad As Integer
 
 #Region "Metodos de apoyo"
     Public Sub LlenarComboboxProducto()
@@ -40,14 +41,34 @@ Public Class Ventas
         TextBox3.Text = Math.Round(SubTotal, 3).ToString()
         TextBox6.Text = Math.Round(Math.Abs(((NumericUpDown2.Value / 100) - 1) * Decimal.Parse(TextBox3.Text)), 3)
     End Sub
+
+    Public Function Repetido(ByVal ID As Integer)
+        For I = 0 To DataGridINVENTARIO.Rows.Count - 1
+            If (DataGridINVENTARIO.Rows(I).Cells(1).Value = ID) Then
+                Return True
+            End If
+        Next
+        Return False
+    End Function
 #End Region
 
 #Region "Eventos"
 
 
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
-        ComboBoxBusqueda_Leave(Nothing, New EventArgs())
-        DataGridINVENTARIO.Rows.Add(DataGridINVENTARIO.Rows.Count + 1, TextBox2.Text.Split("#"c)(1).Split(":"c)(0), TextBox2.Text.Split("#"c)(0), TextBox2.Text.Split("#"c)(1).Split(":"c)(1), NumericUpDown1.Value, "Eliminar")
+        Dim ID = TextBox2.Text.Split("#"c)(1).Split(":"c)(0)
+        If (Repetido(ID) = False) Then
+
+
+            If ((_ProductosBol.ObtenerStockProducto(ID) - NumericUpDown1.Value) >= 0) Then
+                ComboBoxBusqueda_Leave(Nothing, New EventArgs())
+                DataGridINVENTARIO.Rows.Add(DataGridINVENTARIO.Rows.Count + 1, TextBox2.Text.Split("#"c)(1).Split(":"c)(0), TextBox2.Text.Split("#"c)(0), TextBox2.Text.Split("#"c)(1).Split(":"c)(1), NumericUpDown1.Value, "Eliminar")
+            Else
+                MsgBox("No hay suficiente Stock para cubrir dicha cantidad.", MsgBoxStyle.Critical, "FACTURA")
+            End If
+        Else
+            MsgBox("Ya ha añadido este producto a la lista.", MsgBoxStyle.Critical, "FACTURA")
+        End If
     End Sub
 
     Private Sub Ventas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -98,6 +119,16 @@ Public Class Ventas
     End Sub
 
     Private Sub DataGridINVENTARIO_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridINVENTARIO.CellValueChanged
+        Try
+            If (e.ColumnIndex = 4) Then
+                If Not ((_ProductosBol.ObtenerStockProducto(DataGridINVENTARIO.Rows(e.RowIndex).Cells(1).Value) - DataGridINVENTARIO.Rows(e.RowIndex).Cells(4)) >= 0) Then
+                    DataGridINVENTARIO.Rows(e.RowIndex).Cells(4).Value = AuxCantidad
+                    MsgBox("No hay suficiente stock para este producto", MsgBoxStyle.Critical, "FACTURA")
+                End If
+            End If
+        Catch ex As Exception
+
+        End Try
         ActualizarPrecios()
     End Sub
 
@@ -167,6 +198,15 @@ Public Class Ventas
             MsgBox("Debe añadir al menos un elemento a la factura", MsgBoxStyle.Exclamation, "Aviso")
         End If
 
+    End Sub
+
+    'Evento para que se dispare el cambio de objeto tras completar una busqueda'
+    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
+        ComboBox2_SelectionChangeCommitted(sender, e)
+    End Sub
+
+    Private Sub DataGridINVENTARIO_CellBeginEdit(sender As Object, e As DataGridViewCellCancelEventArgs) Handles DataGridINVENTARIO.CellBeginEdit
+        AuxCantidad = DataGridINVENTARIO.Rows(e.RowIndex).Cells(e.ColumnIndex).Value
     End Sub
 
 
