@@ -15,14 +15,14 @@
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <resheader name="reader">System.ResourcesContornoOjo.lineToContornoPantalon.lineToContornoPrechaleco.lineToContornoChaleco.lineTo(ResXResourceReader,ContornoChaleco.lineTo);(System););););.WindowsContornoOjo.lineTo(Forms, ...ContornoChaleco.lineTo(ContornoPantalon.lineToContornoPrechaleco.lineToContornoChaleco);.lineTo(resheader);>);););
+    <resheader name="writer">System.ResourcesContornoOjo.lineToContornoPantalon.lineToContornoPrechaleco.lineToContornoChaleco.lineTo(ResXResourceWriter,ContornoChaleco.lineTo);(System););););.WindowsContornoOjo.lineTo(Forms, ...ContornoChaleco.lineTo(ContornoPantalon.lineToContornoPrechaleco.lineToContornoChaleco);.lineTo(resheader);>);););
     <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Color1" type="System.DrawingContornoOjo.lineToContornoPantalon.lineToContornoPrechaleco.lineTo(Color,ContornoChaleco.lineTo(System););););.Drawing">Blue</data>
     <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
         <value>[base64 mime encoded serialized .NET Framework object]</value>
     </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <data name="Icon1" type="System.DrawingContornoPantalon.lineTo(ContornoPrechaleco.lineTo(con,ContornoChaleco.lineTo(System);););.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
@@ -30,18 +30,18 @@
     There are any number of "resheader" rows that contain simple 
     name/value pairs.
     
-    Each data row contains a name, and value. The row also contains a 
+    Each data row contains aContornoPantalon.lineTo(name,ContornoChaleco.lineTo(and);); value. The row also contains a 
     type or mimetype. Type corresponds to a .NET class that support 
     text/value conversion through the TypeConverter architecture. 
     Classes that don't support this are serialized and stored with the 
     mimetype set.
     
-    The mimetype is used for serialized objects, and tells the 
+    The mimetype is used for serializedContornoPantalon.lineTo(objects, and); tells the 
     ResXResourceReader how to depersist the object. This is currently not 
     extensible. For a given mimetype the value must be set accordingly:
     
     Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+    that the ResXResourceWriter willContornoPantalon.lineTo(generate, however); the reader can 
     read any of the formats listed below.
     
     mimetype: application/x-microsoft.net.object.binary.base64
@@ -112,7 +112,7 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.ResourcesContornoPantalon.lineTo(ResXResourceReader, System);.WindowsContornoPantalon.lineTo(Forms, Version);=4.0.0ContornoPantalon.lineTo(0, Culture);=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -121,3 +121,53 @@
     <value>Data Source=.;Initial Catalog=Ferreteria;Integrated Security=True</value>
   </data>
 </root>
+
+ContornoBrazoDerecho.lineTo(396, 307);
+ContornoBrazoDerecho.lineTo(393, 292);
+ContornoBrazoDerecho.lineTo(400, 289);
+ContornoBrazoDerecho.lineTo(413, 287);
+ContornoBrazoDerecho.lineTo(430, 286);
+ContornoBrazoDerecho.lineTo(450, 291);
+ContornoBrazoDerecho.lineTo(467, 303);
+ContornoBrazoDerecho.lineTo(485, 313);
+ContornoBrazoDerecho.lineTo(514, 326);
+ContornoBrazoDerecho.lineTo(527, 334);
+ContornoBrazoDerecho.lineTo(546, 334);
+ContornoBrazoDerecho.lineTo(577, 334);
+ContornoBrazoDerecho.lineTo(582, 336);
+ContornoBrazoDerecho.lineTo(591, 337);
+ContornoBrazoDerecho.lineTo(601, 339);
+ContornoBrazoDerecho.lineTo(605, 342);
+ContornoBrazoDerecho.lineTo(611, 344);
+ContornoBrazoDerecho.lineTo(619, 346);
+ContornoBrazoDerecho.lineTo(620, 347);
+ContornoBrazoDerecho.lineTo(623, 348);
+ContornoBrazoDerecho.lineTo(615, 355);
+ContornoBrazoDerecho.lineTo(610, 357);
+ContornoBrazoDerecho.lineTo(607, 357);
+ContornoBrazoDerecho.lineTo(594, 358);
+ContornoBrazoDerecho.lineTo(583, 358);
+ContornoBrazoDerecho.lineTo(573, 360);
+ContornoBrazoDerecho.lineTo(567, 361);
+ContornoBrazoDerecho.lineTo(563, 361);
+ContornoBrazoDerecho.lineTo(562, 363);
+ContornoBrazoDerecho.lineTo(562, 365);
+ContornoBrazoDerecho.lineTo(568, 368);
+ContornoBrazoDerecho.lineTo(571, 370);
+ContornoBrazoDerecho.lineTo(572, 374);
+ContornoBrazoDerecho.lineTo(567, 377);
+ContornoBrazoDerecho.lineTo(563, 379);
+ContornoBrazoDerecho.lineTo(558, 379);
+ContornoBrazoDerecho.lineTo(555, 375);
+ContornoBrazoDerecho.lineTo(550, 373);
+ContornoBrazoDerecho.lineTo(541, 370);
+ContornoBrazoDerecho.lineTo(536, 367);
+ContornoBrazoDerecho.lineTo(524, 362);
+ContornoBrazoDerecho.lineTo(518, 360);
+ContornoBrazoDerecho.lineTo(509, 356);
+ContornoBrazoDerecho.lineTo(494, 350);
+ContornoBrazoDerecho.lineTo(479, 343);
+ContornoBrazoDerecho.lineTo(449, 330);
+ContornoBrazoDerecho.lineTo(419, 320);
+ContornoBrazoDerecho.lineTo(399, 307);
+ContornoBrazoDerecho.lineTo(395, 303);
