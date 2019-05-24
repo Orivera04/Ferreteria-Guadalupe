@@ -1,0 +1,101 @@
+﻿[2019/05/07 20:16:08]  System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '@PA'.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader()
+   en Ferreteria___AccesoDatos.Dai_Producto.Filtro(Int32 TipoFiltro, String FiltroCadena) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Producto.vb:línea 157
+   en Ferreteria___LogicaNegocios.Bol_Producto.LeerTodo(Boolean FlagFiltro, Int32 TipoFiltro, String CadenaFiltro) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Producto.vb:línea 74
+ClientConnectionId:75d33001-07f9-455f-8a71-2ff4b6790342
+Error Number:102,State:1,Class:15
+[2019/05/07 20:17:51]  System.MissingMemberException: No se encuentra el miembro público 'P_Nombre' en el tipo 'E_Producto'.
+   en Microsoft.VisualBasic.CompilerServices.Symbols.Container.GetMembers(String& MemberName, Boolean ReportErrors)
+   en Microsoft.VisualBasic.CompilerServices.NewLateBinding.ObjectLateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   en Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   en Ferreteria___LogicaNegocios.Bol_Producto.ListarIDProductos() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Producto.vb:línea 133
+[2019/05/07 20:48:12]  System.MissingMemberException: No se encuentra el miembro público 'P_Nombre' en el tipo 'E_Producto'.
+   en Microsoft.VisualBasic.CompilerServices.Symbols.Container.GetMembers(String& MemberName, Boolean ReportErrors)
+   en Microsoft.VisualBasic.CompilerServices.NewLateBinding.ObjectLateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   en Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   en Ferreteria___LogicaNegocios.Bol_Producto.ListarIDProductos() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Producto.vb:línea 133
+[2019/05/07 20:51:02]  System.MissingMemberException: No se encuentra el miembro público 'P_Nombre' en el tipo 'E_Producto'.
+   en Microsoft.VisualBasic.CompilerServices.Symbols.Container.GetMembers(String& MemberName, Boolean ReportErrors)
+   en Microsoft.VisualBasic.CompilerServices.NewLateBinding.ObjectLateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   en Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   en Ferreteria___LogicaNegocios.Bol_Producto.ListarIDProductos() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Producto.vb:línea 133
+[2019/05/07 21:31:18]  System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'NOMBRE'.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader()
+   en Ferreteria___AccesoDatos.Dai_Producto.Filtro(Int32 TipoFiltro, String FiltroCadena) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Producto.vb:línea 157
+   en Ferreteria___LogicaNegocios.Bol_Producto.LeerTodo(Boolean FlagFiltro, Int32 TipoFiltro, String CadenaFiltro) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Producto.vb:línea 74
+ClientConnectionId:12006edb-090b-4235-bb1f-ad4926097f79
+Error Number:207,State:1,Class:16
+[2019/05/07 21:34:36]  System.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_DetalleFactura_Producto". The conflict occurred in database "Ferreteria", table "dbo.DetalleFactura", column 'ID_Producto'.
+The statement has been terminated.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Ferreteria___AccesoDatos.Dai_Producto.Delete(String ID_Producto) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Producto.vb:línea 135
+   en Ferreteria___LogicaNegocios.Bol_Producto.EliminarProducto(String ID_Producto) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Producto.vb:línea 114
+ClientConnectionId:3d21507a-7b12-435b-9fce-28881c0ee0ce
+Error Number:547,State:0,Class:16
+[2019/05/07 21:34:43]  System.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_DetalleFactura_Producto". The conflict occurred in database "Ferreteria", table "dbo.DetalleFactura", column 'ID_Producto'.
+The statement has been terminated.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Ferreteria___AccesoDatos.Dai_Producto.Delete(String ID_Producto) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Producto.vb:línea 135
+   en Ferreteria___LogicaNegocios.Bol_Producto.EliminarProducto(String ID_Producto) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Producto.vb:línea 114
+ClientConnectionId:3d21507a-7b12-435b-9fce-28881c0ee0ce
+Error Number:547,State:0,Class:16
+[2019/05/07 21:34:46]  System.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_DetalleFactura_Producto". The conflict occurred in database "Ferreteria", table "dbo.DetalleFactura", column 'ID_Producto'.
+The statement has been terminated.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Ferreteria___AccesoDatos.Dai_Producto.Delete(String ID_Producto) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Producto.vb:línea 135
+   en Ferreteria___LogicaNegocios.Bol_Producto.EliminarProducto(String ID_Producto) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Producto.vb:línea 114
+ClientConnectionId:3d21507a-7b12-435b-9fce-28881c0ee0ce
+Error Number:547,State:0,Class:16
+[2019/05/19 21:44:27]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/19 21:47:03]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/19 22:03:07]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/19 22:21:36]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
