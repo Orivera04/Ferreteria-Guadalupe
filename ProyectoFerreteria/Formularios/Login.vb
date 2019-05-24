@@ -42,6 +42,13 @@ Public Class Login
     End Sub
 
     Private Sub bunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles bunifuFlatButton1.Click
+
+        inicio_sesion()
+
+    End Sub
+
+
+    Public Sub inicio_sesion()
         _Empleado.Usuario_P = bunifuMaterialTextbox1.Text
         _Empleado.Contraseña_P = bunifuMaterialTextbox2.Text
         Principal.EmpleadoActivo = _EmpleadoBoi.AutenticarUsuario(_Empleado)
@@ -59,8 +66,20 @@ Public Class Login
     End Sub
 
     Private Sub BunifuMaterialTextbox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles bunifuMaterialTextbox1.KeyPress
-        If (e.KeyChar = ChrW(Keys.Enter)) Then
-            bunifuMaterialTextbox2.Select()
+        If (e.KeyChar = (Convert.ToChar(Keys.Enter))) Then
+
+            inicio_sesion()
+
         End If
+
+    End Sub
+
+    Private Sub bunifuMaterialTextbox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles bunifuMaterialTextbox2.KeyPress
+        If (e.KeyChar = (Convert.ToChar(Keys.Enter))) Then
+
+            inicio_sesion()
+
+        End If
+
     End Sub
 End Class

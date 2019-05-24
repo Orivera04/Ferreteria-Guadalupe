@@ -9,6 +9,7 @@ Public Class Cliente
     Dim _FacturaVentaBol As New Bol_FacturaVenta()
     Dim IDAux As Integer
     Dim MontoFaltante As Integer
+    Dim _Funcion As New Func
 #Region "Metodos de apoyo"
     Public Sub LlenarDataGridViewClientes()
         DataGridINVENTARIO.Rows.Clear()
@@ -143,6 +144,7 @@ Public Class Cliente
     Private Sub Cliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForIllegalCrossThreadCalls = False
         ComboBoxBusqueda.SelectedIndex = 0
+        _funcion.ALTERNARColorDataGrid(DataGridINVENTARIO)
         Dim HiloCliente As New Thread(AddressOf LlenarDataGridViewClientes)
         HiloCliente.Start()
     End Sub

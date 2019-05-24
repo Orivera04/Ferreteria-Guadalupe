@@ -8,6 +8,7 @@ Public Class Proveedores
     Private _ProveedoresBol As New Bol_Proveedor()
     Private _Proveedor As New E_Proveedor()
     Private IDTemp As Integer
+    Private _Funcion As New Func
 
 #Region "Metodos de apoyo"
     Public Sub LlenarDataGridViewProveedores()
@@ -33,6 +34,7 @@ Public Class Proveedores
 #Region "Eventos"
     Private Sub Proveedores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForIllegalCrossThreadCalls = False
+        _Funcion.ALTERNARColorDataGrid(DataGridProveedores)
         Dim HiloProveedores As New Thread(AddressOf LlenarDataGridViewProveedores)
         HiloProveedores.Start()
     End Sub

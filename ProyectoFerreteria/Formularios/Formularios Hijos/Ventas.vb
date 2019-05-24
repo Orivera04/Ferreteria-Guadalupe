@@ -10,6 +10,7 @@ Public Class Ventas
     Private _ClientesBol As New Bol_Cliente()
     Private _FacturaVentaBol As New Bol_FacturaVenta()
     Private _Factura As New E_FacturaVenta()
+    Dim _Funcion As New Func
 
 #Region "Metodos de apoyo"
     Public Sub LlenarComboboxProducto()
@@ -51,6 +52,7 @@ Public Class Ventas
 
     Private Sub Ventas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
+            _funcion.ALTERNARColorDataGrid(DataGridINVENTARIO)
             LlenarComboboxCliente()
             LlenarComboboxProducto()
 
