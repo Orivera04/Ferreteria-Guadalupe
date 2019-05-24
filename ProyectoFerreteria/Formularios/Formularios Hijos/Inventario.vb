@@ -291,10 +291,6 @@ Public Class Inventario
     End Sub
 
 
-
-
-
-
 #End Region
 
 End Class
