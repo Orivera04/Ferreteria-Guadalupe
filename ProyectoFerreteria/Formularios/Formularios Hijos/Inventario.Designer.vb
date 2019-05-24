@@ -66,7 +66,6 @@ Partial Class Inventario
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.DataGridINVENTARIO = New System.Windows.Forms.DataGridView()
-        Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -81,6 +80,7 @@ Partial Class Inventario
         Me.Proveedor_ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Edit = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Elim = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -691,14 +691,6 @@ Partial Class Inventario
         Me.DataGridINVENTARIO.Size = New System.Drawing.Size(841, 522)
         Me.DataGridINVENTARIO.TabIndex = 0
         '
-        'TextBoxBusqueda
-        '
-        Me.TextBoxBusqueda.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TextBoxBusqueda.Location = New System.Drawing.Point(379, 55)
-        Me.TextBoxBusqueda.Name = "TextBoxBusqueda"
-        Me.TextBoxBusqueda.Size = New System.Drawing.Size(265, 20)
-        Me.TextBoxBusqueda.TabIndex = 5
-        '
         'ID
         '
         Me.ID.HeaderText = "ID"
@@ -775,6 +767,14 @@ Partial Class Inventario
         Me.Elim.HeaderText = "Acción 2"
         Me.Elim.Name = "Elim"
         Me.Elim.Text = "Eliminar"
+        '
+        'TextBoxBusqueda
+        '
+        Me.TextBoxBusqueda.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextBoxBusqueda.Location = New System.Drawing.Point(379, 55)
+        Me.TextBoxBusqueda.Name = "TextBoxBusqueda"
+        Me.TextBoxBusqueda.Size = New System.Drawing.Size(265, 20)
+        Me.TextBoxBusqueda.TabIndex = 5
         '
         'Inventario
         '

@@ -15,7 +15,7 @@ Public Class Arqueo
     Dim SumaGANACIA As Double
     Dim ID_Empl As Integer
     Dim FechaT As Date
-    Dim Dolar As Double = 33.0
+    Dim Dolar As Double = 32.0
     Dim caja As Integer
     Dim VentaDelDia As Double
     Dim boleano As Boolean = True
@@ -541,7 +541,7 @@ INICIO:
         redon = Math.Round(SumaGANACIA)
         redon = SumaGANACIA - redon
         redon = Math.Abs(redon)
-        If redon > 0.4 Then
+        If redon > 0.5 Then
             SumaGANACIA = Math.Round(SumaGANACIA) + 1
         ElseIf redon < 0.5 Then
             SumaGANACIA = Math.Round(SumaGANACIA)

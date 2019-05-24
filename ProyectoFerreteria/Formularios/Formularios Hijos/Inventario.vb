@@ -132,7 +132,7 @@ Public Class Inventario
 
 
     'Calcula el porcentaje con la formula magica de Richard :V'
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles DescripcionBox.TextChanged, Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If Porcentaje.Text > 0 Then
             VentaBox.Text = (Int32.Parse(Porcentaje.Text) / 100 + 1) * CompraBox.Value
         Else
@@ -258,6 +258,7 @@ Public Class Inventario
         Else
             MsgBox(_ProductoBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
         End If
+
     End Sub
 
     'Filtra elementos en el DataGridView'

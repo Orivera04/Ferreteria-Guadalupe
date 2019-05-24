@@ -97,7 +97,7 @@ Public Class Bol_FacturaVenta
                 Errores.Append(vbLf + "Ocurrio un error al escribir en el Log" + vbLf + "Intentelo de nuevo mas tarde")
             End If
         End Try
-        Return -1
+        Return 1
     End Function
 
 

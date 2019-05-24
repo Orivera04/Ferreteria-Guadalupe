@@ -8,6 +8,7 @@ Public Class Medida
     Private _UnidadesMedidasBol As New Bol_UnidadMedida()
     Private _Medida As New E_UnidadMedida()
     Private _IDTemp As New Integer
+    Dim _funcion As New Func
 #Region "Metodos de apoyo"
     'Llenar DatagridView de medidas
     Public Sub LlenarDataGridViewMedidas()
@@ -76,6 +77,7 @@ Public Class Medida
 
     Private Sub Medida_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForIllegalCrossThreadCalls = False
+        _funcion.ALTERNARColorDataGrid(DataGridUnidades)
         Dim HiloMedidas As New Thread(AddressOf LlenarDataGridViewMedidas)
         HiloMedidas.Start()
     End Sub
