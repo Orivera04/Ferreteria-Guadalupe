@@ -73,16 +73,27 @@ Public Class Cliente
             IDAux = DataGridINVENTARIO.Rows(e.RowIndex).Cells(0).Value
             Me.Cursor = Cursors.Default
         ElseIf (e.ColumnIndex = 7) Then
-            Me.Cursor = Cursors.WaitCursor
-            _ClientesBol.EliminarCliente(DataGridINVENTARIO.Rows(e.RowIndex).Cells(0).Value)
-            If (_ClientesBol.Errores.Length = 0) Then
-                LlenarDataGridViewClientes()
-                MsgBox("El cliente fue eliminado exitosamente", MsgBoxStyle.OkOnly, "Exito")
-            Else
-                MsgBox(_ClientesBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
+            Dim resulta As Integer = MessageBox.Show("¿Esta seguro que desea eliminar?", "Cliente", MessageBoxButtons.YesNo)
+            If resulta = DialogResult.No Then
+
+                MsgBox("No se elimino el cliente", MsgBoxStyle.Information, "INFORMACION")
+            ElseIf resulta = DialogResult.Yes Then
+
+                Me.Cursor = Cursors.WaitCursor
+                _ClientesBol.EliminarCliente(DataGridINVENTARIO.Rows(e.RowIndex).Cells(0).Value)
+                If (_ClientesBol.Errores.Length = 0) Then
+                    LlenarDataGridViewClientes()
+                    MsgBox("El cliente fue eliminado exitosamente", MsgBoxStyle.OkOnly, "Exito")
+                Else
+                    MsgBox(_ClientesBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
+                End If
+                Me.Cursor = Cursors.Default
             End If
-            Me.Cursor = Cursors.Default
+
         End If
+
+
+
     End Sub
 
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click

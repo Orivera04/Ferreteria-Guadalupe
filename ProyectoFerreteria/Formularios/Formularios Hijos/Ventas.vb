@@ -113,8 +113,13 @@ Public Class Ventas
 
     Private Sub DataGridINVENTARIO_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridINVENTARIO.CellContentClick
         If (e.ColumnIndex = 5) Then
-            DataGridINVENTARIO.Rows.RemoveAt(e.RowIndex)
-            ActualizarPrecios()
+            Try
+                DataGridINVENTARIO.Rows.RemoveAt(e.RowIndex)
+                ActualizarPrecios()
+            Catch ex As Exception
+
+            End Try
+
         End If
     End Sub
 
