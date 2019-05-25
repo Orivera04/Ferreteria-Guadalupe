@@ -62,15 +62,31 @@ Public Class Medida
             _IDTemp = DataGridUnidades.Rows(e.RowIndex).Cells(0).Value
             Me.Cursor = Cursors.Default
         ElseIf (e.ColumnIndex = 3) Then
-            Me.Cursor = Cursors.WaitCursor
-            _UnidadesMedidasBol.EliminarUnidadMedida(DataGridUnidades.Rows(e.RowIndex).Cells(0).Value)
-            If (_UnidadesMedidasBol.Errores.Length = 0) Then
-                LlenarDataGridViewMedidas()
-                MsgBox("La unidad de medida fue eliminada exitosamente", MsgBoxStyle.OkOnly, "Exito")
-            Else
-                MsgBox(_UnidadesMedidasBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
+
+            Dim resulta As Integer = MessageBox.Show("¿Esta seguro que desea eliminar?", "MEDIDA", MessageBoxButtons.YesNo)
+            If resulta = DialogResult.No Then
+
+                MsgBox("No se elimino la medida", MsgBoxStyle.Information, "INFORMACION")
+            ElseIf resulta = DialogResult.Yes Then
+
+                Me.Cursor = Cursors.WaitCursor
+                Try
+                    _UnidadesMedidasBol.EliminarUnidadMedida(DataGridUnidades.Rows(e.RowIndex).Cells(0).Value)
+                Catch ex As Exception
+
+                End Try
+
+                If (_UnidadesMedidasBol.Errores.Length = 0) Then
+                    LlenarDataGridViewMedidas()
+                    MsgBox("La unidad de medida fue eliminada exitosamente", MsgBoxStyle.OkOnly, "Exito")
+                Else
+                    MsgBox(_UnidadesMedidasBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
+                End If
+                Me.Cursor = Cursors.Default
+
             End If
-            Me.Cursor = Cursors.Default
+
+
         End If
     End Sub
 

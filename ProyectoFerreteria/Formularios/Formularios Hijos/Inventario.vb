@@ -197,10 +197,15 @@ Public Class Inventario
         If (e.ColumnIndex = 12) Then
             EditarButton.Visible = True
             Me.Cursor = Cursors.WaitCursor
-            ListarProducto(DataGridINVENTARIO.Rows(e.RowIndex).Cells(0).Value)
+            Try
+                ListarProducto(DataGridINVENTARIO.Rows(e.RowIndex).Cells(0).Value)
+            Catch ex As Exception
+
+            End Try
+
             Me.Cursor = Cursors.Default
         ElseIf (e.ColumnIndex = 13) Then
-            Dim resulta As Integer = MessageBox.Show("¿Esta seguro que desea eliminar?", "Gasto", MessageBoxButtons.YesNo)
+            Dim resulta As Integer = MessageBox.Show("¿Esta seguro que desea eliminar?", "INVENTARIO", MessageBoxButtons.YesNo)
 
             If resulta = DialogResult.No Then
                 MsgBox("El producto no se elimino", MsgBoxStyle.Information, "INVENTARIO")
@@ -276,6 +281,14 @@ Public Class Inventario
         ProveedorCombo.Items.Clear()
         LlenarComboboxUnidadesDeMedida()
         LlenarComboboxProveedores()
+
+
+    End Sub
+
+    Private Sub TextBoxBusqueda_TextChanged(sender As Object, e As EventArgs) Handles TextBoxBusqueda.TextChanged
+
+        FiltrarBoton.PerformClick()
+
 
 
     End Sub

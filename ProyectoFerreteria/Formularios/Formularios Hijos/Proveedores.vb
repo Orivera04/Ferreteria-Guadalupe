@@ -79,7 +79,12 @@ Public Class Proveedores
             Me.Cursor = Cursors.Default
         ElseIf (e.ColumnIndex = 6) Then
             Me.Cursor = Cursors.WaitCursor
-            _ProveedoresBol.EliminarProveedor(DataGridProveedores.Rows(e.RowIndex).Cells(0).Value)
+            Try
+                _ProveedoresBol.EliminarProveedor(DataGridProveedores.Rows(e.RowIndex).Cells(0).Value)
+            Catch ex As Exception
+
+            End Try
+
             If (_ProveedoresBol.Errores.Length = 0) Then
                 LlenarDataGridViewProveedores()
                 MsgBox("El proveedor fue eliminado exitosamente", MsgBoxStyle.OkOnly, "Exito")

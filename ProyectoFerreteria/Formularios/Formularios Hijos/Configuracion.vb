@@ -7,6 +7,7 @@ Public Class Configuracion
     Dim _EmpleadosBol As New Bol_Empleado()
     Dim _Empleado As New E_Empleado()
     Dim IDAux As Integer
+    Dim _funcion As New Func
 
 #Region "Metodos de apoyo"
     Public Sub LlenarDataGridViewUsuarios()
@@ -77,15 +78,27 @@ Public Class Configuracion
             IDAux = DataGridView1.Rows(e.RowIndex).Cells(0).Value
             Me.Cursor = Cursors.Default
         ElseIf (e.ColumnIndex = 8) Then
-            Me.Cursor = Cursors.WaitCursor
-            _EmpleadosBol.EliminarEmpleado(DataGridView1.Rows(e.RowIndex).Cells(0).Value)
-            If (_EmpleadosBol.Errores.Length = 0) Then
-                LlenarDataGridViewUsuarios()
-                MsgBox("El empleado fue eliminado exitosamente", MsgBoxStyle.OkOnly, "Exito")
-            Else
-                MsgBox(_EmpleadosBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
+
+            Dim resulta As Integer = MessageBox.Show("¿Esta seguro que desea eliminar?", "USUARIO", MessageBoxButtons.YesNo)
+            If resulta = DialogResult.No Then
+
+                MsgBox("No se elimino el Empleado", MsgBoxStyle.Information, "INFORMACION")
+
+            ElseIf resulta = DialogResult.Yes Then
+
+
+                Me.Cursor = Cursors.WaitCursor
+                _EmpleadosBol.EliminarEmpleado(DataGridView1.Rows(e.RowIndex).Cells(0).Value)
+                If (_EmpleadosBol.Errores.Length = 0) Then
+                    LlenarDataGridViewUsuarios()
+                    MsgBox("El empleado fue eliminado exitosamente", MsgBoxStyle.OkOnly, "Exito")
+                Else
+                    MsgBox(_EmpleadosBol.Errores.ToString(), MsgBoxStyle.Critical, "Error")
+                End If
+                Me.Cursor = Cursors.Default
+
             End If
-            Me.Cursor = Cursors.Default
+
         End If
     End Sub
 
@@ -120,6 +133,7 @@ Public Class Configuracion
     End Sub
 
     Private Sub Configuracion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        _funcion.ALTERNARColorDataGrid(DataGridView1)
         CheckForIllegalCrossThreadCalls = False
         Dim HiloEmpleados As New Thread(AddressOf LlenarDataGridViewUsuarios)
         HiloEmpleados.Start()
