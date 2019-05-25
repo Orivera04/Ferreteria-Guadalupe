@@ -131,3 +131,15 @@ Error Number:245,State:1,Class:16
 [2019/05/25 03:11:06]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
    en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
    en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/25 06:32:17]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/25 06:35:02]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/25 06:35:32]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/25 06:37:09]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93

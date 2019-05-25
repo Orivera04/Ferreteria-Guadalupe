@@ -28,6 +28,7 @@ Partial Class Inventario
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.VScrollBar1 = New System.Windows.Forms.VScrollBar()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.EditarButton = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.ProveedorCombo = New System.Windows.Forms.ComboBox()
@@ -81,21 +82,20 @@ Partial Class Inventario
         Me.Edit = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Elim = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
-        Me.VScrollBar1 = New System.Windows.Forms.VScrollBar()
-        Me.Panel2.SuspendLayout
+        Me.Panel2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout
-        Me.GroupBox1.SuspendLayout
+        Me.Panel1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.VentaBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CompraBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ExistenciaDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MaxStockDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MinStockDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupDataGrid.SuspendLayout
+        Me.GroupDataGrid.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridINVENTARIO, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout
+        Me.SuspendLayout()
         '
         'Panel2
         '
@@ -181,6 +181,15 @@ Partial Class Inventario
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1307, 733)
         Me.Panel1.TabIndex = 69
+        '
+        'VScrollBar1
+        '
+        Me.VScrollBar1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.VScrollBar1.Location = New System.Drawing.Point(1241, 113)
+        Me.VScrollBar1.Maximum = 200
+        Me.VScrollBar1.Name = "VScrollBar1"
+        Me.VScrollBar1.Size = New System.Drawing.Size(21, 522)
+        Me.VScrollBar1.TabIndex = 68
         '
         'GroupBox1
         '
@@ -780,14 +789,6 @@ Partial Class Inventario
         Me.TextBoxBusqueda.Size = New System.Drawing.Size(265, 20)
         Me.TextBoxBusqueda.TabIndex = 5
         '
-        'VScrollBar1
-        '
-        Me.VScrollBar1.Location = New System.Drawing.Point(1247, 113)
-        Me.VScrollBar1.Maximum = 200
-        Me.VScrollBar1.Name = "VScrollBar1"
-        Me.VScrollBar1.Size = New System.Drawing.Size(21, 522)
-        Me.VScrollBar1.TabIndex = 68
-        '
         'Inventario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -802,11 +803,11 @@ Partial Class Inventario
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inventario"
         Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout
+        Me.Panel2.PerformLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout
+        Me.GroupBox1.PerformLayout()
         CType(Me.VentaBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CompraBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ExistenciaDown1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -814,11 +815,11 @@ Partial Class Inventario
         CType(Me.MinStockDown1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupDataGrid.ResumeLayout(False)
-        Me.GroupDataGrid.PerformLayout
+        Me.GroupDataGrid.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridINVENTARIO, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout
+        Me.PerformLayout()
 
     End Sub
 
