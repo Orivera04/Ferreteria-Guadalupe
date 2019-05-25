@@ -280,6 +280,14 @@ Public Class Inventario
 
     End Sub
 
+    Private Sub TextBoxBusqueda_TextChanged(sender As Object, e As EventArgs) Handles TextBoxBusqueda.TextChanged
+
+        FiltrarBoton.PerformClick()
+
+
+
+    End Sub
+
 
 
 
