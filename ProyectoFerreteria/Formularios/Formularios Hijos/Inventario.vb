@@ -1,6 +1,8 @@
 ﻿Imports System.Threading
 Imports Ferreteria___Entidades
 Imports Ferreteria___LogicaNegocios
+Imports System.Reflection
+
 
 Public Class Inventario
 
@@ -13,6 +15,14 @@ Public Class Inventario
     Private _funcion As New Func
 
 #Region "Metodos de apoyo"
+
+    'Activa el Doble Buffer'
+    Public Sub ActivarDobleBufer(ByVal DG As DataGridView)
+        Dim Tipo As Type = DG.[GetType]()
+        Dim PR As PropertyInfo = Tipo.GetProperty("DoubleBuffered", BindingFlags.Instance Or BindingFlags.NonPublic)
+        PR.SetValue(DG, True, Nothing)
+    End Sub
+
 
     'Actualiza el listado de proveedores'
     Public Sub LlenarComboboxProveedores()
@@ -55,6 +65,7 @@ Public Class Inventario
     'Actualiza la lista de productos'
     Public Sub LlenarDataGridViewProductos(ByVal FiltroFlag As Boolean, ByVal TipoFiltro As Integer, ByVal Cadena As String)
         DataGridINVENTARIO.Rows.Clear()
+        DataGridINVENTARIO.SuspendLayout()
         Dim ListaProductos
         If (FiltroFlag = False) Then
             ListaProductos = _ProductoBol.LeerTodo(False, 0, "")
@@ -64,6 +75,10 @@ Public Class Inventario
         For I As Integer = 0 To ListaProductos.Count() - 1
             DataGridINVENTARIO.Rows.Add(ListaProductos(I).P_ID_Producto, ListaProductos(I).P_Marca, ListaProductos(I).P_Descripcion, ListaProductos(I).P_Categoria, ListaProductos(I).P_Stock_Minimo, ListaProductos(I).P_Stock_Maximo, ListaProductos(I).P_Existencia, ListaProductos(I).P_NombreUnidadMedida, ListaProductos(I).P_PrecioCompra, ListaProductos(I).P_PrecioVenta, ListaProductos(I).P_FechaIngreso, ListaProductos(I).P_NombreProveedor, "Editar", "Eliminar")
         Next
+
+        VScrollBar1.Enabled = True
+        VScrollBar1.Value = 0
+        VScrollBar1.Maximum = ListaProductos.Count() - 1
         Label17.Hide()
         Listo = True
     End Sub
@@ -98,6 +113,8 @@ Public Class Inventario
         CategoriaCombo.SelectedIndex = 0
         ProveedorCombo.SelectedIndex = 0
         ComboBoxBusqueda.SelectedIndex = 0
+        VScrollBar1.Enabled = False
+        ActivarDobleBufer(DataGridINVENTARIO)
         Dim HiloProveedores As New Thread(AddressOf LlenarComboboxProveedores)
         HiloProveedores.Start()
     End Sub
@@ -293,9 +310,19 @@ Public Class Inventario
 
     End Sub
 
+    Private Sub VScrollBar1_ValueChanged(sender As Object, e As EventArgs) Handles VScrollBar1.ValueChanged
+        Try
+            DataGridINVENTARIO.FirstDisplayedScrollingRowIndex = VScrollBar1.Value
+        Catch ex As Exception
 
+        End Try
+    End Sub
 
-
+    Private Sub DataGridINVENTARIO_Scroll(sender As Object, e As ScrollEventArgs) Handles DataGridINVENTARIO.Scroll
+        If (e.ScrollOrientation = ScrollOrientation.VerticalScroll) Then
+            VScrollBar1.Value = e.NewValue
+        End If
+    End Sub
 
 
 #End Region

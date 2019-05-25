@@ -181,7 +181,7 @@ Public Class Dai_Producto
     End Function
 
     'Obtiene el stock de un producto'
-    Public Function GetStockProducto(ByVal ID As Integer)
+    Public Function GetStockProducto(ByVal ID As String)
         Using Conn As New SqlConnection(My.Resources.CadenaConexion)
             Conn.Open()
             Query = "SELECT EXISTENCIA 

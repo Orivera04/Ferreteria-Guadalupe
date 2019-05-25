@@ -143,7 +143,7 @@ Public Class Bol_Producto
     End Function
 
 
-    Public Function ObtenerStockProducto(ByVal ID As Integer)
+    Public Function ObtenerStockProducto(ByVal ID As String)
         Errores.Clear()
         Try
             Return Dai_Producto.GetStockProducto(ID)

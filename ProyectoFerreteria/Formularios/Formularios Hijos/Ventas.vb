@@ -42,7 +42,7 @@ Public Class Ventas
         TextBox6.Text = Math.Round(Math.Abs(((NumericUpDown2.Value / 100) - 1) * Decimal.Parse(TextBox3.Text)), 3)
     End Sub
 
-    Public Function Repetido(ByVal ID As Integer)
+    Public Function Repetido(ByVal ID As String)
         For I = 0 To DataGridINVENTARIO.Rows.Count - 1
             If (DataGridINVENTARIO.Rows(I).Cells(1).Value = ID) Then
                 Return True

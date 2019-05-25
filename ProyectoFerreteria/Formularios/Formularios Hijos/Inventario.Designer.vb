@@ -81,20 +81,21 @@ Partial Class Inventario
         Me.Edit = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Elim = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.TextBoxBusqueda = New System.Windows.Forms.TextBox()
-        Me.Panel2.SuspendLayout()
+        Me.VScrollBar1 = New System.Windows.Forms.VScrollBar()
+        Me.Panel2.SuspendLayout
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
+        Me.Panel1.SuspendLayout
+        Me.GroupBox1.SuspendLayout
         CType(Me.VentaBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CompraBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ExistenciaDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MaxStockDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MinStockDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupDataGrid.SuspendLayout()
+        Me.GroupDataGrid.SuspendLayout
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridINVENTARIO, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        Me.SuspendLayout
         '
         'Panel2
         '
@@ -172,6 +173,7 @@ Partial Class Inventario
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.VScrollBar1)
         Me.Panel1.Controls.Add(Me.GroupBox1)
         Me.Panel1.Controls.Add(Me.GroupDataGrid)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -778,6 +780,14 @@ Partial Class Inventario
         Me.TextBoxBusqueda.Size = New System.Drawing.Size(265, 20)
         Me.TextBoxBusqueda.TabIndex = 5
         '
+        'VScrollBar1
+        '
+        Me.VScrollBar1.Location = New System.Drawing.Point(1247, 113)
+        Me.VScrollBar1.Maximum = 200
+        Me.VScrollBar1.Name = "VScrollBar1"
+        Me.VScrollBar1.Size = New System.Drawing.Size(21, 522)
+        Me.VScrollBar1.TabIndex = 68
+        '
         'Inventario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -792,11 +802,11 @@ Partial Class Inventario
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inventario"
         Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
+        Me.Panel2.PerformLayout
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.GroupBox1.PerformLayout
         CType(Me.VentaBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CompraBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ExistenciaDown1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -804,11 +814,11 @@ Partial Class Inventario
         CType(Me.MinStockDown1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupDataGrid.ResumeLayout(False)
-        Me.GroupDataGrid.PerformLayout()
+        Me.GroupDataGrid.PerformLayout
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridINVENTARIO, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.PerformLayout
 
     End Sub
 
@@ -870,4 +880,5 @@ Partial Class Inventario
     Friend WithEvents Proveedor_ID As DataGridViewTextBoxColumn
     Friend WithEvents Edit As DataGridViewButtonColumn
     Friend WithEvents Elim As DataGridViewButtonColumn
+    Friend WithEvents VScrollBar1 As VScrollBar
 End Class

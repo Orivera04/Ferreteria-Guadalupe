@@ -9,6 +9,12 @@ Public Class Principal
     Private Provedor As New Proveedores()
     Private Configuracion As New Configuracion()
     Private Estadistica As New Estadisticas()
+    Private Venta As New Ventas()
+    Private Cliente As New Cliente()
+    Private FacturaVista As New Factura_Vista()
+    Private FacturaCompra As New Factura_Compra()
+
+
     Public Shared EmpleadoActivo As New E_Empleado
 
 
@@ -57,7 +63,7 @@ Public Class Principal
 
 
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
-        Abrirform(New Menu)
+        Abrirform(New Menu())
     End Sub
 
     Private Sub BunifuFlatButton2_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton2.Click
@@ -69,7 +75,7 @@ Public Class Principal
     End Sub
 
     Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
-        Abrirform(New Ventas)
+        Abrirform(Ventas)
     End Sub
 
     Private Sub BunifuFlatButton6_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton6.Click
@@ -81,15 +87,15 @@ Public Class Principal
     End Sub
 
     Private Sub BunifuFlatButton7_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton7.Click
-        Abrirform(New Factura_Compra)
+        Abrirform(Factura_Compra)
     End Sub
 
     Private Sub BunifuFlatButton8_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton8.Click
-        Abrirform(New Factura_Vista)
+        Abrirform(Factura_Vista)
     End Sub
 
     Private Sub BunifuFlatButton9_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton9.Click
-        Abrirform(New Cliente)
+        Abrirform(Cliente)
     End Sub
 
     Private Sub BunifuFlatButton10_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton10.Click
