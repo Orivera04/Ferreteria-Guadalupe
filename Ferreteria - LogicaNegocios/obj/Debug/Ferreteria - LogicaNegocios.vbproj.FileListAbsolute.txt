@@ -31,3 +31,17 @@ C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\obj\Deb
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\Ferreteria - LogicaNegocios.dll
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\Ferreteria - LogicaNegocios.xml
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\Ferreteria - LogicaNegocios.pdb
+J:\Ferreteria\Ferreteria - LogicaNegocios\bin\Debug\Ferreteria - LogicaNegocios.dll
+J:\Ferreteria\Ferreteria - LogicaNegocios\bin\Debug\Ferreteria - LogicaNegocios.pdb
+J:\Ferreteria\Ferreteria - LogicaNegocios\bin\Debug\Ferreteria - LogicaNegocios.xml
+J:\Ferreteria\Ferreteria - LogicaNegocios\bin\Debug\Ferreteria - AccesoDatos.dll
+J:\Ferreteria\Ferreteria - LogicaNegocios\bin\Debug\Ferreteria - Entidades.dll
+J:\Ferreteria\Ferreteria - LogicaNegocios\bin\Debug\Ferreteria - AccesoDatos.pdb
+J:\Ferreteria\Ferreteria - LogicaNegocios\bin\Debug\Ferreteria - AccesoDatos.xml
+J:\Ferreteria\Ferreteria - LogicaNegocios\bin\Debug\Ferreteria - Entidades.pdb
+J:\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\Ferreteria - LogicaNegocios.vbprojResolveAssemblyReference.cache
+J:\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\Ferreteria___LogicaNegocios.Resources.resources
+J:\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\Ferreteria - LogicaNegocios.vbproj.GenerateResource.Cache
+J:\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\Ferreteria - LogicaNegocios.dll
+J:\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\Ferreteria - LogicaNegocios.xml
+J:\Ferreteria\Ferreteria - LogicaNegocios\obj\Debug\Ferreteria - LogicaNegocios.pdb

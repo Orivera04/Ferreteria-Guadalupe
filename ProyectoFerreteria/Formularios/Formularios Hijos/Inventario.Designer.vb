@@ -60,6 +60,7 @@ Partial Class Inventario
         Me.Label5 = New System.Windows.Forms.Label()
         Me.pictureBox8 = New System.Windows.Forms.PictureBox()
         Me.GroupDataGrid = New System.Windows.Forms.GroupBox()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.FiltrarBoton = New System.Windows.Forms.Button()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.ComboBoxBusqueda = New System.Windows.Forms.ComboBox()
@@ -603,6 +604,7 @@ Partial Class Inventario
         Me.GroupDataGrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupDataGrid.BackColor = System.Drawing.Color.White
+        Me.GroupDataGrid.Controls.Add(Me.Label13)
         Me.GroupDataGrid.Controls.Add(Me.FiltrarBoton)
         Me.GroupDataGrid.Controls.Add(Me.Label17)
         Me.GroupDataGrid.Controls.Add(Me.ComboBoxBusqueda)
@@ -616,6 +618,21 @@ Partial Class Inventario
         Me.GroupDataGrid.Size = New System.Drawing.Size(853, 628)
         Me.GroupDataGrid.TabIndex = 10
         Me.GroupDataGrid.TabStop = False
+        '
+        'Label13
+        '
+        Me.Label13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
+        Me.Label13.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.Salmon
+        Me.Label13.Location = New System.Drawing.Point(396, 166)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(106, 18)
+        Me.Label13.TabIndex = 68
+        Me.Label13.Text = "No hay Datos"
+        Me.Label13.Visible = False
         '
         'FiltrarBoton
         '
@@ -882,4 +899,5 @@ Partial Class Inventario
     Friend WithEvents Edit As DataGridViewButtonColumn
     Friend WithEvents Elim As DataGridViewButtonColumn
     Friend WithEvents VScrollBar1 As VScrollBar
+    Private WithEvents Label13 As Label
 End Class

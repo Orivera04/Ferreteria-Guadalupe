@@ -143,3 +143,48 @@ Error Number:245,State:1,Class:16
 [2019/05/25 06:37:09]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
    en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
    en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/26 15:19:13]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/26 23:21:52]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/26 23:23:43]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/26 23:27:39]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/28 06:09:42]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/28 06:16:48]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/28 06:17:55]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/28 06:18:25]  System.InvalidCastException: El operador '+' no está definido para tipo 'DBNull' ni para tipo 'Integer'.
+   en Microsoft.VisualBasic.CompilerServices.Operators.AddObject(Object Left, Object Right)
+   en Ferreteria___LogicaNegocios.Bol_FacturaVenta.ObtenerUltimoID() en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_FacturaVenta.vb:línea 93
+[2019/05/28 06:20:36]  System.InvalidOperationException: Error de lectura porque no hay datos.
+   en System.Data.SqlClient.SqlDataReader.CheckDataIsReady(Int32 columnIndex, Boolean allowPartiallyReadColumn, Boolean permitAsync, String methodName)
+   en System.Data.SqlClient.SqlDataReader.TryReadColumn(Int32 i, Boolean setTimeout, Boolean allowPartiallyReadColumn)
+   en System.Data.SqlClient.SqlDataReader.GetValueInternal(Int32 i)
+   en System.Data.SqlClient.SqlDataReader.GetValue(Int32 i)
+   en Ferreteria___AccesoDatos.Dai_Empleado.GetByName(String Name) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 154
+   en Ferreteria___LogicaNegocios.Bol_Empleado.ObtenerNameEmpleado(String Name) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 166
+[2019/05/28 06:28:49]  System.InvalidOperationException: Error de lectura porque no hay datos.
+   en System.Data.SqlClient.SqlDataReader.CheckDataIsReady(Int32 columnIndex, Boolean allowPartiallyReadColumn, Boolean permitAsync, String methodName)
+   en System.Data.SqlClient.SqlDataReader.TryReadColumn(Int32 i, Boolean setTimeout, Boolean allowPartiallyReadColumn)
+   en System.Data.SqlClient.SqlDataReader.GetValueInternal(Int32 i)
+   en System.Data.SqlClient.SqlDataReader.GetValue(Int32 i)
+   en Ferreteria___AccesoDatos.Dai_Empleado.GetByName(String Name) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 154
+   en Ferreteria___LogicaNegocios.Bol_Empleado.ObtenerNameEmpleado(String Name) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 166
+[2019/05/28 06:30:06]  System.InvalidOperationException: Error de lectura porque no hay datos.
+   en System.Data.SqlClient.SqlDataReader.CheckDataIsReady(Int32 columnIndex, Boolean allowPartiallyReadColumn, Boolean permitAsync, String methodName)
+   en System.Data.SqlClient.SqlDataReader.TryReadColumn(Int32 i, Boolean setTimeout, Boolean allowPartiallyReadColumn)
+   en System.Data.SqlClient.SqlDataReader.GetValueInternal(Int32 i)
+   en System.Data.SqlClient.SqlDataReader.GetValue(Int32 i)
+   en Ferreteria___AccesoDatos.Dai_Empleado.GetByName(String Name) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\Dai_Empleado.vb:línea 154
+   en Ferreteria___LogicaNegocios.Bol_Empleado.ObtenerNameEmpleado(String Name) en C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - LogicaNegocios\Bol_Empleado.vb:línea 166

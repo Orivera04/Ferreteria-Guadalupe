@@ -115,7 +115,7 @@ Partial Class Ventas
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Label15.Location = New System.Drawing.Point(153, 10)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(67, 25)
+        Me.Label15.Size = New System.Drawing.Size(67, 28)
         Me.Label15.TabIndex = 4
         Me.Label15.Text = "Venta"
         '
@@ -164,7 +164,9 @@ Partial Class Ventas
         '
         'NumericUpDown1
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(497, 121)
+        Me.NumericUpDown1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(466, 122)
         Me.NumericUpDown1.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.NumericUpDown1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.NumericUpDown1.Name = "NumericUpDown1"
@@ -174,11 +176,13 @@ Partial Class Ventas
         '
         'Label11
         '
+        Me.Label11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.White
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label11.Location = New System.Drawing.Point(404, 122)
+        Me.Label11.Location = New System.Drawing.Point(373, 123)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(87, 19)
         Me.Label11.TabIndex = 50
@@ -187,6 +191,8 @@ Partial Class Ventas
         'BunifuFlatButton1
         '
         Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.BunifuFlatButton1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BunifuFlatButton1.BackColor = System.Drawing.Color.MediumSeaGreen
         Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton1.BorderRadius = 0
@@ -205,7 +211,7 @@ Partial Class Ventas
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 90.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(497, 156)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(466, 157)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.MediumSeaGreen
         Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.SeaGreen
@@ -220,8 +226,10 @@ Partial Class Ventas
         '
         'TextBox2
         '
+        Me.TextBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(497, 83)
+        Me.TextBox2.Location = New System.Drawing.Point(466, 84)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(167, 20)
         Me.TextBox2.TabIndex = 48
@@ -229,11 +237,13 @@ Partial Class Ventas
         '
         'Label10
         '
+        Me.Label10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.White
         Me.Label10.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label10.Location = New System.Drawing.Point(420, 84)
+        Me.Label10.Location = New System.Drawing.Point(389, 85)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(71, 19)
         Me.Label10.TabIndex = 47
@@ -249,18 +259,20 @@ Partial Class Ventas
         Me.ComboBox2.BackColor = System.Drawing.Color.LemonChiffon
         Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(497, 56)
+        Me.ComboBox2.Location = New System.Drawing.Point(466, 57)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(327, 21)
         Me.ComboBox2.TabIndex = 46
         '
         'Label9
         '
+        Me.Label9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.White
         Me.Label9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label9.Location = New System.Drawing.Point(413, 56)
+        Me.Label9.Location = New System.Drawing.Point(382, 57)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(78, 19)
         Me.Label9.TabIndex = 45
@@ -309,7 +321,7 @@ Partial Class Ventas
         Me.Label7.BackColor = System.Drawing.Color.White
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label7.Location = New System.Drawing.Point(856, 103)
+        Me.Label7.Location = New System.Drawing.Point(883, 104)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(51, 19)
         Me.Label7.TabIndex = 40
@@ -322,7 +334,7 @@ Partial Class Ventas
         Me.Label6.BackColor = System.Drawing.Color.White
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label6.Location = New System.Drawing.Point(856, 59)
+        Me.Label6.Location = New System.Drawing.Point(883, 57)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(94, 19)
         Me.Label6.TabIndex = 39
