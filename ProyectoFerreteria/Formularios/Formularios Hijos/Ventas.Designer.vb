@@ -28,6 +28,9 @@ Partial Class Ventas
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GroupDataGrid = New System.Windows.Forms.GroupBox()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -135,6 +138,9 @@ Partial Class Ventas
         Me.GroupDataGrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupDataGrid.BackColor = System.Drawing.Color.White
+        Me.GroupDataGrid.Controls.Add(Me.RadioButton2)
+        Me.GroupDataGrid.Controls.Add(Me.RadioButton1)
+        Me.GroupDataGrid.Controls.Add(Me.TextBox4)
         Me.GroupDataGrid.Controls.Add(Me.NumericUpDown1)
         Me.GroupDataGrid.Controls.Add(Me.Label11)
         Me.GroupDataGrid.Controls.Add(Me.BunifuFlatButton1)
@@ -161,6 +167,37 @@ Partial Class Ventas
         Me.GroupDataGrid.Size = New System.Drawing.Size(1200, 680)
         Me.GroupDataGrid.TabIndex = 10
         Me.GroupDataGrid.TabStop = False
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(810, 97)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(14, 13)
+        Me.RadioButton2.TabIndex = 56
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(810, 62)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(14, 13)
+        Me.RadioButton1.TabIndex = 55
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox4.Location = New System.Drawing.Point(466, 90)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(327, 20)
+        Me.TextBox4.TabIndex = 53
         '
         'NumericUpDown1
         '
@@ -229,7 +266,7 @@ Partial Class Ventas
         Me.TextBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(466, 84)
+        Me.TextBox2.Location = New System.Drawing.Point(377, 194)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(167, 20)
         Me.TextBox2.TabIndex = 48
@@ -243,12 +280,11 @@ Partial Class Ventas
         Me.Label10.BackColor = System.Drawing.Color.White
         Me.Label10.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.CornflowerBlue
-        Me.Label10.Location = New System.Drawing.Point(389, 85)
+        Me.Label10.Location = New System.Drawing.Point(382, 88)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(71, 19)
         Me.Label10.TabIndex = 47
         Me.Label10.Text = "Codigo:"
-        Me.Label10.Visible = False
         '
         'ComboBox2
         '
@@ -761,4 +797,7 @@ Partial Class Ventas
     Friend WithEvents Precio As DataGridViewTextBoxColumn
     Friend WithEvents Cantidad As DataGridViewTextBoxColumn
     Friend WithEvents Acc1 As DataGridViewButtonColumn
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton1 As RadioButton
 End Class
