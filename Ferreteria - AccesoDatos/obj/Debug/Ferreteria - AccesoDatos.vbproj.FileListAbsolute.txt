@@ -24,3 +24,16 @@ J:\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.vbproj
 J:\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.dll
 J:\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.xml
 J:\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.pdb
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - AccesoDatos.dll.config
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - AccesoDatos.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - AccesoDatos.pdb
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - AccesoDatos.xml
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - Entidades.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - Entidades.pdb
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - Entidades.xml
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.vbprojResolveAssemblyReference.cache
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria___AccesoDatos.Resources.resources
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.vbproj.GenerateResource.Cache
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.dll
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.xml
+C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.pdb

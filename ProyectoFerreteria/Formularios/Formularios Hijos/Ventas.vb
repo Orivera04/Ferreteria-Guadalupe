@@ -197,7 +197,10 @@ Public Class Ventas
             LineaFactura.P_Cantidad = DataGridINVENTARIO.Rows(I).Cells(4).Value
             LineaFactura.P_ID_Producto = DataGridINVENTARIO.Rows(I).Cells(1).Value.split("C"c)(0)
             LineaFactura.P_N_Linea = (I + 1)
-            LineaFactura.P_Precio = DataGridINVENTARIO.Rows(I).Cells(3).Value
+
+
+            'esto era el error que daba
+            LineaFactura.P_Precio = DataGridINVENTARIO.Rows(I).Cells(3).Value.split("C"c)(0)
             ListaItems.Add(LineaFactura)
         Next
         If (DataGridINVENTARIO.Rows.Count > 0) Then
