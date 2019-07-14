@@ -106,5 +106,7 @@ Public Class Principal
         Abrirform(Configuracion)
     End Sub
 
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) 
 
+    End Sub
 End Class

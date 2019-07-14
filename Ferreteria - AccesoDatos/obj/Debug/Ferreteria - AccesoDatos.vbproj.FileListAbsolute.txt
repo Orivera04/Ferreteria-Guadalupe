@@ -13,6 +13,17 @@ C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\ob
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.dll
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.xml
 C:\Users\river\OneDrive\Documentos\GitHub\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.pdb
+J:\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - AccesoDatos.dll.config
+J:\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - AccesoDatos.dll
+J:\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - AccesoDatos.pdb
+J:\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - AccesoDatos.xml
+J:\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - Entidades.dll
+J:\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - Entidades.pdb
+J:\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria___AccesoDatos.Resources.resources
+J:\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.vbproj.GenerateResource.Cache
+J:\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.dll
+J:\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.xml
+J:\Ferreteria\Ferreteria - AccesoDatos\obj\Debug\Ferreteria - AccesoDatos.pdb
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - AccesoDatos.dll.config
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - AccesoDatos.dll
 C:\Users\Richard\Documents\GitHub\Ferreteria\Ferreteria - AccesoDatos\bin\Debug\Ferreteria - AccesoDatos.pdb

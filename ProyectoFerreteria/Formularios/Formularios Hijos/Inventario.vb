@@ -75,10 +75,17 @@ Public Class Inventario
         For I As Integer = 0 To ListaProductos.Count() - 1
             DataGridINVENTARIO.Rows.Add(ListaProductos(I).P_ID_Producto, ListaProductos(I).P_Marca, ListaProductos(I).P_Descripcion, ListaProductos(I).P_Categoria, ListaProductos(I).P_Stock_Minimo, ListaProductos(I).P_Stock_Maximo, ListaProductos(I).P_Existencia, ListaProductos(I).P_NombreUnidadMedida, ListaProductos(I).P_PrecioCompra, ListaProductos(I).P_PrecioVenta, ListaProductos(I).P_FechaIngreso, ListaProductos(I).P_NombreProveedor, "Editar", "Eliminar")
         Next
+        Try
+            'Label13.Visible = False
+            VScrollBar1.Enabled = True
+            VScrollBar1.Value = 0
+            VScrollBar1.Maximum = ListaProductos.Count() - 1
 
-        VScrollBar1.Enabled = True
-        VScrollBar1.Value = 0
-        VScrollBar1.Maximum = ListaProductos.Count() - 1
+        Catch ex As Exception
+            '  Label13.Visible = True
+        End Try
+
+
         Label17.Hide()
         Listo = True
     End Sub
@@ -323,6 +330,7 @@ Public Class Inventario
             VScrollBar1.Value = e.NewValue
         End If
     End Sub
+
 
 
 #End Region

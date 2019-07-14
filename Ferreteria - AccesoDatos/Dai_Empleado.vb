@@ -145,7 +145,7 @@ Public Class Dai_Empleado
         Using Conn As New SqlConnection(My.Resources.CadenaConexion)
             Conn.Open()
             Query = "SELECT ID FROM EMPLEADO
-                     WHERE Nombre = @Nombre"
+                     WHERE usuario = @Nombre"
             Using CMD As New SqlCommand(Query, Conn)
                 CMD.Parameters.AddWithValue("@Nombre", Name)
                 Using Lector As SqlDataReader = CMD.ExecuteReader()

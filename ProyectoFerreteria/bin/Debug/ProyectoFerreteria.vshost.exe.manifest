@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KlamuBwJrNoV7IaLGyumb0DT7LLOtiJ2pKofDl6jxs4=</dsig:DigestValue>
+        <dsig:DigestValue>KVHc7gn+aAVjeHqyrf69kqgkXyH19mfFnR8Z3eh2/4w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>czLjoGA1+hKEo1bdneW8ZrsyG8fdBhdlrtP9oZXm8TM=</dsig:DigestValue>
+        <dsig:DigestValue>MSAQjncEqs6RFY0+98Law1j7LofuXYFgi7N8tC5BoGk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -139,14 +139,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoFerreteria.exe" size="535040">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoFerreteria.exe" size="545792">
       <assemblyIdentity name="ProyectoFerreteria" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Q/4aQaDTQb7j86I+oUgwadk9uS7VriurM3s7Gc7EASQ=</dsig:DigestValue>
+        <dsig:DigestValue>OPUUETGnkBTB4zJ3RHvov5yxvonANt1cDiQ2LolecMA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -177,7 +177,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Q8FlXFZDGJf86+iBkYJ1O1M0EWxMBhiI5M9+IVuQ4GM=</dsig:DigestValue>
+      <dsig:DigestValue>8JDCz+h29MrWLwQ/81nhN3Vc6JDeJ/5Wi+ZFl7XWNAs=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

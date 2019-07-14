@@ -146,7 +146,7 @@ Public Class Arqueo
             _EmpleadoID = Empleado.ID_P
             TextBox8.Text = Empleado.ID_P
         Catch ex As Exception
-            MsgBox("hay un problema con al IDENTIFICAR el usuario", MsgBoxStyle.Critical, "ARQUEO")
+            MsgBox("hay un problema  al IDENTIFICAR el usuario", MsgBoxStyle.Critical, "ARQUEO")
         End Try
 
     End Sub

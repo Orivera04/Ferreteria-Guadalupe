@@ -4,7 +4,7 @@
   <description asmv2:publisher="ProyectoFerreteria" asmv2:product="ProyectoFerreteria" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.5.1" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
     <dependentAssembly dependencyType="install" codebase="ProyectoFerreteria.exe.manifest" size="10285">
@@ -14,7 +14,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>exCV2YS+Tyl/9YjMVmDYCJUoz66tsBK0URu9MFZ/7QQ=</dsig:DigestValue>
+        <dsig:DigestValue>VGlJP49y+DpgxszmdomnENwCc45xdyHHoqmzGZTzAIQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
