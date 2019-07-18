@@ -9,9 +9,10 @@ Public Class Ventas
     Private _ProductosBol As New Bol_Producto()
     Private _ClientesBol As New Bol_Cliente()
     Private _FacturaVentaBol As New Bol_FacturaVenta()
+    Private _MedidaBol As New Bol_UnidadMedida
     Private _Factura As New E_FacturaVenta()
     Dim _Funcion As New Func
-    Dim AuxCantidad As Integer
+    Dim AuxCantidad As Decimal
 
 #Region "Metodos de apoyo"
     Public Sub LlenarComboboxProducto()
@@ -36,7 +37,7 @@ Public Class Ventas
         Dim SubTotal = 0.00
         For I = 0 To DataGridINVENTARIO.Rows.Count - 1
             DataGridINVENTARIO.Rows(I).Cells(0).Value = (I + 1).ToString()
-            SubTotal = SubTotal + (Decimal.Parse(DataGridINVENTARIO.Rows(I).Cells(3).Value.ToString.Split("C"c)(0)) * DataGridINVENTARIO.Rows(I).Cells(4).Value)
+            SubTotal = SubTotal + (Decimal.Parse(DataGridINVENTARIO.Rows(I).Cells(6).Value.ToString.Split("C"c)(0)) * DataGridINVENTARIO.Rows(I).Cells(5).Value)
         Next
         TextBox3.Text = Math.Round(SubTotal, 3).ToString()
         TextBox6.Text = Math.Round(Math.Abs(((NumericUpDown2.Value / 100) - 1) * Decimal.Parse(TextBox3.Text)), 3)
@@ -44,7 +45,8 @@ Public Class Ventas
 
     Public Function Repetido(ByVal ID As String)
         For I = 0 To DataGridINVENTARIO.Rows.Count - 1
-            If (DataGridINVENTARIO.Rows(I).Cells(1).Value = ID) Then
+            Dim codigo = DataGridINVENTARIO.Rows(I).Cells(1).Value
+            If ID = codigo.ToString Then
                 Return True
             End If
         Next
@@ -56,12 +58,24 @@ Public Class Ventas
 
 
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
-        Dim ID = TextBox2.Text.Split("#"c)(1).Split(":"c)(0)
+        Dim ID As String = Nothing
+        If RadioButton1.Checked = True Then
+            ID = ComboBox2.Text.Split("#"c)(1).Split(":"c)(0)
+
+        ElseIf RadioButton2.Checked = True Then
+            ID = TextBox4.Text
+        End If
+        ID = ID.Trim()
         If (Repetido(ID) = False) Then
             If RadioButton1.Checked = True Then
                 If ((_ProductosBol.ObtenerStockProducto(ID) - NumericUpDown1.Value) >= 0) Then
                     ComboBoxBusqueda_Leave(Nothing, New EventArgs())
-                    DataGridINVENTARIO.Rows.Add(DataGridINVENTARIO.Rows.Count + 1, TextBox2.Text.Split("#"c)(1).Split(":"c)(0), TextBox2.Text.Split("#"c)(0), TextBox2.Text.Split("#"c)(1).Split(":"c)(1), NumericUpDown1.Value, "Eliminar")
+                    Dim res = _ProductosBol.LeerProducto(ID)
+                    Dim res2 = _MedidaBol.ObtenerUnidadDeMedida(res.P_ID_UnidadMedida)
+                    DataGridINVENTARIO.Rows.Add(DataGridINVENTARIO.Rows.Count + 1, res.P_ID_Producto, res.P_Marca, res.P_Descripcion, res2.P_Nombre, NumericUpDown1.Value, res.P_PrecioVenta & " C$", "Eliminar")
+
+
+                    ' DataGridINVENTARIO.Rows.Add(DataGridINVENTARIO.Rows.Count + 1, TextBox2.Text.Split("#"c)(1).Split(":"c)(0), TextBox2.Text.Split("#"c)(0), TextBox2.Text.Split("#"c)(1).Split(":"c)(1), NumericUpDown1.Value, "Eliminar")
                 ElseIf ComboBox2.Text = "" Then
                     MsgBox("Verifique el Campo", MsgBoxStyle.Critical, "FACTURA")
                     ComboBox2.Focus()
@@ -73,7 +87,8 @@ Public Class Ventas
                 If ((_ProductosBol.ObtenerStockProducto(TextBox4.Text) - NumericUpDown1.Value) >= 0) Then
                     ComboBoxBusqueda_Leave(Nothing, New EventArgs())
                     Dim res = _ProductosBol.LeerProducto(TextBox4.Text)
-                    DataGridINVENTARIO.Rows.Add(DataGridINVENTARIO.Rows.Count + 1, res.P_ID_Producto, res.P_Descripcion, res.P_PrecioVenta, NumericUpDown1.Value, "Eliminar")
+                    Dim res2 = _MedidaBol.ObtenerUnidadDeMedida(res.P_ID_UnidadMedida)
+                    DataGridINVENTARIO.Rows.Add(DataGridINVENTARIO.Rows.Count + 1, res.P_ID_Producto, res.P_Marca, res.P_Descripcion, res2.P_Nombre, NumericUpDown1.Value, res.P_PrecioVenta & " C$", "Eliminar")
 
                 Else
                     MsgBox("No hay suficiente Stock para cubrir dicha cantidad.", MsgBoxStyle.Critical, "FACTURA")
@@ -93,7 +108,7 @@ Public Class Ventas
             LlenarComboboxCliente()
             LlenarComboboxProducto()
             RadioButton1.Select()
-            TextBox2.Text = ComboBox2.SelectedItem
+            ' TextBox2.Text = ComboBox2.SelectedItem
             Caja.Text = Principal.EmpleadoActivo.Usuario_P
 
 
@@ -109,7 +124,7 @@ Public Class Ventas
 
 
     Private Sub ComboBox2_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles ComboBox2.SelectionChangeCommitted
-        TextBox2.Text = ComboBox2.SelectedItem
+        'TextBox2.Text = ComboBox2.SelectedItem
     End Sub
 
     Private Sub ComboBoxBusqueda_Leave(sender As Object, e As EventArgs) Handles ComboBoxBusqueda.Leave
@@ -129,7 +144,7 @@ Public Class Ventas
     End Sub
 
     Private Sub DataGridINVENTARIO_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridINVENTARIO.CellContentClick
-        If (e.ColumnIndex = 5) Then
+        If (e.ColumnIndex = 7) Then
             Try
                 DataGridINVENTARIO.Rows.RemoveAt(e.RowIndex)
                 ActualizarPrecios()
@@ -142,9 +157,9 @@ Public Class Ventas
 
     Private Sub DataGridINVENTARIO_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridINVENTARIO.CellValueChanged
         Try
-            If (e.ColumnIndex = 4) Then
-                If Not ((_ProductosBol.ObtenerStockProducto(DataGridINVENTARIO.Rows(e.RowIndex).Cells(1).Value) - DataGridINVENTARIO.Rows(e.RowIndex).Cells(4).Value) >= 0) Then
-                    DataGridINVENTARIO.Rows(e.RowIndex).Cells(4).Value = AuxCantidad
+            If (e.ColumnIndex = 5) Then
+                If Not ((_ProductosBol.ObtenerStockProducto(DataGridINVENTARIO.Rows(e.RowIndex).Cells(1).Value) - DataGridINVENTARIO.Rows(e.RowIndex).Cells(5).Value) >= 0) Then
+                    DataGridINVENTARIO.Rows(e.RowIndex).Cells(5).Value = AuxCantidad
                     MsgBox("No hay suficiente stock para este producto", MsgBoxStyle.Critical, "FACTURA")
                 End If
             End If
@@ -194,13 +209,13 @@ Public Class Ventas
         For I = 0 To DataGridINVENTARIO.Rows.Count - 1
             Dim LineaFactura As New E_DetalleFactura
             LineaFactura.P_ID_Factura = TextBoxBusqueda.Text
-            LineaFactura.P_Cantidad = DataGridINVENTARIO.Rows(I).Cells(4).Value
-            LineaFactura.P_ID_Producto = DataGridINVENTARIO.Rows(I).Cells(1).Value.split("C"c)(0)
+            LineaFactura.P_Cantidad = DataGridINVENTARIO.Rows(I).Cells(5).Value
+            LineaFactura.P_ID_Producto = DataGridINVENTARIO.Rows(I).Cells(1).Value
             LineaFactura.P_N_Linea = (I + 1)
 
 
             'esto era el error que daba
-            LineaFactura.P_Precio = DataGridINVENTARIO.Rows(I).Cells(3).Value.split("C"c)(0)
+            LineaFactura.P_Precio = DataGridINVENTARIO.Rows(I).Cells(6).Value.split("C"c)(0)
             ListaItems.Add(LineaFactura)
         Next
         If (DataGridINVENTARIO.Rows.Count > 0) Then
@@ -231,7 +246,11 @@ Public Class Ventas
     End Sub
 
     Private Sub DataGridINVENTARIO_CellBeginEdit(sender As Object, e As DataGridViewCellCancelEventArgs) Handles DataGridINVENTARIO.CellBeginEdit
-        AuxCantidad = DataGridINVENTARIO.Rows(e.RowIndex).Cells(e.ColumnIndex).Value
+        If (e.ColumnIndex = 5) Then
+            AuxCantidad = DataGridINVENTARIO.Rows(e.RowIndex).Cells(e.ColumnIndex).Value
+        End If
+
+
     End Sub
 
 

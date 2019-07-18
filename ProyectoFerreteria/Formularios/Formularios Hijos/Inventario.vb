@@ -281,6 +281,7 @@ Public Class Inventario
 
     'Filtra elementos en el DataGridView'
     Private Sub FiltrarBoton_Click(sender As Object, e As EventArgs) Handles FiltrarBoton.Click
+        Label13.Visible = False
         If (ComboBoxBusqueda.SelectedItem = "Codigo") Then
             LlenarDataGridViewProductos(True, 0, TextBoxBusqueda.Text)
         ElseIf (ComboBoxBusqueda.SelectedItem = "Descripcion") Then
@@ -290,6 +291,16 @@ Public Class Inventario
         Else
             LlenarDataGridViewProductos(False, 0, "")
         End If
+
+        If DataGridINVENTARIO.RowCount > 1 Then
+
+            VScrollBar1.Maximum = DataGridINVENTARIO.RowCount
+        Else
+
+            Label13.Visible = True
+        End If
+
+
     End Sub
 
     Private Sub ComboBoxBusqueda_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxBusqueda.SelectedIndexChanged
@@ -326,9 +337,15 @@ Public Class Inventario
     End Sub
 
     Private Sub DataGridINVENTARIO_Scroll(sender As Object, e As ScrollEventArgs) Handles DataGridINVENTARIO.Scroll
-        If (e.ScrollOrientation = ScrollOrientation.VerticalScroll) Then
-            VScrollBar1.Value = e.NewValue
-        End If
+        Try
+            If (e.ScrollOrientation = ScrollOrientation.VerticalScroll) Then
+                VScrollBar1.Value = e.NewValue
+            End If
+
+        Catch ex As Exception
+
+        End Try
+
     End Sub
 
 

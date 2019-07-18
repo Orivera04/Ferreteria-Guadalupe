@@ -23,8 +23,8 @@ Partial Class Principal
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
-        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation8 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation7 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Principal))
         Me.BarControl = New Bunifu.Framework.UI.BunifuCards()
         Me.Nombre = New System.Windows.Forms.Label()
@@ -204,7 +204,7 @@ Partial Class Principal
         Me.BunifuFlatButton11.IconRightVisible = True
         Me.BunifuFlatButton11.IconRightZoom = 0R
         Me.BunifuFlatButton11.IconVisible = True
-        Me.BunifuFlatButton11.IconZoom = 100.0R
+        Me.BunifuFlatButton11.IconZoom = 70.0R
         Me.BunifuFlatButton11.IsTab = False
         Me.BunifuFlatButton11.Location = New System.Drawing.Point(0, 580)
         Me.BunifuFlatButton11.Name = "BunifuFlatButton11"
@@ -242,7 +242,7 @@ Partial Class Principal
         Me.BunifuFlatButton10.IconRightVisible = True
         Me.BunifuFlatButton10.IconRightZoom = 0R
         Me.BunifuFlatButton10.IconVisible = True
-        Me.BunifuFlatButton10.IconZoom = 85.0R
+        Me.BunifuFlatButton10.IconZoom = 70.0R
         Me.BunifuFlatButton10.IsTab = False
         Me.BunifuFlatButton10.Location = New System.Drawing.Point(0, 532)
         Me.BunifuFlatButton10.Name = "BunifuFlatButton10"
@@ -280,7 +280,7 @@ Partial Class Principal
         Me.BunifuFlatButton9.IconRightVisible = True
         Me.BunifuFlatButton9.IconRightZoom = 0R
         Me.BunifuFlatButton9.IconVisible = True
-        Me.BunifuFlatButton9.IconZoom = 80.0R
+        Me.BunifuFlatButton9.IconZoom = 90.0R
         Me.BunifuFlatButton9.IsTab = False
         Me.BunifuFlatButton9.Location = New System.Drawing.Point(0, 484)
         Me.BunifuFlatButton9.Name = "BunifuFlatButton9"
@@ -356,7 +356,7 @@ Partial Class Principal
         Me.BunifuFlatButton7.IconRightVisible = True
         Me.BunifuFlatButton7.IconRightZoom = 0R
         Me.BunifuFlatButton7.IconVisible = True
-        Me.BunifuFlatButton7.IconZoom = 82.0R
+        Me.BunifuFlatButton7.IconZoom = 68.0R
         Me.BunifuFlatButton7.IsTab = False
         Me.BunifuFlatButton7.Location = New System.Drawing.Point(0, 388)
         Me.BunifuFlatButton7.Name = "BunifuFlatButton7"
@@ -394,7 +394,7 @@ Partial Class Principal
         Me.BunifuFlatButton6.IconRightVisible = True
         Me.BunifuFlatButton6.IconRightZoom = 0R
         Me.BunifuFlatButton6.IconVisible = True
-        Me.BunifuFlatButton6.IconZoom = 85.0R
+        Me.BunifuFlatButton6.IconZoom = 80.0R
         Me.BunifuFlatButton6.IsTab = False
         Me.BunifuFlatButton6.Location = New System.Drawing.Point(0, 340)
         Me.BunifuFlatButton6.Name = "BunifuFlatButton6"
@@ -508,7 +508,7 @@ Partial Class Principal
         Me.BunifuFlatButton3.IconRightVisible = True
         Me.BunifuFlatButton3.IconRightZoom = 0R
         Me.BunifuFlatButton3.IconVisible = True
-        Me.BunifuFlatButton3.IconZoom = 65.0R
+        Me.BunifuFlatButton3.IconZoom = 70.0R
         Me.BunifuFlatButton3.IsTab = False
         Me.BunifuFlatButton3.Location = New System.Drawing.Point(0, 196)
         Me.BunifuFlatButton3.Name = "BunifuFlatButton3"
@@ -546,7 +546,7 @@ Partial Class Principal
         Me.BunifuFlatButton2.IconRightVisible = True
         Me.BunifuFlatButton2.IconRightZoom = 0R
         Me.BunifuFlatButton2.IconVisible = True
-        Me.BunifuFlatButton2.IconZoom = 90.0R
+        Me.BunifuFlatButton2.IconZoom = 60.0R
         Me.BunifuFlatButton2.IsTab = False
         Me.BunifuFlatButton2.Location = New System.Drawing.Point(0, 148)
         Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
@@ -585,7 +585,7 @@ Partial Class Principal
         Me.BunifuFlatButton1.IconRightVisible = True
         Me.BunifuFlatButton1.IconRightZoom = 0R
         Me.BunifuFlatButton1.IconVisible = True
-        Me.BunifuFlatButton1.IconZoom = 75.0R
+        Me.BunifuFlatButton1.IconZoom = 60.0R
         Me.BunifuFlatButton1.IsTab = False
         Me.BunifuFlatButton1.Location = New System.Drawing.Point(0, 100)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
@@ -628,22 +628,22 @@ Partial Class Principal
         '
         Me.AnimacionFlecha.AnimationType = BunifuAnimatorNS.AnimationType.Rotate
         Me.AnimacionFlecha.Cursor = Nothing
-        Animation2.AnimateOnlyDifferences = True
-        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
-        Animation2.LeafCoeff = 0!
-        Animation2.MaxTime = 1.0!
-        Animation2.MinTime = 0!
-        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
-        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
-        Animation2.MosaicSize = 0
-        Animation2.Padding = New System.Windows.Forms.Padding(50)
-        Animation2.RotateCoeff = 1.0!
-        Animation2.RotateLimit = 0!
-        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
-        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
-        Animation2.TimeCoeff = 0!
-        Animation2.TransparencyCoeff = 1.0!
-        Me.AnimacionFlecha.DefaultAnimation = Animation2
+        Animation8.AnimateOnlyDifferences = True
+        Animation8.BlindCoeff = CType(resources.GetObject("Animation8.BlindCoeff"), System.Drawing.PointF)
+        Animation8.LeafCoeff = 0!
+        Animation8.MaxTime = 1.0!
+        Animation8.MinTime = 0!
+        Animation8.MosaicCoeff = CType(resources.GetObject("Animation8.MosaicCoeff"), System.Drawing.PointF)
+        Animation8.MosaicShift = CType(resources.GetObject("Animation8.MosaicShift"), System.Drawing.PointF)
+        Animation8.MosaicSize = 0
+        Animation8.Padding = New System.Windows.Forms.Padding(50)
+        Animation8.RotateCoeff = 1.0!
+        Animation8.RotateLimit = 0!
+        Animation8.ScaleCoeff = CType(resources.GetObject("Animation8.ScaleCoeff"), System.Drawing.PointF)
+        Animation8.SlideCoeff = CType(resources.GetObject("Animation8.SlideCoeff"), System.Drawing.PointF)
+        Animation8.TimeCoeff = 0!
+        Animation8.TransparencyCoeff = 1.0!
+        Me.AnimacionFlecha.DefaultAnimation = Animation8
         '
         'PanelContenedor
         '
@@ -673,22 +673,22 @@ Partial Class Principal
         '
         Me.AnimacionPanelSecundario.AnimationType = BunifuAnimatorNS.AnimationType.Scale
         Me.AnimacionPanelSecundario.Cursor = Nothing
-        Animation1.AnimateOnlyDifferences = True
-        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
-        Animation1.LeafCoeff = 0!
-        Animation1.MaxTime = 1.0!
-        Animation1.MinTime = 0!
-        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
-        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
-        Animation1.MosaicSize = 0
-        Animation1.Padding = New System.Windows.Forms.Padding(0)
-        Animation1.RotateCoeff = 0!
-        Animation1.RotateLimit = 0!
-        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
-        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
-        Animation1.TimeCoeff = 0!
-        Animation1.TransparencyCoeff = 0!
-        Me.AnimacionPanelSecundario.DefaultAnimation = Animation1
+        Animation7.AnimateOnlyDifferences = True
+        Animation7.BlindCoeff = CType(resources.GetObject("Animation7.BlindCoeff"), System.Drawing.PointF)
+        Animation7.LeafCoeff = 0!
+        Animation7.MaxTime = 1.0!
+        Animation7.MinTime = 0!
+        Animation7.MosaicCoeff = CType(resources.GetObject("Animation7.MosaicCoeff"), System.Drawing.PointF)
+        Animation7.MosaicShift = CType(resources.GetObject("Animation7.MosaicShift"), System.Drawing.PointF)
+        Animation7.MosaicSize = 0
+        Animation7.Padding = New System.Windows.Forms.Padding(0)
+        Animation7.RotateCoeff = 0!
+        Animation7.RotateLimit = 0!
+        Animation7.ScaleCoeff = CType(resources.GetObject("Animation7.ScaleCoeff"), System.Drawing.PointF)
+        Animation7.SlideCoeff = CType(resources.GetObject("Animation7.SlideCoeff"), System.Drawing.PointF)
+        Animation7.TimeCoeff = 0!
+        Animation7.TransparencyCoeff = 0!
+        Me.AnimacionPanelSecundario.DefaultAnimation = Animation7
         '
         'Tarjetadecontrol
         '
